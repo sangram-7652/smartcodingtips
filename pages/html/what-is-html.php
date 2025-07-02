@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">What is HTML?</h1>
-        <p class="text-lg mb-4">
+        <p class="  mb-4">
             HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to create web pages and web applications. HTML structures the content on the web, telling the browser how to display text, images, links, and other elements.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why is HTML Important?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside  ">
                 <li><strong>Foundation of Websites:</strong> Every website you visit is built using HTML in some form.</li>
                 <li><strong>Compatible with All Browsers:</strong> HTML is universally supported and forms the core of web technology.</li>
                 <li><strong>Easy to Learn:</strong> HTML has a simple syntax and is beginner-friendly, making it the first step for aspiring web developers.</li>
@@ -33,8 +33,8 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Structure of an HTML Document</h2>
-            <p class="text-lg mb-2">Every HTML page follows a specific structure, like this:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="  mb-2">Every HTML page follows a specific structure, like this:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto bg-white text-black dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -50,7 +50,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Key Features of HTML</h2>
-            <ol class="list-decimal list-inside text-lg">
+            <ol class="list-decimal list-inside  ">
                 <li><strong>Elements and Tags:</strong> HTML uses tags like <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, and <code>&lt;a&gt;</code> to define content.</li>
                 <li><strong>Hyperlinks:</strong> You can connect one page to another using anchor tags (<code>&lt;a&gt;</code>).</li>
                 <li><strong>Media Integration:</strong> HTML allows adding images, videos, audio, and more.</li>
@@ -59,11 +59,11 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">HTML is the first language every web developer must learn. It lays the foundation for structuring and displaying content on the web. With its simple syntax and powerful features, HTML is the stepping stone toward building websites and web applications.</p>
+            <p class=" ">HTML is the first language every web developer must learn. It lays the foundation for structuring and displaying content on the web. With its simple syntax and powerful features, HTML is the stepping stone toward building websites and web applications.</p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html.php?page=html/features" class="text-blue-600 hover:underline">Features of html →</a></p>
+            <p class="  font-semibold">Next: <a href="html.php?page=html/features" class="text-blue-600 hover:underline">Features of html →</a></p>
         </div>
     </article>
 </main>

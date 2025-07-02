@@ -22,7 +22,7 @@ include 'includes/header.php';
 ?>
 
 <div class="flex  ">
-    <div class="w-[18rem] h-[1200px] overflow-y-scroll bg-gray-100 shadow-lg hidden md:flex flex-col items-start px-6 py-8 space-y-6 text-sm font-medium ">
+    <div class="w-[18rem] h-[1200px] overflow-y-scroll bg-gray-100 shadow-lg hidden md:flex flex-col items-start px-6 py-8 space-y-6 text-sm font-medium bg-white text-black dark:bg-gray-900 dark:text-white">
 
         <div>
             <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>

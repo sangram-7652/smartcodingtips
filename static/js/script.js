@@ -31,17 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-  // const toggleBtn = document.getElementById('themeToggle');
-  // const html = document.documentElement;
+  const toggleBtn = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  if (localStorage.getItem('theme') === 'dark') {
+    html.classList.add('dark');
+    toggleBtn.textContent = '☀️';
+  }
 
-  // if (localStorage.getItem('theme') === 'dark') {
-  //   html.classList.add('dark');
-  //   toggleBtn.textContent = '☀️';
-  // }
-
-  // toggleBtn.addEventListener('click', () => {
-  //   html.classList.toggle('dark');
-  //   const isDark = html.classList.contains('dark');
-  //   localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  //   toggleBtn.textContent = isDark ? '☀️' : '🌙';
-  // });
+  toggleBtn.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    const isDark = html.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    toggleBtn.textContent = isDark ? '☀️' : '🌙';
+  });

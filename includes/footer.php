@@ -1,7 +1,7 @@
 <!-- footer.php -->
 <footer class="bg-gray-900 dark:bg-gray-800 text-white mt-10">
   <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-    
+
     <!-- Left: Brand Info -->
     <div class="text-center md:text-left">
       <h2 class="text-xl font-bold text-emerald-400">SmartCodingTips</h2>
@@ -32,3 +32,7 @@
 
 <!-- Font Awesome CDN for icons -->
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<script src="/smartcodingtips/static/js/script.js"></script>
+</body>
+
+</html>

@@ -11,10 +11,10 @@
     </section>
 
     <!-- Features Section -->
-    <section class="grid md:grid-cols-3 gap-6 mb-12">
+    <section class="grid md:grid-cols-3 gap-6 mb-12 ">
 
         <!-- HTML Card -->
-        <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
             <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML Icon" class="mx-auto mb-3" />
             <h2 class="text-2xl font-semibold mb-2">HTML Tutorials</h2>
             <p class="text-gray-600 mb-4">Understand the basics of web structure, tags, forms, and layout.</p>
@@ -22,7 +22,7 @@
         </div>
 
         <!-- CSS Card -->
-        <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
             <img src="https://img.icons8.com/color/48/css3.png" alt="CSS Icon" class="mx-auto mb-3" />
             <h2 class="text-2xl font-semibold mb-2">CSS Styling</h2>
             <p class="text-gray-600 mb-4">Learn how to design beautiful websites with modern CSS techniques.</p>
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Tailwind CSS Card -->
-        <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
             <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind Icon" class="mx-auto mb-3" />
             <h2 class="text-2xl font-semibold mb-2">Tailwind CSS</h2>
             <p class="text-gray-600 mb-4">Master utility-first design with responsive, modern Tailwind UI tips and projects.</p>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- JavaScript Card -->
-        <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
             <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript Icon" class="mx-auto mb-3" />
             <h2 class="text-2xl font-semibold mb-2">JavaScript</h2>
             <p class="text-gray-600 mb-4">Add interactivity and logic to your web pages using JavaScript.</p>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- ✅ React Card -->
-        <div class="bg-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
+        <div class="bg-white text-black dark:bg-gray-900 dark:text-white shadow-md p-6 rounded-lg text-center hover:shadow-xl transition">
             <img src="https://img.icons8.com/color/48/react-native.png" alt="React Icon" class="mx-auto mb-3" />
             <h2 class="text-2xl font-semibold mb-2">React.js</h2>
             <p class="text-gray-600 mb-4">Build modern, dynamic UIs with React and component-based architecture.</p>
@@ -56,15 +56,15 @@
     </section>
 
     <!-- Blog Teaser -->
-    <section class="mb-12">
+    <section class="mb-12 ">
         <h2 class="text-3xl font-bold mb-6">Latest from the Blog</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <article class="bg-gray-100 p-5 rounded shadow-sm hover:shadow-lg transition">
+        <div class="grid md:grid-cols-2 gap-6 ">
+            <article class="bg-gray-100 p-5 rounded shadow-sm hover:shadow-lg transition bg-white text-black dark:bg-gray-900 dark:text-white">
                 <h3 class="text-xl font-semibold mb-2">Why You Should Use Semantic HTML</h3>
                 <p class="text-gray-700 mb-2">Semantic HTML improves accessibility, SEO, and code clarity. Learn which tags to use and why they matter.</p>
                 <a href="semantic-html.php" class="text-blue-600 hover:underline">Read More →</a>
             </article>
-            <article class="bg-gray-100 p-5 rounded shadow-sm hover:shadow-lg transition">
+            <article class="bg-gray-100 p-5 rounded shadow-sm hover:shadow-lg transition bg-white text-black dark:bg-gray-900 dark:text-white">
                 <h3 class="text-xl font-semibold mb-2">Responsive Design with Flexbox</h3>
                 <p class="text-gray-700 mb-2">Use Flexbox to create responsive, modern layouts without media query chaos. A complete guide with examples.</p>
                 <a href="flexbox-layout.php" class="text-blue-600 hover:underline">Read More →</a>
@@ -73,7 +73,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="bg-indigo-50 p-6 rounded-lg text-center">
+    <section class="bg-indigo-50 p-6 rounded-lg text-center bg-white text-black dark:bg-gray-900 dark:text-white">
         <h2 class="text-2xl font-bold mb-2">Join Our Newsletter</h2>
         <p class="text-gray-700 mb-4">Stay updated with the latest tutorials, tips, and tricks.</p>
         <?php

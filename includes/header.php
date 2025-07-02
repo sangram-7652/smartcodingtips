@@ -21,7 +21,11 @@
     <link rel="stylesheet" href="/smartcodingtips/static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
     <!-- Optional: Smooth scrolling -->
     <style>
         html {
@@ -30,7 +34,7 @@
     </style>
 </head>
 
-<body class="">
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
     <!-- bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white -->
     <!-- Header Start -->
     <header class="w-full bg-gray-900 dark:bg-gray-800 text-white fixed top-0 left-0 z-50 shadow-md">
@@ -52,7 +56,7 @@
             </nav>
 
             <!-- Theme Toggle -->
-            <button id="themeToggle" class="ml-4 text-xl" title="Toggle Theme">🌙</button>
+            <button id="themeToggle"  class="ml-4 text-xl" title="Toggle Theme">🌙</button>
 
             <!-- Mobile Menu Icon -->
             <button class="md:hidden focus:outline-none">
