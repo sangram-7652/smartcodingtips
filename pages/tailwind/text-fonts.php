@@ -1,0 +1,94 @@
+<!-- Page Content Starts Here -->
+<main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
+        <ol class="list-none p-0 inline-flex">
+            <li class="flex items-center">
+                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <span class="mx-2">/</span>
+            </li>
+            <li class="flex items-center">
+                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <span class="mx-2">/</span>
+            </li>
+            <li class="text-gray-500">Font Size, Family, and Weight</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <article>
+        <h1 class="text-3xl font-bold mb-4">Font Size, Family, and Weight</h1>
+        <p class="text-lg mb-4">
+            Tailwind provides utility classes to easily control text size, font family, and weight. This gives you powerful control over typography without writing custom CSS.
+        </p>
+
+        <!-- Font Sizes -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">1. Font Sizes</h2>
+            <p class="text-lg mb-2">Use <code>text-{size}</code> to set font size. Example sizes:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+text-xs     /* Extra small */
+text-sm     /* Small */
+text-base   /* Default body text */
+text-lg     /* Large */
+text-xl     /* Extra Large */
+text-2xl to text-9xl  /* Larger heading sizes */
+            </pre>
+            <div class="space-y-2 mt-4">
+                <p class="text-xs bg-gray-50 p-2 rounded">This is text-xs</p>
+                <p class="text-base bg-gray-50 p-2 rounded">This is text-base</p>
+                <p class="text-4xl bg-gray-50 p-2 rounded">This is text-4xl</p>
+            </div>
+        </section>
+
+        <!-- Font Family -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">2. Font Family</h2>
+            <p class="text-lg mb-2">Use <code>font-sans</code>, <code>font-serif</code>, or <code>font-mono</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+font-sans   /* Default: Inter, system-ui, etc. */
+font-serif  /* Georgia, Times New Roman */
+font-mono   /* Menlo, Courier New */
+            </pre>
+            <div class="space-y-2 mt-4">
+                <p class="font-sans bg-gray-50 p-2 rounded">This is sans-serif font</p>
+                <p class="font-serif bg-gray-50 p-2 rounded">This is serif font</p>
+                <p class="font-mono bg-gray-50 p-2 rounded">This is mono font</p>
+            </div>
+        </section>
+
+        <!-- Font Weight -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">3. Font Weight</h2>
+            <p class="text-lg mb-2">Control font weight with <code>font-{weight}</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+font-thin        /* 100 */
+font-extralight  /* 200 */
+font-light       /* 300 */
+font-normal      /* 400 */
+font-medium      /* 500 */
+font-semibold    /* 600 */
+font-bold        /* 700 */
+font-extrabold   /* 800 */
+font-black       /* 900 */
+            </pre>
+            <div class="space-y-2 mt-4">
+                <p class="font-light bg-gray-50 p-2 rounded">This is light text</p>
+                <p class="font-semibold bg-gray-50 p-2 rounded">This is semi-bold text</p>
+                <p class="font-black bg-gray-50 p-2 rounded">This is black text</p>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
+            <p class="text-lg">
+                Tailwind’s typography utilities let you apply font sizes, families, and weights quickly. Combine these classes to create headings, body text, and labels that match your brand.
+            </p>
+        </section>
+
+        <div class="mt-4">
+            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/text-spacing" class="text-blue-600 hover:underline">Line Height & Letter Spacing →</a></p>
+        </div>
+    </article>
+</main>

@@ -1,0 +1,107 @@
+<!-- Page Content Starts Here -->
+<main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
+        <ol class="list-none p-0 inline-flex">
+            <li class="flex items-center">
+                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <span class="mx-2">/</span>
+            </li>
+            <li class="flex items-center">
+                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <span class="mx-2">/</span>
+            </li>
+            <li class="text-gray-500">Responsive, Hover, and Focus Variants</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <article>
+        <h1 class="text-3xl font-bold mb-4">Responsive, Hover, and Focus Variants</h1>
+        <p class="text-lg mb-4">
+            Tailwind CSS allows you to conditionally apply utility classes based on screen size (responsive design), interaction state (like hover or focus), and more — using *variants*.
+        </p>
+
+        <!-- Responsive Variants -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">1. Responsive Variants</h2>
+            <p class="text-lg mb-2">
+                Prefix classes with breakpoints like <code>sm:</code>, <code>md:</code>, <code>lg:</code> to apply styles at specific screen widths.
+            </p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+&lt;div class="text-sm sm:text-base md:text-lg lg:text-xl"&gt;
+  Responsive Text Size
+&lt;/div&gt;
+            </pre>
+            <p class="text-lg mt-2">This element will have increasing font size on larger screens.</p>
+        </section>
+
+        <!-- Hover and Focus States -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">2. Hover and Focus States</h2>
+            <p class="text-lg mb-2">
+                Tailwind includes variants for interaction states like <code>hover:</code>, <code>focus:</code>, <code>active:</code>, and more.
+            </p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+&lt;button class="bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 text-white py-2 px-4 rounded"&gt;
+  Hover & Focus Me
+&lt;/button&gt;
+            </pre>
+        </section>
+
+        <!-- Group Hover Example -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">3. Group Hover Example</h2>
+            <p class="text-lg mb-2">Use <code>group</code> on the parent and <code>group-hover:</code> on child elements:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+&lt;div class="group p-4 bg-gray-100 hover:bg-gray-200"&gt;
+  &lt;h3 class="text-xl font-semibold group-hover:text-blue-600"&gt;
+    Hover to change heading color
+  &lt;/h3&gt;
+&lt;/div&gt;
+            </pre>
+        </section>
+
+        <!-- Combining Multiple Variants -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">4. Combining Variants</h2>
+            <p class="text-lg mb-2">You can combine responsive and state variants:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+&lt;button class="text-sm sm:text-base hover:bg-green-500 focus:outline-none focus:ring-2"&gt;
+  Responsive Button
+&lt;/button&gt;
+            </pre>
+        </section>
+
+        <!-- Customizing Variants -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">5. Customizing Available Variants</h2>
+            <p class="text-lg mb-2">
+                You can control which variants are generated in your <code>tailwind.config.js</code> file:
+            </p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+// tailwind.config.js
+module.exports = {
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+      textColor: ['visited'],
+    },
+  },
+};
+            </pre>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
+            <p class="text-lg">
+                Responsive and interactive variants are a core strength of Tailwind. They enable powerful designs directly within your HTML, keeping your components both flexible and easy to maintain.
+            </p>
+        </section>
+
+        <div class="mt-4">
+            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/jit-purge" class="text-blue-600 hover:underline">How Tailwind Applies Styles →</a></p>
+        </div>
+    </article>
+</main>
