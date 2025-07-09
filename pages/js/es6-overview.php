@@ -21,11 +21,11 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 let & const</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>let count = 10;  // Mutable
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>let count = 10;  // Mutable
 const PI = 3.14; // Immutable</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔻 Arrow Functions</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Traditional
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Traditional
 function greet(name) {
   return "Hello " + name;
 }
@@ -34,11 +34,11 @@ function greet(name) {
 const greet = name => `Hello ${name}`;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Template Literals</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>const user = "Alice";
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const user = "Alice";
 console.log(`Welcome, ${user}!`);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Object
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Object
 const user = { name: "Bob", age: 25 };
 const { name, age } = user;
 
@@ -47,7 +47,7 @@ const colors = ["red", "green"];
 const [first, second] = colors;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🌀 Spread & Rest Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Spread
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Spread
 const nums = [1, 2, 3];
 const newNums = [...nums, 4, 5];
 
@@ -57,14 +57,14 @@ function sum(...args) {
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📁 Modules</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Exporting
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Exporting
 export const sayHello = () => console.log("Hello");
 
 // Importing
 import { sayHello } from './utils.js';</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Default Parameters</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>function greet(name = "Guest") {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name = "Guest") {
   console.log(`Hello, ${name}`);
 }</code></pre>
 

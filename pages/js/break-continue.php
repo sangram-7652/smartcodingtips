@@ -26,7 +26,7 @@
         The <code>break</code> statement immediately exits the loop or switch block it's in.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         break;
     }
@@ -40,7 +40,7 @@
         The <code>continue</code> statement skips the current iteration and moves to the next one.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         continue;
     }

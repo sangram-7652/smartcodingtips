@@ -26,7 +26,7 @@
         <code>var</code> was the original way to declare variables in JavaScript. It has function-level scope and can be redeclared.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>var name = "Alice";
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>var name = "Alice";
 console.log(name); // Alice
 
 var name = "Bob";  // Redeclared
@@ -44,7 +44,7 @@ console.log(name); // Bob
         <code>let</code> is block-scoped and prevents variable redeclaration.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let age = 25;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 25;
 age = 26;      // ✅ Reassignment allowed
 
 let age = 30;  // ❌ Error: Cannot redeclare
@@ -61,7 +61,7 @@ let age = 30;  // ❌ Error: Cannot redeclare
         <code>const</code> is also block-scoped and must be initialized when declared. The value cannot be reassigned.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const PI = 3.1416;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const PI = 3.1416;
 PI = 3.14; // ❌ Error: Assignment to constant variable
 
 const user = { name: "Alice" };
@@ -76,7 +76,7 @@ user.name = "Bob"; // ✅ Allowed (object itself not reassigned)
 
     <h2 class="text-2xl font-semibold mb-2">⚖️ Summary: When to Use What?</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="dark:bg-gray-900 dark:text-white mb-6">
         <table class="min-w-full border border-gray-300 text-sm">
             <thead class="bg-gray-100">
                 <tr>

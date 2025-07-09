@@ -22,11 +22,11 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Creating Arrays</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let fruits = ["apple", "banana", "cherry"];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let fruits = ["apple", "banana", "cherry"];
 let numbers = new Array(1, 2, 3, 4);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Looping Through Arrays</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (let i = 0; i &lt; fruits.length; i++) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 0; i &lt; fruits.length; i++) {
     console.log(fruits[i]);
 }
 
@@ -47,7 +47,7 @@ fruits.forEach(function(item) {
         <li><code>splice()</code> – Add/remove at index</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let colors = ["red", "green", "blue"];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let colors = ["red", "green", "blue"];
 colors.push("yellow");  // ["red", "green", "blue", "yellow"]
 colors.splice(1, 1);    // ["red", "blue", "yellow"]
 console.log(colors.includes("blue")); // true</code></pre>
@@ -62,7 +62,7 @@ console.log(colors.includes("blue")); // true</code></pre>
         <li><code>find()</code> – Find first matching element</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let nums = [1, 2, 3, 4, 5];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let nums = [1, 2, 3, 4, 5];
 
 let doubled = nums.map(n =&gt; n * 2);      // [2, 4, 6, 8, 10]
 let evens = nums.filter(n =&gt; n % 2 === 0); // [2, 4]

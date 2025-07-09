@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Using DevTools for CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Developer Tools (DevTools) in browsers like Chrome and Firefox are powerful for inspecting and editing CSS live, helping you debug layouts, check styles, and test changes quickly.
         </p>
 
         <!-- Opening DevTools -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. How to Open DevTools</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><strong>Windows/Linux:</strong> Press <code>F12</code> or <code>Ctrl + Shift + I</code></li>
                 <li><strong>Mac:</strong> Press <code>Cmd + Option + I</code></li>
                 <li>Right-click on any element and choose <strong>Inspect</strong></li>
@@ -35,14 +35,14 @@
         <!-- Inspect Element -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Inspect and Edit CSS</h2>
-            <p class="text-lg mb-2">Use the Elements panel to:</p>
-            <ul class="list-disc list-inside text-lg">
+            <p class=" mb-2">Use the Elements panel to:</p>
+            <ul class="list-disc list-inside ">
                 <li>See HTML and CSS side by side</li>
                 <li>Click on an element to view and edit its styles</li>
                 <li>Enable/disable CSS properties by checking/unchecking</li>
                 <li>Live edit padding, margin, font, colors, etc.</li>
             </ul>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Changes made here are **temporary** and reset on refresh.
             </p>
         </section>
@@ -50,10 +50,10 @@
         <!-- Box Model View -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Box Model Visual</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 DevTools shows the CSS box model visually, helping you understand:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Padding, border, margin</li>
                 <li>Element’s size and spacing</li>
                 <li>Clicking each area highlights it live on the page</li>
@@ -63,10 +63,10 @@
         <!-- Mobile View -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Responsive Design Mode</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Click the 📱 icon (Device Toggle Toolbar) to:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Simulate different screen sizes</li>
                 <li>Test breakpoints and media queries</li>
                 <li>Rotate orientation or throttle network speeds</li>
@@ -76,10 +76,10 @@
         <!-- Sources and Live Editing -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Edit CSS Files Directly (Sources Panel)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 In the <strong>Sources</strong> tab, you can:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Find and open CSS files</li>
                 <li>Live edit them for previewing changes</li>
                 <li>Use <code>Cmd/Ctrl + P</code> to search file by name</li>
@@ -89,7 +89,7 @@
         <!-- Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Pro Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Right-click on a style rule → “Copy Rule”</li>
                 <li>Click the color box to use a color picker or change color format</li>
                 <li>Use the filter in Styles pane to search properties</li>
@@ -100,13 +100,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 DevTools is an essential part of modern CSS development. It helps you test changes in real-time, debug layouts visually, and improve your workflow dramatically.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-debugging.php" class="text-blue-600 hover:underline">CSS Debugging Techniques →</a></p>
+            <p class=" font-semibold">Next: <a href="css-debugging.php" class="text-blue-600 hover:underline">CSS Debugging Techniques →</a></p>
         </div>
     </article>
 </main>

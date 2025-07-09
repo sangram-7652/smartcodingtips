@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Gradients in Tailwind CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS provides a set of utility classes to apply linear gradients easily, using directional classes like <code>bg-gradient-to-r</code> and color stops like <code>from-</code>, <code>via-</code>, and <code>to-</code>.
         </p>
 
         <!-- Basic Gradient Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Gradient Syntax</h2>
-            <p class="text-lg mb-2">Apply gradient direction with <code>bg-gradient-to-*</code> and color stops:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Apply gradient direction with <code>bg-gradient-to-*</code> and color stops:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="bg-gradient-to-r from-purple-400 to-pink-500 p-6 rounded text-white"&gt;
     Gradient Background
 &lt;/div&gt;
@@ -39,8 +39,8 @@
         <!-- Directions -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Direction Options</h2>
-            <p class="text-lg mb-2">Use these classes to control direction:</p>
-            <ul class="list-disc list-inside text-lg mb-3">
+            <p class=" mb-2">Use these classes to control direction:</p>
+            <ul class="list-disc list-inside  mb-3">
                 <li><code>bg-gradient-to-t</code> – top</li>
                 <li><code>bg-gradient-to-tr</code> – top right</li>
                 <li><code>bg-gradient-to-r</code> – right</li>
@@ -59,8 +59,8 @@
         <!-- Using via-* for Midpoint -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Using <code>via-*</code> for Midpoints</h2>
-            <p class="text-lg mb-2">You can create three-color gradients by adding a <code>via-</code> stop:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">You can create three-color gradients by adding a <code>via-</code> stop:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 text-white rounded"&gt;
     Multicolor Gradient
 &lt;/div&gt;
@@ -73,8 +73,8 @@
         <!-- Text Gradients -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Text Gradients (with <code>bg-clip-text</code>)</h2>
-            <p class="text-lg mb-2">To apply gradients to text:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">To apply gradients to text:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;h2 class="text-3xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 text-transparent bg-clip-text"&gt;
     Gradient Text
 &lt;/h2&gt;
@@ -87,7 +87,7 @@
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use gradients for emphasis, backgrounds, or sections</li>
                 <li>Combine with <code>text-white</code> or <code>text-transparent + bg-clip-text</code></li>
                 <li>Stick to 2–3 colors for readability and simplicity</li>
@@ -97,13 +97,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind's gradient utilities give you powerful visual styles without custom CSS. They are perfect for modern UI designs like banners, cards, or hero sections.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/borders" class="text-blue-600 hover:underline">Border and Radius →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/borders" class="text-blue-600 hover:underline">Border and Radius →</a></p>
         </div>
     </article>
 </main>

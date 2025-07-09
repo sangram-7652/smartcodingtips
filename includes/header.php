@@ -18,7 +18,7 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/smartcodingtips/static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <script>
@@ -31,45 +31,76 @@
         html {
             scroll-behavior: smooth;
         }
+
+        td,
+        th {
+            word-break: break-word;
+        }
+
+        code,
+        pre {
+            word-break: break-word;
+        }
     </style>
 </head>
 
-<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white overflow-x-hidden">
     <!-- bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white -->
     <!-- Header Start -->
-    <header class="w-full bg-gray-900 dark:bg-gray-800 text-white fixed top-0 left-0 z-50 shadow-md">
+    <header
+        class="w-full bg-gray-900 dark:bg-gray-800 text-white fixed top-0 left-0 z-50 shadow-md ">
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
 
             <!-- Logo -->
-            <a href="/smartcodingtips/index.php" class="text-2xl font-bold text-white hover:text-teal-400 transition duration-200">
+            <a href="index.php" class="text-2xl font-bold text-white hover:text-teal-400 transition duration-200">
                 SmartCodingTips
             </a>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex items-center space-x-8 text-lg font-medium">
-                <a href="/smartcodingtips/index.php" class="hover:text-teal-400 transition">Home</a>
-                <a href="/smartcodingtips/html.php" class="hover:text-teal-400 transition">HTML</a>
-                <a href="/smartcodingtips/css.php" class="hover:text-teal-400 transition">CSS</a>
-                <a href="/smartcodingtips/tailwind.php" class="hover:text-teal-400 transition">Tailwind CSS</a>
-                <a href="/smartcodingtips/js.php" class="hover:text-teal-400 transition">JavaScript</a>
-                <a href="/smartcodingtips/react.php" class="hover:text-teal-400 transition">React</a>
+                <a href="index.php" class="hover:text-teal-400 transition">Home</a>
+                <a href="html.php" class="hover:text-teal-400 transition">HTML</a>
+                <a href="css.php" class="hover:text-teal-400 transition">CSS</a>
+                <a href="tailwind.php" class="hover:text-teal-400 transition">Tailwind CSS</a>
+                <a href="js.php" class="hover:text-teal-400 transition">JavaScript</a>
+                <a href="react.php" class="hover:text-teal-400 transition">React</a>
             </nav>
 
             <!-- Theme Toggle -->
-            <button id="themeToggle"  class="ml-4 text-xl" title="Toggle Theme">🌙</button>
+            <button id="themeToggle" class="ml-4 text-xl" title="Toggle Theme">🌙</button>
 
             <!-- Mobile Menu Icon -->
-            <button class="md:hidden focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
-                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <button class="md:hidden focus:outline-none" id="mobile_nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0,0,256,256">
+                    <g fill="#ffffff">
                         <g transform="scale(5.12,5.12)">
-                            <path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path>
+                            <path d="M5,8c-0.72,-0.01 -1.39,0.37 -1.76,0.99c-0.36,0.62 -0.36,1.39 0,2.02c0.36,0.62 1.03,1 1.76,0.99h40c0.72,0.01 1.39,-0.37 1.76,-0.99c0.36,-0.62 0.36,-1.39 0,-2.02c-0.36,-0.62 -1.03,-1 -1.76,-0.99zM5,23c-0.72,-0.01 -1.39,0.37 -1.76,0.99c-0.36,0.62 -0.36,1.39 0,2.02c0.36,0.62 1.03,1 1.76,0.99h40c0.72,0.01 1.39,-0.37 1.76,-0.99c0.36,-0.62 0.36,-1.39 0,-2.02c-0.36,-0.62 -1.03,-1 -1.76,-0.99zM5,38c-0.72,-0.01 -1.39,0.37 -1.76,0.99c-0.36,0.62 -0.36,1.39 0,2.02c0.36,0.62 1.03,1 1.76,0.99h40c0.72,0.01 1.39,-0.37 1.76,-0.99c0.36,-0.62 0.36,-1.39 0,-2.02c-0.36,-0.62 -1.03,-1 -1.76,-0.99z"></path>
                         </g>
                     </g>
                 </svg>
             </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu w-full h-screen absolute top-0 bg-gray-900 text-white hidden z-50">
+
+            <button class="text-2xl absolute top-4 right-4" id="close_mobile_nav">✖</button>
+
+            <nav class="mt-20 space-y-4 text-lg font-medium">
+                <ul>
+                    <li class=" py-4 px-10 shadow-xl"><a href="index.php" class="block hover:text-teal-400 transition">Home</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="html.php" class="block hover:text-teal-400 transition">HTML</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="css.php" class="block hover:text-teal-400 transition">CSS</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="tailwind.php" class="block hover:text-teal-400 transition">Tailwind CSS</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="js.php" class="block hover:text-teal-400 transition">JavaScript</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="react.php" class="block hover:text-teal-400 transition">React</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+
+
     <!-- Header End -->
 
     <!-- Optional space below fixed header -->

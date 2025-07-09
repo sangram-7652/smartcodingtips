@@ -33,21 +33,21 @@
         Events "bubble" up from the target element to its ancestors. You can use <code>event.target</code> to detect which child was clicked.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.getElementById("list").addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("list").addEventListener("click", function(e) {
     if (e.target.tagName === "LI") {
         alert("You clicked: " + e.target.textContent);
     }
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example With HTML</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;ul id="list"&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;ul id="list"&gt;
     &lt;li&gt;Apple&lt;/li&gt;
     &lt;li&gt;Banana&lt;/li&gt;
     &lt;li&gt;Cherry&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚨 Filtering by Class or Attribute</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>container.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>container.addEventListener("click", function(e) {
     if (e.target.classList.contains("delete-btn")) {
         e.target.parentElement.remove(); // Remove the item
     }

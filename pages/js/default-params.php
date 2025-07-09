@@ -20,7 +20,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Syntax Example</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>function greet(name = "Guest") {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name = "Guest") {
   console.log(`Hello, ${name}!`);
 }
 
@@ -32,7 +32,7 @@ greet("Alice");  // Hello, Alice!
     <p class="mb-4">
         Before ES6, developers used the OR operator (`||`) to simulate default values:
     </p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>function greet(name) {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name) {
   name = name || "Guest";
   console.log("Hello, " + name);
 }</code></pre>
@@ -48,7 +48,7 @@ greet("Alice");  // Hello, Alice!
     <p class="mb-4">
         Default parameters only apply if the argument is <code>undefined</code>, not <code>null</code>.
     </p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>function demo(value = "default") {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function demo(value = "default") {
   console.log(value);
 }
 

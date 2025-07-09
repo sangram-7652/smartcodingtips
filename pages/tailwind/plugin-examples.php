@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Community Plugins and Examples</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             In addition to official plugins, the Tailwind CSS community has created a rich ecosystem of plugins that extend functionality and speed up development. These plugins cover everything from animation and forms to custom components and layouts.
         </p>
 
         <!-- Why Use Community Plugins -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">1. Why Use Community Plugins?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Quickly add utility classes for complex tasks.</li>
                 <li>Benefit from the experience and patterns of the Tailwind community.</li>
                 <li>Save time on repetitive configurations or patterns.</li>
@@ -35,7 +35,7 @@
         <!-- Popular Community Plugins -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">2. Popular Community Plugins</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>tailwindcss-animate:</strong> Adds popular animation utility classes (uses Animate.css-like patterns).</li>
                 <li><strong>tailwindcss-fluid-type:</strong> Adds fluid typography utilities using `clamp()`.</li>
                 <li><strong>tailwindcss-debug-screens:</strong> Shows current responsive breakpoint onscreen while developing.</li>
@@ -47,8 +47,8 @@
         <!-- Installation Example -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">3. Installation Example</h2>
-            <p class="text-lg mb-2">Install the plugin via npm and require it in your <code>tailwind.config.js</code> file:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Install the plugin via npm and require it in your <code>tailwind.config.js</code> file:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 // Install
 npm install tailwindcss-debug-screens
 
@@ -57,8 +57,8 @@ plugins: [
   require('tailwindcss-debug-screens'),
 ]
             </code></pre>
-            <p class="text-lg mt-2">Then use the utility:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mt-2">Then use the utility:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="debug-screens"&gt;...&lt;/div&gt;
             </code></pre>
         </section>
@@ -66,7 +66,7 @@ plugins: [
         <!-- Where to Find Plugins -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">4. Where to Discover Plugins</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><a href="https://github.com/aniftyco/awesome-tailwindcss" target="_blank" class="text-blue-600 hover:underline">Awesome Tailwind CSS</a> – curated plugin list</li>
                 <li><a href="https://tailwindcomponents.com/plugins" target="_blank" class="text-blue-600 hover:underline">Tailwind Components Plugins</a></li>
                 <li><a href="https://npmjs.com/search?q=tailwindcss-plugin" target="_blank" class="text-blue-600 hover:underline">npm plugin search</a></li>
@@ -76,7 +76,7 @@ plugins: [
         <!-- Tips and Warnings -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">5. Tips for Using Plugins</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always check compatibility with your Tailwind version.</li>
                 <li>Read the README and test in a dev environment before using in production.</li>
                 <li>Don’t overload your config—install only what you need.</li>
@@ -87,13 +87,13 @@ plugins: [
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Community plugins make Tailwind even more powerful. With careful selection, you can speed up your development process while maintaining clean, consistent, and maintainable code.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/plugin-typography" class="text-blue-600 hover:underline">Typography Plugin →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/plugin-typography" class="text-blue-600 hover:underline">Typography Plugin →</a></p>
         </div>
     </article>
 </main>

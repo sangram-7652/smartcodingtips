@@ -17,33 +17,33 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Overview</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 A Contact Us form allows users to reach out to the website owner or support team. It typically includes fields like name, email, subject, and message.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
-            <p class="text-lg mb-2">Here is a simple and responsive contact form built using HTML and Tailwind CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Here is a simple and responsive contact form built using HTML and Tailwind CSS:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;form action="submit-form.php" method="post" class="space-y-4"&gt;
   &lt;div&gt;
-    &lt;label for="name" class="block text-lg font-medium"&gt;Name:&lt;/label&gt;
+    &lt;label for="name" class="block  font-medium"&gt;Name:&lt;/label&gt;
     &lt;input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2"&gt;
   &lt;/div&gt;
 
   &lt;div&gt;
-    &lt;label for="email" class="block text-lg font-medium"&gt;Email:&lt;/label&gt;
+    &lt;label for="email" class="block  font-medium"&gt;Email:&lt;/label&gt;
     &lt;input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2"&gt;
   &lt;/div&gt;
 
   &lt;div&gt;
-    &lt;label for="subject" class="block text-lg font-medium"&gt;Subject:&lt;/label&gt;
+    &lt;label for="subject" class="block  font-medium"&gt;Subject:&lt;/label&gt;
     &lt;input type="text" id="subject" name="subject" class="w-full border border-gray-300 rounded px-3 py-2"&gt;
   &lt;/div&gt;
 
   &lt;div&gt;
-    &lt;label for="message" class="block text-lg font-medium"&gt;Message:&lt;/label&gt;
+    &lt;label for="message" class="block  font-medium"&gt;Message:&lt;/label&gt;
     &lt;textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-3 py-2"&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 
@@ -54,7 +54,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always validate form inputs on the client and server sides.</li>
                 <li>Use CAPTCHA to prevent spam submissions.</li>
                 <li>Provide a success or error message after submission.</li>
@@ -62,7 +62,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-table-example.php" class="text-blue-600 hover:underline">HTML Table Example →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/blog-layout" class="text-blue-600 hover:underline">Simple Blog Layout →</a></p>
         </div>
     </article>
 </main>

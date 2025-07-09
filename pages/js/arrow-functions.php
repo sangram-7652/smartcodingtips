@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Basic Syntax</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>// Traditional function
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// Traditional function
 function add(a, b) {
     return a + b;
 }
@@ -42,12 +42,12 @@ console.log(add(2, 3)); // Output: 5</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 One-Liner Arrow Functions</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const square = x =&gt; x * x;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const square = x =&gt; x * x;
 console.log(square(5)); // Output: 25</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Multiple Lines & Return</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const greet = name =&gt; {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const greet = name =&gt; {
     const message = "Hello, " + name;
     return message;
 };
@@ -60,7 +60,7 @@ console.log(greet("Alice"));</code></pre>
         Unlike regular functions, arrow functions do <strong>not</strong> have their own <code>this</code>. They inherit it from the surrounding lexical scope.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const person = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const person = {
     name: "Bob",
     greet: function() {
         setTimeout(() =&gt; {

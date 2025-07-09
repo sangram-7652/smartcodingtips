@@ -18,7 +18,7 @@
     <!-- Main Content -->
     <article x-data="{ yearly: false }">
         <h1 class="text-3xl font-bold mb-4">Tailwind Pricing Table with Toggle</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             A modern, responsive pricing table using Tailwind CSS and Alpine.js. Toggle between monthly and yearly plans with a smooth switch.
         </p>
 
@@ -81,7 +81,7 @@
 
         <!-- Next -->
         <div class="mt-6">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/project-dashboard" class="text-blue-600 hover:underline">→ Dark Mode Dashboard</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/project-dashboard" class="text-blue-600 hover:underline">→ Dark Mode Dashboard</a></p>
         </div>
     </article>
 

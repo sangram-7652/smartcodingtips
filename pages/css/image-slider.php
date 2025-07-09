@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Image Slider in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             An image slider (carousel) cycles through images with transitions. You can build a simple automatic or manual slider using just HTML and CSS — no JavaScript required!
         </p>
 
         <!-- HTML Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic HTML Structure</h2>
-            <p class="text-lg mb-2">Use a container with multiple images inside a wrapper:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use a container with multiple images inside a wrapper:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <div class="slider">
     <div class="slides">
         <img src="img1.jpg" alt="Slide 1" />
@@ -40,8 +40,8 @@
         <!-- CSS Animation -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS for Auto Sliding</h2>
-            <p class="text-lg mb-2">Use keyframes to automatically move images left to right:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use keyframes to automatically move images left to right:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .slider {
     width: 100%;
     max-width: 800px;
@@ -73,8 +73,8 @@
         <!-- Manual Navigation (Optional) -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Optional: Manual Navigation</h2>
-            <p class="text-lg mb-2">Use radio buttons and labels to control slides without JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use radio buttons and labels to control slides without JavaScript:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <!-- Add hidden radio buttons and labels to control -->
 <input type="radio" name="slider" id="slide1" checked hidden>
 <input type="radio" name="slider" id="slide2" hidden>
@@ -93,7 +93,7 @@
     </div>
 </div>
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Then, use the <code>:checked</code> pseudo-class to change slides with CSS only.
             </p>
         </section>
@@ -101,7 +101,7 @@
         <!-- Tips & Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Tips & Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use responsive units (<code>max-width</code>, <code>vw</code>) for mobile support.</li>
                 <li>Add <code>object-fit: cover</code> to control image cropping.</li>
                 <li>For long sliders, consider using JavaScript or libraries like Swiper.js.</li>
@@ -112,13 +112,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS-only sliders are great for simple websites and portfolios. While more complex features need JavaScript, these sliders are fast and lightweight for basic needs.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="testimonial-slider.php" class="text-blue-600 hover:underline">Testimonial Slider →</a></p>
+            <p class=" font-semibold">Next: <a href="testimonial-slider.php" class="text-blue-600 hover:underline">Testimonial Slider →</a></p>
         </div>
     </article>
 </main>

@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Widths, Heights, Max/Min Sizing in Tailwind CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS makes sizing elements flexible and efficient using utility classes for width, height, and their min/max counterparts. These utilities help build fully responsive and adaptive designs.
         </p>
 
         <!-- Width Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Width Utilities</h2>
-            <p class="text-lg mb-2">Control the width of elements using <code>w-*</code> classes:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Control the width of elements using <code>w-*</code> classes:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="w-1/2"&gt;50% width&lt;/div&gt;
 &lt;div class="w-full"&gt;100% width&lt;/div&gt;
 &lt;div class="w-64"&gt;Fixed width (16rem)&lt;/div&gt;
@@ -37,8 +37,8 @@
         <!-- Height Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Height Utilities</h2>
-            <p class="text-lg mb-2">Use <code>h-*</code> classes to set height:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Use <code>h-*</code> classes to set height:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="h-16"&gt;Fixed height (4rem)&lt;/div&gt;
 &lt;div class="h-screen"&gt;Full screen height&lt;/div&gt;
 &lt;div class="h-auto"&gt;Height adjusts to content&lt;/div&gt;
@@ -48,8 +48,8 @@
         <!-- Min/Max Width -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Min/Max Width</h2>
-            <p class="text-lg mb-2">Tailwind provides <code>min-w-*</code> and <code>max-w-*</code> for responsive constraints:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Tailwind provides <code>min-w-*</code> and <code>max-w-*</code> for responsive constraints:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="min-w-[200px]"&gt;Minimum 200px width&lt;/div&gt;
 &lt;div class="max-w-md"&gt;Maximum medium width (28rem)&lt;/div&gt;
             </pre>
@@ -58,8 +58,8 @@
         <!-- Min/Max Height -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Min/Max Height</h2>
-            <p class="text-lg mb-2">Use <code>min-h-*</code> and <code>max-h-*</code> to control vertical sizing:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Use <code>min-h-*</code> and <code>max-h-*</code> to control vertical sizing:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="min-h-screen"&gt;Full height on small screens&lt;/div&gt;
 &lt;div class="max-h-60 overflow-y-auto"&gt;Scroll when content exceeds 15rem&lt;/div&gt;
             </pre>
@@ -68,8 +68,8 @@
         <!-- Responsive Sizing -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Responsive Sizing</h2>
-            <p class="text-lg mb-2">Combine breakpoints to adjust widths and heights on different screen sizes:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Combine breakpoints to adjust widths and heights on different screen sizes:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="w-full md:w-1/2 lg:w-1/3"&gt;
     Responsive width on different devices
 &lt;/div&gt;
@@ -79,13 +79,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Sizing utilities in Tailwind CSS empower you to control dimensions responsively without custom CSS. They’re powerful for both fixed and fluid layouts.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/display" class="text-blue-600 hover:underline">Display, Float, Overflow →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/display" class="text-blue-600 hover:underline">Display, Float, Overflow →</a></p>
         </div>
     </article>
 </main>

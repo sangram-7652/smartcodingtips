@@ -21,11 +21,11 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Styling Disabled Elements</h2>
-            <p class="text-lg mb-2">Use the <code>disabled:</code> modifier to target elements when disabled:</p>
+            <p class=" mb-2">Use the <code>disabled:</code> modifier to target elements when disabled:</p>
             <button class="bg-blue-500 text-white px-4 py-2 rounded disabled:bg-gray-400" disabled>
                 Disabled Button
             </button>
-            <pre class="bg-gray-100 p-4 rounded mt-2 overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;button class="bg-blue-500 text-white px-4 py-2 rounded disabled:bg-gray-400" disabled&gt;
     Disabled Button
 &lt;/button&gt;
@@ -34,8 +34,8 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. First, Last, Odd, and Even</h2>
-            <p class="text-lg mb-2">Tailwind provides utilities for targeting specific children:</p>
-            <ul class="text-lg list-disc list-inside mb-2">
+            <p class=" mb-2">Tailwind provides utilities for targeting specific children:</p>
+            <ul class=" list-disc list-inside mb-2">
                 <li><code>first:</code> – First child</li>
                 <li><code>last:</code> – Last child</li>
                 <li><code>odd:</code> – Odd-indexed children</li>
@@ -49,7 +49,7 @@
                     <p>Item 4</p>
                 </div>
             </div>
-            <pre class="bg-gray-100 p-4 rounded mt-2 overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="first:bg-green-100 last:bg-pink-100 odd:bg-gray-50 even:bg-gray-200"&gt;
     &lt;p class="first:text-red-600"&gt;Item 1&lt;/p&gt;
     &lt;p&gt;Item 2&lt;/p&gt;
@@ -61,8 +61,8 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Transitions and Timing</h2>
-            <p class="text-lg mb-2">Add smooth transitions using Tailwind’s transition classes:</p>
-            <ul class="text-lg list-disc list-inside mb-2">
+            <p class=" mb-2">Add smooth transitions using Tailwind’s transition classes:</p>
+            <ul class=" list-disc list-inside mb-2">
                 <li><code>transition</code> – enables transition</li>
                 <li><code>duration-*</code> – duration in ms</li>
                 <li><code>ease-in, ease-out, ease-in-out, linear</code></li>
@@ -71,7 +71,7 @@
             <div class="w-40 h-20 bg-blue-400 hover:bg-blue-600 transition-all duration-300 ease-in-out text-white flex items-center justify-center rounded">
                 Hover Me
             </div>
-            <pre class="bg-gray-100 p-4 rounded mt-2 overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="w-40 h-20 bg-blue-400 hover:bg-blue-600 transition-all duration-300 ease-in-out text-white"&gt;
     Hover Me
 &lt;/div&gt;
@@ -80,13 +80,13 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind's pseudo-state utilities like <code>disabled:</code>, <code>first:</code>, <code>last:</code>, <code>odd:</code>, and <code>even:</code> offer elegant solutions for styling dynamic UIs. Combined with transition utilities, they enable clean and interactive components without writing custom CSS.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/transitions" class="text-blue-600 hover:underline">Transitions and Timing →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/transitions" class="text-blue-600 hover:underline">Transitions and Timing →</a></p>
         </div>
     </article>
 </main>

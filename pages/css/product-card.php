@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Product Card in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             A product card displays an item with its image, title, price, and a call-to-action. These cards are a core part of any online store layout. You can build them easily with clean, responsive CSS.
         </p>
 
         <!-- HTML Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic HTML Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <div class="product-card">
     <img src="product.jpg" alt="Product Image">
     <div class="product-info">
@@ -40,8 +40,8 @@
         <!-- CSS Styling -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS Styling</h2>
-            <p class="text-lg mb-2">Style the card with borders, shadows, and layout:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Style the card with borders, shadows, and layout:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .product-card {
     border: 1px solid #e5e7eb;
     border-radius: 10px;
@@ -93,8 +93,8 @@
         <!-- Responsive Grid Display -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Display in a Grid</h2>
-            <p class="text-lg mb-2">Use CSS Grid to show multiple product cards:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use CSS Grid to show multiple product cards:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -107,8 +107,8 @@
         <!-- Optional: Badge & Ratings -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Addons: Badge & Ratings</h2>
-            <p class="text-lg mb-2">You can add a badge (e.g., "New") or star ratings with icons:</p>
-            <ul class="list-disc list-inside text-lg">
+            <p class=" mb-2">You can add a badge (e.g., "New") or star ratings with icons:</p>
+            <ul class="list-disc list-inside ">
                 <li>Add a <code>position: absolute;</code> badge in top corner</li>
                 <li>Use ⭐ emojis or SVG for star ratings</li>
             </ul>
@@ -117,13 +117,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Product cards are essential components in modern websites. With CSS, you can easily build stylish, interactive, and responsive product displays to enhance user engagement.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="product-card-hover.php" class="text-blue-600 hover:underline">Hover Effects for Product Cards →</a></p>
+            <p class=" font-semibold">Next: <a href="product-card-hover.php" class="text-blue-600 hover:underline">Hover Effects for Product Cards →</a></p>
         </div>
     </article>
 </main>

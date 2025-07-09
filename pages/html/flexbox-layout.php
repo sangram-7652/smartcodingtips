@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Flexbox Layout</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Flexbox Layout in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Flexbox (Flexible Box Layout) is a powerful layout model in CSS that allows you to create complex layouts with simple and flexible alignment of items inside containers.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Flexbox Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .flex-container {
     display: flex;
@@ -51,7 +51,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Flexbox Properties</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>display: flex;</code> – Defines a flex container.</li>
                 <li><code>flex-direction</code> – Sets direction: <code>row</code>, <code>column</code>, etc.</li>
                 <li><code>justify-content</code> – Aligns items horizontally (e.g., <code>center</code>, <code>space-between</code>).</li>
@@ -63,7 +63,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Flexbox Layout</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .responsive-flex {
     display: flex;
@@ -88,8 +88,8 @@
             </code></pre>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-grid-layout.php" class="text-blue-600 hover:underline">HTML Grid Layout →</a></p>
+         <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/grid-layout" class="text-blue-600 hover:underline">Grid Layout →</a></p>
         </div>
     </article>
 </main>

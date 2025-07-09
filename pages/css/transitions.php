@@ -18,17 +18,17 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">CSS Transitions</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS transitions allow you to animate changes to CSS properties smoothly over time, enhancing the user experience without JavaScript.
         </p>
 
         <!-- Basic Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use the <code>transition</code> property to define which CSS property to animate, the duration, and optionally, the timing function and delay.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .button {
     transition: background-color 0.3s ease;
 }
@@ -42,13 +42,13 @@
         <!-- Transition Properties -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Transition Properties</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>transition-property</code>: Which property to animate</li>
                 <li><code>transition-duration</code>: How long the transition takes</li>
                 <li><code>transition-timing-function</code>: Easing (e.g., <code>ease</code>, <code>linear</code>, <code>ease-in</code>)</li>
                 <li><code>transition-delay</code>: Delay before starting</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto mt-2"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mt-2"><code class="text-sm">
 .box {
     transition-property: transform;
     transition-duration: 0.5s;
@@ -61,8 +61,8 @@
         <!-- Shorthand Transition -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Shorthand Transition</h2>
-            <p class="text-lg mb-2">Combine all properties into one line:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Combine all properties into one line:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .card {
     transition: transform 0.4s ease-in-out;
 }
@@ -75,8 +75,8 @@
         <!-- Multiple Transitions -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Multiple Transitions</h2>
-            <p class="text-lg mb-2">Animate more than one property at the same time:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Animate more than one property at the same time:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .box {
     transition: opacity 0.3s ease, transform 0.5s ease-in;
 }
@@ -86,7 +86,7 @@
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Keep transitions smooth and subtle for better UX.</li>
                 <li>Avoid animating properties that trigger reflows (like <code>width</code>, <code>height</code>) unless necessary.</li>
                 <li>Use <code>transform</code> and <code>opacity</code> for performance-friendly animations.</li>
@@ -96,13 +96,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS transitions are a powerful way to bring your website to life with smooth animations. They’re easy to use and work well with user interactions like hover and focus.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-transforms.php" class="text-blue-600 hover:underline">CSS Transforms →</a></p>
+            <p class=" font-semibold">Next: <a href="css-transforms.php" class="text-blue-600 hover:underline">CSS Transforms →</a></p>
         </div>
     </article>
 </main>

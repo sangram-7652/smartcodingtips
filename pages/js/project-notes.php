@@ -20,14 +20,14 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Structure</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>&lt;div id="app"&gt;
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;div id="app"&gt;
   &lt;textarea id="note-input" placeholder="Write your note here..." class="w-full p-2 border rounded"&gt;&lt;/textarea&gt;
   &lt;button id="add-note" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded"&gt;Add Note&lt;/button&gt;
   &lt;div id="notes-container" class="mt-6 space-y-4"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>const noteInput = document.getElementById("note-input");
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const noteInput = document.getElementById("note-input");
 const addBtn = document.getElementById("add-note");
 const notesContainer = document.getElementById("notes-container");
 

@@ -18,7 +18,7 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Responsive Portfolio Page</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             In this guide, you'll build a clean, responsive portfolio layout using Tailwind CSS. It will include an introduction, project grid, and contact section.
         </p>
 
@@ -32,12 +32,12 @@
         <!-- Step-by-Step Layout -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
-            <p class="text-lg">Start with a responsive container and sections:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="">Start with a responsive container and sections:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;body class="bg-gray-100 text-gray-800"&gt;
   &lt;header class="text-center py-10"&gt;
     &lt;h1 class="text-4xl font-bold"&gt;John Doe&lt;/h1&gt;
-    &lt;p class="text-lg text-gray-600"&gt;Web Developer | UI Designer&lt;/p&gt;
+    &lt;p class=" text-gray-600"&gt;Web Developer | UI Designer&lt;/p&gt;
   &lt;/header&gt;
 
   &lt;main class="max-w-6xl mx-auto px-4"&gt;
@@ -54,8 +54,8 @@
         <!-- Project Grid -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Project Grid</h2>
-            <p class="text-lg">Use a responsive grid for portfolio cards:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="">Use a responsive grid for portfolio cards:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-12"&gt;
   &lt;div class="bg-white rounded-lg shadow p-4"&gt;
     &lt;img src="project1.jpg" alt="Project 1" class="rounded mb-4"&gt;
@@ -75,8 +75,8 @@
         <!-- Contact Section -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Contact Section</h2>
-            <p class="text-lg">Add a simple contact form or email link:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="">Add a simple contact form or email link:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;section class="text-center"&gt;
   &lt;h2 class="text-2xl font-bold mb-4"&gt;Let’s Work Together&lt;/h2&gt;
   &lt;p class="mb-6"&gt;Email me at &lt;a href="mailto:you@example.com" class="text-blue-600 hover:underline"&gt;you@example.com&lt;/a&gt;&lt;/p&gt;
@@ -87,7 +87,7 @@
         <!-- Tailwind Tips -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">Tips for Customization</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use hover effects like <code>hover:shadow-xl</code> on cards.</li>
                 <li>Add transitions using <code>transition-all duration-300</code>.</li>
                 <li>Use <code>prose</code> class if using Tailwind Typography plugin for blogs.</li>
@@ -97,13 +97,13 @@
         <!-- Conclusion -->
         <section class="mb-4">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 This responsive portfolio template is a great starting point to showcase your work with Tailwind. You can enhance it with animations, filters, or dark mode for a personalized touch.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/project-product-grid" class="text-blue-600 hover:underline">→ Product Grid Layout</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/project-product-grid" class="text-blue-600 hover:underline">→ Product Grid Layout</a></p>
         </div>
     </article>
 </main>

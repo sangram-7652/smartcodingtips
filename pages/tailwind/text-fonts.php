@@ -18,19 +18,19 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Font Size, Family, and Weight</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind provides utility classes to easily control text size, font family, and weight. This gives you powerful control over typography without writing custom CSS.
         </p>
 
         <!-- Font Sizes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Font Sizes</h2>
-            <p class="text-lg mb-2">Use <code>text-{size}</code> to set font size. Example sizes:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Use <code>text-{size}</code> to set font size. Example sizes:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 text-xs     /* Extra small */
 text-sm     /* Small */
 text-base   /* Default body text */
-text-lg     /* Large */
+     /* Large */
 text-xl     /* Extra Large */
 text-2xl to text-9xl  /* Larger heading sizes */
             </pre>
@@ -44,8 +44,8 @@ text-2xl to text-9xl  /* Larger heading sizes */
         <!-- Font Family -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Font Family</h2>
-            <p class="text-lg mb-2">Use <code>font-sans</code>, <code>font-serif</code>, or <code>font-mono</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Use <code>font-sans</code>, <code>font-serif</code>, or <code>font-mono</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 font-sans   /* Default: Inter, system-ui, etc. */
 font-serif  /* Georgia, Times New Roman */
 font-mono   /* Menlo, Courier New */
@@ -60,8 +60,8 @@ font-mono   /* Menlo, Courier New */
         <!-- Font Weight -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Font Weight</h2>
-            <p class="text-lg mb-2">Control font weight with <code>font-{weight}</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">Control font weight with <code>font-{weight}</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 font-thin        /* 100 */
 font-extralight  /* 200 */
 font-light       /* 300 */
@@ -82,13 +82,13 @@ font-black       /* 900 */
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind’s typography utilities let you apply font sizes, families, and weights quickly. Combine these classes to create headings, body text, and labels that match your brand.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/text-spacing" class="text-blue-600 hover:underline">Line Height & Letter Spacing →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/text-spacing" class="text-blue-600 hover:underline">Line Height & Letter Spacing →</a></p>
         </div>
     </article>
 </main>

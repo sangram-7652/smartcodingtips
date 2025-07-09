@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Anchor Tag</li>
@@ -18,49 +18,49 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Anchor Tag in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The anchor tag <code>&lt;a&gt;</code> is used to create hyperlinks in HTML documents. It allows users to navigate between pages, link to external websites, or jump to specific sections within the same page.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Syntax</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The most common use of the anchor tag is to link to another webpage using the <code>href</code> attribute.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 The text between the opening and closing <code>&lt;a&gt;</code> tags becomes clickable.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Opening Links in New Tab</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use the <code>target="_blank"</code> attribute to open the link in a new browser tab or window.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example in New Tab&lt;/a&gt;
             </code></pre>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Linking to an Email Address</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can use the <code>mailto:</code> scheme to let users send an email by clicking the link.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;a href="mailto:info@example.com"&gt;Email Us&lt;/a&gt;
             </code></pre>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Internal Page Anchors</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can link to an element on the same page using the <code>id</code> attribute.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;
 
 ...
@@ -71,7 +71,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always use descriptive link text.</li>
                 <li>Use <code>target="_blank"</code> with <code>rel="noopener noreferrer"</code> for security.</li>
                 <li>Avoid using "Click here" as link text; describe the link's purpose.</li>
@@ -81,13 +81,13 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Anchor tags are essential for navigation in HTML documents. Use them effectively to link to internal and external resources, provide emails, and enhance user experience.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="image-tag.php" class="text-blue-600 hover:underline">Image Tag in HTML →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/new-tab" class="text-blue-600 hover:underline">Open in New Tab →</a></p>
         </div>
     </article>
 </main>

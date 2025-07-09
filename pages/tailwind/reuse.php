@@ -19,17 +19,17 @@
     <article>
         <h1 class="text-3xl font-bold mb-4">Extracting Reusable Components with Tailwind</h1>
 
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             While Tailwind CSS encourages utility-first development, it's common to reuse combinations of utility classes across components. Instead of repeating long class lists, you can extract them into reusable components using <code>@apply</code>, partials, or components in your JS/Blade/Vue/React templates.
         </p>
 
         <!-- Using @apply -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Using <code>@apply</code> in Custom CSS</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Define a class in your custom CSS file and apply commonly used utility combinations with <code>@apply</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 /* styles.css */
 .btn {
   @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
@@ -43,10 +43,10 @@
         <!-- Extracting into Blade or HTML Components -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. HTML/Blade/React Component Extraction</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 In templating engines like Blade, or frameworks like React, Vue, or Alpine, it's common to extract components:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 <!-- Blade Example: resources/views/components/button.blade.php -->
 &lt;button {{ $attributes->merge(['class' => 'btn']) }}&gt;
     {{ $slot }}
@@ -60,7 +60,7 @@
         <!-- Extracted React Component -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. React/JSX Component</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 function Button({ children }) {
   return (
     &lt;button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"&gt;
@@ -74,7 +74,7 @@ function Button({ children }) {
         <!-- Why It's Useful -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Why Reuse Matters</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Reduces duplication of utility classes.</li>
                 <li>Makes your components easier to read and maintain.</li>
                 <li>Encourages design consistency across your UI.</li>
@@ -85,13 +85,13 @@ function Button({ children }) {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 You don’t have to choose between utility-first and component-based design — Tailwind enables both. Extract reusable components with <code>@apply</code> or templates, and speed up your UI workflow without sacrificing structure or consistency.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/components" class="text-blue-600 hover:underline">Navbar, Cards, Modals →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/components" class="text-blue-600 hover:underline">Navbar, Cards, Modals →</a></p>
         </div>
     </article>
 </main>

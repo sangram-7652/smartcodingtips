@@ -27,7 +27,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Basic Example</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function greet(name, callback) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function greet(name, callback) {
     console.log("Hello " + name);
     callback();
 }
@@ -45,12 +45,12 @@ greet("Alice", sayBye);</code></pre>
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⏱ With setTimeout</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>setTimeout(function() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>setTimeout(function() {
     console.log("Executed after 2 seconds");
 }, 2000);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔄 Callback as Function Parameter</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function processUserInput(callback) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function processUserInput(callback) {
     const name = "Bob";
     callback(name);
 }
@@ -64,7 +64,7 @@ processUserInput(function(name) {
         Too many nested callbacks can lead to unreadable code.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>doSomething(function(result1) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>doSomething(function(result1) {
     doSomethingElse(result1, function(result2) {
         doMore(result2, function(result3) {
             // ...

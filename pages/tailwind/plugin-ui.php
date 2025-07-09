@@ -18,46 +18,46 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Tailwind UI (Paid) vs Headless UI (Free)</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind UI and Headless UI are two powerful resources created by the Tailwind Labs team. They serve different purposes and suit different needs when building modern UIs with Tailwind CSS.
         </p>
 
         <!-- Tailwind UI -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">1. Tailwind UI (Paid)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 <strong>Tailwind UI</strong> is a premium component library built by the creators of Tailwind CSS. It provides you with beautifully designed, responsive components using Tailwind’s utility classes.
             </p>
-            <ul class="list-disc list-inside text-lg mb-4">
+            <ul class="list-disc list-inside  mb-4">
                 <li>Includes hundreds of professionally designed components</li>
                 <li>Covers multiple categories like navbars, modals, tables, dashboards, etc.</li>
                 <li>Available for HTML, React, and Vue</li>
                 <li>Requires a license — one-time or team-based pricing</li>
                 <li>Great for production-level UI work</li>
             </ul>
-            <p class="text-lg">Official site: <a href="https://tailwindui.com" class="text-blue-600 hover:underline" target="_blank">tailwindui.com</a></p>
+            <p class="">Official site: <a href="https://tailwindui.com" class="text-blue-600 hover:underline" target="_blank">tailwindui.com</a></p>
         </section>
 
         <!-- Headless UI -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">2. Headless UI (Free)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 <strong>Headless UI</strong> is an open-source library of unstyled, fully accessible components designed to integrate seamlessly with Tailwind CSS — especially for dynamic UIs.
             </p>
-            <ul class="list-disc list-inside text-lg mb-4">
+            <ul class="list-disc list-inside  mb-4">
                 <li>Includes functional components like modals, dropdowns, tabs, popovers</li>
                 <li>No styles included — you style them yourself using Tailwind classes</li>
                 <li>Built specifically for React and Vue</li>
                 <li>Promotes full control over appearance and layout</li>
                 <li>Ideal for advanced JavaScript-driven UIs with accessibility in mind</li>
             </ul>
-            <p class="text-lg">Official site: <a href="https://headlessui.dev" class="text-blue-600 hover:underline" target="_blank">headlessui.dev</a></p>
+            <p class="">Official site: <a href="https://headlessui.dev" class="text-blue-600 hover:underline" target="_blank">headlessui.dev</a></p>
         </section>
 
         <!-- Comparison Table -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">3. Comparison Summary</h2>
-            <div class="overflow-x-auto">
+            <div class="dark:bg-gray-900 dark:text-white">
                 <table class="table-auto w-full text-left border border-gray-300 text-sm">
                     <thead>
                         <tr class="bg-gray-100">
@@ -100,13 +100,13 @@
         <!-- Conclusion -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Choose <strong>Tailwind UI</strong> if you want production-ready UI kits and time-saving design patterns. Opt for <strong>Headless UI</strong> when you need accessible components with complete visual freedom.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/integration" class="text-blue-600 hover:underline">PostCSS, Vite Integration →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/integration" class="text-blue-600 hover:underline">PostCSS, Vite Integration →</a></p>
         </div>
     </article>
 </main>

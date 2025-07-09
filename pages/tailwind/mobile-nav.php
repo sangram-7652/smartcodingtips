@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Building a Mobile-First Navbar with Tailwind</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind makes it easy to create responsive navigation bars that adapt to screen sizes using utility classes and mobile-first design principles.
         </p>
 
         <!-- Basic Mobile Navbar -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
-            <p class="text-lg mb-2">Here’s a simple navbar layout that is optimized for mobile first, then enhanced for desktop:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Here’s a simple navbar layout that is optimized for mobile first, then enhanced for desktop:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;nav class="bg-white shadow-md"&gt;
     &lt;div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"&gt;
         &lt;div class="text-xl font-bold"&gt;Brand&lt;/div&gt;
@@ -46,8 +46,8 @@
         <!-- Show Menu on Toggle -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Toggle Menu on Mobile</h2>
-            <p class="text-lg mb-2">Use JavaScript or Alpine.js to toggle the visibility of the mobile menu:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Use JavaScript or Alpine.js to toggle the visibility of the mobile menu:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 // JS example
 document.getElementById('menu-toggle').addEventListener('click', function () {
     const menu = document.getElementById('menu');
@@ -59,8 +59,8 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
         <!-- Alpine.js Option -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Alpine.js Version (Optional)</h2>
-            <p class="text-lg mb-2">For a more reactive setup without external JS:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">For a more reactive setup without external JS:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;nav x-data="{ open: false }" class="bg-white shadow-md"&gt;
     &lt;div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"&gt;
         &lt;div class="text-xl font-bold"&gt;Brand&lt;/div&gt;
@@ -78,7 +78,7 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always hide the menu on mobile by default and use JavaScript to show it.</li>
                 <li>Use mobile-first classes (<code>md:flex</code>, <code>md:hidden</code>) to enhance progressively.</li>
                 <li>Ensure your toggle button is keyboard accessible for better accessibility.</li>
@@ -88,13 +88,13 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
         <!-- Conclusion -->
         <section>
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 A responsive, mobile-first navbar in Tailwind is quick to build with utility classes and a small amount of JavaScript. It’s also highly customizable and easy to extend for dropdowns, search bars, or user menus.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-basic" class="text-blue-600 hover:underline">Styling Inputs and Buttons →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-basic" class="text-blue-600 hover:underline">Styling Inputs and Buttons →</a></p>
         </div>
     </article>
 </main>

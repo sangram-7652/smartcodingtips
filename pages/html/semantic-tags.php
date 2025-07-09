@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Semantic Tags</li>
@@ -18,20 +18,20 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Semantic Tags in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Semantic tags clearly define the meaning of the content in HTML documents. They help search engines, screen readers, and developers understand the structure and content of a webpage.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">What Are Semantic Tags?</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Semantic tags provide meaning to the web page content. Instead of using generic <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, you can use tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Semantic Tags</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>&lt;header&gt;</code> – Defines the header for a page or section.</li>
                 <li><code>&lt;nav&gt;</code> – Defines navigation links.</li>
                 <li><code>&lt;main&gt;</code> – Specifies the main content.</li>
@@ -44,7 +44,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Usage</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;article&gt;
     &lt;header&gt;
         &lt;h2&gt;News Title&lt;/h2&gt;
@@ -57,7 +57,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why Use Semantic Tags?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Improves accessibility for screen readers.</li>
                 <li>Enhances SEO by providing meaningful structure.</li>
                 <li>Makes code easier to read and maintain.</li>
@@ -66,13 +66,13 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Semantic tags make your HTML more meaningful, accessible, and SEO-friendly. Always prefer semantic tags over generic ones for better web development practices.
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="forms.php" class="text-blue-600 hover:underline">HTML Forms →</a></p>
+       <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/quote-cite" class="text-blue-600 hover:underline">Quote & Citation →</a></p>
         </div>
     </article>
 </main>

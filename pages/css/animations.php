@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">CSS Keyframe Animations</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Keyframe animations in CSS allow you to define complex animations by specifying styles at various points during the animation sequence. This gives you full control over how elements animate.
         </p>
 
         <!-- Basic Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
-            <p class="text-lg mb-2">Use the <code>@keyframes</code> rule to define animation stages, and apply the animation using the <code>animation</code> property:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use the <code>@keyframes</code> rule to define animation stages, and apply the animation using the <code>animation</code> property:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @keyframes slideRight {
     from {
         transform: translateX(0);
@@ -45,8 +45,8 @@
         <!-- Multiple Steps with Percentages -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Multiple Steps with Percentages</h2>
-            <p class="text-lg mb-2">Define multiple stages using percentages:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Define multiple stages using percentages:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @keyframes bounce {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-50px); }
@@ -62,7 +62,7 @@
         <!-- Animation Properties -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Animation Properties</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>animation-name</code> – the keyframe animation name</li>
                 <li><code>animation-duration</code> – how long the animation runs</li>
                 <li><code>animation-timing-function</code> – easing function</li>
@@ -76,7 +76,7 @@
         <!-- Shorthand Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Shorthand Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .animate {
     animation: pulse 1.5s ease-in-out infinite;
 }
@@ -92,7 +92,7 @@
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use animations to enhance UX, not distract.</li>
                 <li>Keep durations short (typically under 2 seconds).</li>
                 <li>Combine with <code>transform</code> or <code>opacity</code> for better performance.</li>
@@ -103,13 +103,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Keyframe animations provide fine-grained control over element motion, enabling you to create everything from subtle effects to complex interactive animations — all with pure CSS.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
+            <p class=" font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
         </div>
     </article>
 </main>

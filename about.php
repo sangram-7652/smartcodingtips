@@ -1,19 +1,19 @@
 <?php include 'includes/header.php'; ?>
 
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
-    <section class="bg-white p-6 rounded-xl shadow-md">
-        <h1 class="text-3xl font-bold mb-6 text-gray-800">About SmartCodingTips</h1>
+    <section class="bg-white p-6 rounded-xl shadow-md dark:bg-gray-900 dark:text-white">
+        <h1 class="text-3xl font-bold mb-6 ">About SmartCodingTips</h1>
 
-        <p class="text-gray-700 mb-4">
+        <p class=" mb-4">
             Welcome to <strong>SmartCodingTips</strong> — a platform created to help developers, students, and coding enthusiasts
             learn programming in a practical and simple way.
         </p>
 
-        <p class="text-gray-700 mb-4">
+        <p class=" mb-4">
             We focus on tutorials, examples, and tips for modern web development technologies like:
         </p>
 
-        <ul class="list-disc pl-6 text-gray-700 mb-4">
+        <ul class="list-disc pl-6  mb-4">
             <li>HTML, CSS, JavaScript</li>
             <li>Tailwind CSS</li>
             <li>PHP & MySQL</li>
@@ -21,18 +21,18 @@
             <li>Git, GitHub, and hosting</li>
         </ul>
 
-        <p class="text-gray-700 mb-4">
+        <p class=" mb-4">
             Whether you're a beginner starting your journey or a developer looking for quick solutions, our mission is
             to provide clear, step-by-step guidance to level up your skills.
         </p>
 
-        <p class="text-gray-700 mb-4">
+        <p class=" mb-4">
             This blog is maintained by <strong>Sangram Singh</strong>, a passionate web developer and tech educator.
             If you find the content helpful, feel free to share it, give feedback, or get in touch via the
             <a href="contact.php" class="text-blue-600 underline">Contact</a> page.
         </p>
 
-        <div class="mt-8 text-sm text-gray-500 border-t pt-4">
+        <div class="mt-8 text-sm  border-t pt-4">
             <p><strong>Founded:</strong> 2025</p>
             <p><strong>Location:</strong> India</p>
             <p><strong>Email:</strong> smartcodingtips@gmail.com</p>

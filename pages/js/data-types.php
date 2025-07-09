@@ -33,7 +33,7 @@
         <li><strong>Symbol</strong> – Unique and immutable value often used as object keys</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let name = "Alice";     // String
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let name = "Alice";     // String
 let age = 30;           // Number
 let isAdmin = true;     // Boolean
 let x;                  // Undefined
@@ -51,7 +51,7 @@ let id = Symbol("id");  // Symbol
         <li><strong>Date, RegExp, Error</strong> – Built-in object types</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let person = { name: "Alice", age: 30 }; // Object
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let person = { name: "Alice", age: 30 }; // Object
 let colors = ["red", "green", "blue"];   // Array
 function greet() {
     console.log("Hello!");
@@ -62,7 +62,7 @@ function greet() {
 
     <p class="mb-4">You can check the type of a variable using the <code>typeof</code> operator:</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>typeof "hello"    // "string"
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>typeof "hello"    // "string"
 typeof 42         // "number"
 typeof true       // "boolean"
 typeof undefined  // "undefined"

@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Video Tag</li>
@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Using the HTML &lt;video&gt; Tag</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The &lt;video&gt; tag allows you to embed video content directly into your web pages. It supports multiple sources, controls, and customization options.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Video Example</h2>
             <p class="mb-2">A simple video element with controls:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;video width="640" height="360" controls&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   Your browser does not support the video tag.
@@ -35,7 +35,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Attributes of &lt;video&gt;</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>src</code>: Specifies the video file URL (optional if using &lt;source&gt;).</li>
                 <li><code>controls</code>: Displays play, pause, volume controls, etc.</li>
                 <li><code>autoplay</code>: Starts playing the video automatically (use with caution).</li>
@@ -51,7 +51,7 @@
             <p class="mb-2">
                 You can provide multiple source files in different formats to ensure browser compatibility.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;video controls width="640" height="360" poster="thumbnail.jpg"&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   &lt;source src="video.webm" type="video/webm"&gt;
@@ -63,7 +63,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Accessibility Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Provide captions or subtitles using the &lt;track&gt; element.</li>
                 <li>Include descriptive text between the opening and closing &lt;video&gt; tags for unsupported browsers.</li>
                 <li>Use the <code>muted</code> attribute with <code>autoplay</code> to comply with browser policies.</li>
@@ -72,7 +72,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example with Captions</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;video controls width="640" height="360"&gt;
   &lt;source src="movie.mp4" type="video/mp4"&gt;
   &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
@@ -82,7 +82,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-audio-tag.php" class="text-blue-600 hover:underline">Audio Tag in HTML →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/audio" class="text-blue-600 hover:underline">Audio Tag →</a></p>
         </div>
     </article>
 </main>

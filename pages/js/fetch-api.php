@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚀 Syntax</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>fetch(url)
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -32,7 +32,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔎 Example – Fetching Users from JSONPlaceholder</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>fetch("https://jsonplaceholder.typicode.com/users")
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(users => {
         users.forEach(user => {
@@ -43,10 +43,10 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">📥 GET vs POST with fetch</h2>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">GET (default)</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>fetch("https://api.example.com/data")</code></pre>
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/data")</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">POST with JSON</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>fetch("https://api.example.com/submit", {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/submit", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -65,7 +65,7 @@
         <li><strong>Check response.ok</strong> for HTTP errors</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto"><code>fetch("https://api.example.com/data")
+    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/data")
     .then(response => {
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);

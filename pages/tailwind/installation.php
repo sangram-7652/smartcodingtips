@@ -18,23 +18,23 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Installing Tailwind via CDN and NPM</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS can be installed in multiple ways based on your project type and workflow. The two most popular methods are using a CDN (quick & simple) or installing via NPM (powerful & customizable).
         </p>
 
         <!-- CDN Installation -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Using CDN (Quick Setup)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 This is ideal for quick experiments or small static projects. Just include this CDN link in your HTML:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
             </pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 You can also customize Tailwind using the CDN’s <code>tailwind.config</code> like this:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;script&gt;
     tailwind.config = {
         theme: {
@@ -52,36 +52,36 @@
         <!-- NPM Installation -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Using NPM (Recommended for Production)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 NPM installation gives you full control, custom builds, and enables features like PurgeCSS. Here's how to set it up:
             </p>
 
             <!-- Step-by-step -->
-            <ol class="list-decimal list-inside text-lg space-y-2 mb-4">
+            <ol class="list-decimal list-inside  space-y-2 mb-4">
                 <li>Initialize your project:
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">npm init -y</pre>
+                    <pre class="bg-gray-100 p-3 rounded text-sm dark:bg-gray-900 dark:text-white">npm init -y</pre>
                 </li>
                 <li>Install Tailwind via NPM:
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">npm install -D tailwindcss</pre>
+                    <pre class="bg-gray-100 p-3 rounded text-sm dark:bg-gray-900 dark:text-white">npm install -D tailwindcss</pre>
                 </li>
                 <li>Create config files:
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">npx tailwindcss init</pre>
+                    <pre class="bg-gray-100 p-3 rounded text-sm dark:bg-gray-900 dark:text-white">npx tailwindcss init</pre>
                 </li>
                 <li>Create a CSS file and include Tailwind directives:
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">
+                    <pre class="bg-gray-100 p-3 rounded text-sm dark:bg-gray-900 dark:text-white">
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
                     </pre>
                 </li>
                 <li>Build your CSS using Tailwind CLI:
-                    <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto">
+                    <pre class="bg-gray-100 p-3 rounded text-sm dark:bg-gray-900 dark:text-white">
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
                     </pre>
                 </li>
             </ol>
 
-            <p class="text-lg">
+            <p class="">
                 Now link your <code>output.css</code> file in your HTML and you're ready to go!
             </p>
         </section>
@@ -89,14 +89,14 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Use the CDN for quick testing and learning. For real-world projects, always prefer the NPM setup to unlock Tailwind’s full potential and customization power.
             </p>
         </section>
 
         <!-- Next Link -->
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/config-file" class="text-blue-600 hover:underline">Tailwind CLI and Configuration File →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/config-file" class="text-blue-600 hover:underline">Tailwind CLI and Configuration File →</a></p>
         </div>
     </article>
 </main>

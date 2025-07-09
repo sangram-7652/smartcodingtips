@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Markup</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;div id="quiz-container"&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="quiz-container"&gt;
     &lt;h2 id="question"&gt;&lt;/h2&gt;
     &lt;ul id="answers"&gt;&lt;/ul&gt;
     &lt;button id="nextBtn"&gt;Next&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📜 JavaScript Logic</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const questions = [
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const questions = [
     {
         question: "Which language runs in a web browser?",
         options: ["Java", "C", "Python", "JavaScript"],
@@ -93,7 +93,7 @@ nextBtn.addEventListener("click", () => {
 loadQuestion();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎨 Optional Styling</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;style&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;style&gt;
 #quiz-container {
     max-width: 500px;
     margin: auto;

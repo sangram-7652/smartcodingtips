@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Floating Labels and Focus Styles</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Floating labels provide a clean and modern input experience. Combined with Tailwind’s focus utilities, you can style interactive and accessible form elements effectively.
         </p>
 
         <!-- Basic Floating Label Technique -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Floating Label with Tailwind</h2>
-            <p class="text-lg mb-2">Use <code>absolute</code>, <code>peer</code>, and <code>transform</code> utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Use <code>absolute</code>, <code>peer</code>, and <code>transform</code> utilities:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="relative"&gt;
   &lt;input
     type="text"
@@ -47,7 +47,7 @@
         <!-- Explanation -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. How It Works</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>placeholder=" "</code> is used to trigger the floating effect without displaying a placeholder.</li>
                 <li><code>peer</code> allows the label to react to the input's focus and placeholder state.</li>
                 <li><code>transition-all</code> + <code>top</code> + <code>text-sm</code> animates the label.</li>
@@ -57,22 +57,22 @@
         <!-- Focus Styling Tips -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Enhancing Focus Styles</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Add ring effects or color transitions to improve focus visibility:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;input
   type="email"
   class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
 /&gt;
             </code></pre>
-            <p class="text-lg mt-2">You can use <code>focus:ring</code>, <code>focus:border</code>, or even <code>focus-visible</code> utilities for keyboard-accessibility styling.</p>
+            <p class=" mt-2">You can use <code>focus:ring</code>, <code>focus:border</code>, or even <code>focus-visible</code> utilities for keyboard-accessibility styling.</p>
         </section>
 
         <!-- Accessibility Note -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Accessibility Tip</h2>
-            <p class="text-lg">
+            <p class="">
                 Always pair your input with a <code>&lt;label&gt;</code> and use <code>for</code>/<code>id</code> to ensure screen readers and assistive tools work properly.
             </p>
         </section>
@@ -80,13 +80,13 @@
         <!-- Conclusion -->
         <section>
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Floating labels improve the form UX and Tailwind’s utility classes make it easy to implement and customize them with smooth focus interactions and clean visuals.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-plugin" class="text-blue-600 hover:underline">Tailwind Forms Plugin →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-plugin" class="text-blue-600 hover:underline">Tailwind Forms Plugin →</a></p>
         </div>
     </article>
 </main>

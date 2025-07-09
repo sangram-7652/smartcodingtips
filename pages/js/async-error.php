@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">❌ Without Error Handling</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>async function getData() {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>async function getData() {
   const res = await fetch('https://invalid-url');
   const data = await res.json(); // If fetch fails, this will not run
   console.log(data);
@@ -30,7 +30,7 @@ getData();</code></pre>
   <p class="mb-4">This will throw a runtime error if the fetch fails.</p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Using try...catch with async/await</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>async function getData() {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>async function getData() {
   try {
     const res = await fetch('https://invalid-url');
     if (!res.ok) {

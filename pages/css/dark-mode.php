@@ -18,17 +18,17 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Dark Mode in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Dark mode is a user interface option that uses a dark color palette to reduce eye strain and save battery life. You can implement it in CSS using media queries, custom classes, or the <code>prefers-color-scheme</code> feature.
         </p>
 
         <!-- prefers-color-scheme -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Auto-Detecting User Preference</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 CSS can automatically apply dark mode styles based on the user's system settings using the <code>prefers-color-scheme</code> media query:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* Default (Light Mode) */
 body {
     background: white;
@@ -48,10 +48,10 @@ body {
         <!-- Toggle with Classes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Toggle Dark Mode with a Class</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can create a toggle switch using JavaScript by applying a <code>.dark</code> class to the <code>&lt;body&gt;</code> or <code>&lt;html&gt;</code> tag.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* Light Theme */
 body {
     background: #fff;
@@ -64,8 +64,8 @@ body.dark {
     color: #eee;
 }
             </code></pre>
-            <p class="text-lg mt-2">Then toggle the class with JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mt-2">Then toggle the class with JavaScript:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 document.querySelector('#toggle-theme').addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
@@ -75,10 +75,10 @@ document.querySelector('#toggle-theme').addEventListener('click', () => {
         <!-- Using CSS Variables -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Using CSS Variables for Themes</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Centralize your color values using variables for easy theme switching:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 :root {
     --bg: #ffffff;
     --text: #111111;
@@ -97,7 +97,7 @@ body {
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use enough contrast for readability.</li>
                 <li>Provide a toggle if possible, regardless of system preference.</li>
                 <li>Save the user's theme choice in <code>localStorage</code>.</li>
@@ -108,13 +108,13 @@ body {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Dark mode is a user-friendly and accessible feature. Whether you auto-detect or provide manual toggles, CSS gives you flexible options to implement dark themes with ease.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="theming-with-css-variables.php" class="text-blue-600 hover:underline">Theming with CSS Variables →</a></p>
+            <p class=" font-semibold">Next: <a href="theming-with-css-variables.php" class="text-blue-600 hover:underline">Theming with CSS Variables →</a></p>
         </div>
     </article>
 </main>

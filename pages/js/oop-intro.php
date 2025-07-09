@@ -28,7 +28,7 @@
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Creating a Class</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>class Person {
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -43,7 +43,7 @@ const user = new Person("Alice", 25);
 user.greet();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧬 Inheritance</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>class Student extends Person {
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>class Student extends Person {
   constructor(name, age, subject) {
     super(name, age); // Call parent constructor
     this.subject = subject;
@@ -59,7 +59,7 @@ s1.greet();
 s1.study();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Object Literals vs Classes</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Object literal (simple use-case)
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Object literal (simple use-case)
 const user = {
   name: "Charlie",
   greet() {

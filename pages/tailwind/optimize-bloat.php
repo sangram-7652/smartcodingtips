@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Avoiding Class Bloat in Tailwind CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind encourages using utility classes directly in your markup, but without best practices, it can lead to bloated and unreadable HTML. Here's how to keep your code clean and efficient.
         </p>
 
         <!-- Use @apply -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Use <code>@apply</code> to Extract Reusable Styles</h2>
-            <p class="text-lg mb-2">Instead of repeating long utility chains, use <code>@apply</code> in your CSS files to extract styles:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Instead of repeating long utility chains, use <code>@apply</code> in your CSS files to extract styles:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 .btn-primary {
     @apply bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700;
 }
@@ -36,8 +36,8 @@
         <!-- Use Components -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Create Component Partials</h2>
-            <p class="text-lg mb-2">Break your UI into reusable components (cards, buttons, navbars), especially in frameworks like React or Vue.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Break your UI into reusable components (cards, buttons, navbars), especially in frameworks like React or Vue.</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 // Example: Button.vue (Vue)
 &lt;button class="btn-primary"&gt;Submit&lt;/button&gt;
             </code></pre>
@@ -46,7 +46,7 @@
         <!-- Dynamic Class Management -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Avoid Generating Unused Classes</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Avoid programmatically generating classes in loops</li>
                 <li>Use Tailwind's <code>safelist</code> in config if using dynamic class names</li>
                 <li>Keep conditional class logic simple</li>
@@ -56,8 +56,8 @@
         <!-- Use PurgeCSS -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Use Purge Effectively</h2>
-            <p class="text-lg mb-2">Tailwind uses PurgeCSS (or JIT mode) to remove unused classes from the final CSS build. Make sure your paths are correctly set in <code>tailwind.config.js</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Tailwind uses PurgeCSS (or JIT mode) to remove unused classes from the final CSS build. Make sure your paths are correctly set in <code>tailwind.config.js</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 content: [
   "./src/**/*.{html,js}",
   "./components/**/*.{js,vue}",
@@ -68,7 +68,7 @@ content: [
         <!-- Avoid Over-Nesting -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Avoid Over-Nesting Utilities</h2>
-            <p class="text-lg">
+            <p class="">
                 Don't try to mimic traditional CSS by deeply nesting Tailwind utilities. Stick to flat, semantic HTML with meaningful classes.
             </p>
         </section>
@@ -76,13 +76,13 @@ content: [
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 You can enjoy the power and speed of Tailwind without creating messy code. Use <code>@apply</code>, structure your components wisely, and lean on Tailwind’s purge features to keep your CSS small and maintainable.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/a11y" class="text-blue-600 hover:underline">Accessibility with Tailwind →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/a11y" class="text-blue-600 hover:underline">Accessibility with Tailwind →</a></p>
         </div>
     </article>
 </main>

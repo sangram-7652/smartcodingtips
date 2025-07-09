@@ -29,7 +29,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 Basic Syntax</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const promise = new Promise((resolve, reject) => {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const promise = new Promise((resolve, reject) => {
     const success = true;
 
     if (success) {
@@ -44,7 +44,7 @@ promise
     .catch(error => console.error(error));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 Example: Simulate API</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function fetchData() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("📦 Data received");
@@ -57,7 +57,7 @@ fetchData()
     .catch(err => console.error(err));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Chaining Promises</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>fetchData()
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>fetchData()
     .then(data => {
         console.log(data);
         return "🔍 Processing data";

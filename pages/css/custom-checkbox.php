@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Custom Checkbox & Radio Buttons in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Default checkboxes and radio buttons are hard to style. By hiding the native input and designing a custom visual element, you can build accessible and stylish form controls.
         </p>
 
         <!-- Basic Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. HTML Structure</h2>
-            <p class="text-lg mb-2">Wrap your input with a label and add a <code>span</code> for the custom UI:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Wrap your input with a label and add a <code>span</code> for the custom UI:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <label class="custom-checkbox">
     <input type="checkbox" />
     <span class="checkmark"></span>
@@ -38,8 +38,8 @@
         <!-- Custom Checkbox Styling -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Custom Checkbox CSS</h2>
-            <p class="text-lg mb-2">Hide the native checkbox and style the <code>.checkmark</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Hide the native checkbox and style the <code>.checkmark</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .custom-checkbox {
     display: inline-flex;
     align-items: center;
@@ -84,8 +84,8 @@
         <!-- Custom Radio Styling -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Custom Radio Buttons</h2>
-            <p class="text-lg mb-2">The structure is similar—just use a circle:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">The structure is similar—just use a circle:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <label class="custom-radio">
     <input type="radio" name="gender" />
     <span class="radiomark"></span>
@@ -93,7 +93,7 @@
 </label>
             </code></pre>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .custom-radio {
     display: inline-flex;
     align-items: center;
@@ -130,7 +130,7 @@
         <!-- Accessibility Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Accessibility Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Wrap <code>&lt;input&gt;</code> in a <code>&lt;label&gt;</code> for clickable access.</li>
                 <li>Use <code>tabindex</code> or ARIA roles if doing complex customization.</li>
                 <li>Never remove the actual <code>input</code>—just hide it visually.</li>
@@ -140,13 +140,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Custom checkboxes and radio buttons allow for consistent styling across browsers while keeping the native functionality intact. Use them carefully with proper accessibility support.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="toggle-switch.php" class="text-blue-600 hover:underline">Custom Toggle Switch →</a></p>
+            <p class=" font-semibold">Next: <a href="toggle-switch.php" class="text-blue-600 hover:underline">Custom Toggle Switch →</a></p>
         </div>
     </article>
 </main>

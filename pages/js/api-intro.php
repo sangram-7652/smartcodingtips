@@ -41,14 +41,14 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Common API Response Format: JSON</h2>
     <p>APIs often send data in <code>JSON (JavaScript Object Notation)</code> format:</p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>{
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>{
   "name": "John",
   "age": 30,
   "city": "New York"
 }</code></pre>
 
     <p>JavaScript can easily parse and use JSON data using:</p>
-    <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto"><code>const jsonData = '{"name":"John","age":30}';
+    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>const jsonData = '{"name":"John","age":30}';
 const obj = JSON.parse(jsonData);
 console.log(obj.name); // "John"</code></pre>
 

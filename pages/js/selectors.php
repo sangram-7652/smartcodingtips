@@ -32,7 +32,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📘 Examples</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;div id="main" class="box"&gt;Hello&lt;/div&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="main" class="box"&gt;Hello&lt;/div&gt;
 &lt;p class="text"&gt;Paragraph&lt;/p&gt;
 &lt;p class="text"&gt;Another&lt;/p&gt;
 
@@ -49,7 +49,7 @@ const el4 = document.querySelectorAll(".text"); // NodeList of both &lt;p&gt;
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Looping Through NodeLists</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.querySelectorAll(".text").forEach(p =&gt; {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelectorAll(".text").forEach(p =&gt; {
     console.log(p.textContent);
 });</code></pre>
 

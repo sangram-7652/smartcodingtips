@@ -54,7 +54,7 @@
     </div>
 
     <h2 class="text-2xl font-semibold mb-2">📊 Comparison Table</h2>
-    <div class="overflow-x-auto mb-6">
+    <div class="dark:bg-gray-900 dark:text-white mb-6">
         <table class="min-w-full border border-gray-300 text-sm">
             <thead class="bg-gray-100 text-left">
                 <tr>

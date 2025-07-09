@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Sticky Header & Footer</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Sticky Header & Footer</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             A sticky header or footer remains visible as the user scrolls through the page. This is useful for navigation menus, page titles, or footers with important links.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Sticky Header Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   header {
     position: sticky;
@@ -51,7 +51,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Sticky Footer Example</h2>
             <p class="mb-2">To keep the footer always visible at the bottom of the viewport:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   body, html {
     margin: 0;
@@ -92,7 +92,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">When to Use Sticky Elements</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Navigation bars for quick access</li>
                 <li>Important page actions (e.g. "Save" or "Next")</li>
                 <li>Persistent toolbars or messages</li>
@@ -101,7 +101,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-media-queries.php" class="text-blue-600 hover:underline">HTML Media Queries →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/aria-alt-title" class="text-blue-600 hover:underline">Alt, Title, ARIA →</a></p>
         </div>
     </article>
 </main>

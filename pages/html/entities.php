@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">HTML Entities</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Entities</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML entities are special codes used to display reserved or invisible characters in HTML. These are useful when you need to display symbols that would otherwise be interpreted as HTML code or cannot be typed directly.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why Use HTML Entities?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>To display reserved characters like <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code>.</li>
                 <li>To display invisible or special characters like non-breaking spaces or copyright signs.</li>
                 <li>To ensure consistent rendering across all browsers and platforms.</li>
@@ -35,7 +35,7 @@
             <h2 class="text-2xl font-semibold mb-2">Common HTML Entities</h2>
             <table class="table-auto border-collapse w-full text-left text-base">
                 <thead>
-                    <tr class="bg-gray-200">
+                    <tr class="bg-gray-200 dark:bg-gray-900 dark:text-white">
                         <th class="border px-4 py-2">Character</th>
                         <th class="border px-4 py-2">Entity Name</th>
                         <th class="border px-4 py-2">Entity Number</th>
@@ -83,14 +83,14 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Usage</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;p&gt;5 &amp;lt; 10 is a valid expression.&lt;/p&gt;
 &lt;p&gt;Use &amp;copy; for copyright symbol.&lt;/p&gt;
             </code></pre>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-links.php" class="text-blue-600 hover:underline">HTML Links →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/inline-block" class="text-blue-600 hover:underline">Inline vs Block →</a></p>
         </div>
     </article>
 </main>

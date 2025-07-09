@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Basic CSS Selectors</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS selectors are patterns used to target and apply styles to HTML elements. Basic selectors let you select elements by tag, class, ID, or universally.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Universal Selector (<code>*</code>)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies styles to all elements on the page.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 * {
     margin: 0;
     padding: 0;
@@ -38,10 +38,10 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Element Selector</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Targets all elements of a specific type (e.g., all <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code> tags).
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 p {
     font-size: 18px;
     color: #333;
@@ -51,16 +51,16 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Class Selector (<code>.</code>)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Targets elements with a specific <code>class</code> attribute. Classes can be reused on multiple elements.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .highlight {
     background-color: yellow;
     font-weight: bold;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 HTML usage:
                 <code>&lt;p class="highlight"&gt;Important Text&lt;/p&gt;</code>
             </p>
@@ -68,17 +68,17 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. ID Selector (<code>#</code>)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Targets a single element with a specific <code>id</code>. IDs should be unique on each page.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 #header {
     background-color: #1e3a8a;
     color: white;
     padding: 10px;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 HTML usage:
                 <code>&lt;div id="header"&gt;Site Header&lt;/div&gt;</code>
             </p>
@@ -86,10 +86,10 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Grouping Selector</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Apply the same styles to multiple elements by separating selectors with commas.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 h1, h2, h3 {
     font-family: 'Segoe UI', sans-serif;
     color: #1f2937;
@@ -99,13 +99,13 @@ h1, h2, h3 {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Mastering basic selectors is essential for applying styles effectively. Once you're comfortable with these, you can move on to more advanced combinators and pseudo-selectors.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="combinator-selectors.php" class="text-blue-600 hover:underline">Combinator Selectors →</a></p>
+            <p class=" font-semibold">Next: <a href="combinator-selectors.php" class="text-blue-600 hover:underline">Combinator Selectors →</a></p>
         </div>
     </article>
 </main>

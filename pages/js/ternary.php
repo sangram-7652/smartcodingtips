@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 Syntax</h2>
     
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>condition ? expressionIfTrue : expressionIfFalse</code></pre>
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>condition ? expressionIfTrue : expressionIfFalse</code></pre>
 
     <p class="mb-4">
         If the condition is true, it evaluates and returns <code>expressionIfTrue</code>; otherwise, it returns <code>expressionIfFalse</code>.
@@ -31,13 +31,13 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Example 1: Assigning a Value</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let age = 20;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 20;
 let result = (age &gt;= 18) ? "Adult" : "Minor";
 console.log(result); // "Adult"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Example 2: Inside HTML or JSX</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let isLoggedIn = true;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
 let message = isLoggedIn ? "Welcome!" : "Please log in.";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Why Use the Ternary Operator?</h2>

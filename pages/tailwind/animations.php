@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Animating with Keyframes in Tailwind CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS provides built-in animation utilities using keyframes. You can apply simple animations or define custom ones using your configuration file.
         </p>
 
         <!-- Built-In Animation Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Built-In Animations</h2>
-            <p class="text-lg mb-2">Tailwind offers some default animations:</p>
-            <ul class="list-disc list-inside text-lg mb-4">
+            <p class=" mb-2">Tailwind offers some default animations:</p>
+            <ul class="list-disc list-inside  mb-4">
                 <li><code>animate-spin</code> – spinning loader</li>
                 <li><code>animate-ping</code> – fading circle</li>
                 <li><code>animate-pulse</code> – pulsing element</li>
@@ -40,7 +40,7 @@
                 <div class="h-10 w-10 rounded-full bg-red-500 animate-bounce"></div>
             </div>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto mt-4 text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mt-4 text-sm"><code>
 &lt;div class="animate-spin"&gt;&lt;/div&gt;
 &lt;div class="animate-ping"&gt;&lt;/div&gt;
 &lt;div class="animate-pulse"&gt;&lt;/div&gt;
@@ -51,9 +51,9 @@
         <!-- Custom Animations -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Creating Custom Keyframe Animations</h2>
-            <p class="text-lg mb-2">You can define custom keyframes and animation classes in your <code>tailwind.config.js</code> file:</p>
+            <p class=" mb-2">You can define custom keyframes and animation classes in your <code>tailwind.config.js</code> file:</p>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -71,8 +71,8 @@ module.exports = {
 }
             </code></pre>
 
-            <p class="text-lg mt-4">Then apply it using:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mt-4">Then apply it using:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="animate-wiggle"&gt;I'm wiggling!&lt;/div&gt;
             </code></pre>
         </section>
@@ -80,13 +80,13 @@ module.exports = {
         <!-- Timing and Control -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Animation Timing Utilities</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>duration-{ms}</code> – sets animation time</li>
                 <li><code>delay-{ms}</code> – delays animation</li>
                 <li><code>ease-in / ease-out / ease-in-out / linear</code> – timing function</li>
                 <li><code>infinite, once, alternate</code> – via config or custom class</li>
             </ul>
-            <p class="text-lg">
+            <p class="">
                 Combine them to fine-tune animation experience.
             </p>
         </section>
@@ -94,13 +94,13 @@ module.exports = {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind makes it incredibly easy to use both predefined and custom animations. You can quickly animate elements without writing custom CSS, and scale up with your own motion designs as needed.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/transform" class="text-blue-600 hover:underline">Transform and Scale →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/transform" class="text-blue-600 hover:underline">Transform and Scale →</a></p>
         </div>
     </article>
 </main>

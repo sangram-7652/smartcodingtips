@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Input Types</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Input Types</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The <code>&lt;input&gt;</code> element in HTML supports a wide range of types to capture different kinds of user data. Choosing the right input type improves user experience and data validation.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Input Types</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>text</code> – Single-line input for plain text.</li>
                 <li><code>password</code> – Hides the input characters.</li>
                 <li><code>email</code> – Validates an email address.</li>
@@ -40,7 +40,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Form with Various Input Types</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="username"&gt;Username:&lt;/label&gt;
   &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
@@ -68,7 +68,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Tips for Using Input Types</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always include the <code>name</code> attribute for each input to ensure it is submitted.</li>
                 <li>Use <code>label</code> tags to improve accessibility.</li>
                 <li>Combine with attributes like <code>required</code>, <code>placeholder</code>, and <code>pattern</code> for better form validation.</li>
@@ -76,7 +76,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-label-tag.php" class="text-blue-600 hover:underline">Label Tag Explained →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/labels-placeholders" class="text-blue-600 hover:underline">Labels & Placeholders →</a></p>
         </div>
     </article>
 </main>

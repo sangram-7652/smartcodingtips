@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Layout</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>&lt;div id="quiz-container"&gt;
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;div id="quiz-container"&gt;
   &lt;h2 id="question"&gt;&lt;/h2&gt;
   &lt;div id="answers"&gt;&lt;/div&gt;
   &lt;button id="next-btn"&gt;Next&lt;/button&gt;
@@ -28,7 +28,7 @@
 &lt;/div&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>const questions = [
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const questions = [
   {
     question: "Which method is used to parse JSON in JavaScript?",
     options: ["JSON.parse()", "JSON.stringify()", "parseJSON()", "convertJSON()"],

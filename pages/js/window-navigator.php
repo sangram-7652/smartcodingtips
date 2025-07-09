@@ -24,7 +24,7 @@
         The <code>window</code> object is the global object in the browser environment. All global variables and functions are properties of this object.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Accessing window properties
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Accessing window properties
 console.log(window.innerWidth);  // Width of the browser window
 console.log(window.innerHeight); // Height of the browser window
 
@@ -44,7 +44,7 @@ setTimeout(() => console.log("Executed after 2 seconds"), 2000);</code></pre>
         The <code>navigator</code> object contains information about the user's browser and operating system.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Basic browser info
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Basic browser info
 console.log(navigator.userAgent);    // Full user agent string
 console.log(navigator.language);     // Language (e.g., "en-US")
 console.log(navigator.onLine);       // Check if user is online

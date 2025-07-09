@@ -18,19 +18,19 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Tailwind Config File (`tailwind.config.js`)</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The `tailwind.config.js` file is where you customize and extend Tailwind’s default design system. You can define colors, breakpoints, fonts, and more to match your design needs.
         </p>
 
         <!-- Creating the Config File -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Creating the Config File</h2>
-            <p class="text-lg mb-2">Generate the file using the CLI:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Generate the file using the CLI:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 npx tailwindcss init
             </code></pre>
-            <p class="text-lg mt-2">This will create a minimal config file:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mt-2">This will create a minimal config file:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 module.exports = {
   content: [],
   theme: {
@@ -44,8 +44,8 @@ module.exports = {
         <!-- Adding Content Paths -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Specify Content Sources</h2>
-            <p class="text-lg mb-2">Update the <code>content</code> array with paths to your HTML/JS files so Tailwind can purge unused styles:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Update the <code>content</code> array with paths to your HTML/JS files so Tailwind can purge unused styles:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 content: [
   "./index.html",
   "./src/**/*.{js,ts,jsx,tsx,php}"
@@ -56,8 +56,8 @@ content: [
         <!-- Extending the Theme -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing the Theme</h2>
-            <p class="text-lg mb-2">You can add custom colors, spacing, fonts, and more inside <code>theme.extend</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">You can add custom colors, spacing, fonts, and more inside <code>theme.extend</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 theme: {
   extend: {
     colors: {
@@ -79,18 +79,18 @@ theme: {
         <!-- Enabling Dark Mode -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">4. Dark Mode Settings</h2>
-            <p class="text-lg mb-2">Enable dark mode using either <code>'media'</code> or <code>'class'</code> strategy:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Enable dark mode using either <code>'media'</code> or <code>'class'</code> strategy:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 darkMode: 'class', // or 'media'
             </code></pre>
-            <p class="text-lg mt-2">Use <code>dark:</code> utilities in your HTML to style for dark mode.</p>
+            <p class=" mt-2">Use <code>dark:</code> utilities in your HTML to style for dark mode.</p>
         </section>
 
         <!-- Adding Plugins -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">5. Adding Plugins</h2>
-            <p class="text-lg mb-2">Add official or custom plugins under the <code>plugins</code> array:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Add official or custom plugins under the <code>plugins</code> array:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 plugins: [
   require('@tailwindcss/forms'),
   require('@tailwindcss/typography'),
@@ -101,13 +101,13 @@ plugins: [
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 The Tailwind config file is a powerful way to customize the design system for your project. Tailor every aspect of your styles while keeping your HTML clean and consistent.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/extending" class="text-blue-600 hover:underline">Extending Utilities →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/extending" class="text-blue-600 hover:underline">Extending Utilities →</a></p>
         </div>
     </article>
 </main>

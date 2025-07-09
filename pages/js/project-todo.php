@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Structure</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;div id="todo-container"&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="todo-container"&gt;
     &lt;input type="text" id="todo-input" placeholder="Add a task..." /&gt;
     &lt;button id="add-btn"&gt;Add&lt;/button&gt;
     &lt;ul id="todo-list"&gt;&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎯 JavaScript Logic</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const input = document.getElementById("todo-input");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const input = document.getElementById("todo-input");
 const addBtn = document.getElementById("add-btn");
 const list = document.getElementById("todo-list");
 
@@ -50,7 +50,7 @@ addBtn.addEventListener("click", () => {
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎨 Basic Styles (Optional)</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;style&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;style&gt;
 #todo-container {
     max-width: 400px;
     margin: auto;

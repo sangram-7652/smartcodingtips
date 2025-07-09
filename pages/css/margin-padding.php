@@ -18,31 +18,31 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Margin & Padding in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             <strong>Margin</strong> and <strong>padding</strong> are two key spacing properties in CSS. They control the space around and inside elements, and are essential for layout and design.
         </p>
 
         <!-- Margin -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Margin</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>margin</code> property sets the outer space around an element. It pushes the element away from others.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .box {
     margin: 20px;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 You can set individual sides using:
             </p>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>margin-top</code></li>
                 <li><code>margin-right</code></li>
                 <li><code>margin-bottom</code></li>
                 <li><code>margin-left</code></li>
             </ul>
-            <p class="text-lg">
+            <p class="">
                 Or use shorthand: <code>margin: 10px 15px 20px 25px;</code> (top, right, bottom, left)
             </p>
         </section>
@@ -50,18 +50,18 @@
         <!-- Padding -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Padding</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>padding</code> property adds space inside the element, between the content and the border.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .card {
     padding: 16px;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 You can also target individual sides: <code>padding-top</code>, <code>padding-right</code>, etc.
             </p>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Or use shorthand like <code>padding: 10px 20px;</code> for top-bottom and left-right.
             </p>
         </section>
@@ -69,10 +69,10 @@
         <!-- Margin Collapse -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Margin Collapse</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 When vertical margins of two elements meet, the larger one remains and the smaller one collapses. This is called <strong>margin collapsing</strong>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 h1 {
     margin-bottom: 20px;
 }
@@ -88,7 +88,7 @@ p {
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use margin for spacing between elements.</li>
                 <li>Use padding for spacing inside elements (around content).</li>
                 <li>Consistent use of shorthand improves readability.</li>
@@ -99,13 +99,13 @@ p {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Mastering margin and padding is crucial for creating clean and well-structured web layouts. Use them wisely to control spacing and improve design flow.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-borders-outline.php" class="text-blue-600 hover:underline">Borders & Outline →</a></p>
+            <p class=" font-semibold">Next: <a href="css-borders-outline.php" class="text-blue-600 hover:underline">Borders & Outline →</a></p>
         </div>
     </article>
 </main>

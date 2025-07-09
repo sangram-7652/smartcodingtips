@@ -18,7 +18,7 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">E-Commerce Product Grid</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Let's create a responsive product grid layout for an online store using Tailwind CSS. This layout is mobile-friendly, clean, and optimized for product cards.
         </p>
 
@@ -31,10 +31,10 @@
         <!-- Step 1: Product Card Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Product Card Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;div class="bg-white shadow-md rounded p-4"&gt;
     &lt;img src="product.jpg" alt="Product" class="w-full h-48 object-cover mb-4 rounded"&gt;
-    &lt;h3 class="text-lg font-semibold"&gt;Product Name&lt;/h3&gt;
+    &lt;h3 class=" font-semibold"&gt;Product Name&lt;/h3&gt;
     &lt;p class="text-gray-500 text-sm"&gt;Short description here&lt;/p&gt;
     &lt;div class="flex justify-between items-center mt-3"&gt;
         &lt;span class="text-blue-600 font-bold"&gt;$29.99&lt;/span&gt;
@@ -47,8 +47,8 @@
         <!-- Step 2: Responsive Grid Layout -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Responsive Grid Layout</h2>
-            <p class="text-lg">Use responsive Tailwind grid classes:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="">Use responsive Tailwind grid classes:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"&gt;
     &lt;!-- Repeat Product Card Here --&gt;
 &lt;/section&gt;
@@ -58,7 +58,7 @@
         <!-- Step 3: Enhancements -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Enhancements</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Add hover effects: <code>hover:shadow-lg</code>, <code>hover:scale-105</code></li>
                 <li>Use <code>transition</code> for smooth interactions</li>
                 <li>Display badges like "Sale" or "New" with absolute positioning</li>
@@ -69,11 +69,11 @@
         <!-- Full Example -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">4. Complete Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"&gt;
   &lt;div class="bg-white rounded-lg shadow p-4 hover:shadow-xl transition"&gt;
     &lt;img src="shoe.jpg" alt="Sneakers" class="w-full h-48 object-cover mb-4 rounded"&gt;
-    &lt;h3 class="text-lg font-semibold"&gt;Stylish Sneakers&lt;/h3&gt;
+    &lt;h3 class=" font-semibold"&gt;Stylish Sneakers&lt;/h3&gt;
     &lt;p class="text-gray-500 text-sm"&gt;Comfortable and trendy shoes for all-day wear.&lt;/p&gt;
     &lt;div class="flex justify-between items-center mt-3"&gt;
         &lt;span class="text-green-600 font-bold"&gt;$49.99&lt;/span&gt;
@@ -89,13 +89,13 @@
         <!-- Conclusion -->
         <section class="mb-4">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind CSS makes it easy to build responsive, attractive product grids with minimal effort. Combine utility classes for layout, style, and interactivity to deliver a sleek shopping experience.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/project-pricing" class="text-blue-600 hover:underline">→ Pricing Table</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/project-pricing" class="text-blue-600 hover:underline">→ Pricing Table</a></p>
         </div>
     </article>
 </main>

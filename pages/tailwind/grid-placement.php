@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Grid Areas and Placement</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS allows you to control grid item placement using utilities like <code>col-start</code>, <code>col-span</code>, <code>row-start</code>, <code>row-span</code>, and custom CSS grid-area definitions.
         </p>
 
         <!-- Grid Column Start / End -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Column and Row Placement</h2>
-            <p class="text-lg mb-2">You can control where elements appear in the grid using start and span utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">You can control where elements appear in the grid using start and span utilities:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="grid grid-cols-4 gap-4"&gt;
     &lt;div class="bg-indigo-200 col-start-2 col-span-2 p-4"&gt;
         Spans from column 2 to 4
@@ -41,10 +41,10 @@
         <!-- Named Grid Areas (Manual) -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Named Grid Areas (with custom CSS)</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Tailwind does not support named grid areas directly, but you can extend it via <code>@layer</code> and apply custom CSS:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 /* tailwind.config.js */
 module.exports = {
   theme: {
@@ -62,7 +62,7 @@ module.exports = {
 }
             </pre>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mt-4">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mt-4">
 &lt;div class="grid [grid-template-areas:'header_header''sidebar_content''footer_footer'] grid-cols-2 gap-4"&gt;
     &lt;header class="[grid-area:header] bg-blue-300 p-4"&gt;Header&lt;/header&gt;
     &lt;aside class="[grid-area:sidebar] bg-blue-200 p-4"&gt;Sidebar&lt;/aside&gt;
@@ -70,7 +70,7 @@ module.exports = {
     &lt;footer class="[grid-area:footer] bg-blue-400 p-4"&gt;Footer&lt;/footer&gt;
 &lt;/div&gt;
             </pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Use plugins like <code>@savvywombat/tailwindcss-grid-areas</code> for cleaner area naming.
             </p>
         </section>
@@ -78,10 +78,10 @@ module.exports = {
         <!-- Auto Placement Tip -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Let the Grid Auto-Place</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 If you don’t specify start or span, Tailwind will auto-place items based on document order:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 gap-4"&gt;
     &lt;div class="bg-gray-200 p-4"&gt;1&lt;/div&gt;
     &lt;div class="bg-gray-300 p-4"&gt;2&lt;/div&gt;
@@ -93,13 +93,13 @@ module.exports = {
         <!-- Conclusion -->
         <section>
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Grid placement utilities give you fine control over layout structure, while custom extensions can add full CSS grid-area support to Tailwind CSS.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/grid-responsive" class="text-blue-600 hover:underline">Responsive Grid Layouts →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/grid-responsive" class="text-blue-600 hover:underline">Responsive Grid Layouts →</a></p>
         </div>
     </article>
 </main>

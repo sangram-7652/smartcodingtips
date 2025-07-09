@@ -30,7 +30,7 @@
         <li><code>mousemove</code> – Mouse movement</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.getElementById("box").addEventListener("click", () =&gt; {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("box").addEventListener("click", () =&gt; {
     alert("Box clicked!");
 });</code></pre>
 
@@ -41,7 +41,7 @@
         <li><code>keypress</code> – (deprecated) Use <code>keydown</code> instead</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.addEventListener("keydown", function(event) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("keydown", function(event) {
     console.log("Key pressed:", event.key);
     if (event.key === "Enter") {
         alert("You pressed Enter!");
@@ -49,12 +49,12 @@
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Accessing Event Data</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(e) {
     console.log("Mouse X:", e.clientX, "Mouse Y:", e.clientY);
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Example With HTML</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;input type="text" id="inputField" placeholder="Type something..."&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;input type="text" id="inputField" placeholder="Type something..."&gt;
 
 &lt;script&gt;
 document.getElementById("inputField").addEventListener("keyup", function(e) {

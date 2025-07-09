@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📦 HTML Structure</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>&lt;div class="slider-container"&gt;
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;div class="slider-container"&gt;
   &lt;div class="slides"&gt;
     &lt;img src="img1.jpg" class="slide active"&gt;
     &lt;img src="img2.jpg" class="slide"&gt;
@@ -31,7 +31,7 @@
 &lt;/div&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🎨 CSS Styles</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>.slider-container {
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>.slider-container {
   position: relative;
   max-width: 700px;
   margin: auto;
@@ -58,7 +58,7 @@ button.prev, button.next {
 .next { right: 0; }</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ JavaScript Functionality</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>const slides = document.querySelectorAll(".slide");
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 

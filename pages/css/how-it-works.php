@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">How CSS Works</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS works by selecting HTML elements and applying styles to them. The browser reads the HTML, builds a structure called the DOM (Document Object Model), and then applies the styles from CSS to render the page visually.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. The Browser Rendering Process</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 When a web page loads, the browser goes through several steps:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>HTML is parsed to build the DOM (Document Object Model)</li>
                 <li>CSS is parsed to build the CSSOM (CSS Object Model)</li>
                 <li>Both models are combined into a render tree</li>
@@ -37,26 +37,26 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS Selectors and Rules</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 CSS uses selectors to target HTML elements, and applies rules (properties and values) to style them.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 p {
     color: red;
     font-size: 18px;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 In this example, all <code>&lt;p&gt;</code> elements will appear in red with font size 18px.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Cascading and Specificity</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The "Cascading" in CSS means that styles can come from multiple sources, and the most specific one takes priority. Style rules are applied based on:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Importance</strong> (e.g., <code>!important</code>)</li>
                 <li><strong>Specificity</strong> (e.g., ID > class > element)</li>
                 <li><strong>Source order</strong> (the last rule overrides earlier ones)</li>
@@ -65,20 +65,20 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Inheritance</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Some CSS properties (like font and color) are inherited from parent elements by default. Others (like padding or border) are not.
             </p>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 You can control inheritance using the <code>inherit</code>, <code>initial</code>, or <code>unset</code> keywords.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Applying CSS to HTML</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 CSS can be applied in three main ways:
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Inline: directly within the HTML element</li>
                 <li>Internal: inside a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code></li>
                 <li>External: linked via a separate <code>.css</code> file</li>
@@ -87,13 +87,13 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS works by defining rules that are applied to HTML elements through the browser’s rendering engine. Understanding how CSS is parsed, cascades, and is inherited is essential to mastering layout and design in web development.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-syntax.php" class="text-blue-600 hover:underline">CSS Syntax →</a></p>
+            <p class=" font-semibold">Next: <a href="css-syntax.php" class="text-blue-600 hover:underline">CSS Syntax →</a></p>
         </div>
     </article>
 </main>

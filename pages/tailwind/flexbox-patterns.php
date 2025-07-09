@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mb-2">1️⃣ Navbar with Logo and Links</h2>
     <pre class="bg-gray-900 text-white text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;nav class="flex items-center justify-between p-4 bg-gray-800 text-white"&gt;
-  &lt;div class="text-lg font-bold"&gt;MySite&lt;/div&gt;
+  &lt;div class=" font-bold"&gt;MySite&lt;/div&gt;
   &lt;div class="space-x-4"&gt;
     &lt;a href="#"&gt;Home&lt;/a&gt;
     &lt;a href="#"&gt;About&lt;/a&gt;
@@ -30,7 +30,7 @@
 &lt;/nav&gt;</code></pre>
 
     <div class="flex items-center justify-between p-4 bg-gray-800 text-white rounded mb-6">
-        <div class="text-lg font-bold">MySite</div>
+        <div class=" font-bold">MySite</div>
         <div class="space-x-4">
             <a href="#" class="hover:underline">Home</a>
             <a href="#" class="hover:underline">About</a>

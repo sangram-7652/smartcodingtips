@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Example: Accessing the Event Object</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.addEventListener("click", function(event) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(event) {
     console.log(event); // Logs the entire event object
 });</code></pre>
 
@@ -38,7 +38,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Example: Using `event.target`</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.querySelector("ul").addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("ul").addEventListener("click", function(e) {
     console.log("You clicked on:", e.target.tagName);
 });</code></pre>
 
@@ -46,7 +46,7 @@
     <p class="mb-4">
         Used to stop things like form submission, link redirection, etc.
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.querySelector("form").addEventListener("submit", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault(); // Stops form from submitting
     alert("Form intercepted!");
 });</code></pre>
@@ -55,7 +55,7 @@
     <p class="mb-4">
         Use this when you don’t want an event to bubble up to parent elements.
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>button.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>button.addEventListener("click", function(e) {
     e.stopPropagation();
     console.log("Button clicked without bubbling up");
 });</code></pre>

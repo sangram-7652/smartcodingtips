@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📚 Step 1: Define the Book Class</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>class Book {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class Book {
   constructor(title, author, available = true) {
     this.title = title;
     this.author = author;
@@ -43,7 +43,7 @@
 }</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">👤 Step 2: Create a User Class</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>class User {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class User {
   constructor(name) {
     this.name = name;
     this.books = [];
@@ -68,7 +68,7 @@
 }</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🏛️ Step 3: Setup a Library</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>const book1 = new Book("The Alchemist", "Paulo Coelho");
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const book1 = new Book("The Alchemist", "Paulo Coelho");
 const book2 = new Book("1984", "George Orwell");
 
 const user1 = new User("Alice");

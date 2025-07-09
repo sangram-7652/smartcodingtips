@@ -18,17 +18,17 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Interactive Forms with Validation Styling</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS makes it easy to create responsive and accessible forms with real-time validation feedback. You can style valid/invalid states using utility classes and pseudo-classes.
         </p>
 
         <!-- Using HTML5 Validation States -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Styling Valid & Invalid Inputs</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use <code>:invalid</code>, <code>:valid</code>, and <code>:required</code> pseudo-classes to style form controls based on their validation state.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;input type="email" required
   class="peer w-full border rounded px-3 py-2 
          border-gray-300 focus:outline-none 
@@ -42,8 +42,8 @@
         <!-- Displaying Validation Messages -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Showing Error Messages</h2>
-            <p class="text-lg mb-2">You can use the <code>.peer</code> class to conditionally show error messages:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">You can use the <code>.peer</code> class to conditionally show error messages:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div&gt;
   &lt;input type="text" required class="peer w-full border px-3 py-2 border-gray-300 
        invalid:border-red-500 invalid:ring-red-500"&gt;
@@ -57,8 +57,8 @@
         <!-- Example Form -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Interactive Example</h2>
-            <p class="text-lg mb-2">Here's a full form example with validation feedback:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Here's a full form example with validation feedback:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;form class="space-y-4"&gt;
   &lt;div&gt;
     &lt;label class="block text-sm font-medium text-gray-700"&gt;Email&lt;/label&gt;
@@ -92,7 +92,7 @@
         <!-- Accessibility Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Accessibility Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always associate labels with inputs using <code>&lt;label&gt;</code>.</li>
                 <li>Use <code>aria-invalid</code> for screen reader feedback if needed.</li>
                 <li>Use <code>required</code>, <code>minlength</code>, etc., for built-in HTML validation.</li>
@@ -102,13 +102,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 With Tailwind and modern HTML features, you can create fully interactive, validated, and accessible forms using just utility classes — without writing custom CSS.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/custom-config" class="text-blue-600 hover:underline">Tailwind Config File →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/custom-config" class="text-blue-600 hover:underline">Tailwind Config File →</a></p>
         </div>
     </article>
 </main>

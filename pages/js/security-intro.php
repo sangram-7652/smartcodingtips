@@ -23,7 +23,7 @@
   <p class="mb-4">
     Always sanitize and validate user inputs to prevent malicious code from being injected or misused.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>const sanitize = (input) => {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const sanitize = (input) => {
   const div = document.createElement("div");
   div.textContent = input;
   return div.innerHTML;
@@ -51,14 +51,14 @@
   <p class="mb-4">
     CORS policies define which domains can communicate with your server. Set appropriate headers on your API to avoid exposing data to unintended sources.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>// Example: Express.js
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// Example: Express.js
 res.setHeader("Access-Control-Allow-Origin", "https://yourdomain.com");</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛑 6. Content Security Policy (CSP)</h2>
   <p class="mb-4">
     A CSP header restricts which scripts and resources are allowed to run on your page, preventing XSS and data injection attacks.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>// Example HTTP Header
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// Example HTTP Header
 Content-Security-Policy: default-src 'self'; script-src 'self';</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔑 7. Avoid Hardcoding Secrets</h2>

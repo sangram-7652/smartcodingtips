@@ -21,7 +21,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⏱️ What is Synchronous Code?</h2>
   <p class="mb-2">Synchronous code runs line-by-line. One operation must finish before the next begins.</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>console.log("1");
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log("1");
 console.log("2");
 console.log("3");
 // Output: 1, 2, 3
@@ -29,7 +29,7 @@ console.log("3");
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🚦 What is Asynchronous Code?</h2>
   <p class="mb-2">Asynchronous code allows tasks to run in the background while the rest of the code continues.</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>console.log("1");
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log("1");
 
 setTimeout(() => {
   console.log("2");

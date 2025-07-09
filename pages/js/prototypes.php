@@ -25,7 +25,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Constructor Function and Prototype</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>function Person(name) {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function Person(name) {
   this.name = name;
 }
 
@@ -39,7 +39,7 @@ john.greet(); // "Hi, I’m John"
 </code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Prototype Chain Example</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>console.log(john.__proto__ === Person.prototype); // true
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(john.__proto__ === Person.prototype); // true
 console.log(Person.prototype.__proto__ === Object.prototype); // true
 </code></pre>
 
@@ -47,7 +47,7 @@ console.log(Person.prototype.__proto__ === Object.prototype); // true
   <p class="mb-2">
     You can also manually create objects with a specific prototype using <code>Object.create()</code>.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>const animal = {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const animal = {
   speak() {
     console.log("I can speak");
   }

@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Validation</li>
@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Form Validation</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML provides built-in form validation to ensure users enter data in the correct format. You can enforce rules like required fields, input length, format constraints, and more.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Required Field</h2>
             <p class="mb-2">Use the <code>required</code> attribute to make a field mandatory before form submission.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label for="email"&gt;Email:&lt;/label&gt;
   &lt;input type="email" id="email" name="email" required&gt;
@@ -38,7 +38,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Input Constraints</h2>
             <p class="mb-2">Use attributes like <code>minlength</code>, <code>maxlength</code>, <code>min</code>, <code>max</code>, and <code>pattern</code> to control what data is accepted.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label for="username"&gt;Username (5-10 characters):&lt;/label&gt;
   &lt;input type="text" id="username" name="username" minlength="5" maxlength="10" required&gt;
@@ -59,7 +59,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Client-Side vs Server-Side Validation</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Client-Side:</strong> Done by the browser using HTML5 attributes and JavaScript before sending data to the server.</li>
                 <li><strong>Server-Side:</strong> Performed after the form is submitted, used as a secure backup to prevent invalid data from being processed.</li>
                 <li>Always implement both for security and user experience.</li>
@@ -67,7 +67,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-input-types.php" class="text-blue-600 hover:underline">HTML Input Types →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/form-submit" class="text-blue-600 hover:underline">Form Submission →</a></p>
         </div>
     </article>
 </main>

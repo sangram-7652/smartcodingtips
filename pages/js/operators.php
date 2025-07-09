@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">➕ 1. Arithmetic Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let x = 10;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let x = 10;
 let y = 3;
 
 x + y  // 13 (Addition)
@@ -33,7 +33,7 @@ x % y  // 1  (Modulus)
 x ** y // 1000 (Exponentiation)</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🟰 2. Assignment Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let a = 5;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let a = 5;
 
 a += 2;  // a = a + 2 => 7
 a -= 1;  // a = a - 1 => 6
@@ -42,7 +42,7 @@ a /= 2;  // a = a / 2 => 9
 a %= 4;  // a = a % 4 => 1</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 3. Comparison Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>5 == '5'   // true (loose equality)
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>5 == '5'   // true (loose equality)
 5 === '5'  // false (strict equality)
 5 != '5'   // false
 5 !== '5'  // true
@@ -56,13 +56,13 @@ a %= 4;  // a = a % 4 => 1</code></pre>
     </div>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🤔 4. Logical Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>true && true   // true
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>true && true   // true
 true && false  // false
 true || false  // true
 !true          // false</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔄 5. Increment & Decrement</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let count = 1;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 1;
 
 count++; // Post-increment
 ++count; // Pre-increment
@@ -70,7 +70,7 @@ count--; // Post-decrement
 --count; // Pre-decrement</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 6. Ternary (Conditional) Operator</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let age = 18;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 18;
 let status = (age &gt;= 18) ? "Adult" : "Minor";</code></pre>
     <p class="mb-4">Use this for inline if-else logic.</p>
 
@@ -79,7 +79,7 @@ let status = (age &gt;= 18) ? "Adult" : "Minor";</code></pre>
         <li><code>typeof</code> – Returns the type of a variable</li>
         <li><code>instanceof</code> – Checks if an object is an instance of a class</li>
     </ul>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>typeof "Hello"       // "string"
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>typeof "Hello"       // "string"
 person instanceof Object  // true</code></pre>
 
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">

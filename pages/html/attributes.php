@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Attributes</li>
@@ -18,26 +18,26 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Attributes</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Attributes in HTML provide additional information about elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Syntax</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 An attribute is written inside the start tag of an element. Here's an example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 In this case, <code>href</code> is the attribute name and <code>"https://example.com"</code> is the value.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common HTML Attributes</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>href</strong>: Specifies the URL in anchor tags</li>
                 <li><strong>src</strong>: Specifies the path to an image</li>
                 <li><strong>alt</strong>: Provides alternative text for images</li>
@@ -50,7 +50,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Attribute Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always use quotes around attribute values.</li>
                 <li>Use lowercase for attribute names (HTML is not case-sensitive, but consistency helps).</li>
                 <li>Use meaningful <code>alt</code> text for images to improve accessibility.</li>
@@ -60,23 +60,23 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Boolean Attributes</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Boolean attributes do not require a value. Their mere presence implies truth. Example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;input type="checkbox" checked&gt;
             </code></pre>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 HTML attributes add power and flexibility to your tags. By understanding and applying them correctly, you can make your pages more functional, accessible, and visually appealing.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="headings.php" class="text-blue-600 hover:underline">HTML Headings →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/empty-vs-container" class="text-blue-600 hover:underline">Empty vs Container →</a></p>
         </div>
     </article>
 </main>

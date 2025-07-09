@@ -18,20 +18,20 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">2D & 3D Transforms in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS transforms allow you to visually manipulate elements by rotating, scaling, translating, or skewing them. You can apply transformations in both 2D and 3D space using the <code>transform</code> property.
         </p>
 
         <!-- 2D Transforms -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. 2D Transforms</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>translate(x, y)</code> – moves the element</li>
                 <li><code>rotate(angle)</code> – rotates the element</li>
                 <li><code>scale(x, y)</code> – resizes the element</li>
                 <li><code>skew(x-angle, y-angle)</code> – skews the element</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .box {
     transform: translate(50px, 20px) rotate(10deg) scale(1.2);
 }
@@ -41,10 +41,10 @@
         <!-- 3D Transforms -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. 3D Transforms</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 3D transforms add depth to the element using the Z-axis. Make sure to set the <code>perspective</code> for the parent container.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .scene {
     perspective: 1000px;
 }
@@ -58,10 +58,10 @@
         <!-- Transform Origin -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Transform Origin</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Controls the pivot point of the transform:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .box {
     transform-origin: top left;
     transform: rotate(15deg);
@@ -72,8 +72,8 @@
         <!-- Combining Transforms -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Combining Transforms</h2>
-            <p class="text-lg mb-2">You can combine multiple transforms in one rule:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">You can combine multiple transforms in one rule:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .box {
     transform: scale(1.1) translateX(20px) rotateZ(10deg);
 }
@@ -83,10 +83,10 @@
         <!-- Hardware Acceleration -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Hardware Acceleration Tip</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use <code>transform: translateZ(0);</code> to trigger GPU acceleration and smoother animations:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .card {
     transform: translateZ(0);
 }
@@ -96,13 +96,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS 2D and 3D transforms provide powerful ways to enhance layouts and animations. Use them to rotate, scale, move, and skew elements with creativity and control.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
+            <p class=" font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
         </div>
     </article>
 </main>

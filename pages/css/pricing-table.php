@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Pricing Table in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             A pricing table showcases your product plans and features clearly. With CSS, you can create responsive, modern-looking pricing cards that are easy to scan and visually appealing.
         </p>
 
         <!-- Layout Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. HTML Structure</h2>
-            <p class="text-lg mb-2">Use a simple flex or grid layout for your pricing cards:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use a simple flex or grid layout for your pricing cards:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <div class="pricing-table">
     <div class="pricing-card">
         <h3>Basic</h3>
@@ -46,8 +46,8 @@
         <!-- CSS Styling -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS Styling</h2>
-            <p class="text-lg mb-2">Here's a basic responsive pricing table style using Flexbox:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Here's a basic responsive pricing table style using Flexbox:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .pricing-table {
     display: flex;
     flex-wrap: wrap;
@@ -107,8 +107,8 @@
         <!-- Highlighted Plan -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Highlight Featured Plan</h2>
-            <p class="text-lg mb-2">Use a special class to draw attention to the most popular plan:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use a special class to draw attention to the most popular plan:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .pricing-card.featured {
     border: 2px solid #2563eb;
     background-color: #f0f9ff;
@@ -119,7 +119,7 @@
         <!-- Responsive Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Responsive Design Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use <code>flex-wrap</code> to wrap cards on small screens.</li>
                 <li>Use <code>max-width: 100%</code> for mobile friendliness.</li>
                 <li>Reduce padding and font size on smaller devices.</li>
@@ -130,13 +130,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 A pricing table communicates your value clearly. With modern CSS, you can build responsive, accessible, and visually compelling plans that work well across all devices.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="testimonial-slider.php" class="text-blue-600 hover:underline">Testimonial Slider →</a></p>
+            <p class=" font-semibold">Next: <a href="testimonial-slider.php" class="text-blue-600 hover:underline">Testimonial Slider →</a></p>
         </div>
     </article>
 </main>

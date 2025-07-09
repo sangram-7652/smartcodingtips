@@ -25,12 +25,12 @@
   </p>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">❌ Bad Example (XSS Vulnerable)</h3>
-  <pre class="bg-red-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>// User input directly added to innerHTML
+  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// User input directly added to innerHTML
 const input = "&lt;script&gt;alert('XSS')&lt;/script&gt;";
 document.getElementById("output").innerHTML = input;</code></pre>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">✅ Good Example (Safe)</h3>
-  <pre class="bg-green-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>// Use textContent to escape HTML
+  <pre class="bg-green-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// Use textContent to escape HTML
 const input = "&lt;script&gt;alert('XSS')&lt;/script&gt;";
 document.getElementById("output").textContent = input;</code></pre>
 
@@ -40,7 +40,7 @@ document.getElementById("output").textContent = input;</code></pre>
   </p>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">❌ Avoid This</h3>
-  <pre class="bg-red-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>const userCode = prompt("Enter JS:");
+  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const userCode = prompt("Enter JS:");
 eval(userCode); // 👈 Extremely dangerous!</code></pre>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">✅ Use Safe Alternatives</h3>

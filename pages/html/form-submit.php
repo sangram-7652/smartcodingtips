@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Form Submission</li>
@@ -18,7 +18,7 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Form Submission</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Form submission is the process where data entered by the user in a form is sent to a server for processing. The <code>&lt;form&gt;</code> element uses attributes like <code>action</code> and <code>method</code> to control this process.
         </p>
 
@@ -27,7 +27,7 @@
             <p class="mb-2">
                 The <code>action</code> attribute defines the URL where the form data is sent. The <code>method</code> attribute specifies the HTTP method: <code>GET</code> or <code>POST</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="name"&gt;Name:&lt;/label&gt;
   &lt;input type="text" id="name" name="name" required&gt;
@@ -40,14 +40,14 @@
   &lt;button type="submit"&gt;Send&lt;/button&gt;
 &lt;/form&gt;
             </code></pre>
-            <p class="mt-2 text-lg">
+            <p class="mt-2 ">
                 Use <code>POST</code> for secure data submission and <code>GET</code> for simple queries like search forms.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">GET vs POST</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>GET:</strong> Appends data to the URL, visible in the browser. Suitable for non-sensitive data.</li>
                 <li><strong>POST:</strong> Sends data in the request body. Preferred for sensitive or large data submissions.</li>
                 <li>Use <code>method="post"</code> for forms like login, registration, or feedback.</li>
@@ -59,15 +59,15 @@
             <p class="mb-2">
                 The <code>&lt;button&gt;</code> element can have different types like <code>submit</code>, <code>reset</code>, and <code>button</code>.
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>submit</code>: Submits the form data.</li>
                 <li><code>reset</code>: Resets all fields to their initial values.</li>
                 <li><code>button</code>: A generic button (often used with JavaScript).</li>
             </ul>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-validation.php" class="text-blue-600 hover:underline">HTML Validation →</a></p>
+       <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/html5-intro" class="text-blue-600 hover:underline">Intro to HTML5 →</a></p>
         </div>
     </article>
 </main>

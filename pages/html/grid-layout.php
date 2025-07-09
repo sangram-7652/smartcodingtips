@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Grid Layout</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Grid Layout in HTML & CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS Grid Layout is a powerful system for creating two-dimensional layouts on the web. It allows you to design web pages using rows and columns with precise control.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Grid Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .grid-container {
     display: grid;
@@ -56,7 +56,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Grid Properties</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>display: grid;</code> – Enables grid layout on the container.</li>
                 <li><code>grid-template-columns</code> – Defines the number and size of columns.</li>
                 <li><code>grid-template-rows</code> – Defines the number and size of rows.</li>
@@ -69,7 +69,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Grid</h2>
             <p class="mb-2">Using <code>repeat()</code> and <code>minmax()</code>, you can create responsive grids easily:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .responsive-grid {
     display: grid;
@@ -96,7 +96,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-media-queries.php" class="text-blue-600 hover:underline">HTML Media Queries →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/sticky-footer" class="text-blue-600 hover:underline">Sticky Header/Footer →</a></p>
         </div>
     </article>
 </main>

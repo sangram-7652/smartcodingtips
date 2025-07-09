@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠 Defining Methods</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const user = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = {
     name: "Alice",
     greet: function() {
         return "Hello, " + this.name;
@@ -32,7 +32,7 @@
 console.log(user.greet()); // "Hello, Alice"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚡ ES6 Method Shorthand</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const user = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = {
     name: "Bob",
     greet() {
         return `Hi, I'm ${this.name}`;
@@ -42,7 +42,7 @@ console.log(user.greet()); // "Hello, Alice"</code></pre>
 console.log(user.greet()); // "Hi, I'm Bob"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Adding Methods Dynamically</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>user.sayBye = function() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>user.sayBye = function() {
     return `${this.name} says goodbye.`;
 };
 
@@ -52,7 +52,7 @@ console.log(user.sayBye()); // "Bob says goodbye."</code></pre>
     <p class="mb-4">
         The <code>this</code> keyword refers to the object the method belongs to.
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const car = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const car = {
     brand: "Tesla",
     model: "Model 3",
     info() {
@@ -71,7 +71,7 @@ console.log(car.info()); // "Tesla - Model 3"</code></pre>
         <li><code>Object.freeze(obj)</code> – Makes object immutable</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const obj = { a: 1, b: 2 };
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const obj = { a: 1, b: 2 };
 
 console.log(Object.keys(obj));   // ["a", "b"]
 console.log(Object.values(obj)); // [1, 2]</code></pre>

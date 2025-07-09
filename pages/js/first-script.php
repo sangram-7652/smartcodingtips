@@ -26,7 +26,7 @@
         Create a file named <code>index.html</code> and write the following code:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;!DOCTYPE html&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -70,7 +70,7 @@
         Modify your script to experiment:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>&lt;script&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>&lt;script&gt;
     let name = prompt("What is your name?");
     alert("Welcome, " + name + "!");
 &lt;/script&gt;

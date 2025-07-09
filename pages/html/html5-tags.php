@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">New Tags in HTML5</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">New Tags in HTML5</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML5 introduced several new tags that enhance the structure, semantics, and multimedia capabilities of web pages. These tags help make the content more meaningful and accessible to both users and search engines.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Semantic Elements</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>&lt;header&gt;</code> – Defines a page or section header.</li>
                 <li><code>&lt;nav&gt;</code> – Defines navigation links.</li>
                 <li><code>&lt;article&gt;</code> – Represents a self-contained piece of content.</li>
@@ -36,7 +36,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Media Elements</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>&lt;audio&gt;</code> – Embeds sound content in documents.</li>
                 <li><code>&lt;video&gt;</code> – Embeds video content with playback controls.</li>
                 <li><code>&lt;source&gt;</code> – Specifies multiple media resources for media elements.</li>
@@ -46,7 +46,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Graphics and Interactive Content</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>&lt;canvas&gt;</code> – Used for drawing graphics via scripting (JavaScript).</li>
                 <li><code>&lt;svg&gt;</code> – Embeds scalable vector graphics (SVG) content.</li>
                 <li><code>&lt;details&gt;</code> – Specifies additional details the user can view or hide.</li>
@@ -59,7 +59,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;article&gt;
   &lt;header&gt;
     &lt;h1&gt;HTML5 Tags&lt;/h1&gt;
@@ -71,7 +71,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-form-submission.php" class="text-blue-600 hover:underline">HTML Form Submission →</a></p>
+            <p class=" font-semibold">Next: <a href="html-form-submission.php" class="text-blue-600 hover:underline">HTML Form Submission →</a></p>
         </div>
     </article>
 </main>

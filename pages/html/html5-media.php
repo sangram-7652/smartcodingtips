@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Audio & Video</li>
@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Audio & Video in HTML5</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML5 introduced built-in support for audio and video, allowing developers to embed media content without relying on external plugins like Flash. These elements come with native controls and can be styled or customized using JavaScript and CSS.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">The <code>&lt;audio&gt;</code> Element</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>&lt;audio&gt;</code> tag is used to embed sound content in a web page. It supports multiple source formats to ensure compatibility across browsers.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;audio controls&gt;
   &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
   &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
@@ -38,10 +38,10 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">The <code>&lt;video&gt;</code> Element</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>&lt;video&gt;</code> tag embeds a video player with playback options like play, pause, and volume control. It also supports multiple formats.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;video width="320" height="240" controls&gt;
   &lt;source src="video-file.mp4" type="video/mp4"&gt;
   &lt;source src="video-file.ogg" type="video/ogg"&gt;
@@ -52,14 +52,14 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Additional Tags</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>&lt;source&gt;</code> – Specifies alternative media files for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>.</li>
                 <li><code>&lt;track&gt;</code> – Used for specifying subtitles, captions, or other text tracks in videos.</li>
             </ul>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-forms.php" class="text-blue-600 hover:underline">HTML Forms →</a></p>
+         <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/html5-canvas" class="text-blue-600 hover:underline">Canvas →</a></p>
         </div>
     </article>
 </main>

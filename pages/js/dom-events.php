@@ -22,15 +22,15 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎯 Basic Syntax</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>element.addEventListener("event", callbackFunction);</code></pre>
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>element.addEventListener("event", callbackFunction);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🖱 Example: Click Event</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.getElementById("myBtn").addEventListener("click", function() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("myBtn").addEventListener("click", function() {
     alert("Button was clicked!");
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 Using Named Functions</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function greetUser() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function greetUser() {
     console.log("Hello!");
 }
 
@@ -46,7 +46,7 @@ document.querySelector("button").addEventListener("click", greetUser);</code></p
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Removing Event Listeners</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function sayHi() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function sayHi() {
     alert("Hi!");
 }
 
@@ -57,7 +57,7 @@ btn.addEventListener("click", sayHi);
 btn.removeEventListener("click", sayHi);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Example With HTML</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;button id="myBtn"&gt;Click Me&lt;/button&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;button id="myBtn"&gt;Click Me&lt;/button&gt;
 
 &lt;script&gt;
 document.getElementById("myBtn").addEventListener("click", () =&gt; {

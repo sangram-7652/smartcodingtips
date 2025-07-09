@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Importance of HTML in Web Development</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Importance of HTML in Web Development</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML plays a crucial role in web development. It is the backbone of every webpage you see on the internet. From creating basic website layouts to structuring dynamic web applications, HTML is where everything begins.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why HTML Matters in Modern Web Development</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Core of Web Pages:</strong> All websites start with HTML for defining structure and content.</li>
                 <li><strong>Compatibility with CSS and JavaScript:</strong> HTML integrates seamlessly with CSS for styling and JavaScript for interactivity.</li>
                 <li><strong>SEO-Friendly:</strong> Proper HTML structure helps search engines understand your content better.</li>
@@ -36,20 +36,20 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Real-World Impact</h2>
-            <p class="text-lg">
+            <p class="">
                 Whether you're building a personal portfolio, a company landing page, or a full-fledged web application, HTML is the first step. Learning HTML gives developers the power to create clean, semantic, and structured web documents that are maintainable and scalable.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 HTML is more than just a markup language—it's the foundation of everything we experience on the web. Its simplicity, flexibility, and compatibility make it a critical skill for anyone stepping into web development.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html.php?page=html/how-it-works" class="text-blue-600 hover:underline">How HTML Works →</a></p>
+            <p class=" font-semibold">Next: <a href="html.php?page=html/how-it-works" class="text-blue-600 hover:underline">How HTML Works →</a></p>
         </div>
     </article>
 </main>

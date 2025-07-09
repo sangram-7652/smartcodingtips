@@ -26,7 +26,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <!-- Sidebar -->
         <aside class="md:col-span-1 bg-white dark:bg-gray-800 p-4 rounded shadow">
-            <h2 class="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Menu</h2>
+            <h2 class=" font-semibold mb-4 text-gray-800 dark:text-white">Menu</h2>
             <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                 <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Dashboard</a></li>
                 <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Analytics</a></li>
@@ -46,15 +46,15 @@
             <!-- Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-4 bg-white dark:bg-gray-800 rounded shadow text-gray-800 dark:text-white">
-                    <h3 class="text-lg font-medium">Users</h3>
+                    <h3 class=" font-medium">Users</h3>
                     <p class="text-3xl font-bold mt-2">1,250</p>
                 </div>
                 <div class="p-4 bg-white dark:bg-gray-800 rounded shadow text-gray-800 dark:text-white">
-                    <h3 class="text-lg font-medium">Sales</h3>
+                    <h3 class=" font-medium">Sales</h3>
                     <p class="text-3xl font-bold mt-2">$9,340</p>
                 </div>
                 <div class="p-4 bg-white dark:bg-gray-800 rounded shadow text-gray-800 dark:text-white">
-                    <h3 class="text-lg font-medium">Revenue</h3>
+                    <h3 class=" font-medium">Revenue</h3>
                     <p class="text-3xl font-bold mt-2">$15,670</p>
                 </div>
             </div>
@@ -73,7 +73,7 @@
 
     <!-- Next -->
     <div class="mt-6">
-        <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">
+        <p class=" font-semibold text-gray-700 dark:text-gray-300">
             Next: <a href="tailwind.php?page=tailwind/project-blog" class="text-blue-600 dark:text-blue-400 hover:underline">Blog Layout with Prose →</a>
         </p>
     </div>

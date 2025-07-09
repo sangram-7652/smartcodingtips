@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Features of HTML</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Features of HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML offers a variety of features that make it the backbone of web development. Its simplicity, flexibility, and widespread browser support allow developers to create structured and interactive websites efficiently.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Top Features of HTML</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Platform Independent:</strong> HTML works across all operating systems and web browsers.</li>
                 <li><strong>Easy to Learn:</strong> The syntax of HTML is straightforward and beginner-friendly.</li>
                 <li><strong>Supports Multimedia:</strong> You can embed images, videos, audio, and other media easily.</li>
@@ -38,16 +38,16 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Versions</h2>
-            <p class="text-lg">HTML has evolved over time, with HTML5 being the latest major version. It introduced many new features including semantic tags, multimedia support, and APIs for modern web applications.</p>
+            <p class="">HTML has evolved over time, with HTML5 being the latest major version. It introduced many new features including semantic tags, multimedia support, and APIs for modern web applications.</p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">These features make HTML an essential tool for web developers. Its evolving capabilities continue to support the growing demands of the web development industry.</p>
+            <p class="">These features make HTML an essential tool for web developers. Its evolving capabilities continue to support the growing demands of the web development industry.</p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html.php?page=html/importance" class="text-blue-600 hover:underline">Importance of HTML in Web Development →</a></p>
+            <p class=" font-semibold">Next: <a href="html.php?page=html/importance" class="text-blue-600 hover:underline">Importance of HTML in Web Development →</a></p>
         </div>
     </article>
 </main>

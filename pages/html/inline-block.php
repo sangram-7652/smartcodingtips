@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Inline vs Block</li>
@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Inline vs Block Elements</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             In HTML, elements are categorized as either <strong>inline</strong> or <strong>block-level</strong> based on their default display behavior in the document flow.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Block-Level Elements</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Block-level elements take up the full width available, starting on a new line. They are typically used for structural layout.
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>&lt;div&gt;</code></li>
                 <li><code>&lt;p&gt;</code></li>
                 <li><code>&lt;h1&gt; to &lt;h6&gt;</code></li>
@@ -38,10 +38,10 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Inline Elements</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Inline elements do not start on a new line and only take up as much width as necessary. They are typically used for formatting text.
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>&lt;span&gt;</code></li>
                 <li><code>&lt;a&gt;</code></li>
                 <li><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
@@ -52,7 +52,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Visual Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!-- Block Element --&gt;
 &lt;div&gt;
   &lt;p&gt;This is a paragraph.&lt;/p&gt;
@@ -65,7 +65,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-links.php" class="text-blue-600 hover:underline">HTML Links →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/dom-basics" class="text-blue-600 hover:underline">HTML DOM →</a></p>
         </div>
     </article>
 </main>

@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">CSS Flexbox Basics</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Flexbox (Flexible Box Layout) is a powerful layout model in CSS that allows items to align, distribute, and adapt within a container, even when their sizes are unknown or dynamic.
         </p>
 
         <!-- Flex Container -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Creating a Flex Container</h2>
-            <p class="text-lg mb-2">To enable Flexbox, set the container’s <code>display</code> property to <code>flex</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">To enable Flexbox, set the container’s <code>display</code> property to <code>flex</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
 }
@@ -36,8 +36,8 @@
         <!-- Flex Direction -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Flex Direction</h2>
-            <p class="text-lg mb-2">Defines the main axis direction (<code>row</code> by default):</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Defines the main axis direction (<code>row</code> by default):</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-direction: row;         /* horizontal (default) */
     flex-direction: column;      /* vertical */
@@ -48,8 +48,8 @@
         <!-- Justify Content -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Justify Content</h2>
-            <p class="text-lg mb-2">Aligns items along the main axis (horizontal in <code>row</code>):</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Aligns items along the main axis (horizontal in <code>row</code>):</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     justify-content: flex-start;    /* default */
     justify-content: center;
@@ -63,8 +63,8 @@
         <!-- Align Items -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Align Items</h2>
-            <p class="text-lg mb-2">Aligns items along the cross axis (vertical by default):</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Aligns items along the cross axis (vertical by default):</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     align-items: stretch;      /* default */
     align-items: center;
@@ -78,8 +78,8 @@
         <!-- Flex Wrap -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Flex Wrap</h2>
-            <p class="text-lg mb-2">Controls whether items wrap to the next line if necessary:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Controls whether items wrap to the next line if necessary:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-wrap: nowrap;     /* default */
     flex-wrap: wrap;
@@ -91,8 +91,8 @@
         <!-- Gap -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Gap Between Items</h2>
-            <p class="text-lg mb-2">Use <code>gap</code> to control spacing between items:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use <code>gap</code> to control spacing between items:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     gap: 20px;
@@ -103,8 +103,8 @@
         <!-- Responsive Layouts -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">7. Responsive Flex Layout</h2>
-            <p class="text-lg mb-2">Flexbox makes it easier to build layouts that adapt to screen size:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Flexbox makes it easier to build layouts that adapt to screen size:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @media (min-width: 768px) {
     .flex-container {
         flex-direction: row;
@@ -122,13 +122,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Flexbox provides an efficient way to layout, align, and distribute space among items in a container — especially when the size of the items is unknown or dynamic. It’s a core tool for modern responsive web design.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-grid-layout.php" class="text-blue-600 hover:underline">CSS Grid Layout →</a></p>
+            <p class=" font-semibold">Next: <a href="css-grid-layout.php" class="text-blue-600 hover:underline">CSS Grid Layout →</a></p>
         </div>
     </article>
 </main>

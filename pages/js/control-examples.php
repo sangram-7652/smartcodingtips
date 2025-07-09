@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 1: Login Access Check</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let isLoggedIn = true;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
 
 if (isLoggedIn) {
     console.log("Welcome back!");
@@ -33,7 +33,7 @@ if (isLoggedIn) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 2: Grade Evaluation</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let marks = 85;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let marks = 85;
 
 if (marks &gt;= 90) {
     console.log("Grade: A");
@@ -45,7 +45,7 @@ if (marks &gt;= 90) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 3: Day of the Week using Switch</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let day = "Saturday";
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let day = "Saturday";
 
 switch (day) {
     case "Monday":
@@ -61,7 +61,7 @@ switch (day) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 4: Loop with Continue</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         continue; // Skip 3
     }
@@ -70,7 +70,7 @@ switch (day) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 5: Loop with Break</h2>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let count = 0;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 0;
 
 while (true) {
     count++;

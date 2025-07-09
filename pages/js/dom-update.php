@@ -25,23 +25,23 @@
     <p class="mb-4">
         Safely sets or gets the text content of an element. It does not render HTML.
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.querySelector("p").textContent = "New text goes here.";</code></pre>
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("p").textContent = "New text goes here.";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🌐 <code>innerHTML</code></h2>
     <p class="mb-4">
         Sets or gets HTML inside an element. Use with caution as it can be a security risk (XSS).
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.getElementById("output").innerHTML = "&lt;strong&gt;Bold Text&lt;/strong&gt;";</code></pre>
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("output").innerHTML = "&lt;strong&gt;Bold Text&lt;/strong&gt;";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ <code>innerText</code> (Less Common)</h2>
     <p class="mb-4">
         Similar to <code>textContent</code> but affected by CSS (like <code>display:none</code>).
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const title = document.querySelector("h1");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const title = document.querySelector("h1");
 title.innerText = "Updated Title";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Updating Inputs and Forms</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>document.querySelector("input").value = "New input value";</code></pre>
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("input").value = "New input value";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 When to Use Each</h2>
     <ul class="list-disc list-inside mb-4">

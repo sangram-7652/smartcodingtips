@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Tailwind CSS Breakpoints</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Breakpoints in Tailwind CSS allow you to apply different utility classes at specific screen widths, enabling fully responsive designs with minimal effort.
         </p>
 
         <!-- Default Breakpoints -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Default Breakpoints</h2>
-            <p class="text-lg mb-2">Tailwind uses the following default screen sizes for responsive utilities:</p>
+            <p class=" mb-2">Tailwind uses the following default screen sizes for responsive utilities:</p>
             <table class="w-full mb-4 text-left border border-gray-300 text-sm">
                 <thead class="bg-gray-100">
                     <tr>
@@ -46,17 +46,17 @@
         <!-- Applying Responsive Prefixes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Applying Responsive Prefixes</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can add responsive variants by prefixing any utility with a breakpoint name:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="text-sm md:text-base lg:text-xl"&gt;
     Responsive Text
 &lt;/div&gt;
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 This will apply:
-                <ul class="list-disc list-inside text-lg">
+                <ul class="list-disc list-inside ">
                     <li><code>text-sm</code> on small screens</li>
                     <li><code>text-base</code> from 768px and up</li>
                     <li><code>text-xl</code> from 1024px and up</li>
@@ -67,10 +67,10 @@
         <!-- Customizing Breakpoints -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing Breakpoints</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can override or add breakpoints in your <code>tailwind.config.js</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {},
@@ -90,7 +90,7 @@ module.exports = {
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Start with mobile defaults and scale up.</li>
                 <li>Use as few breakpoints as necessary to keep your CSS clean.</li>
                 <li>Test designs at all screen sizes regularly.</li>
@@ -100,13 +100,13 @@ module.exports = {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind's breakpoint system makes responsive design intuitive and scalable. With just a few prefixes, you can craft fully adaptive UIs without ever writing a single media query.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/show-hide" class="text-blue-600 hover:underline">Show/Hide Utilities →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/show-hide" class="text-blue-600 hover:underline">Show/Hide Utilities →</a></p>
         </div>
     </article>
 </main>

@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Paragraphs &amp; Headings</li>
@@ -18,41 +18,41 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Paragraphs &amp; Headings in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Paragraphs and headings form the backbone of web content. They help organize information, improve readability, and provide structure for both users and search engines.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Paragraphs</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Paragraphs are defined using the <code>&lt;p&gt;</code> tag. They are used to group sentences together into meaningful blocks of text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is a paragraph of text in HTML.&lt;/p&gt;
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Browsers automatically add space above and below paragraphs to separate them from other content.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Headings</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Headings are used to define titles and subtitles. HTML offers six levels of headings, from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important).
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;h1&gt;Main Title&lt;/h1&gt;
 &lt;h2&gt;Subheading&lt;/h2&gt;
 &lt;h3&gt;Section Title&lt;/h3&gt;
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Use headings in order to structure your content hierarchically and semantically.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use <code>&lt;p&gt;</code> for all text blocks, not just line breaks.</li>
                 <li>Start each page with one <code>&lt;h1&gt;</code> as the main title.</li>
                 <li>Don’t skip heading levels (e.g., <code>&lt;h1&gt;</code> directly to <code>&lt;h4&gt;</code>).</li>
@@ -62,13 +62,13 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Paragraphs and headings are fundamental HTML elements that help convey structure and meaning. By using them correctly, you create content that is easy to read, accessible, and search engine-friendly.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="line-breaks.php" class="text-blue-600 hover:underline">Line Breaks in HTML →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/text-formatting" class="text-blue-600 hover:underline">Bold, Italic, etc. →</a></p>
         </div>
     </article>
 </main>

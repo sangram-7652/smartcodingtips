@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Navigation Menus with Lists</li>
@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Creating Navigation Menus with Lists in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Navigation menus are commonly built using unordered lists (&lt;ul&gt;) with list items (&lt;li&gt;). This structure is semantic, accessible, and easy to style.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Nav Menu Example</h2>
             <nav>
-                <ul class="list-none flex space-x-6 text-lg font-medium">
+                <ul class="list-none flex space-x-6  font-medium">
                     <li><a href="index.php" class="text-blue-600 hover:underline">Home</a></li>
                     <li><a href="about.php" class="text-blue-600 hover:underline">About</a></li>
                     <li><a href="services.php" class="text-blue-600 hover:underline">Services</a></li>
@@ -38,7 +38,7 @@
             <h2 class="text-2xl font-semibold mb-2">Nested Menus for Dropdowns</h2>
             <p class="mb-2">You can create submenus by nesting &lt;ul&gt; inside &lt;li&gt; elements:</p>
             <nav>
-                <ul class="list-none space-y-2 text-lg font-medium">
+                <ul class="list-none space-y-2  font-medium">
                     <li>
                         <a href="products.php" class="text-blue-600 hover:underline">Products</a>
                         <ul class="list-disc list-inside ml-5 mt-1">
@@ -55,17 +55,17 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Accessibility Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use semantic &lt;nav&gt; element to identify navigation landmarks.</li>
                 <li>Make links focusable and provide clear visual focus styles.</li>
                 <li>Use ARIA attributes if you implement complex dropdown menus.</li>
             </ul>
         </section>
 
-        <section class="mb-6">
+        <section class="">
             <h2 class="text-2xl font-semibold mb-2">Styling Navigation Menus</h2>
             <p class="mb-2">You can style lists and links with CSS for horizontal or vertical layouts. Using utility classes like Tailwind CSS helps speed up styling.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* Example CSS for horizontal nav */
 nav ul {
   list-style: none;
@@ -84,5 +84,10 @@ nav ul li a:focus {
 }
             </code></pre>
         </section>
+
+         <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/images" class="text-blue-600 hover:underline">Images →</a></p>
+        </div>
     </article>
 </main>
+

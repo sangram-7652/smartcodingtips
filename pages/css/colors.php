@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Text & Background Colors in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Colors are a vital part of web design. CSS allows you to change both text and background colors using various formats like names, HEX, RGB, or HSL.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Text Color</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use the <code>color</code> property to change the text color.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 p {
     color: blue;
 }
@@ -44,10 +44,10 @@ a {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Background Color</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use the <code>background-color</code> property to set an element's background.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 body {
     background-color: #f9fafb;
 }
@@ -60,7 +60,7 @@ div.highlight {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Color Value Types</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Color names</strong>: <code>red</code>, <code>blue</code>, <code>green</code></li>
                 <li><strong>HEX values</strong>: <code>#ff0000</code>, <code>#1e90ff</code></li>
                 <li><strong>RGB values</strong>: <code>rgb(255, 0, 0)</code></li>
@@ -71,10 +71,10 @@ div.highlight {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Applying to Specific Elements</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can use classes and IDs to apply colors to specific elements:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 #warning {
     background-color: orange;
     color: white;
@@ -89,20 +89,20 @@ div.highlight {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Contrast & Accessibility</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Make sure there's enough contrast between text and background. Use online tools like the WCAG Contrast Checker to ensure your site is accessible.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Using text and background colors strategically can enhance readability and design appeal. Practice using different formats to understand which fits your project best.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-box-model.php" class="text-blue-600 hover:underline">CSS Box Model →</a></p>
+            <p class=" font-semibold">Next: <a href="css-box-model.php" class="text-blue-600 hover:underline">CSS Box Model →</a></p>
         </div>
     </article>
 </main>

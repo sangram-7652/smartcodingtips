@@ -23,7 +23,7 @@
   <p class="mb-2">
     The simplest way to debug is by using <code>console.log()</code> to print values at various points in your code.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>console.log("Value of x:", x);</code></pre>
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log("Value of x:", x);</code></pre>
 
   <p class="mb-4">
     Other console methods:
@@ -39,7 +39,7 @@
   <p class="mb-4">
     The <code>debugger</code> keyword stops code execution and lets you inspect variables in the browser's DevTools.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>function calculate(a, b) {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function calculate(a, b) {
   debugger;
   return a + b;
 }</code></pre>

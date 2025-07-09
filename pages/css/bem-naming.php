@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">BEM Naming Convention</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             BEM (Block, Element, Modifier) is a naming methodology that helps you write clean, maintainable, and scalable CSS by clearly describing the structure and purpose of each class.
         </p>
 
         <!-- What is BEM -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. What is BEM?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Block</strong>: A standalone entity (e.g., <code>card</code>)</li>
                 <li><strong>Element</strong>: A part of a block (e.g., <code>card__title</code>)</li>
                 <li><strong>Modifier</strong>: A variation or state (e.g., <code>card--featured</code>)</li>
@@ -35,12 +35,12 @@
         <!-- Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Syntax</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .block { }
 .block__element { }
 .block--modifier { }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 This naming pattern avoids deep nesting and makes styles reusable.
             </p>
         </section>
@@ -48,14 +48,14 @@
         <!-- Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto mb-4"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4"><code class="text-sm">
 <!-- HTML -->
 <div class="card card--featured">
     <h2 class="card__title">Featured Article</h2>
     <p class="card__description">Short summary of the content.</p>
 </div>
             </code></pre>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* CSS */
 .card {
     border: 1px solid #ccc;
@@ -80,7 +80,7 @@
         <!-- Benefits of BEM -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Benefits of BEM</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Improves CSS readability</li>
                 <li>Prevents class name collisions</li>
                 <li>Encourages reusable components</li>
@@ -91,7 +91,7 @@
         <!-- Tools & Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Tools & Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use consistent naming across all blocks</li>
                 <li>Follow kebab-case or lowercase with hyphens</li>
                 <li>Preprocessors like SCSS can help group styles logically</li>
@@ -102,13 +102,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 BEM is a reliable way to structure CSS in complex projects. By separating block, element, and modifier responsibilities, you reduce confusion and improve collaboration in development teams.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="scss-basics.php" class="text-blue-600 hover:underline">SCSS Basics →</a></p>
+            <p class=" font-semibold">Next: <a href="scss-basics.php" class="text-blue-600 hover:underline">SCSS Basics →</a></p>
         </div>
     </article>
 </main>

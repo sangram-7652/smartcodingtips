@@ -24,7 +24,7 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 <code>let</code> – Mutable Variable</h2>
     <p class="mb-2">Use <code>let</code> when the value of a variable might change later.</p>
     
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let count = 0;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 0;
 count = count + 1; // ✅ valid
 console.log(count); // 1</code></pre>
 
@@ -33,12 +33,12 @@ console.log(count); // 1</code></pre>
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔒 <code>const</code> – Constant (Read-only)</h2>
     <p class="mb-2">Use <code>const</code> when the value should not be reassigned.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const pi = 3.14;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const pi = 3.14;
 pi = 3.1415; // ❌ Error: Assignment to constant variable</code></pre>
 
     <p><strong>Note:</strong> Objects and arrays declared with <code>const</code> can still be mutated:</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const user = { name: "John" };
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = { name: "John" };
 user.name = "Jane"; // ✅ Allowed
 
 const arr = [1, 2, 3];

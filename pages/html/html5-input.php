@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">New Input Types</li>
@@ -41,7 +41,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   Email: &lt;input type="email" name="userEmail"&gt;&lt;br&gt;
   URL: &lt;input type="url" name="homepage"&gt;&lt;br&gt;
@@ -53,7 +53,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-form-submission.php" class="text-blue-600 hover:underline">HTML Form Submission →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/html5-media" class="text-blue-600 hover:underline">Audio & Video →</a></p>
         </div>
     </article>
 </main>

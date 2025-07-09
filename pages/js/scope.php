@@ -28,7 +28,7 @@
         <li><strong>Block Scope</strong> – Introduced by <code>let</code> and <code>const</code> inside <code>{ }</code></li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let globalVar = "Global";
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let globalVar = "Global";
 
 function testScope() {
     let functionVar = "Function";
@@ -47,7 +47,7 @@ testScope();
         A <strong>closure</strong> is when an inner function accesses variables from an outer function even after the outer function has finished executing.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function outer() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function outer() {
     let count = 0;
 
     return function inner() {

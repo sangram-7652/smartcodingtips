@@ -19,17 +19,17 @@
     <article>
         <h1 class="text-3xl font-bold mb-4">Tailwind UI Principles</h1>
 
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind UI promotes a set of principles that help developers build scalable, maintainable, and beautifully consistent interfaces using utility-first CSS. These principles are crucial when building reusable components or design systems.
         </p>
 
         <!-- Atomic Design & Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Atomic & Utility-First Design</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Instead of writing custom CSS classes for every component, Tailwind encourages combining small utility classes to create complex UIs. This promotes design consistency and avoids CSS bloat.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"&gt;
   Click Me
 &lt;/button&gt;
@@ -39,10 +39,10 @@
         <!-- DRY Components with @apply -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Reusability with <code>@apply</code></h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Use <code>@apply</code> in your CSS or component files to abstract common utility combinations and avoid repetition.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 /* styles.css */
 .btn-primary {
   @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
@@ -53,10 +53,10 @@
         <!-- Design Tokens -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Use of Design Tokens</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Tailwind's config lets you define and reuse spacing, color, typography, and more using a shared design token system via the `tailwind.config.js`.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 theme: {
   colors: {
     primary: '#1D4ED8',
@@ -73,7 +73,7 @@ theme: {
         <!-- Consistency and Scale -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Scalable, Consistent Design</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Tailwind encourages consistent spacing, font sizing, and layout patterns using its predefined scale system, avoiding one-off customizations that harm scalability.
             </p>
         </section>
@@ -81,7 +81,7 @@ theme: {
         <!-- Accessibility & Semantics -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Accessibility and Semantics</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Tailwind pairs well with semantic HTML. Use meaningful elements (`<button>`, `<nav>`, `<section>`) along with accessibility classes (`sr-only`, `focus:outline-none`, etc.) for inclusive designs.
             </p>
         </section>
@@ -89,13 +89,13 @@ theme: {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 By following these UI principles, developers can build robust design systems using Tailwind CSS that are scalable, accessible, and consistent across large codebases or teams.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/reuse" class="text-blue-600 hover:underline">Reusing with @apply →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/reuse" class="text-blue-600 hover:underline">Reusing with @apply →</a></p>
         </div>
     </article>
 </main>

@@ -29,7 +29,7 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧨 Spread Operator</h2>
     <p class="mb-2">Used to copy or expand iterable values like arrays or objects.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const arr1 = [1, 2, 3];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5]; 
 console.log(arr2); // [1, 2, 3, 4, 5]
 
@@ -40,13 +40,13 @@ console.log(obj2); // { name: "Alice", age: 30 }</code></pre>
     <h2 class="text-2xl font-semibold mt-6 mb-2">📥 Rest Operator</h2>
     <p class="mb-2">Used in function parameters or destructuring to group remaining values into an array.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function sum(...nums) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function sum(...nums) {
     return nums.reduce((a, b) => a + b, 0);
 }
 console.log(sum(1, 2, 3)); // 6</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧩 Rest in Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const [first, ...rest] = [10, 20, 30, 40];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const [first, ...rest] = [10, 20, 30, 40];
 console.log(first); // 10
 console.log(rest);  // [20, 30, 40]
 
@@ -54,7 +54,7 @@ const { a, ...others } = { a: 1, b: 2, c: 3 };
 console.log(others); // { b: 2, c: 3 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Combining Spread with Functions</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const numbers = [4, 5, 6];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const numbers = [4, 5, 6];
 console.log(Math.max(...numbers)); // 6</code></pre>
 
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded mt-6">

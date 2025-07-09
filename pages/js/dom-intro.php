@@ -26,7 +26,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 DOM Structure Example</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;html&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello&lt;/h1&gt;
@@ -47,7 +47,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ DOM Access via JavaScript</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const heading = document.querySelector("h1");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const heading = document.querySelector("h1");
 console.log(heading.textContent); // "Hello"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Why Learn the DOM?</h2>

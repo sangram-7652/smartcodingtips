@@ -17,16 +17,16 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">What is a Photo Gallery?</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 A photo gallery is a grid or layout of images displayed on a web page, often used to showcase photography, products, portfolios, or memories in an organized and visually appealing format.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Structure</h2>
-            <p class="text-lg mb-2">You can use a combination of HTML elements and CSS (Flexbox or Grid) to layout your gallery. Below is a simple example:</p>
+            <p class=" mb-2">You can use a combination of HTML elements and CSS (Flexbox or Grid) to layout your gallery. Below is a simple example:</p>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"&gt;
   &lt;img src="img1.jpg" alt="Image 1" class="w-full h-auto rounded"&gt;
   &lt;img src="img2.jpg" alt="Image 2" class="w-full h-auto rounded"&gt;
@@ -38,7 +38,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use descriptive <code>alt</code> attributes for accessibility and SEO.</li>
                 <li>Compress images for faster page loading.</li>
                 <li>Use a consistent aspect ratio (e.g., square or 3:2) for a clean layout.</li>
@@ -48,8 +48,8 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Gallery with Tailwind</h2>
-            <p class="text-lg mb-2">Tailwind's grid utilities help create responsive galleries easily:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Tailwind's grid utilities help create responsive galleries easily:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"&gt;
   &lt;img src="gallery1.jpg" class="w-full rounded shadow"&gt;
   &lt;img src="gallery2.jpg" class="w-full rounded shadow"&gt;
@@ -59,8 +59,8 @@
             </code></pre>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-multimedia.php" class="text-blue-600 hover:underline">HTML Multimedia →</a></p>
+         <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/contact-project" class="text-blue-600 hover:underline">Contact Us Form →</a></p>
         </div>
     </article>
 </main>

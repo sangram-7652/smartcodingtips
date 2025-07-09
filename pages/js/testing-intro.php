@@ -36,7 +36,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Writing a Simple Unit Test</h2>
   <p class="mb-2">Let’s test a basic function:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>// math.js
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// math.js
 function add(a, b) {
   return a + b;
 }
@@ -58,7 +58,7 @@ console.assert(result === 5, 'Expected 2 + 3 to equal 5');</code></pre>
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📁 File Structure Example</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>project/
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>project/
 ├── src/
 │   └── math.js
 ├── tests/

@@ -18,17 +18,17 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Focus & Interactive States in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS provides pseudo-classes to style elements based on their interaction states, such as hover, focus, active, and visited. These help improve user experience and accessibility.
         </p>
 
         <!-- Hover State -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. :hover</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies when the user hovers over an element (like a link or button).
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 button:hover {
     background-color: #1e40af;
     color: white;
@@ -39,16 +39,16 @@ button:hover {
         <!-- Focus State -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. :focus</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies when an element (e.g., input, button) is selected via mouse, tap, or keyboard.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 input:focus {
     outline: 2px solid #2563eb;
     background-color: #f0f9ff;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Focus styles are crucial for accessibility, especially for keyboard navigation.
             </p>
         </section>
@@ -56,10 +56,10 @@ input:focus {
         <!-- Active State -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. :active</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies while an element is being clicked (mouse down).
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 a:active {
     color: red;
 }
@@ -69,10 +69,10 @@ a:active {
         <!-- Visited Links -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. :visited</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies to links that the user has already visited.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 a:visited {
     color: purple;
 }
@@ -82,10 +82,10 @@ a:visited {
         <!-- Disabled State -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. :disabled</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Applies to form elements that are disabled:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 button:disabled,
 input:disabled {
     background-color: #f3f4f6;
@@ -98,10 +98,10 @@ input:disabled {
         <!-- Order of Pseudo-Classes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Order Matters</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Follow this order to prevent styles from being overridden:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* LVHA */
 a:link {
     color: blue;
@@ -121,13 +121,13 @@ a:active {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS state pseudo-classes like <code>:hover</code>, <code>:focus</code>, and <code>:active</code> let you provide visual feedback and improve accessibility. Always include focus styles for a more inclusive UI.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="form-validation-styling.php" class="text-blue-600 hover:underline">Form Validation Styling →</a></p>
+            <p class=" font-semibold">Next: <a href="form-validation-styling.php" class="text-blue-600 hover:underline">Form Validation Styling →</a></p>
         </div>
     </article>
 </main>

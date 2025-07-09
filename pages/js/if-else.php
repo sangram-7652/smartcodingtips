@@ -24,7 +24,7 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 1. <code>if</code> Statement</h2>
     <p class="mb-4">Executes a block of code if a condition is true.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let age = 18;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 18;
 
 if (age &gt;= 18) {
     console.log("You are an adult.");
@@ -33,7 +33,7 @@ if (age &gt;= 18) {
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 2. <code>if...else</code> Statement</h2>
     <p class="mb-4">Provides an alternative if the condition is false.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let isLoggedIn = false;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = false;
 
 if (isLoggedIn) {
     console.log("Welcome back!");
@@ -44,7 +44,7 @@ if (isLoggedIn) {
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 3. <code>if...else if...else</code> Chain</h2>
     <p class="mb-4">Checks multiple conditions in order.</p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let score = 75;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let score = 75;
 
 if (score &gt;= 90) {
     console.log("Grade: A");
@@ -59,7 +59,7 @@ if (score &gt;= 90) {
         A cleaner way to compare a variable against many values.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let day = "Wednesday";
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let day = "Wednesday";
 
 switch (day) {
     case "Monday":

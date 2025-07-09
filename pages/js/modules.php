@@ -26,12 +26,12 @@
     <p class="mb-2">Used to expand elements from arrays or objects into individual elements.</p>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">👉 Arrays:</h3>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const arr1 = [1, 2, 3];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5];
 console.log(arr2); // [1, 2, 3, 4, 5]</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">👉 Objects:</h3>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const obj1 = { a: 1, b: 2 };
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const obj1 = { a: 1, b: 2 };
 const obj2 = { ...obj1, c: 3 };
 console.log(obj2); // { a: 1, b: 2, c: 3 }</code></pre>
 
@@ -39,12 +39,12 @@ console.log(obj2); // { a: 1, b: 2, c: 3 }</code></pre>
     <p class="mb-2">Used to collect the remaining values into an array or object.</p>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">👉 Arrays:</h3>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const [first, ...rest] = [10, 20, 30, 40];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const [first, ...rest] = [10, 20, 30, 40];
 console.log(first); // 10
 console.log(rest);  // [20, 30, 40]</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">👉 Functions:</h3>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function sum(...numbers) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function sum(...numbers) {
     return numbers.reduce((acc, curr) => acc + curr, 0);
 }
 console.log(sum(1, 2, 3)); // 6</code></pre>

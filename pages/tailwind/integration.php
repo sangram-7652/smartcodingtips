@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Integration with PostCSS and Vite</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS works seamlessly with modern tools like PostCSS and Vite. This guide shows you how to configure Tailwind with both, enabling fast builds and powerful utility-based styling.
         </p>
 
         <!-- What is PostCSS? -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. What is PostCSS?</h2>
-            <p class="text-lg">
+            <p class="">
                 PostCSS is a CSS processor that transforms your CSS with JavaScript plugins. Tailwind uses PostCSS under the hood for features like <code>@tailwind</code>, <code>@apply</code>, and automatic purging.
             </p>
         </section>
@@ -33,8 +33,8 @@
         <!-- Vite + Tailwind Setup -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Setting Up Tailwind with Vite</h2>
-            <p class="text-lg mb-2">Vite is a modern frontend tool that offers fast dev servers and instant HMR. Here’s how to integrate Tailwind:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Vite is a modern frontend tool that offers fast dev servers and instant HMR. Here’s how to integrate Tailwind:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 // 1. Initialize Vite project
 npm create vite@latest my-app
 cd my-app
@@ -67,8 +67,8 @@ import './index.css';
         <!-- Using PostCSS Separately -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Using Tailwind with PostCSS (without Vite)</h2>
-            <p class="text-lg">If you use Webpack or another bundler, configure a <code>postcss.config.js</code> like:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class="">If you use Webpack or another bundler, configure a <code>postcss.config.js</code> like:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 // postcss.config.js
 module.exports = {
   plugins: {
@@ -82,7 +82,7 @@ module.exports = {
         <!-- Tips -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">4. Tips & Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always purge unused styles in production for minimal file sizes.</li>
                 <li>Keep Tailwind config clean with aliases, themes, and plugin arrays.</li>
                 <li>Use <code>@apply</code> only for grouping a few classes; avoid overuse.</li>
@@ -92,13 +92,13 @@ module.exports = {
         <!-- Conclusion -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Integrating Tailwind with Vite or PostCSS allows you to enjoy a fast development experience and scalable styling. It’s one of the best setups for modern frontend workflows.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">End of Section. Back to <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind Topics</a></p>
+            <p class=" font-semibold">End of Section. Back to <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind Topics</a></p>
         </div>
     </article>
 </main>

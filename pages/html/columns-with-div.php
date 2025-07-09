@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Columns with Div</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Creating Columns with &lt;div&gt; in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Creating columns using the <code>&lt;div&gt;</code> element is a common layout technique in web design. With CSS, you can easily make side-by-side columns for content layout.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Two Column Layout (Using Flexbox)</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .row {
     display: flex;
@@ -51,7 +51,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Three Column Layout Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .three-columns {
     display: flex;
@@ -75,7 +75,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use <code>flexbox</code> for responsive and easy column layouts.</li>
                 <li>Add <code>gap</code> or <code>margin</code> between columns for spacing.</li>
                 <li>Set <code>flex: 1</code> on each column to make them equal width.</li>
@@ -84,7 +84,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-grid-layout.php" class="text-blue-600 hover:underline">HTML Grid Layout →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/flexbox-layout" class="text-blue-600 hover:underline">Flexbox Layout →</a></p>
         </div>
     </article>
 </main>

@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Divide and Ring Utilities in Tailwind CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind provides <strong>divide utilities</strong> for borders between child elements and <strong>ring utilities</strong> for focus outlines or decorative borders that sit outside the element's border.
         </p>
 
         <!-- Divide Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Divide Utilities</h2>
-            <p class="text-lg mb-2">Use <code>divide-x</code>, <code>divide-y</code> to create borders between child elements:</p>
+            <p class=" mb-2">Use <code>divide-x</code>, <code>divide-y</code> to create borders between child elements:</p>
             <div class="flex divide-x divide-gray-400 border p-4 mb-2">
                 <div class="px-4">Item 1</div>
                 <div class="px-4">Item 2</div>
@@ -37,7 +37,7 @@
         <!-- Ring Utilities -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Ring Utilities</h2>
-            <p class="text-lg mb-2">Rings are outer outlines used especially for focus states or decorative purposes:</p>
+            <p class=" mb-2">Rings are outer outlines used especially for focus states or decorative purposes:</p>
             <div class="flex gap-4">
                 <button class="ring-2 ring-blue-500 px-4 py-2 rounded">Ring-2</button>
                 <button class="ring-4 ring-green-500 px-4 py-2 rounded">Ring-4</button>
@@ -49,7 +49,7 @@
         <!-- Divide Reverse -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Divide Reverse</h2>
-            <p class="text-lg mb-2">Change the direction of dividing lines with <code>divide-x-reverse</code> or <code>divide-y-reverse</code>:</p>
+            <p class=" mb-2">Change the direction of dividing lines with <code>divide-x-reverse</code> or <code>divide-y-reverse</code>:</p>
             <div class="flex divide-x divide-x-reverse divide-gray-500 border p-4">
                 <div class="px-4">Left</div>
                 <div class="px-4">Right</div>
@@ -59,7 +59,7 @@
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use divide utilities for flexbox/grid child separation without custom borders.</li>
                 <li>Ring utilities work great for focus effects, especially with <code>:focus</code> pseudo-classes.</li>
                 <li>Use <code>ring-offset</code> to maintain padding between ring and element.</li>
@@ -69,13 +69,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 With Tailwind’s <code>divide</code> and <code>ring</code> utilities, you can add visual separators and focus indicators quickly and consistently across your UI.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/states-basic" class="text-blue-600 hover:underline">Pseudo-States and Interactions →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/states-basic" class="text-blue-600 hover:underline">Pseudo-States and Interactions →</a></p>
         </div>
     </article>
 </main>

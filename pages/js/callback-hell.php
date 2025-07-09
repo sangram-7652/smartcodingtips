@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">😖 What Does Callback Hell Look Like?</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>getUser(function(user) {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>getUser(function(user) {
   getPosts(user.id, function(posts) {
     getComments(posts[0].id, function(comments) {
       console.log(comments);
@@ -47,7 +47,7 @@
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Same Example with Promises</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>getUser()
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>getUser()
   .then(user => getPosts(user.id))
   .then(posts => getComments(posts[0].id))
   .then(comments => console.log(comments))

@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Checkbox & Radio</li>
@@ -18,7 +18,7 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">HTML Checkbox & Radio Buttons</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             HTML checkboxes and radio buttons allow users to make selections from a list of options. They are commonly used in forms for user preferences, surveys, and questionnaires.
         </p>
 
@@ -27,7 +27,7 @@
             <p class="mb-2">
                 A checkbox allows users to select one or more options independently. Use the same <code>name</code> if multiple selections belong to the same group.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label&gt;
     &lt;input type="checkbox" name="hobby" value="reading"&gt; Reading
@@ -47,7 +47,7 @@
             <p class="mb-2">
                 Radio buttons allow users to select only one option from a group. All radio inputs in the same group must share the same <code>name</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label&gt;
     &lt;input type="radio" name="gender" value="male"&gt; Male
@@ -64,7 +64,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Tips for Checkboxes & Radios</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Always group related options using <code>fieldset</code> and <code>legend</code> for better accessibility.</li>
                 <li>Wrap input elements with <code>&lt;label&gt;</code> for a better clickable experience.</li>
                 <li>Ensure each option has a <code>value</code> attribute for form data processing.</li>
@@ -72,7 +72,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-button-tag.php" class="text-blue-600 hover:underline">HTML Button Tag →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/select-textarea" class="text-blue-600 hover:underline">Select & Textarea →</a></p>
         </div>
     </article>
 </main>

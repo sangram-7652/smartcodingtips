@@ -20,13 +20,13 @@
   </p>
 
   <h2 class="text-xl font-semibold mt-6 mb-2">📄 HTML Structure</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>&lt;input type="text" id="name-input" placeholder="Enter name" class="border p-2 rounded w-full mb-2"&gt;
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;input type="text" id="name-input" placeholder="Enter name" class="border p-2 rounded w-full mb-2"&gt;
 &lt;button id="add-btn" class="bg-green-500 text-white px-4 py-2 rounded"&gt;Add&lt;/button&gt;
 
 &lt;ul id="user-list" class="mt-4 space-y-2"&gt;&lt;/ul&gt;</code></pre>
 
   <h2 class="text-xl font-semibold mt-6 mb-2">⚙️ JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto mb-4"><code>const input = document.getElementById("name-input");
+  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const input = document.getElementById("name-input");
 const addBtn = document.getElementById("add-btn");
 const userList = document.getElementById("user-list");
 

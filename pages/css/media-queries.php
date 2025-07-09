@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">CSS Media Queries</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Media queries allow you to apply different CSS rules depending on the device's screen size, orientation, resolution, and more. They’re the foundation of responsive web design.
         </p>
 
         <!-- Basic Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
-            <p class="text-lg mb-2">A simple media query that targets devices with a max width of 600px:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">A simple media query that targets devices with a max width of 600px:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @media (max-width: 600px) {
     body {
         background-color: lightgray;
@@ -38,7 +38,7 @@
         <!-- Common Use Cases -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Common Use Cases</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li>Adjust layout for phones, tablets, and desktops</li>
                 <li>Hide/show elements based on screen size</li>
                 <li>Change font sizes or paddings</li>
@@ -48,7 +48,7 @@
         <!-- Breakpoints -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Common Breakpoints</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 /* Smartphones */
 @media (max-width: 480px) { ... }
 
@@ -66,8 +66,8 @@
         <!-- Orientation Queries -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Orientation Queries</h2>
-            <p class="text-lg mb-2">Apply styles based on screen orientation:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Apply styles based on screen orientation:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @media (orientation: landscape) {
     .gallery {
         flex-direction: row;
@@ -79,8 +79,8 @@
         <!-- Combining Conditions -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Combining Conditions</h2>
-            <p class="text-lg mb-2">You can combine multiple media features:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">You can combine multiple media features:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @media (min-width: 768px) and (orientation: portrait) {
     .sidebar {
         display: none;
@@ -92,7 +92,7 @@
         <!-- Responsive Design Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Responsive Design Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Start with a mobile-first approach using <code>min-width</code>.</li>
                 <li>Use relative units like <code>em</code>, <code>%</code>, or <code>rem</code>.</li>
                 <li>Test on real devices and various screen sizes.</li>
@@ -102,13 +102,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Media queries are a crucial part of modern CSS, allowing your website to adapt to any device or screen size. Mastering them is essential for building fully responsive, mobile-friendly websites.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-flexbox.php" class="text-blue-600 hover:underline">CSS Flexbox →</a></p>
+            <p class=" font-semibold">Next: <a href="css-flexbox.php" class="text-blue-600 hover:underline">CSS Flexbox →</a></p>
         </div>
     </article>
 </main>

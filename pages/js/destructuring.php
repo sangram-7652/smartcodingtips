@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Array Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const numbers = [1, 2, 3];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const numbers = [1, 2, 3];
 const [a, b, c] = numbers;
 
 console.log(a); // 1
@@ -31,11 +31,11 @@ console.log(b); // 2</code></pre>
     <p class="mb-4">
         You can skip values by leaving gaps:
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const [first, , third] = [10, 20, 30];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const [first, , third] = [10, 20, 30];
 console.log(third); // 30</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📁 Object Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const user = { name: "Alice", age: 25 };
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = { name: "Alice", age: 25 };
 const { name, age } = user;
 
 console.log(name); // Alice
@@ -44,21 +44,21 @@ console.log(age); // 25</code></pre>
     <p class="mb-4">
         Rename variables using a colon:
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const { name: userName } = user;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const { name: userName } = user;
 console.log(userName); // Alice</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 Default Values</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const { city = "Unknown" } = user;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const { city = "Unknown" } = user;
 console.log(city); // Unknown</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔄 Swapping Values with Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let x = 1, y = 2;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let x = 1, y = 2;
 [x, y] = [y, x];
 console.log(x); // 2
 console.log(y); // 1</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Destructuring in Function Parameters</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function greet({ name, age }) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function greet({ name, age }) {
     console.log(`Hello ${name}, age ${age}`);
 }
 

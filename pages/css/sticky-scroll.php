@@ -18,17 +18,17 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Sticky Scroll in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The <code>position: sticky;</code> property allows elements to stick to the top (or other edges) of the container as the user scrolls, without using JavaScript.
         </p>
 
         <!-- Basic Usage -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Sticky Example</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 To make an element stick to the top of its parent when scrolling:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .sticky-header {
     position: sticky;
     top: 0;
@@ -36,7 +36,7 @@
     z-index: 1000;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 The element will scroll normally, but when it reaches the top of the viewport, it will stick.
             </p>
         </section>
@@ -44,7 +44,7 @@
         <!-- Important Notes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Important Notes</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>The parent container must have a height that causes scrolling.</li>
                 <li>The sticky element will only stick **within** the boundaries of its parent container.</li>
                 <li>Use <code>z-index</code> to keep it above other content when necessary.</li>
@@ -54,10 +54,10 @@
         <!-- Horizontal Sticky -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Horizontal Sticky</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 You can also make an element stick horizontally using <code>left</code> or <code>right</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .sidebar {
     position: sticky;
     left: 0;
@@ -68,7 +68,7 @@
         <!-- When to Use -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. When to Use</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Sticky headers and menus</li>
                 <li>Sticky sidebars in documentation layouts</li>
                 <li>Sticky table headers</li>
@@ -78,7 +78,7 @@
         <!-- Browser Support -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Browser Support</h2>
-            <p class="text-lg">
+            <p class="">
                 <code>position: sticky</code> is widely supported in all modern browsers, but not in older versions of IE. Always test on your target devices.
             </p>
         </section>
@@ -86,13 +86,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Sticky positioning is a powerful tool for improving user experience in scrollable interfaces. Use it to keep important UI elements visible while maintaining natural scroll behavior.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="fixed-positioning.php" class="text-blue-600 hover:underline">Fixed Positioning →</a></p>
+            <p class=" font-semibold">Next: <a href="fixed-positioning.php" class="text-blue-600 hover:underline">Fixed Positioning →</a></p>
         </div>
     </article>
 </main>

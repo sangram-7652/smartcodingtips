@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 LocalStorage</h2>
     <p>Data in <code>localStorage</code> persists even after the browser is closed. It has no expiration time.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Store data
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Store data
 localStorage.setItem("username", "John");
 
 // Retrieve data
@@ -36,7 +36,7 @@ localStorage.clear();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🕒 SessionStorage</h2>
     <p>Data in <code>sessionStorage</code> is cleared when the page session ends (usually when the tab or window is closed).</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Store session data
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Store session data
 sessionStorage.setItem("theme", "dark");
 
 // Retrieve data
@@ -56,7 +56,7 @@ sessionStorage.clear();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Storing Objects</h2>
     <p>You must stringify objects before storing them.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>const user = { name: "Alice", age: 25 };
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const user = { name: "Alice", age: 25 };
 localStorage.setItem("user", JSON.stringify(user));
 
 // Later...

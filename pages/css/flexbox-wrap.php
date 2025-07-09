@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Flexbox Wrapping & Direction</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Flexbox allows you to control the direction in which items flow and whether they wrap onto multiple lines. This flexibility makes it easier to build responsive layouts.
         </p>
 
         <!-- flex-direction -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. flex-direction</h2>
-            <p class="text-lg mb-2">The <code>flex-direction</code> property sets the direction of the main axis along which flex items are placed:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">The <code>flex-direction</code> property sets the direction of the main axis along which flex items are placed:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     flex-direction: row;        /* default: left to right */
@@ -40,8 +40,8 @@
         <!-- flex-wrap -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. flex-wrap</h2>
-            <p class="text-lg mb-2">The <code>flex-wrap</code> property allows items to wrap onto multiple lines if needed:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">The <code>flex-wrap</code> property allows items to wrap onto multiple lines if needed:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-wrap: nowrap;      /* default */
     flex-wrap: wrap;        /* wrap items to next line */
@@ -53,8 +53,8 @@
         <!-- flex-flow -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. flex-flow (Shorthand)</h2>
-            <p class="text-lg mb-2">The <code>flex-flow</code> shorthand combines <code>flex-direction</code> and <code>flex-wrap</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">The <code>flex-flow</code> shorthand combines <code>flex-direction</code> and <code>flex-wrap</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-flow: row wrap;
 }
@@ -64,8 +64,8 @@
         <!-- Responsive Use -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Responsive Layout Example</h2>
-            <p class="text-lg mb-2">Allow content to wrap on smaller screens for better responsiveness:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Allow content to wrap on smaller screens for better responsiveness:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +77,7 @@
         <!-- Visual Aid -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Visual Summary</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>row</code>: items in horizontal row (default)</li>
                 <li><code>column</code>: items in vertical column</li>
                 <li><code>wrap</code>: items move to new line as needed</li>
@@ -88,13 +88,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Understanding <code>flex-direction</code> and <code>flex-wrap</code> helps you create adaptable, fluid layouts that respond well to different screen sizes and content volumes.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="grid-auto-placement.php" class="text-blue-600 hover:underline">Grid Auto Placement →</a></p>
+            <p class=" font-semibold">Next: <a href="grid-auto-placement.php" class="text-blue-600 hover:underline">Grid Auto Placement →</a></p>
         </div>
     </article>
 </main>

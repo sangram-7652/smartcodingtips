@@ -18,14 +18,14 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Animated Navbar in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             An animated navbar enhances the user experience by providing visual feedback during navigation. You can use simple CSS transitions or keyframe animations to animate links, indicators, backgrounds, or mobile toggles.
         </p>
 
         <!-- Basic Navbar HTML -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Navbar Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 <nav class="navbar">
     <div class="logo">MySite</div>
     <ul class="nav-links">
@@ -41,8 +41,8 @@
         <!-- Styling & Hover Animation -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Hover Underline Animation</h2>
-            <p class="text-lg mb-2">Use pseudo-elements and transitions for a smooth underline effect on hover:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use pseudo-elements and transitions for a smooth underline effect on hover:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -80,8 +80,8 @@
         <!-- Animated Mobile Toggle -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Mobile Toggle Animation (Optional)</h2>
-            <p class="text-lg mb-2">Add an animated hamburger icon and slide-in menu for small screens:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Add an animated hamburger icon and slide-in menu for small screens:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -106,7 +106,7 @@
     transform: rotate(-45deg) translateY(-8px);
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Combine this with JavaScript or Tailwind’s class toggling to animate open/close actions.
             </p>
         </section>
@@ -114,8 +114,8 @@
         <!-- Keyframe Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Keyframe Animation (Slide In)</h2>
-            <p class="text-lg mb-2">You can animate nav items appearing on load with <code>@keyframes</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">You can animate nav items appearing on load with <code>@keyframes</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 @keyframes slideIn {
     0% {
         transform: translateY(-20px);
@@ -142,13 +142,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 An animated navbar adds a polished feel to your website. From subtle hovers to full entrance animations, CSS lets you enhance interactivity without JavaScript. Combine transitions and keyframes for even more control.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="hero-section-animation.php" class="text-blue-600 hover:underline">Animated Hero Section →</a></p>
+            <p class=" font-semibold">Next: <a href="hero-section-animation.php" class="text-blue-600 hover:underline">Animated Hero Section →</a></p>
         </div>
     </article>
 </main>

@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">CSS Portfolio Project</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Creating a personal portfolio using HTML and CSS is a great way to showcase your projects, skills, and contact information. It’s also an ideal beginner-to-intermediate CSS project.
         </p>
 
         <!-- Project Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
-            <p class="text-lg mb-2">Here’s a simple structure to get started:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Here’s a simple structure to get started:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;header&gt;...&lt;/header&gt;
 &lt;section id="about"&gt;...&lt;/section&gt;
 &lt;section id="projects"&gt;...&lt;/section&gt;
@@ -38,8 +38,8 @@
         <!-- Hero Section -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Hero Banner</h2>
-            <p class="text-lg mb-2">The landing section with your name and title:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">The landing section with your name and title:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .hero {
     background: linear-gradient(to right, #2563eb, #1e3a8a);
     color: white;
@@ -59,8 +59,8 @@
         <!-- Project Cards -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Project Showcase Grid</h2>
-            <p class="text-lg mb-2">Display projects using cards with CSS Grid:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Display projects using cards with CSS Grid:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -89,8 +89,8 @@
         <!-- Contact Form -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Contact Section</h2>
-            <p class="text-lg mb-2">Include a contact form or email/social links:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Include a contact form or email/social links:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .contact-form {
     max-width: 500px;
     margin: auto;
@@ -110,7 +110,7 @@
         <!-- Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Tips for Your Portfolio</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Highlight your best projects first.</li>
                 <li>Use real screenshots or project links.</li>
                 <li>Include a short bio and skillset.</li>
@@ -122,13 +122,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 A portfolio project helps you practice layout, responsiveness, and visual design. With CSS Grid, Flexbox, and transitions, you can build a professional and impressive showcase site.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="responsive-portfolio.php" class="text-blue-600 hover:underline">Responsive Portfolio Techniques →</a></p>
+            <p class=" font-semibold">Next: <a href="responsive-portfolio.php" class="text-blue-600 hover:underline">Responsive Portfolio Techniques →</a></p>
         </div>
     </article>
 </main>

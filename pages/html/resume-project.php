@@ -17,22 +17,22 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Personal Information</h2>
-            <p class="text-lg"><strong>Name:</strong> John Doe</p>
-            <p class="text-lg"><strong>Email:</strong> johndoe@example.com</p>
-            <p class="text-lg"><strong>Phone:</strong> +91-9876543210</p>
-            <p class="text-lg"><strong>Location:</strong> New Delhi, India</p>
+            <p class=""><strong>Name:</strong> John Doe</p>
+            <p class=""><strong>Email:</strong> johndoe@example.com</p>
+            <p class=""><strong>Phone:</strong> +91-9876543210</p>
+            <p class=""><strong>Location:</strong> New Delhi, India</p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Objective</h2>
-            <p class="text-lg">
+            <p class="">
                 Passionate web developer seeking a challenging position to apply my frontend and backend development skills to build high-quality web applications.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Skills</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>HTML5, CSS3, JavaScript</li>
                 <li>PHP, MySQL</li>
                 <li>Tailwind CSS, Bootstrap</li>
@@ -43,7 +43,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Education</h2>
-            <p class="text-lg">
+            <p class="">
                 <strong>Bachelor of Computer Applications (BCA)</strong><br>
                 XYZ University, 2020 – 2023
             </p>
@@ -51,11 +51,11 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Experience</h2>
-            <p class="text-lg">
+            <p class="">
                 <strong>Web Developer Intern</strong><br>
                 ABC Technologies | Jan 2023 – Apr 2023
             </p>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li>Developed and maintained company website using HTML, CSS, PHP, and MySQL.</li>
                 <li>Implemented responsive layouts with Tailwind CSS.</li>
                 <li>Integrated contact forms with backend processing.</li>
@@ -64,7 +64,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Projects</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>
                     <strong>Smart Coding Tips Website:</strong> Educational website built using PHP and Tailwind CSS with sidebar layout and modular content structure.
                 </li>
@@ -76,11 +76,11 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Languages</h2>
-            <p class="text-lg">English, Hindi</p>
+            <p class="">English, Hindi</p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-interview-questions.php" class="text-blue-600 hover:underline">HTML Interview Questions →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/landing-project" class="text-blue-600 hover:underline">Resume Page →</a></p>
         </div>
     </article>
 </main>

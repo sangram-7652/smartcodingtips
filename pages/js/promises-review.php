@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Creating a Promise</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>const myPromise = new Promise((resolve, reject) => {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const myPromise = new Promise((resolve, reject) => {
   const success = true;
 
   if (success) {
@@ -31,13 +31,13 @@
 });</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔗 Consuming a Promise</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>myPromise
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>myPromise
   .then(result => console.log(result))   // Success handler
   .catch(error => console.error(error)) // Error handler
   .finally(() => console.log("Done!")); // Always runs</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⏳ Real Example: Simulate API Delay</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>function fetchData() {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function fetchData() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("📡 Data received after 2 seconds");
@@ -55,7 +55,7 @@ fetchData().then(data => console.log(data));</code></pre>
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Chaining Promises</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>fetchUser()
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>fetchUser()
   .then(user => fetchPosts(user.id))
   .then(posts => fetchComments(posts[0].id))
   .then(comments => console.log(comments))

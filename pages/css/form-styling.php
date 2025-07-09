@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Input & Button Styling in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Inputs and buttons are essential UI elements in any form or interface. With CSS, you can transform their appearance to match your design while enhancing accessibility and interactivity.
         </p>
 
         <!-- Styling Inputs -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Styling Input Fields</h2>
-            <p class="text-lg mb-2">Basic input styling includes padding, borders, and focus states:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Basic input styling includes padding, borders, and focus states:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -48,8 +48,8 @@ input:focus {
         <!-- Styling Buttons -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Styling Buttons</h2>
-            <p class="text-lg mb-2">Customize colors, padding, border-radius, and hover/focus effects:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Customize colors, padding, border-radius, and hover/focus effects:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 button {
     background-color: #2563eb;
     color: white;
@@ -75,8 +75,8 @@ button:focus {
         <!-- Disabled States -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Disabled States</h2>
-            <p class="text-lg mb-2">Style disabled inputs and buttons clearly to indicate interactivity:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Style disabled inputs and buttons clearly to indicate interactivity:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 input:disabled,
 button:disabled {
     background-color: #f3f4f6;
@@ -90,8 +90,8 @@ button:disabled {
         <!-- Input Icons or Adornments -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Input with Icons (Optional)</h2>
-            <p class="text-lg mb-2">You can style inputs with icons using relative/absolute positioning:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">You can style inputs with icons using relative/absolute positioning:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .input-wrapper {
     position: relative;
 }
@@ -113,7 +113,7 @@ button:disabled {
         <!-- Best Practices -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Ensure sufficient contrast for accessibility.</li>
                 <li>Use focus styles for keyboard navigation support.</li>
                 <li>Minimize reliance on JavaScript for basic styling.</li>
@@ -124,13 +124,13 @@ button:disabled {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Well-styled inputs and buttons improve the user experience significantly. With just a few lines of CSS, you can create clean, modern, and accessible form components for any interface.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="form-validation-styling.php" class="text-blue-600 hover:underline">Form Validation Styling →</a></p>
+            <p class=" font-semibold">Next: <a href="form-validation-styling.php" class="text-blue-600 hover:underline">Form Validation Styling →</a></p>
         </div>
     </article>
 </main>

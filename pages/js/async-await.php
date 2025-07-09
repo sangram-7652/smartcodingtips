@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Declaring an Async Function</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>async function greet() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function greet() {
     return "Hello, Async!";
 }
 
 greet().then(msg => console.log(msg));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⏳ Awaiting a Promise</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function fetchData() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function fetchData() {
     return new Promise(resolve => {
         setTimeout(() => resolve("📦 Data fetched"), 2000);
     });
@@ -47,7 +47,7 @@ displayData();</code></pre>
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">❗ Error Handling with try...catch</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>async function loadUser() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function loadUser() {
     try {
         const user = await fetchUser(); // imaginary function
         console.log(user);
@@ -57,7 +57,7 @@ displayData();</code></pre>
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Multiple Awaits in Sequence</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>async function run() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function run() {
     const res1 = await fetchStep1();
     const res2 = await fetchStep2(res1);
     const res3 = await fetchStep3(res2);

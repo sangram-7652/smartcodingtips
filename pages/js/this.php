@@ -22,11 +22,11 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Global Context</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>console.log(this); 
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.log(this); 
 // In browsers, this refers to the global window object</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Inside an Object Method</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const user = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = {
     name: "Alice",
     greet: function() {
         console.log("Hi, I'm " + this.name);
@@ -36,7 +36,7 @@
 user.greet(); // "Hi, I'm Alice"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ In a Regular Function</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function show() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function show() {
     console.log(this);
 }
 
@@ -46,7 +46,7 @@ show();
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚡ With Arrow Functions</h2>
     <p class="mb-4">Arrow functions do not bind their own <code>this</code>. They inherit it from the outer lexical scope.</p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const person = {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const person = {
     name: "Bob",
     greet: () => {
         console.log("Hi, I'm " + this.name);
@@ -56,7 +56,7 @@ show();
 person.greet(); // "Hi, I'm undefined"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 Using <code>bind()</code>, <code>call()</code>, and <code>apply()</code></h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function sayHello() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function sayHello() {
     console.log("Hello, " + this.name);
 }
 

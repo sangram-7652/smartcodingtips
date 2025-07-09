@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">What is CSS?</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS stands for <strong>Cascading Style Sheets</strong>. It is a stylesheet language used to describe the presentation and layout of a document written in HTML or XML. CSS controls how elements appear on the page — including colors, fonts, spacing, and positioning.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why Use CSS?</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 CSS separates content from design, making it easier to manage and update the look of your website. It improves the user experience and allows consistent styling across multiple pages.
             </p>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Enhances page aesthetics</li>
                 <li>Improves code maintainability</li>
                 <li>Reduces repetition using external stylesheets</li>
@@ -37,7 +37,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Types of CSS</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><strong>Inline CSS:</strong> Applied directly to an element using the <code>style</code> attribute.</li>
                 <li><strong>Internal CSS:</strong> Written inside a <code>&lt;style&gt;</code> tag within the HTML <code>&lt;head&gt;</code>.</li>
                 <li><strong>External CSS:</strong> Stored in a separate <code>.css</code> file and linked using the <code>&lt;link&gt;</code> tag.</li>
@@ -46,7 +46,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -57,8 +57,8 @@
 &lt;/body&gt;
 &lt;/html&gt;
             </code></pre>
-            <p class="text-lg mt-2">And the external CSS file <code>styles.css</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mt-2">And the external CSS file <code>styles.css</code>:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 h1 {
     color: blue;
     text-align: center;
@@ -68,13 +68,13 @@ h1 {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 CSS is a powerful tool for designing beautiful and responsive web pages. Learning CSS allows developers to create visually engaging and user-friendly websites.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="css-selectors.php" class="text-blue-600 hover:underline">CSS Selectors →</a></p>
+            <p class=" font-semibold">Next: <a href="css-selectors.php" class="text-blue-600 hover:underline">CSS Selectors →</a></p>
         </div>
     </article>
 </main>

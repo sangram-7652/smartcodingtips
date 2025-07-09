@@ -47,7 +47,7 @@
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📋 Feature Comparison Table</h2>
-  <div class="overflow-x-auto">
+  <div class="dark:bg-gray-900 dark:text-white">
     <table class="table-auto w-full text-left border border-gray-300 text-sm mb-6">
       <thead class="bg-gray-100">
         <tr>

@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">What is HTML?</li>
@@ -34,7 +34,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Structure of an HTML Document</h2>
             <p class="  mb-2">Every HTML page follows a specific structure, like this:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto bg-white text-black dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap bg-white text-black dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;

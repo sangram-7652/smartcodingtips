@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Meta Tags</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Meta Tags in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Meta tags provide metadata about the HTML document. They are placed inside the <code>&lt;head&gt;</code> element and help search engines, browsers, and social media platforms understand your page better.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Meta Tags</h2>
-            <ul class="list-disc list-inside text-lg mb-2">
+            <ul class="list-disc list-inside  mb-2">
                 <li><code>&lt;meta charset="UTF-8"&gt;</code> – Sets the character encoding to UTF-8.</li>
                 <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> – Ensures responsive design on mobile devices.</li>
                 <li><code>&lt;meta name="description" content="Short summary of your page"&gt;</code> – Describes your page for search engines.</li>
@@ -36,7 +36,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
@@ -48,7 +48,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-links.php" class="text-blue-600 hover:underline">HTML Links →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/favicon" class="text-blue-600 hover:underline">Favicon →</a></p>
         </div>
     </article>
 </main>

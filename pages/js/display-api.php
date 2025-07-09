@@ -23,12 +23,12 @@
 
     <div class="bg-gray-100 p-4 rounded mb-6 text-sm">
         <strong>HTML Structure:</strong>
-        <pre class="overflow-x-auto"><code>&lt;ul id="userList"&gt;&lt;/ul&gt;</code></pre>
+        <pre class="dark:bg-gray-900 dark:text-white"><code>&lt;ul id="userList"&gt;&lt;/ul&gt;</code></pre>
     </div>
 
     <div class="bg-gray-100 p-4 rounded mb-6 text-sm">
         <strong>JavaScript Code:</strong>
-        <pre class="overflow-x-auto"><code>async function loadUsers() {
+        <pre class="dark:bg-gray-900 dark:text-white"><code>async function loadUsers() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
 

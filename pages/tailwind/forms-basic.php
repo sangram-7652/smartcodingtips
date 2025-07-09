@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Styling Inputs, Selects, and Buttons in Tailwind</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CSS allows you to fully customize form elements like text inputs, dropdowns, and buttons using utility classes, giving you both flexibility and consistency.
         </p>
 
         <!-- Input Fields -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Input Fields</h2>
-            <p class="text-lg mb-2">Here’s a styled text input with Tailwind utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Here’s a styled text input with Tailwind utilities:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;input type="text" placeholder="Your Name"
   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"&gt;
             </code></pre>
@@ -35,8 +35,8 @@
         <!-- Select Boxes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Select Boxes</h2>
-            <p class="text-lg mb-2">Customize the look of native dropdowns:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Customize the look of native dropdowns:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;select
   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"&gt;
   &lt;option&gt;Option 1&lt;/option&gt;
@@ -48,8 +48,8 @@
         <!-- Buttons -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Buttons</h2>
-            <p class="text-lg mb-2">Buttons can be styled for different states:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">Buttons can be styled for different states:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;button
   class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"&gt;
   Submit
@@ -60,8 +60,8 @@
         <!-- Grouped Form Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Full Form Example</h2>
-            <p class="text-lg mb-2">A compact form layout using grid and spacing:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <p class=" mb-2">A compact form layout using grid and spacing:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;form class="grid gap-4 max-w-md"&gt;
   &lt;input type="email" placeholder="Email"
     class="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"&gt;
@@ -83,7 +83,7 @@
         <!-- Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Styling Tips</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use <code>focus:</code> classes to enhance accessibility.</li>
                 <li>Apply consistent spacing using <code>px-</code>, <code>py-</code>, <code>gap-</code>.</li>
                 <li>Use transition utilities like <code>hover:</code> and <code>focus:</code> to improve UX.</li>
@@ -94,13 +94,13 @@
         <!-- Conclusion -->
         <section>
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Tailwind provides all the tools you need to style form elements responsively and accessibly using pure utility classes.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-custom" class="text-blue-600 hover:underline">Custom Checkbox & Radio →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/forms-custom" class="text-blue-600 hover:underline">Custom Checkbox & Radio →</a></p>
         </div>
     </article>
 </main>

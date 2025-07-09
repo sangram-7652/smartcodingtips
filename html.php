@@ -1,181 +1,157 @@
 <?php
 // html.php
 
-// Determine which page to load
-$page = $_GET['page'] ?? 'html/what-is-html';  // default page
-
-// Sanitize and build full path
+$page = $_GET['page'] ?? 'html/what-is-html';
 $pagePath = "pages/" . $page . ".php";
 
-// Optional: Protect from invalid file access
 if (!file_exists($pagePath)) {
-    $pagePath = "pages/html/what-is-html.php"; // fallback
+    $pagePath = "pages/html/what-is-html.php";
 }
 
-// This file should set SEO variables like $title, $canonical
 ob_start();
 include $pagePath;
 $pageContent = ob_get_clean();
 
-// Then include layout
 include 'includes/header.php';
+$currentPage = $_GET['page'] ?? 'html/what-is-html';
+
+function tocLink($label, $link, $currentPage) {
+    $activeClass = ($link === $currentPage) ? 'bg-yellow-300 dark:bg-yellow-600 text-black font-semibold rounded px-2' : '';
+    echo "<li><a href='html.php?page=$link' class='block px-2 py-1 rounded  $activeClass'>$label</a></li>";
+}
 ?>
 
-<div class="flex  ">
-    <div class="w-[18rem] h-[1200px] overflow-y-scroll bg-gray-100 shadow-lg hidden md:flex flex-col items-start px-6 py-8 space-y-6 text-sm font-medium bg-white text-black dark:bg-gray-900 dark:text-white">
+<!-- Mobile TOC Button -->
+<button id="openToc" class="md:hidden bg-gray-800 text-white px-4 py-2 m-4 rounded fixed top-16 left-2 z-40">
+    ☰ TOC
+</button>
 
-        <div>
-            <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/what-is-html">What is HTML?</a></li>
-                <li><a href="html.php?page=html/features">Features of HTML</a></li>
-                <li><a href="html.php?page=html/importance">Importance in Web Dev</a></li>
-                <li><a href="html.php?page=html/how-it-works">How HTML Works</a></li>
-                <li><a href="html.php?page=html/first-page">Your First HTML Page</a></li>
-            </ul>
+<div class="flex">
+    <!-- TOC Sidebar -->
+    <aside
+        id="mobileToc"
+        class="fixed top-0 left-0 h-screen w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll md:h-[1200px]">
+
+        <!-- Mobile-only close button -->
+        <button id="closeToc" class="absolute top-4 right-4 text-2xl md:hidden">✖</button>
+
+        <!-- TOC Content -->
+        <div class="px-4 py-10 md:py-4 space-y-4 ">
+<?php
+$sections = [
+    '1. Introduction' => [
+        'What is HTML?' => 'html/what-is-html',
+        'Features of HTML' => 'html/features',
+        'Importance in Web Dev' => 'html/importance',
+        'How HTML Works' => 'html/how-it-works',
+        'Your First HTML Page' => 'html/first-page'
+    ],
+    '2. Document Structure' => [
+        'Basic Structure' => 'html/basic-structure',
+        'Doctype Declaration' => 'html/doctype',
+        'Head & Body' => 'html/head-body',
+        'Comments in HTML' => 'html/comments',
+        'Page Layout Tips' => 'html/page-layout'
+    ],
+    '3. Building Blocks' => [
+        'Elements & Tags' => 'html/elements-tags',
+        'Attributes' => 'html/attributes',
+        'Empty vs Container' => 'html/empty-vs-container',
+        'Tag Nesting' => 'html/nesting',
+        'Reserved Characters' => 'html/reserved-chars'
+    ],
+    '4. Text & Semantics' => [
+        'Paragraphs & Headings' => 'html/text-tags',
+        'Bold, Italic, etc.' => 'html/text-formatting',
+        'Superscript & Subscript' => 'html/super-sub',
+        'Semantic Tags' => 'html/semantic-tags',
+        'Quote & Citation' => 'html/quote-cite'
+    ],
+    '5. Links & Navigation' => [
+        'Anchor Tag' => 'html/anchor-tag',
+        'Open in New Tab' => 'html/new-tab',
+        'Page Jumps' => 'html/page-jump',
+        'Relative vs Absolute' => 'html/relative-absolute',
+        'Nav Menus with Lists' => 'html/nav-menu'
+    ],
+    '6. Media' => [
+        'Images' => 'html/images',
+        'Supported Formats' => 'html/image-formats',
+        'Image Attributes' => 'html/image-attrs',
+        'Video Tag' => 'html/video',
+        'Audio Tag' => 'html/audio',
+        'iFrames' => 'html/iframe'
+    ],
+    '7. Lists & Tables' => [
+        'Types of Lists' => 'html/ol-ul-dl',
+        'Creating Tables' => 'html/create-table',
+        'Table Styling' => 'html/table-style',
+        'Rowspan & Colspan' => 'html/rowspan-colspan'
+    ],
+    '8. Forms' => [
+        'Form Tag' => 'html/forms',
+        'Input Types' => 'html/form-input-types',
+        'Labels & Placeholders' => 'html/labels-placeholders',
+        'Checkbox & Radio' => 'html/checkbox-radio',
+        'Select & Textarea' => 'html/select-textarea',
+        'Validation' => 'html/form-validation',
+        'Form Submission' => 'html/form-submit'
+    ],
+    '9. HTML5 Features' => [
+        'Intro to HTML5' => 'html/html5-intro',
+        'New Tags' => 'html/html5-tags',
+        'New Input Types' => 'html/html5-input',
+        'Audio & Video' => 'html/html5-media',
+        'Canvas' => 'html/html5-canvas',
+        'Geolocation' => 'html/html5-geo',
+        'Web Storage' => 'html/html5-storage'
+    ],
+    '10. Layout Techniques' => [
+        'Div vs Section' => 'html/div-vs-section',
+        'Columns with Div' => 'html/columns-with-div',
+        'Flexbox Layout' => 'html/flexbox-layout',
+        'Grid Layout' => 'html/grid-layout',
+        'Sticky Header/Footer' => 'html/sticky-footer'
+    ],
+    '11. Accessibility & SEO' => [
+        'Alt, Title, ARIA' => 'html/aria-alt-title',
+        'Screen Readers' => 'html/screen-readers',
+        'Heading Structure' => 'html/heading-structure',
+        'Meta Tags' => 'html/meta-tags',
+        'Favicon' => 'html/favicon'
+    ],
+    '12. Other Topics' => [
+        'Deprecated Tags' => 'html/deprecated-tags',
+        'HTML Entities' => 'html/entities',
+        'Inline vs Block' => 'html/inline-block',
+        'HTML DOM' => 'html/dom-basics',
+        'Best Practices' => 'html/best-practices'
+    ],
+    '13. Practice Projects' => [
+        'Resume Page' => 'html/resume-project',
+        'Product Landing Page' => 'html/landing-project',
+        'Photo Gallery' => 'html/gallery-project',
+        'Contact Us Form' => 'html/contact-project',
+        'Simple Blog Layout' => 'html/blog-layout'
+    ]
+];
+
+foreach ($sections as $title => $links) {
+    echo "<div><h2 class='text-xl font-semibold mb-2'>$title</h2><ul class='space-y-2'>";
+    foreach ($links as $label => $href) {
+        tocLink($label, $href, $currentPage);
+    }
+    echo "</ul></div>";
+}
+?>
         </div>
+    </aside>
 
-        <div>
-            <h2 class="text-xl font-semibold mb-2">2. Document Structure</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/basic-structure">Basic Structure</a></li>
-                <li><a href="html.php?page=html/doctype">Doctype Declaration</a></li>
-                <li><a href="html.php?page=html/head-body">Head & Body</a></li>
-                <li><a href="html.php?page=html/comments">Comments in HTML</a></li>
-                <li><a href="html.php?page=html/page-layout">Page Layout Tips</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">3. Building Blocks</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/elements-tags">Elements & Tags</a></li>
-                <li><a href="html.php?page=html/attributes">Attributes</a></li>
-                <li><a href="html.php?page=html/empty-vs-container">Empty vs Container</a></li>
-                <li><a href="html.php?page=html/nesting">Tag Nesting</a></li>
-                <li><a href="html.php?page=html/reserved-chars">Reserved Characters</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">4. Text & Semantics</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/text-tags">Paragraphs & Headings</a></li>
-                <li><a href="html.php?page=html/text-formatting">Bold, Italic, etc.</a></li>
-                <li><a href="html.php?page=html/super-sub">Superscript & Subscript</a></li>
-                <li><a href="html.php?page=html/semantic-tags">Semantic Tags</a></li>
-                <li><a href="html.php?page=html/quote-cite">Quote & Citation</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">5. Links & Navigation</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/anchor-tag">Anchor Tag</a></li>
-                <li><a href="html.php?page=html/new-tab">Open in New Tab</a></li>
-                <li><a href="html.php?page=html/page-jump">Page Jumps</a></li>
-                <li><a href="html.php?page=html/relative-absolute">Relative vs Absolute</a></li>
-                <li><a href="html.php?page=html/nav-menu">Nav Menus with Lists</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">6. Media</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/images">Images</a></li>
-                <li><a href="html.php?page=html/image-formats">Supported Formats</a></li>
-                <li><a href="html.php?page=html/image-attrs">Image Attributes</a></li>
-                <li><a href="html.php?page=html/video">Video Tag</a></li>
-                <li><a href="html.php?page=html/audio">Audio Tag</a></li>
-                <li><a href="html.php?page=html/iframe">iFrames</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">7. Lists & Tables</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/ol-ul-dl">Types of Lists</a></li>
-                <li><a href="html.php?page=html/create-table">Creating Tables</a></li>
-                <li><a href="html.php?page=html/table-style">Table Styling</a></li>
-                <li><a href="html.php?page=html/rowspan-colspan">Rowspan & Colspan</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">8. Forms</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/forms">Form Tag</a></li>
-                <li><a href="html.php?page=html/form-input-types">Input Types</a></li>
-                <li><a href="html.php?page=html/labels-placeholders">Labels & Placeholders</a></li>
-                <li><a href="html.php?page=html/checkbox-radio">Checkbox & Radio</a></li>
-                <li><a href="html.php?page=html/select-textarea">Select & Textarea</a></li>
-                <li><a href="html.php?page=html/form-validation">Validation</a></li>
-                <li><a href="html.php?page=html/form-submit">Form Submission</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">9. HTML5 Features</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/html5-intro">Intro to HTML5</a></li>
-                <li><a href="html.php?page=html/html5-tags">New Tags</a></li>
-                <li><a href="html.php?page=html/html5-input">New Input Types</a></li>
-                <li><a href="html.php?page=html/html5-media">Audio & Video</a></li>
-                <li><a href="html.php?page=html/html5-canvas">Canvas</a></li>
-                <li><a href="html.php?page=html/html5-geo">Geolocation</a></li>
-                <li><a href="html.php?page=html/html5-storage">Web Storage</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">10. Layout Techniques</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/div-vs-section">Div vs Section</a></li>
-                <li><a href="html.php?page=html/columns-with-div">Columns with Div</a></li>
-                <li><a href="html.php?page=html/flexbox-layout">Flexbox Layout</a></li>
-                <li><a href="html.php?page=html/grid-layout">Grid Layout</a></li>
-                <li><a href="html.php?page=html/sticky-footer">Sticky Header/Footer</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">11. Accessibility & SEO</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/aria-alt-title">Alt, Title, ARIA</a></li>
-                <li><a href="html.php?page=html/screen-readers">Screen Readers</a></li>
-                <li><a href="html.php?page=html/heading-structure">Heading Structure</a></li>
-                <li><a href="html.php?page=html/meta-tags">Meta Tags</a></li>
-                <li><a href="html.php?page=html/favicon">Favicon</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">12. Other Topics</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/deprecated-tags">Deprecated Tags</a></li>
-                <li><a href="html.php?page=html/entities">HTML Entities</a></li>
-                <li><a href="html.php?page=html/inline-block">Inline vs Block</a></li>
-                <li><a href="html.php?page=html/dom-basics">HTML DOM</a></li>
-                <li><a href="html.php?page=html/best-practices">Best Practices</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2 class="text-xl font-semibold mb-2">13. Practice Projects</h2>
-            <ul class="space-y-2">
-                <li><a href="html.php?page=html/resume-project">Resume Page</a></li>
-                <li><a href="html.php?page=html/landing-project">Product Landing Page</a></li>
-                <li><a href="html.php?page=html/gallery-project">Photo Gallery</a></li>
-                <li><a href="html.php?page=html/contact-project">Contact Us Form</a></li>
-                <li><a href="html.php?page=html/blog-layout">Simple Blog Layout</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <main class="flex-1">
+    <!-- Main Content -->
+    <main class="flex-1 p-2 mt-4 md:mt-0">
         <?php echo $pageContent; ?>
     </main>
 </div>
 
 <?php include 'includes/footer.php'; ?>
+

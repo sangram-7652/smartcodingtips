@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔔 1. Alert, Prompt, and Confirm</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Simple alert box
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Simple alert box
 alert("This is an alert!");
 
 // Prompt for user input
@@ -40,7 +40,7 @@ console.log("User clicked:", confirmed);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🪟 2. Opening New Windows</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Open a new tab or window
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Open a new tab or window
 const newWin = window.open(
     "https://example.com",
     "_blank",
@@ -56,7 +56,7 @@ const newWin = window.open(
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧹 3. Closing Windows</h2>
     <p>If your script opened a window using <code>window.open()</code>, it can also close it:</p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Close the window (only if script opened it)
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Close the window (only if script opened it)
 newWin.close();</code></pre>
 
     <p class="text-sm text-gray-500 mt-2">Note: Most modern browsers block popups unless triggered by direct user actions (like clicking a button).</p>

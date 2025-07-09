@@ -22,19 +22,19 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Using a <code>for</code> Loop</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const fruits = ["apple", "banana", "cherry"];
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const fruits = ["apple", "banana", "cherry"];
 
 for (let i = 0; i &lt; fruits.length; i++) {
     console.log(fruits[i]);
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">➡️ Using <code>for...of</code> Loop</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (const fruit of fruits) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (const fruit of fruits) {
     console.log(fruit);
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 Using <code>forEach()</code> Method</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>fruits.forEach(function(fruit, index) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>fruits.forEach(function(fruit, index) {
     console.log(index + ": " + fruit);
 });</code></pre>
 
@@ -42,7 +42,7 @@ for (let i = 0; i &lt; fruits.length; i++) {
     <p class="mb-4">
         <code>map()</code> creates a new array by transforming each element.
     </p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const upperFruits = fruits.map(fruit =&gt; fruit.toUpperCase());
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const upperFruits = fruits.map(fruit =&gt; fruit.toUpperCase());
 console.log(upperFruits); // ["APPLE", "BANANA", "CHERRY"]</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ Avoid <code>for...in</code> with Arrays</h2>

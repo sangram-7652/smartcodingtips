@@ -26,7 +26,7 @@
         A concise loop structure often used when the number of iterations is known.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     console.log("Iteration:", i);
 }</code></pre>
 
@@ -37,7 +37,7 @@
         Repeats a block of code as long as a condition is true.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let count = 1;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 1;
 
 while (count &lt;= 3) {
     console.log("Count:", count);
@@ -51,7 +51,7 @@ while (count &lt;= 3) {
         Executes the block once before checking the condition.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>let num = 1;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let num = 1;
 
 do {
     console.log("Number:", num);

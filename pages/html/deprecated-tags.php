@@ -8,7 +8,7 @@
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html-tutorials.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Deprecated Tags</li>
@@ -18,13 +18,13 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Deprecated Tags in HTML</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Deprecated tags are HTML elements that are no longer recommended in modern HTML (especially HTML5). These tags are either obsolete or replaced by newer, more semantic elements and CSS styling techniques.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Common Deprecated Tags</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li><code>&lt;font&gt;</code> – Use CSS for font styles instead.</li>
                 <li><code>&lt;center&gt;</code> – Use <code>text-align: center;</code> in CSS.</li>
                 <li><code>&lt;big&gt;</code>, <code>&lt;small&gt;</code> – Use CSS for font sizing.</li>
@@ -37,7 +37,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Why Avoid Deprecated Tags?</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>They are not supported in HTML5.</li>
                 <li>They may not work correctly in modern browsers.</li>
                 <li>They lead to poor accessibility and SEO.</li>
@@ -47,8 +47,8 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Recommended Alternatives</h2>
-            <p class="text-lg mb-2">Instead of deprecated tags, use modern HTML and CSS practices. For example:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Instead of deprecated tags, use modern HTML and CSS practices. For example:</p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!-- Instead of &lt;font color="red"&gt; --&gt;
 &lt;p style="color: red;"&gt;Text&lt;/p&gt;
 
@@ -57,8 +57,8 @@
             </code></pre>
         </section>
 
-        <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="html-global-attributes.php" class="text-blue-600 hover:underline">HTML Global Attributes →</a></p>
+         <div class="mt-4">
+            <p class="font-semibold">Next: <a href="html.php?page=html/entities" class="text-blue-600 hover:underline">HTML Entities →</a></p>
         </div>
     </article>
 </main>

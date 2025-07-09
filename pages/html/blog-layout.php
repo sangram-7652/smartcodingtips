@@ -16,14 +16,14 @@
         <h1 class="text-3xl font-bold mb-4">Simple Blog Layout Using HTML & Tailwind</h1>
 
         <section class="mb-6">
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Creating a blog layout involves organizing posts into a clean and readable format. Below is a basic blog layout with a header, post cards, and a sidebar-style design.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;div class="grid md:grid-cols-3 gap-6"&gt;
   &lt;!-- Main Blog Area --&gt;
   &lt;div class="md:col-span-2 space-y-6"&gt;
@@ -72,7 +72,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Tips for Better Blog Layouts</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Use a consistent style for blog cards/posts.</li>
                 <li>Ensure typography is clean and easy to read.</li>
                 <li>Highlight recent or featured posts.</li>
@@ -81,7 +81,7 @@
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="photo-gallery.php" class="text-blue-600 hover:underline">Photo Gallery →</a></p>
+            <p class="font-semibold">Next: <a href="html.php?page=html/what-is-html" class="text-blue-600 hover:underline">What is HTML? →</a></p>
         </div>
     </article>
 </main>

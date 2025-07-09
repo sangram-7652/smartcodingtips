@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚀 Basic Example</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>async function getData() {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>async function getData() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
     const data = await response.json();
@@ -42,7 +42,7 @@ getData();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Posting Data Example</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>async function postData() {
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>async function postData() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",

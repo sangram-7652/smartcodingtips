@@ -20,7 +20,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 JSON Format Example</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>{
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>{
   "name": "Alice",
   "age": 25,
   "skills": ["HTML", "CSS", "JavaScript"]
@@ -29,19 +29,19 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Converting Between JSON and JS</h2>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">✅ JSON to JavaScript Object</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>const jsonString = '{"name":"Alice","age":25}';
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const jsonString = '{"name":"Alice","age":25}';
 const obj = JSON.parse(jsonString);
 
 console.log(obj.name); // Alice</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">✅ JavaScript Object to JSON</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>const person = { name: "Bob", age: 30 };
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const person = { name: "Bob", age: 30 };
 const json = JSON.stringify(person);
 
 console.log(json); // {"name":"Bob","age":30}</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 JSON with fetch()</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>fetch("https://jsonplaceholder.typicode.com/posts/1")
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(response => response.json())
   .then(data => {
     console.log(data.title);
@@ -54,7 +54,7 @@ console.log(json); // {"name":"Bob","age":30}</code></pre>
         <li>Use <code>try...catch</code> when parsing JSON</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto"><code>try {
+    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>try {
   const obj = JSON.parse('{"name":"Eve"}');
   console.log(obj.name);
 } catch (error) {

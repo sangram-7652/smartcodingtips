@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ try...catch Syntax</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
     // Code that might throw an error
     let result = riskyFunction();
     console.log(result);
@@ -32,7 +32,7 @@
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ Common Error Example</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
     nonExistentFunction(); // This will throw a ReferenceError
 } catch (err) {
     console.error("Caught error:", err);
@@ -40,7 +40,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Optional finally Block</h2>
     <p class="mb-2">Use <code>finally</code> to run code after <code>try/catch</code> regardless of the outcome.</p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
     console.log("Trying something risky...");
 } catch (err) {
     console.error("Caught an error");
@@ -49,7 +49,7 @@
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚨 Throwing Custom Errors</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>function divide(a, b) {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function divide(a, b) {
     if (b === 0) {
         throw new Error("Division by zero is not allowed.");
     }
@@ -64,7 +64,7 @@ try {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Async Error Handling</h2>
     <p class="mb-2">Use <code>try...catch</code> inside <code>async</code> functions for asynchronous error handling.</p>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>async function fetchData() {
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function fetchData() {
     try {
         const res = await fetch("https://api.example.com/data");
         const data = await res.json();

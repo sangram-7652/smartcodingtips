@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Grid Template Areas in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             The <code>grid-template-areas</code> property allows you to define named layout sections visually, making your grid structure more readable and easier to maintain.
         </p>
 
         <!-- Basic Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
-            <p class="text-lg mb-2">Define grid layout areas using quoted strings for each row:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Define grid layout areas using quoted strings for each row:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-areas:
@@ -37,8 +37,8 @@
     grid-template-rows: auto 1fr auto;
 }
             </code></pre>
-            <p class="text-lg mt-2">Then, assign areas to items:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mt-2">Then, assign areas to items:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .header  { grid-area: header; }
 .sidebar { grid-area: sidebar; }
 .main    { grid-area: main; }
@@ -49,8 +49,8 @@
         <!-- Visual Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Visual Representation</h2>
-            <p class="text-lg mb-2">The layout above corresponds to:</p>
-            <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+            <p class=" mb-2">The layout above corresponds to:</p>
+            <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white">
 +----------------------+--------------------+
 |       header         |      header        |
 +----------------------+--------------------+
@@ -64,8 +64,8 @@
         <!-- Empty Areas -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Empty Grid Cells</h2>
-            <p class="text-lg mb-2">Use a period (<code>.</code>) to represent an empty cell:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Use a period (<code>.</code>) to represent an empty cell:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 grid-template-areas:
     "header header"
     ".      main"
@@ -76,7 +76,7 @@ grid-template-areas:
         <!-- Tips -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Tips & Best Practices</h2>
-            <ul class="list-disc list-inside text-lg">
+            <ul class="list-disc list-inside ">
                 <li>Area names must be valid identifiers (no spaces or special characters).</li>
                 <li>Keep the grid layout visually structured like ASCII art.</li>
                 <li>Always ensure each string row has the same number of columns.</li>
@@ -86,13 +86,13 @@ grid-template-areas:
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 <code>grid-template-areas</code> makes grid layouts more intuitive and maintainable. It's especially useful for larger layouts and semantic structuring.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="grid-auto-placement.php" class="text-blue-600 hover:underline">Grid Auto Placement →</a></p>
+            <p class=" font-semibold">Next: <a href="grid-auto-placement.php" class="text-blue-600 hover:underline">Grid Auto Placement →</a></p>
         </div>
     </article>
 </main>

@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Creating Elements</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>// Create a new element
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// Create a new element
 const newDiv = document.createElement("div");
 newDiv.textContent = "Hello, I'm new!";
 newDiv.classList.add("bg-yellow-100", "p-2", "rounded");
@@ -31,24 +31,24 @@ newDiv.classList.add("bg-yellow-100", "p-2", "rounded");
 document.body.appendChild(newDiv);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📍 Insert Before Specific Element</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const parent = document.getElementById("container");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const parent = document.getElementById("container");
 const reference = document.getElementById("child-2");
 
 parent.insertBefore(newDiv, reference);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧽 Removing Elements</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const element = document.getElementById("toRemove");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const element = document.getElementById("toRemove");
 element.remove(); // Removes the element from the DOM</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Replacing Elements</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>const newElement = document.createElement("p");
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const newElement = document.createElement("p");
 newElement.textContent = "Replacement content";
 const oldElement = document.getElementById("old");
 
 oldElement.parentNode.replaceChild(newElement, oldElement);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Practical Example</h2>
-    <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm mb-4"><code>&lt;div id="list"&gt;&lt;/div&gt;
+    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="list"&gt;&lt;/div&gt;
 &lt;button onclick="addItem()"&gt;Add Item&lt;/button&gt;
 
 &lt;script&gt;

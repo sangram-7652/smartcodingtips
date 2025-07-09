@@ -18,16 +18,16 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Text Alignment & Decoration in CSS</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS provides properties to align text and add decorative styles like underlines, overlines, and strike-throughs. These help enhance the structure and readability of your content.
         </p>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Text Alignment</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>text-align</code> property controls horizontal alignment of text within a container.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 p.left {
     text-align: left;
 }
@@ -44,17 +44,17 @@ p.justify {
     text-align: justify;
 }
             </code></pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 Use <code>justify</code> for newspaper-style block text that aligns on both sides.
             </p>
         </section>
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Text Decoration</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The <code>text-decoration</code> property is used to underline, overline, strike-through, or remove decoration from text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 a {
     text-decoration: none;
 }
@@ -71,10 +71,10 @@ p.marked {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Text Decoration Shorthand</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 The shorthand version allows you to specify style, color, and type together:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 a.custom-link {
     text-decoration: underline dotted red;
 }
@@ -83,10 +83,10 @@ a.custom-link {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Text Transform</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Change the capitalization of text using <code>text-transform</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .upper {
     text-transform: uppercase;
 }
@@ -103,13 +103,13 @@ a.custom-link {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Text alignment and decoration are essential for content structure and visual appeal. Use these properties to guide your users’ attention and create readable, elegant layouts.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="text-shadow.php" class="text-blue-600 hover:underline">Text Shadow →</a></p>
+            <p class=" font-semibold">Next: <a href="text-shadow.php" class="text-blue-600 hover:underline">Text Shadow →</a></p>
         </div>
     </article>
 </main>

@@ -26,7 +26,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛑 2. Use <code>async</code>/<code>await</code> for Cleaner Debugging</h2>
   <p class="mb-2">Instead of chaining <code>.then()</code>, use <code>async</code>/<code>await</code> to keep your code linear and easier to step through.</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>async function fetchData() {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>async function fetchData() {
   try {
     const res = await fetch('https://api.example.com/data');
     const data = await res.json();
@@ -44,7 +44,7 @@ fetchData();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 4. Use <code>console.trace()</code> in Callbacks</h2>
   <p class="mb-4">This prints the stack trace to show where the callback originated from:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 overflow-x-auto"><code>setTimeout(() => {
+  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>setTimeout(() => {
   console.trace("Inside timeout");
 }, 1000);</code></pre>
 

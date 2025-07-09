@@ -22,7 +22,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Named Exports</h2>
   <p>Export multiple things from one file using <code>export</code>:</p>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// utils.js
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// utils.js
 export const add = (a, b) => a + b;
 export const multiply = (a, b) => a * b;
 
@@ -32,7 +32,7 @@ console.log(add(2, 3));</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Default Exports</h2>
   <p>Use <code>export default</code> when only one main export is needed:</p>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// greet.js
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// greet.js
 export default function greet(name) {
   return `Hello, ${name}`;
 }
@@ -42,7 +42,7 @@ import greet from './greet.js';
 console.log(greet("Alice"));</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Combining Named and Default Exports</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// mix.js
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// mix.js
 export const name = "JS Learner";
 export default function sayHi() {
   console.log("Hi!");
@@ -53,7 +53,7 @@ import sayHi, { name } from './mix.js';</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🌐 Using Modules in the Browser</h2>
   <p>Add <code>type="module"</code> to your script tag:</p>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>&lt;script type="module" src="main.js"&gt;&lt;/script&gt;</code></pre>
+  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>&lt;script type="module" src="main.js"&gt;&lt;/script&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Module File Rules</h2>
   <ul class="list-disc list-inside mb-4">

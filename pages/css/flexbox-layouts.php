@@ -18,15 +18,15 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Common CSS Layout Patterns</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             CSS offers a variety of layout techniques to build common UI patterns. These include navigation bars, sidebars, grids, and more using Flexbox and Grid.
         </p>
 
         <!-- 1. Centered Content -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Centered Content</h2>
-            <p class="text-lg mb-2">Vertically and horizontally center elements using Flexbox:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Vertically and horizontally center elements using Flexbox:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .center {
     display: flex;
     justify-content: center;
@@ -39,8 +39,8 @@
         <!-- 2. Holy Grail Layout -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Holy Grail Layout</h2>
-            <p class="text-lg mb-2">A classic layout with header, footer, main content, and two sidebars:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">A classic layout with header, footer, main content, and two sidebars:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-areas:
@@ -56,8 +56,8 @@
         <!-- 3. Sidebar Layout -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Sidebar Layout</h2>
-            <p class="text-lg mb-2">Two-column layout with sidebar and content:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Two-column layout with sidebar and content:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .wrapper {
     display: flex;
 }
@@ -75,8 +75,8 @@
         <!-- 4. Card Grid Layout -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Card Grid Layout</h2>
-            <p class="text-lg mb-2">Responsive card grid using CSS Grid:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Responsive card grid using CSS Grid:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -88,8 +88,8 @@
         <!-- 5. Sticky Header/Footer -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Sticky Header/Footer</h2>
-            <p class="text-lg mb-2">Keep elements fixed to the top or bottom of the viewport:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto"><code class="text-sm">
+            <p class=" mb-2">Keep elements fixed to the top or bottom of the viewport:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 .header {
     position: sticky;
     top: 0;
@@ -102,13 +102,13 @@
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 These layout patterns form the foundation for most modern web interfaces. By combining Flexbox, Grid, and positioning, you can create responsive, accessible, and maintainable designs with ease.
             </p>
         </section>
 
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="responsive-design.php" class="text-blue-600 hover:underline">Responsive Design Tips →</a></p>
+            <p class=" font-semibold">Next: <a href="responsive-design.php" class="text-blue-600 hover:underline">Responsive Design Tips →</a></p>
         </div>
     </article>
 </main>

@@ -25,7 +25,7 @@
         You can use the <code>navigator.userAgent</code> or screen size to detect the type of device:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// User agent detection
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// User agent detection
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 console.log("Is Mobile:", isMobile);
 
@@ -41,7 +41,7 @@ if (window.innerWidth < 768) {
         Feature detection helps check whether a browser supports a specific API or feature before using it.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm overflow-x-auto"><code>// Check for localStorage support
+    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Check for localStorage support
 if (typeof Storage !== "undefined") {
     console.log("localStorage is supported");
 } else {

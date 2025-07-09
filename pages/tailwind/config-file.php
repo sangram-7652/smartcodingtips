@@ -18,20 +18,20 @@
     <!-- Main Content -->
     <article>
         <h1 class="text-3xl font-bold mb-4">Tailwind CLI and Configuration File</h1>
-        <p class="text-lg mb-4">
+        <p class=" mb-4">
             Tailwind CLI is a powerful tool that lets you compile your CSS with Tailwind’s utility classes. It's fast, simple, and supports advanced features like theming and purging unused styles.
         </p>
 
         <!-- What is Tailwind CLI? -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. What is Tailwind CLI?</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 Tailwind CLI is a command-line tool for processing your input CSS file with Tailwind’s directives into a final output CSS. It's a great way to use Tailwind without setting up complex build tools.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
             </pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 This tells Tailwind to watch your input CSS and update the output automatically when changes occur.
             </p>
         </section>
@@ -39,16 +39,16 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
         <!-- Creating tailwind.config.js -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Creating a Configuration File</h2>
-            <p class="text-lg mb-2">
+            <p class=" mb-2">
                 To enable customization (themes, plugins, variants), create a Tailwind configuration file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 npx tailwindcss init
             </pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 This generates a basic <code>tailwind.config.js</code> file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 module.exports = {
   content: [],
   theme: {
@@ -62,8 +62,8 @@ module.exports = {
         <!-- Customizing Config -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing Your Tailwind Build</h2>
-            <p class="text-lg mb-2">You can add paths to your HTML/JS/PHP files so Tailwind only includes used styles:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm">
+            <p class=" mb-2">You can add paths to your HTML/JS/PHP files so Tailwind only includes used styles:</p>
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 module.exports = {
   content: ["./*.html", "./src/**/*.{js,ts,php}"],
   theme: {
@@ -79,7 +79,7 @@ module.exports = {
   plugins: [],
 }
             </pre>
-            <p class="text-lg mt-2">
+            <p class=" mt-2">
                 This makes your CSS smaller, faster, and customized to your project.
             </p>
         </section>
@@ -87,7 +87,7 @@ module.exports = {
         <!-- Advantages of Using Config -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Benefits of Configuration</h2>
-            <ul class="list-disc list-inside text-lg space-y-1">
+            <ul class="list-disc list-inside  space-y-1">
                 <li>Extend default spacing, colors, fonts</li>
                 <li>Add custom breakpoints and media queries</li>
                 <li>Define dark mode strategy</li>
@@ -99,14 +99,14 @@ module.exports = {
         <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="text-lg">
+            <p class="">
                 Using the Tailwind CLI and configuration file unlocks powerful customization and performance benefits. It’s the foundation for building scalable, maintainable Tailwind-based UI systems.
             </p>
         </section>
 
         <!-- Next Link -->
         <div class="mt-4">
-            <p class="text-lg font-semibold">Next: <a href="tailwind.php?page=tailwind/utility-classes" class="text-blue-600 hover:underline">What Are Utility Classes? →</a></p>
+            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/utility-classes" class="text-blue-600 hover:underline">What Are Utility Classes? →</a></p>
         </div>
     </article>
 </main>
