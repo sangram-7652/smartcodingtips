@@ -80,10 +80,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self';
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/security-csp" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Content Security Policy →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/test-interactions') ?>" class="hover:underline">← Previous: User Interaction Testing</a>
+  <a href="<?= base_url('react/auth-tokens') ?>" class="hover:underline">Next: Auth Tokens →</a>
+</div>
 
 </main>

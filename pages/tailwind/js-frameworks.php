@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Using Tailwind with React/Vue</li>
@@ -102,7 +102,7 @@ import './assets/tailwind.css';
             <ul class="list-disc list-inside ">
                 <li>Use component-based design with utility-first styles.</li>
                 <li>Leverage Tailwind’s responsive and dark mode classes.</li>
-                <li>Use <code>@apply</code> inside <code>.module.css</code> or `<style scoped>` for advanced reuse.</li>
+                <li>Use <code>@apply</code> inside <code>.module.css</code>  for advanced reuse.</li>
                 <li>Enable IDE IntelliSense for Tailwind class suggestions.</li>
             </ul>
         </section>
@@ -115,8 +115,9 @@ import './assets/tailwind.css';
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/plugins-install" class="text-blue-600 hover:underline">Installing Tailwind Plugins →</a></p>
-        </div>
+       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/components') ?>" class="hover:underline">← Previous: Responsive Navbar, Cards, Modals</a>
+  <a href="<?= base_url('tailwind/plugins-install') ?>" class="hover:underline">Next: Installing and Using Official Plugins →</a>
+</div>
     </article>
 </main>

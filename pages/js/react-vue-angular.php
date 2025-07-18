@@ -49,12 +49,12 @@
   <h2 class="text-2xl font-semibold mt-6 mb-2">📋 Feature Comparison Table</h2>
   <div class="dark:bg-gray-900 dark:text-white">
     <table class="table-auto w-full text-left border border-gray-300 text-sm mb-6">
-      <thead class="bg-gray-100">
+      <thead class="bg-gray-100  dark:text-black">">
         <tr>
-          <th class="px-4 py-2 border">Feature</th>
-          <th class="px-4 py-2 border">React</th>
-          <th class="px-4 py-2 border">Vue</th>
-          <th class="px-4 py-2 border">Angular</th>
+          <th class="px-4 py-2 border dark:border-black">Feature</th>
+          <th class="px-4 py-2 border dark:border-black">React</th>
+          <th class="px-4 py-2 border dark:border-black">Vue</th>
+          <th class="px-4 py-2 border dark:border-black">Angular</th>
         </tr>
       </thead>
       <tbody>
@@ -106,4 +106,7 @@
     ✨ <strong>Tip:</strong> Start with React or Vue if you're new. Learn Angular if you're planning to work in enterprise-level teams or with TypeScript-heavy stacks.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/node-npm" class="text-blue-600 hover:underline">Node.js & npm →</a></p>
+</div>
 </main>

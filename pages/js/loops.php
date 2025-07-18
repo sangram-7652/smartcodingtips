@@ -73,4 +73,7 @@ do {
         ✅ <strong>Tip:</strong> Always ensure your loop has a terminating condition to avoid infinite loops.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/break-continue" class="text-blue-600 hover:underline">Break & Continue →</a></p>
+</div>
 </main>

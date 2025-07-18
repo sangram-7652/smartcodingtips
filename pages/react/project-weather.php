@@ -119,10 +119,9 @@ export default App;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/todo-app" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Build a To-Do App →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/project-counter') ?>" class="hover:underline">← Previous: Counter App</a>
+  <a href="<?= base_url('react/project-todo') ?>" class="hover:underline">Next: Todo List →</a>
+</div>
 
 </main>

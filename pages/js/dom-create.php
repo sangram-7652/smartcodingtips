@@ -62,5 +62,8 @@ function addItem() {
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded mt-6">
         ✅ <strong>Tip:</strong> Always use <code>createElement</code> for dynamic UIs like modals, lists, or messages. Don’t use <code>innerHTML</code> to add elements — it can break performance and security.
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/mouse-key-events" class="text-blue-600 hover:underline">Mouse & Keyboard Events →</a></p>
+</div>
 
 </main>

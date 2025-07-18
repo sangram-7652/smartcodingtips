@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Line Height & Letter Spacing</li>
@@ -35,8 +35,8 @@ leading-relaxed   /* 1.625 */
 leading-loose     /* 2 */
             </pre>
             <div class="space-y-2 mt-4">
-                <p class="leading-tight bg-gray-50 p-2 rounded">This text has tight line height. <br> It appears closely packed.</p>
-                <p class="leading-loose bg-gray-50 p-2 rounded">This text has loose line height. <br> It gives more breathing space between lines.</p>
+                <p class="leading-tight bg-gray-800 text-white p-2 rounded">This text has tight line height. <br> It appears closely packed.</p>
+                <p class="leading-loose bg-gray-800 text-white p-2 rounded">This text has loose line height. <br> It gives more breathing space between lines.</p>
             </div>
         </section>
 
@@ -53,8 +53,8 @@ tracking-wider     /* 0.05em */
 tracking-widest    /* 0.1em */
             </pre>
             <div class="space-y-2 mt-4">
-                <p class="tracking-tight bg-gray-50 p-2 rounded">Tracking Tight: TEXT</p>
-                <p class="tracking-widest bg-gray-50 p-2 rounded">Tracking Widest: TEXT</p>
+                <p class="tracking-tight bg-gray-800 text-white p-2 rounded">Tracking Tight: TEXT</p>
+                <p class="tracking-widest bg-gray-800 text-white p-2 rounded">Tracking Widest: TEXT</p>
             </div>
         </section>
 
@@ -76,8 +76,9 @@ tracking-widest    /* 0.1em */
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/text-decor" class="text-blue-600 hover:underline">Text Alignment and Decoration →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/text-fonts') ?>" class="hover:underline">← Previous: Font Size, Family, and Weight</a>
+  <a href="<?= base_url('tailwind/text-decor') ?>" class="hover:underline">Next: Text Alignment and Decoration →</a>
+</div>
     </article>
 </main>

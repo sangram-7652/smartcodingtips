@@ -93,5 +93,8 @@ typeof function() {}  // "function"
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">
         <strong>Best Practice:</strong> Learn to distinguish between primitive and reference types. Understanding how they are stored and compared will help you avoid bugs.
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/operators" class="text-blue-600 hover:underline">Operators →</a></p>
+</div>
 
 </main>

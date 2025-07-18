@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Alt, Title & ARIA</li>
@@ -62,8 +62,9 @@
             <p class="mt-2">✅ Use ARIA only when native HTML cannot provide the necessary semantics.</p>
         </section>
 
-       <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/screen-readers" class="text-blue-600 hover:underline">Screen Readers →</a></p>
-        </div>
+       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/sticky-footer') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Sticky Header/Footer</a></div>
+    <div><a href="<?= base_url('html/screen-readers') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Screen Readers →</a></div>
+</div>
     </article>
 </main>

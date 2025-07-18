@@ -80,10 +80,9 @@ function CounterComponent() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/login-example" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Login Example →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/use-callback') ?>" class="hover:underline">← Previous: useCallback()</a>
+  <a href="<?= base_url('react/state-strategies') ?>" class="hover:underline">Next: Props vs Context vs Redux →</a>
+</div>
 
 </main>

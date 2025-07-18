@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">HTML DOM</li>
@@ -69,8 +69,10 @@ heading.textContent = "Updated Heading";
             </ul>
         </section>
 
-         <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/best-practices" class="text-blue-600 hover:underline">Best Practices →</a></p>
-        </div>
+         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/inline-block') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Inline vs Block</a></div>
+    <div><a href="<?= base_url('html/best-practices') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Best Practices →</a></div>
+</div>
+
     </article>
 </main>

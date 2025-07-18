@@ -93,10 +93,9 @@ npm run dev
   </ul>
 
   <!-- Next Link -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/components" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Components in React →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/setup') ?>" class="hover:underline">← Previous: Setting Up React</a>
+  <a href="<?= base_url('react/jsx') ?>" class="hover:underline">Next: JSX →</a>
+</div>
 
 </main>

@@ -117,10 +117,9 @@ function useFetch(url) {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/axios" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Using Axios in React →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/promises') ?>" class="hover:underline">← Previous: Promises & Async/Await</a>
+  <a href="<?= base_url('react/loading-skeletons') ?>" class="hover:underline">Next: Loading Indicators →</a>
+</div>
 
 </main>

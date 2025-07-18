@@ -85,10 +85,8 @@ const UserListWithLoading = withLoading(UserList);
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/hooks-vs-hoc-vs-render-props" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Hooks vs HOC vs Render Props →
-    </a>
-  </div>
-
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/render-props') ?>" class="hover:underline">← Previous: Render Props</a>
+  <a href="<?= base_url('react/component-libs') ?>" class="hover:underline">Next: UI Libraries →</a>
+</div>
 </main>

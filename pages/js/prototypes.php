@@ -69,4 +69,8 @@ dog.speak(); // "I can speak"
     💡 <strong>Tip:</strong> Understanding prototypes helps in debugging, memory optimization, and writing reusable object-oriented code.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/classes" class="text-blue-600 hover:underline">Classes & Inheritance →</a></p>
+</div>
+
 </main>

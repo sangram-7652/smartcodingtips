@@ -57,4 +57,7 @@ const el4 = document.querySelectorAll(".text"); // NodeList of both &lt;p&gt;
         💡 <strong>Tip:</strong> Prefer <code>querySelector</code> and <code>querySelectorAll</code> for flexibility using CSS selectors.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/dom-update" class="text-blue-600 hover:underline">Changing Content →</a></p>
+</div>
 </main>

@@ -78,4 +78,8 @@ try {
         💡 <strong>Tip:</strong> Always handle both synchronous and asynchronous errors to prevent app crashes.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-todo" class="text-blue-600 hover:underline">To-Do List →</a></p>
+</div>
+
 </main>

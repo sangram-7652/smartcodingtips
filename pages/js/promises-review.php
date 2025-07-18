@@ -65,4 +65,7 @@ fetchData().then(data => console.log(data));</code></pre>
     💡 <strong>Tip:</strong> Promises allow you to write async logic in a more structured and maintainable way.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/async-error" class="text-blue-600 hover:underline">Error in Async Code →</a></p>
+</div>
 </main>

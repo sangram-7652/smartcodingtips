@@ -58,4 +58,7 @@ console.log("3");
     💡 <strong>Tip:</strong> Asynchronous programming helps you write non-blocking code, improving performance and user experience.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/callback-hell" class="text-blue-600 hover:underline">Callback Hell →</a></p>
+</div>
 </main>

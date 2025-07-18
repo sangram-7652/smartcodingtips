@@ -54,4 +54,9 @@ title.innerText = "Updated Title";</code></pre>
         💡 <strong>Tip:</strong> Use <code>textContent</code> for security and performance. Avoid <code>innerHTML</code> unless HTML rendering is required.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/dom-events" class="text-blue-600 hover:underline">Event Listeners →</a></p>
+</div>
+
+
 </main>

@@ -112,10 +112,10 @@ function Counter() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/custom-hooks" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Custom Hooks →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/hook-rules') ?>" class="hover:underline">← Previous: Hook Rules & Best Practices</a>
+  <a href="<?= base_url('react/prop-drilling') ?>" class="hover:underline">Next: Props Drilling →</a>
+</div>
+
 
 </main>

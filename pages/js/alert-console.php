@@ -74,4 +74,7 @@ console.table(user);</code></pre>
         ✅ <strong>Tip:</strong> Use <code>console.log()</code> often to test code logic and track variable values.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/if-else" class="text-blue-600 hover:underline">If, Else, Switch →</a></p>
+</div>
 </main>

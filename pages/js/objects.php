@@ -59,5 +59,8 @@ console.log(user.hasOwnProperty("age")); // true</code></pre>
     <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded mt-6">
         💡 <strong>Tip:</strong> Object keys are always strings or symbols. Values can be any data type, including functions (methods).
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/object-methods" class="text-blue-600 hover:underline">Object Methods →</a></p>
+</div>
 
 </main>

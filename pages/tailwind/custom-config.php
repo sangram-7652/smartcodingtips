@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Tailwind Config File</li>
@@ -106,8 +106,9 @@ plugins: [
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/extending" class="text-blue-600 hover:underline">Extending Utilities →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/forms-validation') ?>" class="hover:underline">← Previous: Interactive Forms with Validation Styling</a>
+  <a href="<?= base_url('tailwind/extending') ?>" class="hover:underline">Next: Extending Colors, Fonts, Breakpoints →</a>
+</div>
     </article>
 </main>

@@ -65,4 +65,8 @@ console.log(json); // {"name":"Bob","age":30}</code></pre>
         💡 <strong>Next Step:</strong> Learn how to use <code>async/await</code> with fetch for cleaner API calls!
     </div>
 
+
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/async-await-api" class="text-blue-600 hover:underline">Async/Await with APIs →</a></p>
+</div>  
 </main>

@@ -1,14 +1,19 @@
+<?php
+$title = "What is HTML? | SmartCodingTips";
+$description = "HTML is the standard language for building web pages. Learn what HTML is, its structure, and key features.";
+$keywords = "what is html, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">What is HTML?</li>
@@ -62,8 +67,9 @@
             <p class=" ">HTML is the first language every web developer must learn. It lays the foundation for structuring and displaying content on the web. With its simple syntax and powerful features, HTML is the stepping stone toward building websites and web applications.</p>
         </section>
 
-        <div class="mt-4">
-            <p class="  font-semibold">Next: <a href="html.php?page=html/features" class="text-blue-600 hover:underline">Features of html →</a></p>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+            <div></div>
+            <div><a href="<?= base_url('html/features') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Features of HTML →</a></div>
         </div>
     </article>
 </main>

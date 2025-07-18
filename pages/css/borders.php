@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="css-tutorials.php" class="text-blue-600 hover:underline">CSS</a>
+                <a href="css-tutorials.php" class="text-blue-600 dark:text-blue-400 hover:underline">CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Borders</li>
@@ -113,8 +113,10 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-outline.php" class="text-blue-600 hover:underline">CSS Outline →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/backgrounds') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Backgrounds</a></div>
+    <div><a href="<?= base_url('css/shadows') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Shadows →</a></div>
+</div>
+
     </article>
 </main>

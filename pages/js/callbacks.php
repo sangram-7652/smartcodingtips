@@ -83,4 +83,7 @@ processUserInput(function(name) {
         <li>Can be anonymous functions or named functions.</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/promises" class="text-blue-600 hover:underline">Promises →</a></p>
+</div>
 </main>

@@ -54,4 +54,7 @@ console.log(upperFruits); // ["APPLE", "BANANA", "CHERRY"]</code></pre>
         ⚠️ <strong>Tip:</strong> Use <code>for...of</code> or <code>forEach()</code> for clean array iteration.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/objects" class="text-blue-600 hover:underline">Objects and Properties →</a></p>
+</div>
 </main>

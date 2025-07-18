@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Responsive Portfolio Page</li>
@@ -79,7 +79,7 @@
             <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;section class="text-center"&gt;
   &lt;h2 class="text-2xl font-bold mb-4"&gt;Let’s Work Together&lt;/h2&gt;
-  &lt;p class="mb-6"&gt;Email me at &lt;a href="mailto:you@example.com" class="text-blue-600 hover:underline"&gt;you@example.com&lt;/a&gt;&lt;/p&gt;
+  &lt;p class="mb-6"&gt;Email me at &lt;a href="mailto:you@example.com" class="text-blue-600  dark:text-blue-400 hover:underline"&gt;you@example.com&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
             </code></pre>
         </section>
@@ -102,8 +102,10 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/project-product-grid" class="text-blue-600 hover:underline">→ Product Grid Layout</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/integration') ?>" class="hover:underline">← Previous: Integration with PostCSS and Vite</a>
+  <a href="<?= base_url('tailwind/project-product-grid') ?>" class="hover:underline">Next: E-Commerce Product Grid →</a>
+</div>
+
     </article>
 </main>

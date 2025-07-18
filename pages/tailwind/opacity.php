@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Box Shadows & Opacity</li>
@@ -27,12 +27,12 @@
             <h2 class="text-2xl font-semibold mb-2">1. Box Shadow Utilities</h2>
             <p class=" mb-2">Tailwind includes multiple levels of shadows:</p>
             <div class="grid grid-cols-2 gap-4 mb-2">
-                <div class="shadow p-4 bg-white rounded">.shadow</div>
-                <div class="shadow-md p-4 bg-white rounded">.shadow-md</div>
-                <div class="shadow-lg p-4 bg-white rounded">.shadow-lg</div>
-                <div class="shadow-xl p-4 bg-white rounded">.shadow-xl</div>
-                <div class="shadow-2xl p-4 bg-white rounded">.shadow-2xl</div>
-                <div class="shadow-inner p-4 bg-white rounded">.shadow-inner</div>
+                <div class="shadow p-4 bg-white dark:bg-gray-800 rounded">.shadow</div>
+                <div class="shadow-md p-4 bg-white dark:bg-gray-800 rounded">.shadow-md</div>
+                <div class="shadow-lg p-4 bg-white dark:bg-gray-800 rounded">.shadow-lg</div>
+                <div class="shadow-xl p-4 bg-white dark:bg-gray-800 rounded">.shadow-xl</div>
+                <div class="shadow-2xl p-4 bg-white dark:bg-gray-800 rounded">.shadow-2xl</div>
+                <div class="shadow-inner p-4 bg-white dark:bg-gray-800 rounded">.shadow-inner</div>
             </div>
             <p class="text-sm text-gray-600">Each level adds a different depth of elevation.</p>
         </section>
@@ -41,7 +41,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Customizing Shadow Color (Using Drop Shadow)</h2>
             <p class=" mb-2">To control shadow color, combine with background or use <code>drop-shadow</code> utilities (useful with SVG or transparent content):</p>
-            <div class="drop-shadow-md p-4 bg-pink-200 rounded">Drop Shadow Effect</div>
+            <div class="drop-shadow-md p-4 bg-pink-200 dark:bg-gray-700 rounded">Drop Shadow Effect</div>
         </section>
 
         <!-- Opacity Utilities -->
@@ -75,8 +75,9 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/states-basic" class="text-blue-600 hover:underline">Hover, Focus, Active, Disabled →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/ring-shadow') ?>" class="hover:underline">← Previous: Divide and Ring Utilities</a>
+  <a href="<?= base_url('tailwind/states-basic') ?>" class="hover:underline">Next: Hover, Focus, Active, Visited →</a>
+</div>
     </article>
 </main>

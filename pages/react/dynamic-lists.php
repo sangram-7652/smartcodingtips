@@ -104,10 +104,9 @@ function UserList() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/keys" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Keys in Lists →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/keys') ?>" class="hover:underline">← Previous: Keys in Lists</a>
+  <a href="<?= base_url('react/empty-states') ?>" class="hover:underline">Next: Conditional Lists & Empty States →</a>
+</div>
 
 </main>

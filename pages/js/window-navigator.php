@@ -71,4 +71,7 @@ console.log(navigator.cookieEnabled); // true/false</code></pre>
         <li><strong>navigator</strong> gives you details about the browser and device (user agent, platform, etc.).</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/storage" class="text-blue-600 hover:underline">LocalStorage / SessionStorage →</a></p>
+</div>
 </main>

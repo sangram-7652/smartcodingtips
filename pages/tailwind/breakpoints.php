@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Breakpoints</li>
@@ -27,7 +27,7 @@
             <h2 class="text-2xl font-semibold mb-2">1. Default Breakpoints</h2>
             <p class=" mb-2">Tailwind uses the following default screen sizes for responsive utilities:</p>
             <table class="w-full mb-4 text-left border border-gray-300 text-sm">
-                <thead class="bg-gray-100">
+                <thead class="bg-gray-100 dark:bg-gray-800">
                     <tr>
                         <th class="p-2 border-b border-gray-300">Prefix</th>
                         <th class="p-2 border-b border-gray-300">Min Width</th>
@@ -105,8 +105,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/show-hide" class="text-blue-600 hover:underline">Show/Hide Utilities →</a></p>
-        </div>
+       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline">← Previous: Mobile-First Philosophy</a>
+  <a href="<?= base_url('tailwind/show-hide') ?>" class="hover:underline">Next: Hiding/Showing Elements Responsively →</a>
+</div>
     </article>
 </main>

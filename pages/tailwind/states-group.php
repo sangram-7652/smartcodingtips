@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Group Hover & Focus Within</li>
@@ -27,11 +27,11 @@
             <h2 class="text-2xl font-semibold mb-2">1. Using Group Hover</h2>
             <p class=" mb-2">Add <code>group</code> to a parent and use <code>group-hover:</code> on children:</p>
             <div class="group p-4 border rounded hover:bg-gray-100 transition">
-                <p class="text-gray-700 group-hover:text-blue-600">Hover over this box to change my text color.</p>
+                <p class="text-gray-700 group-hover:text-blue-600 dark:text-blue-400">Hover over this box to change my text color.</p>
             </div>
             <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
 &lt;div class="group p-4 border rounded hover:bg-gray-100"&gt;
-    &lt;p class="group-hover:text-blue-600"&gt;
+    &lt;p class="group-hover:text-blue-600 dark:text-blue-400"&gt;
         Hover over this box to change my text color.
     &lt;/p&gt;
 &lt;/div&gt;
@@ -82,8 +82,9 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/states-position" class="text-blue-600 hover:underline">First/Last/Odd/Even →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/states-basic') ?>" class="hover:underline">← Previous: Hover, Focus, Active, Visited</a>
+  <a href="<?= base_url('tailwind/states-position') ?>" class="hover:underline">Next: Disabled, First/Last, Odd/Even →</a>
+</div>
     </article>
 </main>

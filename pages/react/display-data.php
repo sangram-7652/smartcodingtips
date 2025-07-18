@@ -64,10 +64,9 @@ if (data.length === 0) return &lt;p&gt;No items found.&lt;/p&gt;;
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/pagination" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Pagination →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/axios') ?>" class="hover:underline">← Previous: Axios</a>
+  <a href="<?= base_url('react/forms-controlled') ?>" class="hover:underline">Next: Controlled Forms →</a>
+</div>
 
 </main>

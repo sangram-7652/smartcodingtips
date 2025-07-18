@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Responsive, Hover, and Focus Variants</li>
@@ -55,7 +55,7 @@
             <p class=" mb-2">Use <code>group</code> on the parent and <code>group-hover:</code> on child elements:</p>
             <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
 &lt;div class="group p-4 bg-gray-100 hover:bg-gray-200"&gt;
-  &lt;h3 class="text-xl font-semibold group-hover:text-blue-600"&gt;
+  &lt;h3 class="text-xl font-semibold group-hover:text-blue-600 dark:text-blue-400"&gt;
     Hover to change heading color
   &lt;/h3&gt;
 &lt;/div&gt;
@@ -100,8 +100,10 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/jit-purge" class="text-blue-600 hover:underline">How Tailwind Applies Styles →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/semantic-html') ?>" class="hover:underline">← Previous: Writing Semantic HTML with Utilities</a>
+  <a href="<?= base_url('tailwind/jit-purge') ?>" class="hover:underline">Next: How Tailwind Applies Styles →</a>
+</div>
+
     </article>
 </main>

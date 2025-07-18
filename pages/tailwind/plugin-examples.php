@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Community Plugins and Examples</li>
@@ -67,9 +67,9 @@ plugins: [
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">4. Where to Discover Plugins</h2>
             <ul class="list-disc list-inside ">
-                <li><a href="https://github.com/aniftyco/awesome-tailwindcss" target="_blank" class="text-blue-600 hover:underline">Awesome Tailwind CSS</a> – curated plugin list</li>
-                <li><a href="https://tailwindcomponents.com/plugins" target="_blank" class="text-blue-600 hover:underline">Tailwind Components Plugins</a></li>
-                <li><a href="https://npmjs.com/search?q=tailwindcss-plugin" target="_blank" class="text-blue-600 hover:underline">npm plugin search</a></li>
+                <li><a href="https://github.com/aniftyco/awesome-tailwindcss" target="_blank" class="text-blue-600  dark:text-blue-400 hover:underline">Awesome Tailwind CSS</a> – curated plugin list</li>
+                <li><a href="https://tailwindcomponents.com/plugins" target="_blank" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind Components Plugins</a></li>
+                <li><a href="https://npmjs.com/search?q=tailwindcss-plugin" target="_blank" class="text-blue-600  dark:text-blue-400 hover:underline">npm plugin search</a></li>
             </ul>
         </section>
 
@@ -92,8 +92,10 @@ plugins: [
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/plugin-typography" class="text-blue-600 hover:underline">Typography Plugin →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/plugins-install') ?>" class="hover:underline">← Previous: Installing and Using Official Plugins</a>
+  <a href="<?= base_url('tailwind/plugin-typography') ?>" class="hover:underline">Next: Typography, Aspect-Ratio, Line-Clamp →</a>
+</div>
+
     </article>
 </main>

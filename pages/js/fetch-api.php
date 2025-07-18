@@ -79,4 +79,8 @@
         ✅ <strong>Tip:</strong> Use <code>async/await</code> to simplify fetch logic in modern JavaScript. Want that example next?
     </div>
 
+
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/json" class="text-blue-600 hover:underline">Working with JSON →</a></p>
+</div>
 </main>

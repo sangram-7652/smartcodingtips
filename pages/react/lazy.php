@@ -82,10 +82,9 @@ function App() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/code-splitting" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Code Splitting in React →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/virtualization') ?>" class="hover:underline">← Previous: Virtualization</a>
+  <a href="<?= base_url('react/code-splitting') ?>" class="hover:underline">Next: Code Splitting →</a>
+</div>
 
 </main>

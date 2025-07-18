@@ -76,10 +76,9 @@ function Button() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/styled-components" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Styled-Components →
-    </a>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('react/comparison') ?>" class="hover:underline">← Previous: Tool Comparison</a>
+    <a href="<?= base_url('react/tailwind') ?>" class="hover:underline">Next: Tailwind CSS →</a>
   </div>
 
 </main>

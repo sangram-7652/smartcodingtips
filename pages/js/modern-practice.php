@@ -100,4 +100,8 @@ getData();
     🧠 <strong>Practice Tip:</strong> Try converting your old functions and logic to these modern forms to improve readability and maintainability.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/oop-intro" class="text-blue-600 hover:underline">Intro to OOP →</a></p>
+</div>
+
 </main>

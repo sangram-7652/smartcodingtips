@@ -107,10 +107,10 @@ function Preferences() {
   </ul>
 
   <!-- Next Link -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/controlled-vs-uncontrolled" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Controlled vs Uncontrolled →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/controlled-vs-uncontrolled') ?>" class="hover:underline">← Previous: Controlled vs Uncontrolled</a>
+  <a href="<?= base_url('react/submissions') ?>" class="hover:underline">Next: Handling Submissions →</a>
+</div>
+
 
 </main>

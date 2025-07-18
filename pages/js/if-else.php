@@ -91,4 +91,7 @@ switch (day) {
         ✅ <strong>Tip:</strong> Use <code>switch</code> when checking one variable against multiple fixed values. Use <code>if</code> for more flexible or complex conditions.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/loops" class="text-blue-600 hover:underline">Loops: for, while →</a></p>
+</div>
 </main>

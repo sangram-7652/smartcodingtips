@@ -103,10 +103,9 @@ function Counter() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/redux-async" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Redux Async (createAsyncThunk) →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/context-api') ?>" class="hover:underline">← Previous: Context API</a>
+  <a href="<?= base_url('react/zustand') ?>" class="hover:underline">Next: Zustand →</a>
+</div>
 
 </main>

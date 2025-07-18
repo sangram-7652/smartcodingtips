@@ -101,10 +101,10 @@ export default LoginForm;
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/login-practice" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Login Form Practice →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/form-libraries') ?>" class="hover:underline">← Previous: Formik / RHF / Yup</a>
+  <a href="<?= base_url('react/router-intro') ?>" class="hover:underline">Next: React Router Intro →</a>
+</div>
+
 
 </main>

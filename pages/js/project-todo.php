@@ -82,4 +82,8 @@ li {
         <li>Simple UX interactions</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-weather" class="text-blue-600 hover:underline">Weather App →</a></p>
+</div>
+
 </main>

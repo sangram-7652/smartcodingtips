@@ -72,4 +72,8 @@ console.log(counter()); // 2
         🧠 <strong>Tip:</strong> Closures power many JS patterns including callbacks, modules, and event handlers.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/this" class="text-blue-600 hover:underline">The `this` Keyword →</a></p>
+</div>
+
 </main>

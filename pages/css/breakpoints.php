@@ -4,85 +4,100 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="css-tutorials.php" class="text-blue-600 hover:underline">CSS</a>
+                <a href="css-tutorials.php" class="text-blue-600 dark:text-blue-400 hover:underline">CSS</a>
                 <span class="mx-2">/</span>
             </li>
-            <li class="text-gray-500">Mobile-First Design</li>
+            <li class="text-gray-500">Breakpoints</li>
         </ol>
     </nav>
 
     <!-- Main Content -->
     <article>
-        <h1 class="text-3xl font-bold mb-4">Mobile-First Design in CSS</h1>
+        <h1 class="text-3xl font-bold mb-4">CSS Breakpoints</h1>
         <p class=" mb-4">
-            Mobile-first design is a development strategy that prioritizes designing and optimizing the website for mobile devices before adapting it to larger screens. This approach ensures a responsive, user-friendly experience for all users.
+            Breakpoints are specific screen widths where your design adjusts to better fit the device. They are used in media queries to make layouts responsive.
         </p>
 
-        <!-- Why Mobile-First? -->
+        <!-- What Are Breakpoints -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">1. Why Mobile-First?</h2>
+            <h2 class="text-2xl font-semibold mb-2">1. What Are Breakpoints?</h2>
+            <p class=" mb-2">
+                A breakpoint is a width threshold where you apply new CSS rules. Common device categories:
+            </p>
             <ul class="list-disc list-inside ">
-                <li>Majority of web traffic comes from mobile devices.</li>
-                <li>Faster performance on smaller devices.</li>
-                <li>Better progressive enhancement strategy.</li>
-                <li>Improves accessibility and usability.</li>
+                <li><strong>Mobile:</strong> 0 – 639px</li>
+                <li><strong>Tablet:</strong> 640px – 1023px</li>
+                <li><strong>Laptop:</strong> 1024px – 1279px</li>
+                <li><strong>Desktop:</strong> 1280px and up</li>
             </ul>
         </section>
 
-        <!-- Mobile-First with Media Queries -->
+        <!-- Syntax -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">2. Using Media Queries</h2>
-            <p class=" mb-2">
-                With mobile-first design, you write base styles for mobile devices first, then use <code>min-width</code> media queries to add styles for larger screens:
-            </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
-/* Base styles for mobile */
-.container {
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* Styles for tablets and up */
+            <h2 class="text-2xl font-semibold mb-2">2. Media Query Syntax</h2>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto dark:bg-gray-900 dark:text-white"><code class="text-sm">
+/* Target devices 768px and wider */
 @media (min-width: 768px) {
     .container {
-        padding: 20px;
-        font-size: 16px;
+        display: flex;
     }
 }
 
-/* Styles for desktops and up */
+/* Max-width example for phones */
+@media (max-width: 640px) {
+    .nav {
+        flex-direction: column;
+    }
+}
+            </code></pre>
+        </section>
+
+        <!-- Common Breakpoint Values -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">3. Common Breakpoint Values</h2>
+            <ul class="list-disc list-inside ">
+                <li><code>320px</code> – Small phones</li>
+                <li><code>480px</code> – Larger phones</li>
+                <li><code>768px</code> – Tablets</li>
+                <li><code>1024px</code> – Small laptops</li>
+                <li><code>1280px</code> – Desktops</li>
+                <li><code>1536px+</code> – Large screens</li>
+            </ul>
+        </section>
+
+        <!-- Mobile-First vs Desktop-First -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">4. Mobile-First vs Desktop-First</h2>
+            <p class=" mb-2">
+                A <strong>mobile-first</strong> approach starts with styles for the smallest screens and adds styles as the screen gets wider using <code>min-width</code>. This is recommended.
+            </p>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto dark:bg-gray-900 dark:text-white"><code class="text-sm">
+/* Mobile styles first */
+.card {
+    font-size: 14px;
+}
+
+/* Desktop override */
 @media (min-width: 1024px) {
-    .container {
-        padding: 30px;
+    .card {
         font-size: 18px;
     }
 }
             </code></pre>
         </section>
 
-        <!-- Benefits of Mobile-First -->
+        <!-- Debugging Tips -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">3. Benefits</h2>
+            <h2 class="text-2xl font-semibold mb-2">5. Tips for Managing Breakpoints</h2>
             <ul class="list-disc list-inside ">
-                <li>Cleaner, more maintainable CSS.</li>
-                <li>Ensures your content works on all devices.</li>
-                <li>Improves load time and performance.</li>
-                <li>Helps meet Google’s mobile-friendly ranking criteria.</li>
-            </ul>
-        </section>
-
-        <!-- Best Practices -->
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">4. Best Practices</h2>
-            <ul class="list-disc list-inside ">
-                <li>Design and test on small screens first.</li>
-                <li>Use flexible layouts and fluid grids.</li>
-                <li>Optimize images and font sizes for smaller viewports.</li>
-                <li>Progressively enhance features for larger screens.</li>
+                <li>Keep breakpoints consistent across your project</li>
+                <li>Use DevTools' responsive mode to test live</li>
+                <li>Don’t overuse breakpoints — use fluid layouts when possible</li>
+                <li>Consider CSS frameworks (like Tailwind or Bootstrap) for predefined breakpoints</li>
             </ul>
         </section>
 
@@ -90,12 +105,14 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
             <p class="">
-                Mobile-first design is a foundational principle of responsive web design. It ensures your website is accessible and functional on the most widely used devices and helps create a better experience for every user.
+                CSS breakpoints are essential for responsive design. Start with a mobile-first mindset, apply media queries logically, and test across screen sizes to ensure your site looks great everywhere.
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-flexbox.php" class="text-blue-600 hover:underline">CSS Flexbox →</a></p>
-        </div>
+      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/mobile-first') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Mobile-First Design</a></div>
+    <div><a href="<?= base_url('css/flexbox-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Flexbox Basics →</a></div>
+</div>
+
     </article>
 </main>

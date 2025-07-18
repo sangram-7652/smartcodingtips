@@ -88,10 +88,10 @@ const theme = {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/css-in-js-comparison" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: CSS-in-JS Comparison →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/tailwind') ?>" class="hover:underline">← Previous: Tailwind CSS</a>
+  <a href="<?= base_url('react/emotion') ?>" class="hover:underline">Next: Emotion →</a>
+</div>
+
 
 </main>

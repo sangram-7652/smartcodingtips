@@ -60,4 +60,8 @@ console.log(result); // 16</code></pre>
         📝 <strong>Note:</strong> Function declarations are hoisted. This means they can be called before they are defined in the code.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/arrow-functions" class="text-blue-600 hover:underline">Arrow Functions →</a></p>
+</div>
+
 </main>

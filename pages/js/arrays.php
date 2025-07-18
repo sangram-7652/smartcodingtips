@@ -72,4 +72,8 @@ let total = nums.reduce((sum, n) =&gt; sum + n, 0); // 15</code></pre>
         💡 <strong>Tip:</strong> Arrays in JavaScript are flexible and dynamic. You can mix data types, nest arrays, and use them like lists or stacks.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/looping-arrays" class="text-blue-600 hover:underline">Looping Through Arrays →</a></p>
+</div>
+
 </main>

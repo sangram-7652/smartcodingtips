@@ -80,4 +80,8 @@ const user = {
     💡 <strong>Tip:</strong> Use classes when building large-scale apps or when multiple objects share similar structure or behavior.
   </div>
 
+
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/prototypes" class="text-blue-600 hover:underline">Prototypes →</a></p>
+</div>
 </main>

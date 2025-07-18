@@ -100,10 +100,9 @@ function Card({ children }) {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/performance-optimization" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Performance Optimization →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/conditional-styles') ?>" class="hover:underline">← Previous: Conditional Styling</a>
+  <a href="<?= base_url('react/compound') ?>" class="hover:underline">Next: Compound Components →</a>
+</div>
 
 </main>

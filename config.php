@@ -10,3 +10,11 @@ try {
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
+
+
+
+function base_url($path = '') {
+    $host = $_SERVER['HTTP_HOST'];
+    $base = ($host === 'localhost') ? '/smartcodingtips' : '';
+    return $base . '/' . ltrim($path, '/');
+}

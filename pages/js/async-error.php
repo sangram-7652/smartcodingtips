@@ -67,4 +67,8 @@ getData();</code></pre>
     💡 <strong>Reminder:</strong> Unhandled Promise rejections will crash Node.js apps and be silenced in browsers. Always handle errors!
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/testing-intro" class="text-blue-600 hover:underline">Intro to Testing →</a></p>
+</div>
+
 </main>

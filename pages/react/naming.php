@@ -67,10 +67,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/performance-tips" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Performance Tips →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/folder-structure') ?>" class="hover:underline">← Previous: Folder Structure</a>
+  <a href="<?= base_url('react/clean-code') ?>" class="hover:underline">Next: Clean Code →</a>
+</div>
 
 </main>

@@ -105,10 +105,10 @@ expect(mockFn).toHaveBeenCalledWith('hello');
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/testing-library" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: React Testing Library →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/testing-intro') ?>" class="hover:underline">← Previous: Why Testing?</a>
+  <a href="<?= base_url('react/testing-library') ?>" class="hover:underline">Next: React Testing Library →</a>
+</div>
+
 
 </main>

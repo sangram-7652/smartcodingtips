@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php?page=tailwind/flexbox-direction" class="text-blue-600 hover:underline">Direction, Wrapping, and Growth</a>
+                <a href="tailwind.php?page=tailwind/flexbox-direction" class="text-blue-600 dark:text-blue-400 hover:underline">Direction, Wrapping, and Growth</a>
             </li>
         </ol>
     </nav>
@@ -20,7 +20,7 @@
     <p class="mb-4">Tailwind CSS gives you precise control over how flex items are arranged, wrapped, and scaled inside a flex container.</p>
 
     <h2 class="text-2xl font-semibold mb-2">1️⃣ Flex Direction</h2>
-    <p class="mb-3">Use <code class="bg-gray-200 px-1 rounded text-sm">flex-row</code>, <code class="bg-gray-200 px-1 rounded text-sm">flex-col</code>, and their reverse versions to set direction.</p>
+    <p class="mb-3">Use <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-row</code>, <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-col</code>, and their reverse versions to set direction.</p>
 
     <pre class="bg-gray-900 text-white text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;div class="flex flex-col"&gt;
   &lt;div class="bg-blue-500 text-white p-2"&gt;Item A&lt;/div&gt;
@@ -33,19 +33,19 @@
     </div>
 
     <ul class="list-disc list-inside mb-6">
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-row</code> (default): horizontal (left to right)</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-row-reverse</code>: horizontal (right to left)</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-col</code>: vertical (top to bottom)</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-col-reverse</code>: vertical (bottom to top)</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-row</code> (default): horizontal (left to right)</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-row-reverse</code>: horizontal (right to left)</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-col</code>: vertical (top to bottom)</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-col-reverse</code>: vertical (bottom to top)</li>
     </ul>
 
     <h2 class="text-2xl font-semibold mb-2">2️⃣ Flex Wrapping</h2>
     <p class="mb-3">Use wrapping utilities to control whether flex items stay on one line or wrap to multiple lines.</p>
 
     <ul class="list-disc list-inside mb-3">
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-nowrap</code>: items stay in a single line</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-wrap</code>: wrap to the next line if needed</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-wrap-reverse</code>: wrap in reverse direction</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-nowrap</code>: items stay in a single line</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-wrap</code>: wrap to the next line if needed</li> dark:bg-gray-900
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-wrap-reverse</code>: wrap in reverse direction</li>
     </ul>
 
     <pre class="bg-gray-900 text-white text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;div class="flex flex-wrap gap-2"&gt;
@@ -64,9 +64,9 @@
     <p class="mb-3">Use these utilities to control how items expand or contract relative to other items.</p>
 
     <ul class="list-disc list-inside mb-3">
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-grow</code>: allow an item to grow</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">flex-shrink</code>: allow an item to shrink</li>
-        <li><code class="bg-gray-200 px-1 rounded text-sm">basis-{size}</code>: initial size before growing/shrinking</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-grow</code>: allow an item to grow</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">flex-shrink</code>: allow an item to shrink</li>
+        <li><code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">basis-{size}</code>: initial size before growing/shrinking</li>
     </ul>
 
     <pre class="bg-gray-900 text-white text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;div class="flex space-x-2"&gt;
@@ -80,6 +80,11 @@
     </div>
 
     <h2 class="text-2xl font-semibold mb-2">🧠 Quick Tip</h2>
-    <p>Use <code class="bg-gray-200 px-1 rounded text-sm">basis-1/2</code> or <code class="bg-gray-200 px-1 rounded text-sm">basis-full</code> to control item size with great flexibility!</p>
+    <p>Use <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">basis-1/2</code> or <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">basis-full</code> to control item size with great flexibility!</p>
+
+    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <a href="<?= base_url('tailwind/flexbox-intro') ?>" class="hover:underline">← Previous: Flex Containers and Items</a>
+        <a href="<?= base_url('tailwind/flexbox-align') ?>" class="hover:underline">Next: Justify Content & Align Items →</a>
+    </div>
 
 </main>

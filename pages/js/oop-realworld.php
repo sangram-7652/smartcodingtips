@@ -89,4 +89,8 @@ user1.returnBook(book1);  // Alice returns The Alchemist
     💡 <strong>Try this:</strong> Expand this app by adding a <code>Library</code> class to manage available books and track inventory.
   </div>
 
+
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/sync-vs-async" class="text-blue-600 hover:underline">Sync vs Async →</a></p>
+</div>
 </main>

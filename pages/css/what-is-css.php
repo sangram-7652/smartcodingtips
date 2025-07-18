@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="css-tutorials.php" class="text-blue-600 hover:underline">CSS</a>
+                <a href="css-tutorials.php" class="text-blue-600 dark:text-blue-400 hover:underline">CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">What is CSS?</li>
@@ -16,7 +16,7 @@
     </nav>
 
     <!-- Main Content -->
-    <article>
+    <article class="">
         <h1 class="text-3xl font-bold mb-4">What is CSS?</h1>
         <p class=" mb-4">
             CSS stands for <strong>Cascading Style Sheets</strong>. It is a stylesheet language used to describe the presentation and layout of a document written in HTML or XML. CSS controls how elements appear on the page — including colors, fonts, spacing, and positioning.
@@ -46,11 +46,12 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white l"><code class="text-sm ">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;link rel="stylesheet"
+     href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Hello, World!&lt;/h1&gt;
@@ -58,7 +59,7 @@
 &lt;/html&gt;
             </code></pre>
             <p class=" mt-2">And the external CSS file <code>styles.css</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-whit break-alle"><code class="text-sm">
 h1 {
     color: blue;
     text-align: center;
@@ -73,8 +74,9 @@ h1 {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-selectors.php" class="text-blue-600 hover:underline">CSS Selectors →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div></div>
+    <div><a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Why Use CSS? →</a></div>
+</div>
     </article>
 </main>

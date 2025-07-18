@@ -80,10 +80,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/debugging" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Debugging Techniques →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/clean-code') ?>" class="hover:underline">← Previous: Clean Code</a>
+  <a href="<?= base_url('react/devtools') ?>" class="hover:underline">Next: React DevTools →</a>
+</div>
 
 </main>

@@ -63,10 +63,9 @@
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/deploy-vercel" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Deploy on Vercel →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/cicd') ?>" class="hover:underline">← Previous: CI/CD Basics</a>
+  <a href="<?= base_url('react/folder-structure') ?>" class="hover:underline">Next: Folder Structure →</a>
+</div>
 
 </main>

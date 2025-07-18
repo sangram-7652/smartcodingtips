@@ -77,10 +77,9 @@ const count = useCounterStore((state) => state.count);
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/form-handling" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Controlled Forms →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/zustand') ?>" class="hover:underline">← Previous: Zustand</a>
+  <a href="<?= base_url('react/css-modules') ?>" class="hover:underline">Next: CSS Modules →</a>
+</div>
 
 </main>

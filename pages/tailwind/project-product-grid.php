@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">E-Commerce Product Grid</li>
@@ -37,7 +37,7 @@
     &lt;h3 class=" font-semibold"&gt;Product Name&lt;/h3&gt;
     &lt;p class="text-gray-500 text-sm"&gt;Short description here&lt;/p&gt;
     &lt;div class="flex justify-between items-center mt-3"&gt;
-        &lt;span class="text-blue-600 font-bold"&gt;$29.99&lt;/span&gt;
+        &lt;span class="text-blue-600  dark:text-blue-400 font-bold"&gt;$29.99&lt;/span&gt;
         &lt;button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600"&gt;Buy&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -94,8 +94,10 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/project-pricing" class="text-blue-600 hover:underline">→ Pricing Table</a></p>
-        </div>
+       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/project-portfolio') ?>" class="hover:underline">← Previous: Responsive Portfolio Page</a>
+  <a href="<?= base_url('tailwind/project-pricing') ?>" class="hover:underline">Next: Pricing Table with Toggle →</a>
+</div>
+
     </article>
 </main>

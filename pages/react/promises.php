@@ -105,10 +105,9 @@ function Users() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/error-handling" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Error Handling in Async Code →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/component-libs') ?>" class="hover:underline">← Previous: UI Libraries</a>
+  <a href="<?= base_url('react/async-state') ?>" class="hover:underline">Next: Handling Async State →</a>
+</div>
 
 </main>

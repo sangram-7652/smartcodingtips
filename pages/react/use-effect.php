@@ -56,7 +56,7 @@ function App() {
 </code></pre>
 
   <p class="mb-6 text-black dark:text-gray-300">
-    - <code>[]</code> makes the effect run only once (like <code>componentDidMount</code>)  
+    - <code>[]</code> makes the effect run only once (like <code>componentDidMount</code>)
     - Add values inside the array to re-run when they change
   </p>
 
@@ -101,10 +101,9 @@ function App() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/custom-hooks" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Custom Hooks →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/use-state') ?>" class="hover:underline">← Previous: useState()</a>
+  <a href="<?= base_url('react/use-effect-cleanup') ?>" class="hover:underline">Next: Cleanup in useEffect →</a>
+</div>
 
 </main>

@@ -51,4 +51,7 @@ let message = isLoggedIn ? "Welcome!" : "Please log in.";</code></pre>
         ✅ <strong>Tip:</strong> Avoid nesting ternary operators. It can make code harder to read.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/control-examples" class="text-blue-600 hover:underline">Control Flow Examples →</a></p>
+</div>
 </main>

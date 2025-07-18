@@ -1,23 +1,46 @@
 <?php
 // tailwind.php
 
+// ✅ Base URL helper: handles both local and live domain
+function base_url($path = '') {
+    $host = $_SERVER['HTTP_HOST'];
+    $isLocal = $host === 'localhost' || str_contains($host, '127.0.0.1');
+    $base = $isLocal ? '/smartcodingtips' : ''; // Change if local folder name is different
+    return $base . '/' . ltrim($path, '/');
+}
+
+// ✅ Get current page
 $page = $_GET['page'] ?? 'tailwind/what-is-tailwind';
 $pagePath = "pages/" . $page . ".php";
 
+// ✅ Fallback if file not found
 if (!file_exists($pagePath)) {
     $pagePath = "pages/tailwind/what-is-tailwind.php";
 }
 
+// ✅ Get page content
 ob_start();
 include $pagePath;
 $pageContent = ob_get_clean();
 
-include 'includes/header.php';
+// ✅ SEO Metadata (optional per page)
+$title = $title ?? "SmartCodingTips - Tailwind CSS";
+$description = $description ?? "Learn Tailwind CSS step-by-step with clean examples.";
+$keywords = $keywords ?? "tailwind css, utility first css, responsive design";
+$slug = basename($page);
+$canonical = "https://smartcodingtips.com/tailwind/$slug";
+
+// ✅ Current page for TOC highlighting
 $currentPage = $_GET['page'] ?? 'tailwind/what-is-tailwind';
 
+// ✅ Include header
+include 'includes/header.php';
+
+// ✅ TOC Link Generator
 function tocLink($label, $link, $currentPage) {
+    $slug = basename($link); // tailwind/what-is-tailwind → what-is-tailwind
     $activeClass = ($link === $currentPage) ? 'bg-yellow-300 dark:bg-yellow-600 text-black font-semibold rounded px-2' : '';
-    echo "<li><a href='tailwind.php?page=$link' class='block px-2 py-1 rounded $activeClass'>$label</a></li>";
+    echo "<li><a href='" . base_url("tailwind/$slug") . "' class='block px-2 py-1 rounded $activeClass'>$label</a></li>";
 }
 ?>
 
@@ -30,7 +53,7 @@ function tocLink($label, $link, $currentPage) {
     <!-- TOC Sidebar -->
     <aside
         id="mobileToc"
-        class="fixed top-0 left-0 h-screen w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll md:h-[1200px]">
+        class="fixed top-0 left-0 h-[1200px] w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll md:h-[1200px]">
 
         <!-- Mobile-only close button -->
         <button id="closeToc" class="absolute top-4 right-4 text-2xl md:hidden">✖</button>
@@ -162,7 +185,7 @@ foreach ($sections as $title => $links) {
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-4 mt-4 md:mt-0">
+    <main class="flex-1 p-2 mt-4 md:mt-0">
         <?php echo $pageContent; ?>
     </main>
 </div>

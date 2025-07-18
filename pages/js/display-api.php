@@ -21,12 +21,12 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Example: Displaying a List of Users</h2>
 
-    <div class="bg-gray-100 p-4 rounded mb-6 text-sm">
+    <div class="bg-gray-100 p-4 rounded mb-6  dark:bg-gray-900 dark:text-white"> text-sm">
         <strong>HTML Structure:</strong>
         <pre class="dark:bg-gray-900 dark:text-white"><code>&lt;ul id="userList"&gt;&lt;/ul&gt;</code></pre>
     </div>
 
-    <div class="bg-gray-100 p-4 rounded mb-6 text-sm">
+    <div class="bg-gray-100 p-4 rounded mb-6  dark:bg-gray-900 dark:text-white"> text-sm">
         <strong>JavaScript Code:</strong>
         <pre class="dark:bg-gray-900 dark:text-white"><code>async function loadUsers() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -46,7 +46,7 @@ loadUsers();</code></pre>
     </div>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎯 Output Example</h2>
-    <ul id="userList" class="list-disc list-inside bg-white shadow p-4 rounded mb-4">
+    <ul id="userList" class="list-disc list-inside bg-white shadow p-4 rounded mb-4 dark:bg-gray-900 dark:text-white">">
         <li>Leanne Graham (Sincere@april.biz)</li>
         <li>Ervin Howell (Shanna@melissa.tv)</li>
         <li>Clementine Bauch (Nathan@yesenia.net)</li>
@@ -64,4 +64,7 @@ loadUsers();</code></pre>
         💡 <strong>Bonus:</strong> Try building a "Search Users" input box to filter the displayed data!
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/es6-overview" class="text-blue-600 hover:underline">ES6+ Overview →</a></p>
+</div>
 </main>

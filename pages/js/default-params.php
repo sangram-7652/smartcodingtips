@@ -59,4 +59,7 @@ demo(null);      // null</code></pre>
         ✅ <strong>Next Up:</strong> Learn about <code>import</code> and <code>export</code> for using JavaScript modules!
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/es6-modules" class="text-blue-600 hover:underline">Modules in Depth →</a></p>
+</div>
 </main>

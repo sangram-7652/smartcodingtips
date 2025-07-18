@@ -47,10 +47,10 @@ arr.push(4); // ✅ Allowed</code></pre>
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Key Differences</h2>
     <table class="table-auto border border-collapse w-full text-sm mb-6">
         <thead>
-            <tr class="bg-gray-100">
-                <th class="border px-4 py-2 text-left">Feature</th>
-                <th class="border px-4 py-2 text-left">let</th>
-                <th class="border px-4 py-2 text-left">const</th>
+            <tr class="bg-gray-100  dark:text-black">
+                <th class="border dark:border-black px-4 py-2 text-left">Feature</th>
+                <th class="border dark:border-black px-4 py-2 text-left">let</th>
+                <th class="border dark:border-black px-4 py-2 text-left">const</th>
             </tr>
         </thead>
         <tbody>
@@ -81,5 +81,9 @@ arr.push(4); // ✅ Allowed</code></pre>
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded mt-6">
         ✅ <strong>Tip:</strong> Avoid <code>var</code> unless you're working in older environments or need function scope specifically.
     </div>
+
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/destructuring" class="text-blue-600 hover:underline">Destructuring →</a></p>
+</div>
 
 </main>

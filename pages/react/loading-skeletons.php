@@ -93,10 +93,9 @@ import { Circles } from 'react-loader-spinner';
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/error-boundaries" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Error Boundaries →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/async-state') ?>" class="hover:underline">← Previous: Handling Async State</a>
+  <a href="<?= base_url('react/debounce') ?>" class="hover:underline">Next: Retry / Debounce →</a>
+</div>
 
 </main>

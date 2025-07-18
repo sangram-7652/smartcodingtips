@@ -112,10 +112,9 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/axios" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Axios in React →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/debounce') ?>" class="hover:underline">← Previous: Retry / Debounce</a>
+  <a href="<?= base_url('react/memoization') ?>" class="hover:underline">Next: Memoization →</a>
+</div>
 
 </main>

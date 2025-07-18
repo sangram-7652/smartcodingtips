@@ -76,10 +76,9 @@ function Home() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/fetch-api" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Using fetch() →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/route-guards') ?>" class="hover:underline">← Previous: 404 & Protected Routes</a>
+  <a href="<?= base_url('react/use-reducer') ?>" class="hover:underline">Next: useReducer() →</a>
+</div>
 
 </main>

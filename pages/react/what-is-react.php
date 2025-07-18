@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 dark:text-gray-300 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline dark:text-blue-400">Home</a>
+        <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline dark:text-blue-400">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="react.php?page=react/intro" class="text-blue-600 hover:underline dark:text-blue-400">Introduction</a>
+        <a href="react.php?page=react/intro" class="text-blue-600  dark:text-blue-400 hover:underline dark:text-blue-400">Introduction</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center text-black dark:text-gray-400">What is React?</li>
@@ -90,10 +90,9 @@ setCount(count + 1);</code></pre>
   <p class="mt-4 text-black dark:text-gray-300">React is powerful, flexible, and widely used — a great choice for modern front-end development.</p>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/why-use-react" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Why Use React →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <span></span>
+  <a href="<?= base_url('react/why-react') ?>" class="hover:underline">Next: Why Use React? →</a>
+</div>
 
 </main>

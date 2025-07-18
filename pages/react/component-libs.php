@@ -117,10 +117,8 @@ npm install @mui/material @emotion/react @emotion/styled
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/animation-libraries" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Animation Libraries →
-    </a>
-  </div>
-
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/hoc') ?>" class="hover:underline">← Previous: HOC</a>
+  <a href="<?= base_url('react/promises') ?>" class="hover:underline">Next: Promises & Async/Await →</a>
+</div>
 </main>

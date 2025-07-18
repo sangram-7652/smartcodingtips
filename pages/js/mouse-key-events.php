@@ -66,4 +66,7 @@ document.getElementById("inputField").addEventListener("keyup", function(e) {
         💡 <strong>Tip:</strong> Use <code>event.preventDefault()</code> if you want to stop default behavior like form submission.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/event-object" class="text-blue-600 hover:underline">Event Object →</a></p>
+</div>
 </main>

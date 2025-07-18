@@ -116,10 +116,9 @@ export default App;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/form-validation" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Form with Validation →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/project-todo') ?>" class="hover:underline">← Previous: Todo List</a>
+  <a href="<?= base_url('react/project-blog') ?>" class="hover:underline">Next: Blog App →</a>
+</div>
 
 </main>

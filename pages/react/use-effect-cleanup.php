@@ -92,10 +92,9 @@ function Timer() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/useref" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: useRef() →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/use-effect') ?>" class="hover:underline">← Previous: useEffect()</a>
+  <a href="<?= base_url('react/hook-rules') ?>" class="hover:underline">Next: Hook Rules & Best Practices →</a>
+</div>
 
 </main>

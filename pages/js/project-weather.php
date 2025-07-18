@@ -93,4 +93,7 @@ button {
         <li>Error handling and validation</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-calculator" class="text-blue-600 hover:underline">Calculator →</a></p>
+</div>  
 </main>

@@ -65,4 +65,7 @@ console.log(Math.max(...numbers)); // 6</code></pre>
         </ul>
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/modules" class="text-blue-600 hover:underline">Modules: import/export →</a></p>
+</div>
 </main>

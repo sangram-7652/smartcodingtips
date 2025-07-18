@@ -100,10 +100,9 @@ const handleChange = (e) =&gt; {
   </ul>
 
   <!-- Next Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/useref" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: useRef Hook →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/refs') ?>" class="hover:underline">← Previous: Refs with useRef()</a>
+  <a href="<?= base_url('react/use-effect') ?>" class="hover:underline">Next: useEffect() →</a>
+</div>
 
 </main>

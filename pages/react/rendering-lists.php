@@ -89,9 +89,8 @@ function ProductList({ products }) {
   </ul>
 
   <!-- Next Page Link -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/events" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Handling Events →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/conditional-rendering') ?>" class="hover:underline">← Previous: Conditional Rendering</a>
+  <a href="<?= base_url('react/keys') ?>" class="hover:underline">Next: Keys in Lists →</a>
+</div>
 </main>

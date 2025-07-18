@@ -70,4 +70,7 @@ fetchData();</code></pre>
     💡 <strong>Tip:</strong> Always handle errors in async code with <code>try...catch</code> to avoid silent failures.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/security-intro" class="text-blue-600 hover:underline">Security Basics →</a></p>
+</div>
 </main>

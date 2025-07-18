@@ -93,4 +93,8 @@ while (true) {
         ✅ Practice these patterns to master control flow logic in JavaScript!
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/functions" class="text-blue-600 hover:underline">Defining Functions →</a></p>
+</div>
+
 </main>

@@ -52,10 +52,10 @@ console.log(sum(1, 2, 3)); // 6</code></pre>
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Differences Summary</h2>
     <table class="table-auto border border-collapse w-full text-sm mb-6">
         <thead>
-            <tr class="bg-gray-100">
-                <th class="border px-4 py-2 text-left">Operator</th>
-                <th class="border px-4 py-2 text-left">Use Case</th>
-                <th class="border px-4 py-2 text-left">Example Context</th>
+            <tr class="bg-gray-100  dark:text-black">
+                <th class="border dark:border-black px-4 py-2 text-left">Operator</th>
+                <th class="border dark:border-black px-4 py-2 text-left">Use Case</th>
+                <th class="border dark:border-black px-4 py-2 text-left">Example Context</th>
             </tr>
         </thead>
         <tbody>
@@ -75,5 +75,9 @@ console.log(sum(1, 2, 3)); // 6</code></pre>
     <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded mt-6">
         💡 <strong>Tip:</strong> Use <code>...rest</code> to write flexible, dynamic functions and <code>...spread</code> to clone or combine data cleanly.
     </div>
+
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/callbacks" class="text-blue-600 hover:underline">Callbacks →</a></p>
+</div>
 
 </main>

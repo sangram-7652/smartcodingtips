@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Tailwind vs Bootstrap vs Custom CSS</li>
@@ -125,8 +125,9 @@
         </section>
 
         <!-- Next Link -->
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/installation" class="text-blue-600 hover:underline">Installing Tailwind via CDN and NPM →</a></p>
-        </div>
+      <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/why-utility-first') ?>" class="hover:underline">← Previous: Why Choose Utility-First Frameworks?</a>
+  <a href="<?= base_url('tailwind/installation') ?>" class="hover:underline">Next: Installing Tailwind via CDN and NPM →</a>
+</div>
     </article>
 </main>

@@ -37,7 +37,7 @@
 
   <h2 class="text-xl font-semibold mb-4">📦 Variables and Functions – <code>camelCase</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 let userName = "John";
 const maxItems = 10;
 
@@ -51,7 +51,7 @@ function getUserData() {
 
   <h2 class="text-xl font-semibold mb-4">🏗️ Classes and Constructors – <code>PascalCase</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 class UserProfile {
   constructor(name) {
     this.name = name;
@@ -64,7 +64,7 @@ class UserProfile {
 
   <h2 class="text-xl font-semibold mb-4">🔒 Constants – <code>UPPER_SNAKE_CASE</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 const MAX_RETRIES = 3;
 const API_KEY = "abcd1234";</code></pre>
 
@@ -92,4 +92,8 @@ const API_KEY = "abcd1234";</code></pre>
 
   <p class="mt-4">By following naming conventions, your JavaScript will be cleaner and easier to maintain, especially in team environments.</p>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/performance" class="text-blue-600 hover:underline">Performance Tips →</a></p>
+</div>
 </main>
+

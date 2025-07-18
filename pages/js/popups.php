@@ -72,4 +72,7 @@ newWin.close();</code></pre>
         ⚠️ <strong>Tip:</strong> Avoid using popups excessively. Use modal dialogs (via HTML/CSS/JS) for better UX.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/api-intro" class="text-blue-600 hover:underline">Intro to APIs →</a></p>
+</div>
 </main>

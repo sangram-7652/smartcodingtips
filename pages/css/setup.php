@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="css-tutorials.php" class="text-blue-600 hover:underline">CSS</a>
+                <a href="css-tutorials.php" class="text-blue-600 dark:text-blue-400 hover:underline">CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Setup Your First CSS File</li>
@@ -25,20 +25,25 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Create the HTML File</h2>
             <p class=" mb-2">
-                Start with a basic HTML structure and save it as <code>index.html</code>.
+                Start with a basic HTML structure and save it as
+                 <code>index.html</code>.
             </p>
             <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0"&gt;
     &lt;title&gt;My First CSS Page&lt;/title&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link rel="stylesheet" 
+    href="style.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
-    &lt;p&gt;This is a simple web page styled with CSS.&lt;/p&gt;
+    &lt;p&gt;This is a simple web page
+     styled with CSS.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
             </code></pre>
@@ -94,8 +99,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-selectors.php" class="text-blue-600 hover:underline">CSS Selectors →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How CSS Works</a></div>
+    <div><a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Syntax Overview →</a></div>
+</div>
     </article>
 </main>

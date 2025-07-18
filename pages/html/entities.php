@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">HTML Entities</li>
@@ -35,10 +35,10 @@
             <h2 class="text-2xl font-semibold mb-2">Common HTML Entities</h2>
             <table class="table-auto border-collapse w-full text-left text-base">
                 <thead>
-                    <tr class="bg-gray-200 dark:bg-gray-900 dark:text-white">
-                        <th class="border px-4 py-2">Character</th>
-                        <th class="border px-4 py-2">Entity Name</th>
-                        <th class="border px-4 py-2">Entity Number</th>
+                    <tr class="bg-gray-200  dark:text-black">
+                        <th class="border dark:border-black px-4 py-2">Character</th>
+                        <th class="border dark:border-black px-4 py-2">Entity Name</th>
+                        <th class="border dark:border-black px-4 py-2">Entity Number</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,8 +89,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/inline-block" class="text-blue-600 hover:underline">Inline vs Block →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/deprecated-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Deprecated Tags</a></div>
+    <div><a href="<?= base_url('html/inline-block') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Inline vs Block →</a></div>
+</div>
     </article>
 </main>

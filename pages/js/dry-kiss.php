@@ -27,13 +27,13 @@
   </p>
 
   <h3 class="text-lg font-semibold mb-2">💥 Bad Example:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>let area1 = 10 * 5;
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let area1 = 10 * 5;
 let area2 = 20 * 5;
 let area3 = 30 * 5;
 // Repeating the same formula</code></pre>
 
   <h3 class="text-lg font-semibold mb-2">✅ DRY Version:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>function calculateArea(length, width) {
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function calculateArea(length, width) {
   return length * width;
 }
 
@@ -53,7 +53,7 @@ let area3 = calculateArea(30, 5);</code></pre>
   </p>
 
   <h3 class="text-lg font-semibold mb-2">💥 Bad Example:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>function isEven(num) {
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function isEven(num) {
   if (num % 2 === 0) {
     return true;
   } else {
@@ -62,7 +62,7 @@ let area3 = calculateArea(30, 5);</code></pre>
 }</code></pre>
 
   <h3 class="text-lg font-semibold mb-2">✅ KISS Version:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>const isEven = num => num % 2 === 0;</code></pre>
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const isEven = num => num % 2 === 0;</code></pre>
 
   <div class="bg-yellow-100 border-l-4 border-yellow-600 text-yellow-800 p-4 rounded mb-6">
     🧹 <strong>Tip:</strong> Simple code is easier to debug, test, and collaborate on with teammates.
@@ -81,4 +81,7 @@ let area3 = calculateArea(30, 5);</code></pre>
     Stick to these principles in every project — they’re simple, but powerful habits that separate clean code from messy chaos.
   </p>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/naming" class="text-blue-600 hover:underline">Naming Conventions →</a></p>
+</div>
 </main>

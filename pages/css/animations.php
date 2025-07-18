@@ -108,8 +108,9 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
-        </div>
+       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/transitions') ?>" class="text-blue-600 hover:underline">← Previous: CSS Transitions</a></div>
+    <div><a href="<?= base_url('css/transforms') ?>" class="text-blue-600 hover:underline">Next: 2D & 3D Transforms →</a></div>
+</div>
     </article>
 </main>

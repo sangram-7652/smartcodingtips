@@ -72,4 +72,7 @@ header("Access-Control-Allow-Origin: https://your-frontend.com");</code></pre>
     💡 <strong>Tip:</strong> Use browser DevTools → Network tab to inspect CORS headers like <code>Access-Control-Allow-Origin</code>.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/csp" class="text-blue-600 hover:underline">Content Security Policy →</a></p>
+</div>
 </main>

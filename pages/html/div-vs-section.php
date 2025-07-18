@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Div vs Section</li>
@@ -50,11 +50,11 @@
         <section class="mb-6 w-full p-2">
             <h2 class="text-2xl font-semibold mb-2">Key Differences</h2>
             <table class="table-auto border border-gray-300 w-full text-sm text-left">
-                <thead class="bg-gray-100 dark:bg-gray-900 dark:text-white">
+                <thead class="bg-gray-100  dark:text-black">
                     <tr>
-                        <th class="border md:px-4 md:py-2">Aspect</th>
-                        <th class="border md:px-4 md:py-2">&lt;div&gt;</th>
-                        <th class="border md:px-4 md:py-2">&lt;section&gt;</th>
+                        <th class="border dark:border-black md:px-4 md:py-2">Aspect</th>
+                        <th class="border dark:border-black md:px-4 md:py-2">&lt;div&gt;</th>
+                        <th class="border dark:border-black md:px-4 md:py-2">&lt;section&gt;</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -91,8 +91,9 @@
             </ul>
         </section>
 
-        <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/columns-with-div" class="text-blue-600 hover:underline">Columns with Div→</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/html5-storage') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Web Storage</a></div>
+    <div><a href="<?= base_url('html/columns-with-div') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Columns with Div →</a></div>
+</div>
     </article>
 </main>

@@ -85,5 +85,8 @@ person instanceof Object  // true</code></pre>
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">
         ✅ <strong>Practice:</strong> Try combining arithmetic, logical, and ternary operators in short functions to see how they behave.
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/comments" class="text-blue-600 hover:underline">Comments →</a></p>
+</div>
 
 </main>

@@ -80,4 +80,7 @@
     💡 <strong>Pro Tip:</strong> Start with Vanilla JavaScript to master the core. Once you're confident, move to frameworks for better scalability and productivity.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/react-vue-angular" class="text-blue-600 hover:underline">React / Vue / Angular →</a></p>
+</div>
 </main>

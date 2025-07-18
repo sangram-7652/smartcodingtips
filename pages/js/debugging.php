@@ -76,4 +76,7 @@
     💡 <strong>Pro Tip:</strong> Modern editors like VS Code can debug JavaScript directly using breakpoints inside the editor.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/async-debug" class="text-blue-600 hover:underline">Debug Async →</a></p>
+</div>
 </main>

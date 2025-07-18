@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /smartcodingtips/
+
+# Allow existing files and folders (like index.php, style.css)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# HTML Pages
+
+RewriteRule ^html/([^/]+)$ html.php?page=html/$1 [L,QSA]
+
+# CSS Pages
+
+RewriteRule ^css/([^/]+)$ css.php?page=css/$1 [L,QSA]
+
+# JS Pages
+
+RewriteRule ^js/([^/]+)$ js.php?page=js/$1 [L,QSA]
+
+# Tailwind Pages
+
+RewriteRule ^tailwind/([^/]+)$ tailwind.php?page=tailwind/$1 [L,QSA]
+
+# React Pages
+
+RewriteRule ^react/([^/]+)$ react.php?page=react/$1 [L,QSA]

@@ -85,10 +85,9 @@ const App = () =&gt; &lt;h1&gt;Hello World&lt;/h1&gt;;</code></pre>
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/react-vs-others" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: React vs Vanilla JS / Angular / Vue →
-    </a>
-  </div>
+<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/what-is-react') ?>" class="hover:underline">← Previous: What is React?</a>
+  <a href="<?= base_url('react/react-vs-others') ?>" class="hover:underline">Next: React vs Vanilla JS / Angular / Vue →</a>
+</div>
 
 </main>

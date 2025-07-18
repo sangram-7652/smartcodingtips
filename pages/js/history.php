@@ -54,8 +54,8 @@
 
     <h2 class="text-2xl font-semibold mb-2">🧠 Summary Timeline</h2>
 
-    <div class="bg-gray-100 p-4 rounded text-sm mb-6">
-        <ul class="space-y-1 list-disc list-inside">
+    <div class="bg-gray-100  dark:text-white dark:bg-gray-900 p-4 rounded text-sm mb-6">
+        <ul class="space-y-1 list-disc list-inside ">
             <li><strong>1995</strong> – JavaScript created by Brendan Eich at Netscape</li>
             <li><strong>1997</strong> – ECMAScript standard established</li>
             <li><strong>2009</strong> – Node.js released (JavaScript on server)</li>
@@ -69,5 +69,7 @@
     </div>
 
     <p class="text-green-700 font-semibold">✅ Today, JavaScript powers everything from websites and APIs to desktop apps and IoT devices.</p>
-
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/js-vs-html-css" class="text-blue-600 hover:underline">JS vs HTML/CSS →</a></p>
+</div>
 </main>

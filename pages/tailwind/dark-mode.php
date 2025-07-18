@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Dark Mode</li>
@@ -85,7 +85,7 @@ module.exports = {
             <h2 class="text-2xl font-semibold mb-2">4. Class vs Media: When to Use?</h2>
             <table class="w-full text-left border text-sm">
                 <thead>
-                    <tr class="bg-gray-200">
+                    <tr class="bg-gray-200 dark:bg-gray-800">
                         <th class="p-2">Feature</th>
                         <th class="p-2">Class</th>
                         <th class="p-2">Media</th>
@@ -134,8 +134,10 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/ui-principles" class="text-blue-600 hover:underline">Tailwind UI Principles →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/custom-utilities') ?>" class="hover:underline">← Previous: Creating Custom Utility Classes</a>
+  <a href="<?= base_url('tailwind/ui-principles') ?>" class="hover:underline">Next: Tailwind UI Principles →</a>
+</div>
+
     </article>
 </main>

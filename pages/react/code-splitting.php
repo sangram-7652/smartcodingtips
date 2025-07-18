@@ -93,10 +93,9 @@ const LazySettings = lazy(() =&gt; import(/* webpackChunkName: "settings" */ './
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/bundle-analyzer" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Bundle Analyzer →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/lazy') ?>" class="hover:underline">← Previous: Lazy Loading</a>
+  <a href="<?= base_url('react/performance-tips') ?>" class="hover:underline">Next: Performance Tips →</a>
+</div>
 
 </main>

@@ -74,10 +74,9 @@ function Navbar() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/router-routes" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Route & Nested Routes →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/router-intro') ?>" class="hover:underline">← Previous: React Router Intro</a>
+  <a href="<?= base_url('react/router-links') ?>" class="hover:underline">Next: Route / Link / Navigate →</a>
+</div>
 
 </main>

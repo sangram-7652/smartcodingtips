@@ -101,4 +101,7 @@ showSlide(currentSlide);</code></pre>
     💡 <strong>Tip:</strong> Use royalty-free images from sites like <a href="https://unsplash.com" class="underline text-blue-700" target="_blank">Unsplash</a> for demo.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-quiz-2" class="text-blue-600 hover:underline">Advanced Quiz →</a></p>
+</div>
 </main>

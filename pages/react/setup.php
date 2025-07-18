@@ -87,10 +87,9 @@ npm run dev
   </ul>
 
   <!-- Next Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/jsx" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Understanding JSX →
-    </a>
-  </div>
+<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/react-vs-others') ?>" class="hover:underline">← Previous: React vs Vanilla JS / Angular / Vue</a>
+  <a href="<?= base_url('react/first-app') ?>" class="hover:underline">Next: Your First React App →</a>
+</div>
 
 </main>

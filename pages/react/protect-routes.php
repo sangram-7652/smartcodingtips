@@ -111,10 +111,9 @@ function Login() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/persistent-login" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Persistent Login →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/rate-limit') ?>" class="hover:underline">← Previous: Rate Limiting</a>
+  <a href="<?= base_url('react/project-counter') ?>" class="hover:underline">Next: Counter App →</a>
+</div>
 
 </main>

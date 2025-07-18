@@ -62,4 +62,7 @@ eval(userCode); // 👈 Extremely dangerous!</code></pre>
     💡 <strong>Pro Tip:</strong> Never trust user input — always treat it as unsafe until properly validated and sanitized.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/cors" class="text-blue-600 hover:underline">CORS Explained →</a></p>
+</div>
 </main>

@@ -80,10 +80,9 @@ fetch('/api/user', {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/protected-routes" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Protected Routes →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/xss-protection') ?>" class="hover:underline">← Previous: XSS Protection</a>
+  <a href="<?= base_url('react/env-vars') ?>" class="hover:underline">Next: Environment Variables →</a>
+</div>
 
 </main>

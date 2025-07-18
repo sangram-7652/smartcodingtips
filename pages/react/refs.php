@@ -85,10 +85,9 @@ function RenderCounter() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/useeffect" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: useEffect Hook →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/submissions') ?>" class="hover:underline">← Previous: Handling Submissions</a>
+  <a href="<?= base_url('react/use-state') ?>" class="hover:underline">Next: useState() →</a>
+</div>
 
 </main>

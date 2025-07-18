@@ -106,10 +106,8 @@ function SignupForm() {
   </ul>
 
   <!-- Next Link -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/form-validation" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Form Validation →
-    </a>
-  </div>
-
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/forms') ?>" class="hover:underline">← Previous: Forms</a>
+  <a href="<?= base_url('react/refs') ?>" class="hover:underline">Next: Refs with useRef() →</a>
+</div>
 </main>

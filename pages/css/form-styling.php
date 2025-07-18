@@ -129,8 +129,8 @@ button:disabled {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="form-validation-styling.php" class="text-blue-600 hover:underline">Form Validation Styling →</a></p>
-        </div>
+       <div class="mt-4">
+    <p class="font-semibold">Next: <a href="css.php?page=css/form-layouts" class="text-blue-600 hover:underline">Form Layout →</a></p>
+</div>
     </article>
 </main>

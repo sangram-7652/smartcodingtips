@@ -62,4 +62,7 @@ console.log(heading.textContent); // "Hello"</code></pre>
         ✅ <strong>In Summary:</strong> The DOM lets JavaScript talk to the HTML structure of a page. Mastering the DOM is essential for building interactive websites.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/selectors" class="text-blue-600 hover:underline">Selectors →</a></p>
+</div>
 </main>

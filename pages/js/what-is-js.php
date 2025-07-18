@@ -68,5 +68,8 @@
     <p>
         JavaScript is the scripting language that powers the interactive web. Whether you're building simple animations or full-stack applications, learning JavaScript is essential for modern developers.
     </p>
+    <div class="mt-4">
+        <p class="font-semibold">Next: <a href="js.php?page=js/history" class="text-blue-600 hover:underline">History and Evolution →</a></p>
+    </div>
 
 </main>

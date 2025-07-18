@@ -74,4 +74,7 @@ console.log(data.name); // Alice</code></pre>
         <li>Use <code>JSON.stringify</code> and <code>JSON.parse</code> for storing/retrieving objects.</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/device-detect" class="text-blue-600 hover:underline">Device & Feature Detect →</a></p>
+</div>
 </main>

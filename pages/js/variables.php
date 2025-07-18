@@ -78,12 +78,12 @@ user.name = "Bob"; // ✅ Allowed (object itself not reassigned)
 
     <div class="dark:bg-gray-900 dark:text-white mb-6">
         <table class="min-w-full border border-gray-300 text-sm">
-            <thead class="bg-gray-100">
+            <thead class="bg-gray-100 dark:text-black">
                 <tr>
-                    <th class="border px-4 py-2 text-left">Feature</th>
-                    <th class="border px-4 py-2">var</th>
-                    <th class="border px-4 py-2">let</th>
-                    <th class="border px-4 py-2">const</th>
+                    <th class="border dark:border-black px-4 py-2 text-left">Feature</th>
+                    <th class="border dark:border-black px-4 py-2">var</th>
+                    <th class="border dark:border-black px-4 py-2">let</th>
+                    <th class="border dark:border-black px-4 py-2">const</th>
                 </tr>
             </thead>
             <tbody>
@@ -118,5 +118,7 @@ user.name = "Bob"; // ✅ Allowed (object itself not reassigned)
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">
         <strong>Best Practice:</strong> Use <code>let</code> for variables that will change, and <code>const</code> for those that shouldn’t. Avoid <code>var</code> in modern JavaScript.
     </div>
-
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/data-types" class="text-blue-600 hover:underline">Data Types →</a></p>
+</div>
 </main>

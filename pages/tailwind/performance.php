@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Performance and SEO Tips</li>
@@ -81,7 +81,7 @@ module.exports = {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Run Performance Audits</h2>
             <p class="">
-                Use tools like <a href="https://pagespeed.web.dev" target="_blank" class="text-blue-600 hover:underline">Google Lighthouse</a> or <code>npm run audit</code> to test for:
+                Use tools like <a href="https://pagespeed.web.dev" target="_blank" class="text-blue-600  dark:text-blue-400 hover:underline">Google Lighthouse</a> or <code>npm run audit</code> to test for:
             </p>
             <ul class="list-disc list-inside ">
                 <li>Unused CSS</li>
@@ -99,8 +99,11 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/what-is-tailwind" class="text-blue-600 hover:underline">Back to Start →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/a11y') ?>" class="hover:underline">← Previous: Accessibility with Tailwind</a>
+  <span></span>
+</div>
+
+
     </article>
 </main>

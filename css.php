@@ -1,6 +1,15 @@
 <?php
 // css.php
 
+// ✅ Dynamic base URL for local & production
+function base_url($path = '') {
+    $host = $_SERVER['HTTP_HOST'];
+    $isLocal = $host === 'localhost' || str_contains($host, '127.0.0.1');
+    $base = $isLocal ? '/smartcodingtips' : ''; // Update this if local folder name changes
+    return $base . '/' . ltrim($path, '/');
+}
+
+// ✅ Get page or fallback
 $page = $_GET['page'] ?? 'css/what-is-css';
 $pagePath = "pages/" . $page . ".php";
 
@@ -8,21 +17,35 @@ if (!file_exists($pagePath)) {
     $pagePath = "pages/css/what-is-css.php";
 }
 
+// ✅ Load page content
 ob_start();
 include $pagePath;
 $pageContent = ob_get_clean();
 
-include 'includes/header.php';
+// ✅ SEO Meta (optional — add title, description per page if needed)
+$title = $title ?? "SmartCodingTips - CSS";
+$description = $description ?? "Learn CSS with structured tutorials and examples.";
+$keywords = $keywords ?? "css, styling, web development, smartcodingtips";
+$slug = basename($page);
+$canonical = "https://smartcodingtips.com/css/$slug";
+
+// ✅ Current page for TOC
 $currentPage = $_GET['page'] ?? 'css/what-is-css';
 
+// ✅ Include header
+include 'includes/header.php';
+
+// ✅ TOC link function
 function tocLink($label, $link, $currentPage) {
+    $slug = basename($link); // css/what-is-css → what-is-css
     $activeClass = ($link === $currentPage) ? 'bg-yellow-300 dark:bg-yellow-600 text-black font-semibold rounded px-2' : '';
-    echo "<li><a href='css.php?page=$link' class='block px-2 py-1 rounded $activeClass'>$label</a></li>";
+    echo "<li><a href='" . base_url("css/$slug") . "' class='block px-2 py-1 rounded $activeClass'>$label</a></li>";
 }
 ?>
 
+
 <!-- Mobile TOC Button -->
-<button id="openToc" class="md:hidden bg-gray-800 text-white px-4 py-2 m-4 rounded fixed top-16 left-4 z-40">
+<button id="openToc" class="md:hidden bg-gray-800 text-white px-4 py-2 m-4 rounded fixed top-16 left-2 z-40">
     ☰ TOC
 </button>
 
@@ -30,7 +53,7 @@ function tocLink($label, $link, $currentPage) {
     <!-- TOC Sidebar -->
     <aside
         id="mobileToc"
-        class="fixed top-0 left-0 h-screen w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll md:h-[1200px]">
+        class="fixed top-0 left-0 h-[1200px] w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll md:h-[1200px]">
 
         <!-- Mobile-only close button -->
         <button id="closeToc" class="absolute top-4 right-4 text-2xl md:hidden">✖</button>
@@ -139,7 +162,7 @@ foreach ($sections as $title => $links) {
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-4 mt-4 md:mt-0">
+    <main class="flex-1 p-2 mt-4 md:mt-0">
         <?php echo $pageContent; ?>
     </main>
 </div>

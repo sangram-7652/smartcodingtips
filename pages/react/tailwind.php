@@ -76,10 +76,9 @@ darkMode: 'class',
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/responsive-design" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Responsive Design →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/css-modules') ?>" class="hover:underline">← Previous: CSS Modules</a>
+  <a href="<?= base_url('react/styled-components') ?>" class="hover:underline">Next: Styled Components →</a>
+</div>
 
 </main>

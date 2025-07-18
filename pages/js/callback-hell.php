@@ -57,4 +57,7 @@
     💡 <strong>Tip:</strong> Promises and <code>async/await</code> are powerful tools to make async code more readable and maintainable.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/promises-review" class="text-blue-600 hover:underline">Promises Review →</a></p>
+</div>
 </main>

@@ -33,7 +33,7 @@
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Install & Use Vite:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>npm create vite@latest my-app
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm create vite@latest my-app
 cd my-app
 npm install
 npm run dev</code></pre>
@@ -52,9 +52,9 @@ npm run dev</code></pre>
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Basic Webpack Setup:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>npm install --save-dev webpack webpack-cli</code></pre>
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm install --save-dev webpack webpack-cli</code></pre>
   <p class="mb-2">Create a <code>webpack.config.js</code>:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm"><code>module.exports = {
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -77,10 +77,10 @@ npm run dev</code></pre>
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Install Babel with Webpack:</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4"><code>npm install --save-dev babel-loader @babel/core @babel/preset-env</code></pre>
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm install --save-dev babel-loader @babel/core @babel/preset-env</code></pre>
 
   <p class="mb-2">Update <code>webpack.config.js</code> with a loader:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm"><code>module: {
+  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>module: {
   rules: [
     {
       test: /\.m?js$/,
@@ -100,10 +100,10 @@ npm run dev</code></pre>
   <h2 class="text-2xl font-semibold mt-6 mb-2">🆚 Vite vs Webpack vs Babel</h2>
   <table class="w-full border mt-4 mb-6 text-sm">
     <thead>
-      <tr class="bg-gray-200">
-        <th class="border px-4 py-2 text-left">Tool</th>
-        <th class="border px-4 py-2 text-left">Purpose</th>
-        <th class="border px-4 py-2 text-left">Use Case</th>
+      <tr class="bg-gray-200 dark:text-black">
+        <th class="border dark:border-black px-4 py-2 text-left">Tool</th>
+        <th class="border dark:border-black px-4 py-2 text-left">Purpose</th>
+        <th class="border dark:border-black px-4 py-2 text-left">Use Case</th>
       </tr>
     </thead>
     <tbody>
@@ -129,4 +129,7 @@ npm run dev</code></pre>
     💡 <strong>Pro Tip:</strong> If you're building a modern front-end app, try Vite first. Use Webpack + Babel when you need full control or enterprise-level bundling.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/dry-kiss" class="text-blue-600 hover:underline">DRY & KISS →</a></p>
+</div>
 </main>

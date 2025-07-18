@@ -84,10 +84,9 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/hoc-pattern" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Higher-Order Components →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/compound') ?>" class="hover:underline">← Previous: Compound Components</a>
+  <a href="<?= base_url('react/hoc') ?>" class="hover:underline">Next: HOC →</a>
+</div>
 
 </main>

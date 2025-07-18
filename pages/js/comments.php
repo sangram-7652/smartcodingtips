@@ -62,4 +62,7 @@ console.log(name); // This will run</code></pre>
         💡 <strong>Tip:</strong> Clean, self-explanatory code reduces the need for excessive comments.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/alert-console" class="text-blue-600 hover:underline">Alert, Prompt, Console →</a></p>
+</div>
 </main>

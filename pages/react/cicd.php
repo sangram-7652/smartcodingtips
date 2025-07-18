@@ -79,10 +79,9 @@ yarn start
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/deploy-vercel" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Deploy on Vercel →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/env-vars-deploy') ?>" class="hover:underline">← Previous: Env Variables</a>
+  <a href="<?= base_url('react/free-domain') ?>" class="hover:underline">Next: Free Domain →</a>
+</div>
 
 </main>

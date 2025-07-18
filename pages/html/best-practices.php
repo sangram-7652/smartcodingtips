@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Best Practices</li>
@@ -64,7 +64,7 @@
             <h2 class="text-2xl font-semibold mb-2">6. Validate Your HTML</h2>
             <p class=" mb-2">
                 Use the W3C Validator to check for errors in your HTML code.
-                <a href="https://validator.w3.org/" class="text-blue-600 hover:underline" target="_blank">W3C Validator</a>
+                <a href="https://validator.w3.org/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">W3C Validator</a>
             </p>
         </section>
 
@@ -82,8 +82,9 @@
             </p>
         </section>
 
-         <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/resume-project" class="text-blue-600 hover:underline">Resume Page →</a></p>
-        </div>
+         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/dom-basics') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: HTML DOM</a></div>
+    <div><a href="<?= base_url('html/resume-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Resume Page →</a></div>
+</div>
     </article>
 </main>

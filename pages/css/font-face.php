@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="css-tutorials.php" class="text-blue-600 hover:underline">CSS</a>
+                <a href="css-tutorials.php" class="text-blue-600 dark:text-blue-400 hover:underline">CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Custom Fonts</li>
@@ -25,7 +25,7 @@
         <!-- Google Fonts -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Importing from Google Fonts</h2>
-            <p class=" mb-2">Visit <a href="https://fonts.google.com" class="text-blue-600 hover:underline" target="_blank">Google Fonts</a>, choose a font, and include the provided link in your HTML <code>&lt;head&gt;</code>:</p>
+            <p class=" mb-2">Visit <a href="https://fonts.google.com" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">Google Fonts</a>, choose a font, and include the provided link in your HTML <code>&lt;head&gt;</code>:</p>
             <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"&gt;
             </code></pre>
@@ -99,8 +99,9 @@ body {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="responsive-typography.php" class="text-blue-600 hover:underline">Responsive Typography →</a></p>
-        </div>
+       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/grid-responsive') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Responsive Grids</a></div>
+    <div><a href="<?= base_url('css/calc-clamp') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: calc(), clamp() →</a></div>
+</div>
     </article>
 </main>

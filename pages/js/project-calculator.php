@@ -96,4 +96,8 @@ button {
         <li>Building interactive UIs with JS</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-quiz" class="text-blue-600 hover:underline">Quiz App →</a></p>
+</div>
 </main>
+

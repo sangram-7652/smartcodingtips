@@ -18,30 +18,15 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="static/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
+    <link rel="stylesheet" href="static/css/style.css?v=1">
     <script>
         tailwind.config = {
             darkMode: 'class',
         }
     </script>
-    <!-- Optional: Smooth scrolling -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
 
-        td,
-        th {
-            word-break: break-word;
-        }
 
-        code,
-        pre {
-            word-break: break-word;
-        }
-    </style>
 </head>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white overflow-x-hidden">
@@ -58,12 +43,12 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex items-center space-x-8 text-lg font-medium">
-                <a href="index.php" class="hover:text-teal-400 transition">Home</a>
-                <a href="html.php" class="hover:text-teal-400 transition">HTML</a>
-                <a href="css.php" class="hover:text-teal-400 transition">CSS</a>
-                <a href="tailwind.php" class="hover:text-teal-400 transition">Tailwind CSS</a>
-                <a href="js.php" class="hover:text-teal-400 transition">JavaScript</a>
-                <a href="react.php" class="hover:text-teal-400 transition">React</a>
+                <a href="<?= base_url('') ?>" class="hover:text-teal-400 transition">Home</a>
+                <a href="<?= base_url('html/what-is-html') ?>" class="hover:text-teal-400 transition">HTML</a>
+                <a href="<?= base_url('css/what-is-css') ?>" class="hover:text-teal-400 transition">CSS</a>
+                <a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="hover:text-teal-400 transition">Tailwind CSS</a>
+                <a href="<?= base_url('js/what-is-js') ?>" class="hover:text-teal-400 transition">JavaScript</a>
+                <a href="<?= base_url('react/what-is-react') ?>" class="hover:text-teal-400 transition">React</a>
             </nav>
 
             <!-- Theme Toggle -->
@@ -88,12 +73,12 @@
 
             <nav class="mt-20 space-y-4 text-lg font-medium">
                 <ul>
-                    <li class=" py-4 px-10 shadow-xl"><a href="index.php" class="block hover:text-teal-400 transition">Home</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="html.php" class="block hover:text-teal-400 transition">HTML</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="css.php" class="block hover:text-teal-400 transition">CSS</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="tailwind.php" class="block hover:text-teal-400 transition">Tailwind CSS</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="js.php" class="block hover:text-teal-400 transition">JavaScript</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="react.php" class="block hover:text-teal-400 transition">React</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('') ?>" class="block hover:text-teal-400 transition">Home</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('html/what-is-html') ?>" class="block hover:text-teal-400 transition">HTML</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('css/what-is-css') ?>" class="block hover:text-teal-400 transition">CSS</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('js/what-is-js') ?>" class="block hover:text-teal-400 transition">Tailwind CSS</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="block hover:text-teal-400 transition">JavaScript</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('react/what-is-react') ?>" class="block hover:text-teal-400 transition">React</a></li>
                 </ul>
             </nav>
         </div>

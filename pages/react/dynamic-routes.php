@@ -72,10 +72,9 @@ const { category, slug } = useParams();
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/router-404" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: 404 & Catch-All Routes →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/router-links') ?>" class="hover:underline">← Previous: Route / Link / Navigate</a>
+  <a href="<?= base_url('react/route-guards') ?>" class="hover:underline">Next: 404 & Protected Routes →</a>
+</div>
 
 </main>

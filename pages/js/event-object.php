@@ -64,4 +64,7 @@
         💡 <strong>Tip:</strong> Always use the <code>event</code> object to get dynamic and context-aware responses from your JavaScript code.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/delegation" class="text-blue-600 hover:underline">Event Delegation →</a></p>
+</div>
 </main>

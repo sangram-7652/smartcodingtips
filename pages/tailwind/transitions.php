@@ -4,89 +4,116 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
-            <li class="text-gray-500">Disabled, First/Last, Odd/Even, Transitions</li>
+            <li class="text-gray-500">Transitions and Timing Functions</li>
         </ol>
     </nav>
 
     <!-- Main Content -->
     <article>
-        <h1 class="text-3xl font-bold mb-4">Disabled, First/Last, Odd/Even, and Transitions in Tailwind CSS</h1>
+        <h1 class="text-3xl font-bold mb-4">Transitions and Timing Functions</h1>
+        <p class="text-lg mb-4">
+            Tailwind CSS provides utility classes to apply smooth transitions and control timing functions easily, helping you enhance the interactivity of your UI.
+        </p>
 
+        <!-- Transition Utilities -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">1. Styling Disabled Elements</h2>
-            <p class=" mb-2">Use the <code>disabled:</code> modifier to target elements when disabled:</p>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded disabled:bg-gray-400" disabled>
-                Disabled Button
-            </button>
-            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
-&lt;button class="bg-blue-500 text-white px-4 py-2 rounded disabled:bg-gray-400" disabled&gt;
-    Disabled Button
+            <h2 class="text-2xl font-semibold mb-2">1. Transition Utilities</h2>
+            <p class="text-lg mb-2">
+                Use <code>transition</code> classes to apply transitions. You can specify which properties should animate:
+            </p>
+            <pre class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+transition          /* Apply default transition */
+transition-colors   /* Animate color changes */
+transition-opacity  /* Animate opacity */
+transition-transform/* Animate transform (scale, rotate, etc.) */
+transition-all      /* Animate all properties */
+            </code></pre>
+            <p class="text-lg">Example:</p>
+            <pre class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+&lt;button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors"&gt;
+    Hover Me
 &lt;/button&gt;
             </code></pre>
         </section>
 
+        <!-- Duration Utilities -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">2. First, Last, Odd, and Even</h2>
-            <p class=" mb-2">Tailwind provides utilities for targeting specific children:</p>
-            <ul class=" list-disc list-inside mb-2">
-                <li><code>first:</code> – First child</li>
-                <li><code>last:</code> – Last child</li>
-                <li><code>odd:</code> – Odd-indexed children</li>
-                <li><code>even:</code> – Even-indexed children</li>
-            </ul>
-            <div class="space-y-2">
-                <div class="bg-white p-2 first:bg-green-100 last:bg-pink-100 odd:bg-gray-50 even:bg-gray-200 border" style="width: max-content;">
-                    <p class="first:text-red-600">Item 1</p>
-                    <p>Item 2</p>
-                    <p>Item 3</p>
-                    <p>Item 4</p>
-                </div>
-            </div>
-            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
-&lt;div class="first:bg-green-100 last:bg-pink-100 odd:bg-gray-50 even:bg-gray-200"&gt;
-    &lt;p class="first:text-red-600"&gt;Item 1&lt;/p&gt;
-    &lt;p&gt;Item 2&lt;/p&gt;
-    &lt;p&gt;Item 3&lt;/p&gt;
-    &lt;p&gt;Item 4&lt;/p&gt;
+            <h2 class="text-2xl font-semibold mb-2">2. Duration Utilities</h2>
+            <p class="text-lg">
+                Control how long the transition takes using <code>duration-{time}</code>:
+            </p>
+            <pre class="bg-gray-100dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+duration-75
+duration-150
+duration-300
+duration-500
+            </code></pre>
+        </section>
+
+        <!-- Easing Functions -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">3. Easing / Timing Functions</h2>
+            <p class="text-lg">
+                Tailwind provides timing utilities for easing:
+            </p>
+            <pre class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+ease-linear
+ease-in
+ease-out
+ease-in-out
+            </code></pre>
+            <p class="text-lg">Example:</p>
+            <pre class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+&lt;div class="transition-opacity duration-500 ease-in-out hover:opacity-50"&gt;
+    Hover to fade
 &lt;/div&gt;
             </code></pre>
         </section>
 
+        <!-- Delay Utility -->
         <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">3. Transitions and Timing</h2>
-            <p class=" mb-2">Add smooth transitions using Tailwind’s transition classes:</p>
-            <ul class=" list-disc list-inside mb-2">
-                <li><code>transition</code> – enables transition</li>
-                <li><code>duration-*</code> – duration in ms</li>
-                <li><code>ease-in, ease-out, ease-in-out, linear</code></li>
-                <li><code>delay-*</code> – adds delay before animation</li>
-            </ul>
-            <div class="w-40 h-20 bg-blue-400 hover:bg-blue-600 transition-all duration-300 ease-in-out text-white flex items-center justify-center rounded">
-                Hover Me
-            </div>
-            <pre class="bg-gray-100 p-4 rounded mt-2 dark:bg-gray-900 dark:text-white text-sm"><code>
-&lt;div class="w-40 h-20 bg-blue-400 hover:bg-blue-600 transition-all duration-300 ease-in-out text-white"&gt;
-    Hover Me
-&lt;/div&gt;
+            <h2 class="text-2xl font-semibold mb-2">4. Transition Delays</h2>
+            <p class="text-lg">
+                Add delays using <code>delay-{time}</code> classes:
+            </p>
+            <pre class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded overflow-x-auto text-sm"><code>
+delay-75
+delay-150
+delay-300
+delay-500
             </code></pre>
         </section>
 
+        <!-- Best Practices -->
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-2">5. Best Practices</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>Use transitions to enhance UX, not just for visual effects.</li>
+                <li>Keep duration short for interactive elements (150–300ms).</li>
+                <li>Combine with hover, focus, and active states for responsiveness.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
-            <p class="">
-                Tailwind's pseudo-state utilities like <code>disabled:</code>, <code>first:</code>, <code>last:</code>, <code>odd:</code>, and <code>even:</code> offer elegant solutions for styling dynamic UIs. Combined with transition utilities, they enable clean and interactive components without writing custom CSS.
+            <p class="text-lg">
+                Tailwind's transition utilities make it simple to apply smooth effects and animations to your UI, boosting interactivity and polish with minimal code.
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/transitions" class="text-blue-600 hover:underline">Transitions and Timing →</a></p>
-        </div>
+        <!-- Next Link -->
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/states-position') ?>" class="hover:underline">← Previous: Disabled, First/Last, Odd/Even</a>
+  <a href="<?= base_url('tailwind/animations') ?>" class="hover:underline">Next: Animating with Keyframes →</a>
+</div>
+
     </article>
 </main>

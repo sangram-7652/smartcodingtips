@@ -15,17 +15,17 @@
     </ol>
   </nav>
 
-  <h1 class="text-3xl font-bold mb-4 text-black">📦 useEffect + Axios</h1>
+  <h1 class="text-3xl font-bold mb-4 text-black dark:text-white">📦 useEffect + Axios</h1>
 
-  <p class="mb-6 text-black">
+  <p class="mb-6 text-black dark:text-white">
     Axios is a promise-based HTTP client that's often preferred over fetch due to cleaner syntax and built-in JSON parsing. Here’s how to use it inside <code>useEffect()</code>.
   </p>
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">🧪 Example: Fetch Users with Axios</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 Example: Fetch Users with Axios</h2>
 
-  <pre class="bg-gray-100 text-black p-4 rounded text-sm mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-gray-300 p-4 rounded text-sm mb-4 overflow-x-auto"><code>
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -68,21 +68,20 @@ export default UsersList;
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">🔍 Axios Benefits</h2>
-  <ul class="list-disc list-inside text-black mb-4">
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔍 Axios Benefits</h2>
+  <ul class="list-disc list-inside text-black dark:text-white mb-4">
     <li>No need for <code>JSON.parse()</code> — Axios does it automatically</li>
     <li>Better error messages</li>
     <li>Supports request/response interceptors</li>
     <li>Works on both client and server (Node.js)</li>
   </ul>
 
-  <p class="text-black">Install Axios via <code>npm install axios</code> before using it.</p>
+  <p class="text-black dark:text-white">Install Axios via <code>npm install axios</code> before using it.</p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/custom-hooks" class="text-blue-600 hover:underline">
-      Next: Creating Custom Hooks →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/loading-error') ?>" class="hover:underline">← Previous: Loading & Error</a>
+  <a href="<?= base_url('react/display-data') ?>" class="hover:underline">Next: Displaying Data →</a>
+</div>
 
 </main>

@@ -4,28 +4,28 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-800 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="react.php?page=react/useEffect" class="text-blue-600 hover:underline">Hooks</a>
+        <a href="react.php?page=react/useEffect" class="text-blue-600 dark:text-blue-400 hover:underline">Hooks</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">Using fetch()</li>
     </ol>
   </nav>
 
-  <h1 class="text-3xl font-bold mb-4 text-black">🌐 Using <code>fetch()</code> in React</h1>
+  <h1 class="text-3xl font-bold mb-4 text-black dark:text-white">🌐 Using <code>fetch()</code> in React</h1>
 
-  <p class="mb-6 text-black">
+  <p class="mb-6 text-black dark:text-white">
     The <code>fetch()</code> API is a native JavaScript function used to make HTTP requests. In React, it's commonly used inside the <code>useEffect()</code> hook to load data from an API when a component mounts.
   </p>
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">🚀 Example: Fetching Data from an API</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 Example: Fetching Data from an API</h2>
 
-  <pre class="bg-gray-100 text-black p-4 rounded text-sm mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-gray-300 p-4 rounded text-sm mb-4 overflow-x-auto"><code>
 import React, { useEffect, useState } from 'react';
 
 function UsersList() {
@@ -52,8 +52,8 @@ function UsersList() {
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">📌 Best Practices</h2>
-  <ul class="list-disc list-inside text-black mb-4">
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📌 Best Practices</h2>
+  <ul class="list-disc list-inside text-black dark:text-white mb-4">
     <li>Use <code>useEffect()</code> to run fetch on component mount.</li>
     <li>Always handle loading and error states.</li>
     <li>Use <code>async/await</code> for cleaner syntax if preferred.</li>
@@ -61,9 +61,9 @@ function UsersList() {
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">🧼 Cleaner Version Using async/await</h2>
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧼 Cleaner Version Using async/await</h2>
 
-  <pre class="bg-gray-100 text-black p-4 rounded text-sm mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-gray-300 p-4 rounded text-sm mb-4 overflow-x-auto"><code>
 useEffect(() => {
   const fetchData = async () => {
     try {
@@ -81,18 +81,18 @@ useEffect(() => {
 
   <hr class="my-6 border-gray-300">
 
-  <h2 class="text-2xl font-semibold mb-4 text-black">📋 Summary</h2>
-  <ul class="list-disc list-inside text-black mb-4">
+  <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📋 Summary</h2>
+  <ul class="list-disc list-inside text-black dark:text-white mb-4">
     <li><code>fetch()</code> is used to get data from external APIs.</li>
     <li>Combine with <code>useEffect()</code> for side effects in React.</li>
     <li>Always manage loading, success, and error states.</li>
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/axios" class="text-blue-600 hover:underline">
-      Next: Using Axios →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/context-intro') ?>" class="hover:underline">← Previous: Context API Intro</a>
+  <a href="<?= base_url('react/fetch-with-effect') ?>" class="hover:underline">Next: useEffect + fetch →</a>
+</div>
+
 
 </main>

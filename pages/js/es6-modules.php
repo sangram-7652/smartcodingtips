@@ -73,4 +73,7 @@ import sayHi, { name } from './mix.js';</code></pre>
     ✅ <strong>Next Tip:</strong> Organize related functions and components into modules for cleaner, reusable code!
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/modern-practice" class="text-blue-600 hover:underline">Modern Code Examples →</a></p>
+</div>
 </main>

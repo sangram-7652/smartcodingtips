@@ -113,10 +113,9 @@ test('updates name on typing', async () =&gt; {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/testing-mocking" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Mocking API Requests →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/snapshots') ?>" class="hover:underline">← Previous: Snapshot Testing</a>
+  <a href="<?= base_url('react/xss-protection') ?>" class="hover:underline">Next: XSS Protection →</a>
+</div>
 
 </main>

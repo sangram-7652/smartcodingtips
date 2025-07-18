@@ -90,4 +90,7 @@ dev.greet();
     💡 <strong>Tip:</strong> Classes are syntactic sugar over JavaScript's prototypal inheritance. Behind the scenes, it's still using prototypes!
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/oop-realworld" class="text-blue-600 hover:underline">Real-World OOP →</a></p>
+</div>
 </main>

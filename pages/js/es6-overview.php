@@ -72,4 +72,8 @@ import { sayHello } from './utils.js';</code></pre>
         💡 <strong>Next:</strong> Dive into classes, inheritance, and OOP with ES6+!
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/default-params" class="text-blue-600 hover:underline">Default Params →</a></p>
+</div>
+
 </main>

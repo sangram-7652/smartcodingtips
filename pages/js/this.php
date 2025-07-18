@@ -72,4 +72,8 @@ boundFunc();            // Hello, Charlie</code></pre>
         💡 <strong>Tip:</strong> Always be mindful of how a function is called — that's what determines what <code>this</code> refers to.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/arrays" class="text-blue-600 hover:underline">Arrays and Methods →</a></p>
+</div>
+
 </main>

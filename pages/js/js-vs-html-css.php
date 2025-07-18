@@ -22,7 +22,7 @@
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <div class="bg-blue-100 p-4 rounded shadow">
+        <div class="bg-blue-100 dark:bg-gray-900 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">🔤 HTML (Structure)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Defines page content & structure</li>
@@ -32,7 +32,7 @@
             </ul>
         </div>
 
-        <div class="bg-green-100 p-4 rounded shadow">
+        <div class="bg-green-100  dark:bg-gray-900 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">🎨 CSS (Style)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Controls design and presentation</li>
@@ -42,7 +42,7 @@
             </ul>
         </div>
 
-        <div class="bg-yellow-100 p-4 rounded shadow">
+        <div class="bg-yellow-100  dark:bg-gray-900 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">⚙️ JavaScript (Behavior)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Adds interactivity & logic</li>
@@ -56,12 +56,12 @@
     <h2 class="text-2xl font-semibold mb-2">📊 Comparison Table</h2>
     <div class="dark:bg-gray-900 dark:text-white mb-6">
         <table class="min-w-full border border-gray-300 text-sm">
-            <thead class="bg-gray-100 text-left">
+            <thead class="bg-gray-100 dark:text-black text-left">
                 <tr>
-                    <th class="border px-4 py-2">Feature</th>
-                    <th class="border px-4 py-2">HTML</th>
-                    <th class="border px-4 py-2">CSS</th>
-                    <th class="border px-4 py-2">JavaScript</th>
+                    <th class="border dark:border-black px-4 py-2">Feature</th>
+                    <th class="border dark:border-black px-4 py-2">HTML</th>
+                    <th class="border dark:border-black px-4 py-2">CSS</th>
+                    <th class="border dark:border-black px-4 py-2">JavaScript</th>
                 </tr>
             </thead>
             <tbody>
@@ -102,5 +102,9 @@
     <div class="bg-green-50 border-l-4 border-green-400 text-green-800 p-4 rounded">
         <strong>Tip:</strong> Think of it like this: <em>HTML is the skeleton, CSS is the skin, JavaScript is the brain.</em>
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/running-js" class="text-blue-600 hover:underline">Where JavaScript Runs →</a></p>
+</div>
+
 
 </main>

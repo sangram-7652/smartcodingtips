@@ -75,4 +75,8 @@ person.greet(); // Output: "Hi, I'm Bob"</code></pre>
         💡 Use arrow functions to preserve <code>this</code> in methods or inside timeouts and event handlers.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/scope" class="text-blue-600 hover:underline">Scope & Closure →</a></p>
+</div>
+
 </main>

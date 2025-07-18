@@ -64,4 +64,8 @@
         ✅ <strong>Pro Tip:</strong> Use delegation with lists, tables, and components where elements may be added or removed dynamically.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/bubbling" class="text-blue-600 hover:underline">Bubbling vs Capturing →</a></p>
+</div>
+
 </main>

@@ -95,10 +95,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/fetch-api" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Using fetch() →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/custom-hooks') ?>" class="hover:underline">← Previous: Custom Hooks</a>
+  <a href="<?= base_url('react/context-api') ?>" class="hover:underline">Next: Context API →</a>
+</div>
 
 </main>

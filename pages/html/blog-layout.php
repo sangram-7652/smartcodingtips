@@ -1,29 +1,29 @@
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
-    <!-- Breadcrumb Navigation -->
-    <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
-        <ol class="list-none p-0 inline-flex">
-            <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
-                <span class="mx-2">/</span>
-            </li>
-            <li class="text-gray-500">Simple Blog Layout</li>
-        </ol>
-    </nav>
+  <!-- Breadcrumb Navigation -->
+  <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
+    <ol class="list-none p-0 inline-flex">
+      <li class="flex items-center">
+        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+      </li>
+      <li class="text-gray-500">Simple Blog Layout</li>
+    </ol>
+  </nav>
 
-    <!-- Main Content -->
-    <article>
-        <h1 class="text-3xl font-bold mb-4">Simple Blog Layout Using HTML & Tailwind</h1>
+  <!-- Main Content -->
+  <article>
+    <h1 class="text-3xl font-bold mb-4">Simple Blog Layout Using HTML & Tailwind</h1>
 
-        <section class="mb-6">
-            <p class=" mb-2">
-                Creating a blog layout involves organizing posts into a clean and readable format. Below is a basic blog layout with a header, post cards, and a sidebar-style design.
-            </p>
-        </section>
+    <section class="mb-6">
+      <p class=" mb-2">
+        Creating a blog layout involves organizing posts into a clean and readable format. Below is a basic blog layout with a header, post cards, and a sidebar-style design.
+      </p>
+    </section>
 
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
+      <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;div class="grid md:grid-cols-3 gap-6"&gt;
   &lt;!-- Main Blog Area --&gt;
   &lt;div class="md:col-span-2 space-y-6"&gt;
@@ -68,20 +68,21 @@
   &lt;/aside&gt;
 &lt;/div&gt;
             </code></pre>
-        </section>
+    </section>
 
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">Tips for Better Blog Layouts</h2>
-            <ul class="list-disc list-inside ">
-                <li>Use a consistent style for blog cards/posts.</li>
-                <li>Ensure typography is clean and easy to read.</li>
-                <li>Highlight recent or featured posts.</li>
-                <li>Optimize for mobile using responsive design.</li>
-            </ul>
-        </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Tips for Better Blog Layouts</h2>
+      <ul class="list-disc list-inside ">
+        <li>Use a consistent style for blog cards/posts.</li>
+        <li>Ensure typography is clean and easy to read.</li>
+        <li>Highlight recent or featured posts.</li>
+        <li>Optimize for mobile using responsive design.</li>
+      </ul>
+    </section>
 
-        <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/what-is-html" class="text-blue-600 hover:underline">What is HTML? →</a></p>
-        </div>
-    </article>
+    <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 hover:underline">← Previous: Contact Us Form</a></div>
+    <div></div>
+</div>
+  </article>
 </main>

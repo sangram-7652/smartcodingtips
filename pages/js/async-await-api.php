@@ -70,4 +70,7 @@ postData();</code></pre>
         ✅ <strong>Next Tip:</strong> Combine multiple API calls using <code>Promise.all()</code> for parallel execution!
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/display-api" class="text-blue-600 hover:underline">Display Fetched Data →</a></p>
+</div>
 </main>

@@ -72,4 +72,7 @@ test('fetchData returns mocked data', () => {
     ✅ <strong>Pro Tip:</strong> Place tests in a <code>__tests__</code> folder or name them <code>*.test.js</code> for automatic discovery.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/debugging" class="text-blue-600 hover:underline">Debugging Techniques →</a></p>
+</div>
 </main>

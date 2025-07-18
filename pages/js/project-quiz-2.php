@@ -115,4 +115,7 @@ showQuestion();</code></pre>
     💡 <strong>Tip:</strong> Wrap questions in a JSON file for loading via <code>fetch()</code> to make it scalable.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-notes" class="text-blue-600 hover:underline">Notes App →</a></p>
+</div>
 </main>

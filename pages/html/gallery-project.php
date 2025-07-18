@@ -4,7 +4,7 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Photo Gallery</li>
@@ -59,8 +59,9 @@
             </code></pre>
         </section>
 
-         <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/contact-project" class="text-blue-600 hover:underline">Contact Us Form →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/landing-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Product Landing Page</a></div>
+    <div><a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Contact Us Form →</a></div>
+</div>
     </article>
 </main>

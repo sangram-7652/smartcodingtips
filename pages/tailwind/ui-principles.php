@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Tailwind UI Principles</li>
@@ -78,13 +78,19 @@ theme: {
             </p>
         </section>
 
-        <!-- Accessibility & Semantics -->
-        <section class="mb-6">
-            <h2 class="text-2xl font-semibold mb-2">5. Accessibility and Semantics</h2>
-            <p class=" mb-2">
-                Tailwind pairs well with semantic HTML. Use meaningful elements (`<button>`, `<nav>`, `<section>`) along with accessibility classes (`sr-only`, `focus:outline-none`, etc.) for inclusive designs.
-            </p>
-        </section>
+      <!-- Accessibility & Semantics -->
+<section class="mb-6">
+    <h2 class="text-2xl font-semibold mb-2">5. Accessibility and Semantics</h2>
+    <p class="mb-2">
+        Tailwind CSS pairs well with semantic HTML. Use meaningful elements like <code class="bg-gray-200  dark:bg-gray-800 px-1 rounded text-sm">&lt;nav&gt;</code>, 
+        <code class="bg-gray-200 dark:bg-gray-800 px-1 rounded text-sm">&lt;section&gt;</code>, and 
+        <code class="bg-gray-200 dark:bg-gray-800 px-1 rounded text-sm">&lt;button&gt;</code> along with utility classes like 
+        <code class="bg-gray-200 dark:bg-gray-800 px-1 rounded text-sm">sr-only</code>, 
+        <code class="bg-gray-200 dark:bg-gray-800 px-1 rounded text-sm">focus:outline-none</code>, and 
+        <code class="bg-gray-200 dark:bg-gray-800 px-1 rounded text-sm">aria-*</code> attributes to build accessible and inclusive designs.
+    </p>
+</section>
+
 
         <!-- Conclusion -->
         <section class="mb-6">
@@ -94,8 +100,10 @@ theme: {
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/reuse" class="text-blue-600 hover:underline">Reusing with @apply →</a></p>
-        </div>
+       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/dark-mode') ?>" class="hover:underline">← Previous: Dark Mode: Class vs Media Strategy</a>
+  <a href="<?= base_url('tailwind/reuse') ?>" class="hover:underline">Next: Extracting Reusable Components →</a>
+</div>
+
     </article>
 </main>

@@ -92,10 +92,9 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/state" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Understanding State →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/jsx') ?>" class="hover:underline">← Previous: JSX</a>
+  <a href="<?= base_url('react/props') ?>" class="hover:underline">Next: Props →</a>
+</div>
 
 </main>

@@ -70,4 +70,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self';</code></pre>
     💡 <strong>Tip:</strong> Always keep dependencies updated and regularly audit your packages using tools like <code>npm audit</code>.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/xss-eval" class="text-blue-600 hover:underline">Avoiding XSS / eval() →</a></p>
+</div>
 </main>

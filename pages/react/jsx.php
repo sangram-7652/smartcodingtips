@@ -82,10 +82,8 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/props" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Props in React →
-    </a>
-  </div>
-
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/first-app') ?>" class="hover:underline">← Previous: Your First React App</a>
+  <a href="<?= base_url('react/components') ?>" class="hover:underline">Next: Components →</a>
+</div>
 </main>

@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Tailwind UI vs Headless UI</li>
@@ -35,7 +35,7 @@
                 <li>Requires a license — one-time or team-based pricing</li>
                 <li>Great for production-level UI work</li>
             </ul>
-            <p class="">Official site: <a href="https://tailwindui.com" class="text-blue-600 hover:underline" target="_blank">tailwindui.com</a></p>
+            <p class="">Official site: <a href="https://tailwindui.com" class="text-blue-600  dark:text-blue-400 hover:underline" target="_blank">tailwindui.com</a></p>
         </section>
 
         <!-- Headless UI -->
@@ -51,7 +51,7 @@
                 <li>Promotes full control over appearance and layout</li>
                 <li>Ideal for advanced JavaScript-driven UIs with accessibility in mind</li>
             </ul>
-            <p class="">Official site: <a href="https://headlessui.dev" class="text-blue-600 hover:underline" target="_blank">headlessui.dev</a></p>
+            <p class="">Official site: <a href="https://headlessui.dev" class="text-blue-600  dark:text-blue-400 hover:underline" target="_blank">headlessui.dev</a></p>
         </section>
 
         <!-- Comparison Table -->
@@ -60,7 +60,7 @@
             <div class="dark:bg-gray-900 dark:text-white">
                 <table class="table-auto w-full text-left border border-gray-300 text-sm">
                     <thead>
-                        <tr class="bg-gray-100">
+                        <tr class="bg-gray-100 dark:bg-gray-800">
                             <th class="p-2 border">Feature</th>
                             <th class="p-2 border">Tailwind UI</th>
                             <th class="p-2 border">Headless UI</th>
@@ -72,7 +72,7 @@
                             <td class="p-2 border">Paid</td>
                             <td class="p-2 border">Free</td>
                         </tr>
-                        <tr class="bg-gray-50">
+                        <tr class="bg-gray-50 dark:bg-gray-800">
                             <td class="p-2 border">Component Type</td>
                             <td class="p-2 border">Styled UI Components</td>
                             <td class="p-2 border">Functional (unstyled)</td>
@@ -82,7 +82,7 @@
                             <td class="p-2 border">HTML, React, Vue</td>
                             <td class="p-2 border">React, Vue</td>
                         </tr>
-                        <tr class="bg-gray-50">
+                        <tr class="bg-gray-50 dark:bg-gray-800">
                             <td class="p-2 border">Accessibility</td>
                             <td class="p-2 border">Yes</td>
                             <td class="p-2 border">Yes (fully accessible)</td>
@@ -105,8 +105,9 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/integration" class="text-blue-600 hover:underline">PostCSS, Vite Integration →</a></p>
-        </div>
+       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/plugin-typography') ?>" class="hover:underline">← Previous: Typography, Aspect-Ratio, Line-Clamp</a>
+  <a href="<?= base_url('tailwind/integration') ?>" class="hover:underline">Next: Integration with PostCSS and Vite →</a>
+</div>
     </article>
 </main>

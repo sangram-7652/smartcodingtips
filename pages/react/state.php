@@ -84,10 +84,9 @@ function Profile() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/events" class="text-blue-600 dark:text-blue-400 hover:underline">
-      Next: Events in React →
-    </a>
-  </div>
+<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/props') ?>" class="hover:underline">← Previous: Props</a>
+  <a href="<?= base_url('react/conditional-rendering') ?>" class="hover:underline">Next: Conditional Rendering →</a>
+</div>
 
 </main>

@@ -103,10 +103,9 @@ function Counter() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/redux-async" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Redux Async (createAsyncThunk) →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/redux') ?>" class="hover:underline">← Previous: Redux Toolkit</a>
+  <a href="<?= base_url('react/comparison') ?>" class="hover:underline">Next: Tool Comparison →</a>
+</div>
 
 </main>

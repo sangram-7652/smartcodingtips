@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Image Attributes</li>
@@ -111,60 +111,61 @@
             <h2 class="text-2xl font-semibold mb-2">Summary of Common Image Attributes</h2>
             <table class="table-auto min-w-full   border border-gray-300 text-left mb-4 ">
                 <thead>
-                    <tr class="bg-gray-200 dark:bg-gray-900 dark:text-white">
-                        <th class=" border">Attribute</th>
-                        <th class=" border">Purpose</th>
-                        <th class=" border">Example</th>
+                    <tr class="bg-gray-200  dark:text-black">
+                        <th class="p-2 border dark:border-black">Attribute</th>
+                        <th class="p-2 border dark:border-black">Purpose</th>
+                        <th class="p-2 border dark:border-black">Example</th>
                     </tr>
                 </thead>
                 
                 <tbody>
                     <tr>
-                        <td class=" border"><code>src</code></td>
-                        <td class=" border">Image source URL</td>
-                        <td class=" border">&lt;img src="image.jpg"&gt;</td>
+                        <td class="p-2 border"><code>src</code></td>
+                        <td class="p-2 border">Image source URL</td>
+                        <td class="p-2 border">&lt;img src="image.jpg"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>alt</code></td>
-                        <td class=" border">Alternative text for accessibility</td>
-                        <td class=" border">&lt;img alt="Description"&gt;</td>
+                        <td class="p-2 border"><code>alt</code></td>
+                        <td class="p-2 border">Alternative text for accessibility</td>
+                        <td class="p-2 border">&lt;img alt="Description"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>width</code></td>
-                        <td class=" border">Width in pixels</td>
-                        <td class=" border">&lt;img width="300"&gt;</td>
+                        <td class="p-2 border"><code>width</code></td>
+                        <td class="p-2 border">Width in pixels</td>
+                        <td class="p-2 border">&lt;img width="300"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>height</code></td>
-                        <td class=" border">Height in pixels</td>
-                        <td class=" border">&lt;img height="200"&gt;</td>
+                        <td class="p-2 border"><code>height</code></td>
+                        <td class="p-2 border">Height in pixels</td>
+                        <td class="p-2 border">&lt;img height="200"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>title</code></td>
-                        <td class=" border">Tooltip text on hover</td>
-                        <td class=" border">&lt;img title="Info"&gt;</td>
+                        <td class="p-2 border"><code>title</code></td>
+                        <td class="p-2 border">Tooltip text on hover</td>
+                        <td class="p-2 border">&lt;img title="Info"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>loading</code></td>
-                        <td class=" border">Lazy loading control</td>
-                        <td class=" border">&lt;img loading="lazy"&gt;</td>
+                        <td class="p-2 border"><code>loading</code></td>
+                        <td class="p-2 border">Lazy loading control</td>
+                        <td class="p-2 border">&lt;img loading="lazy"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>srcset</code></td>
-                        <td class=" border">Responsive image sources</td>
-                        <td class=" border">&lt;img srcset="img1.jpg 500w, img2.jpg 1000w"&gt;</td>
+                        <td class="p-2 border"><code>srcset</code></td>
+                        <td class="p-2 border">Responsive image sources</td>
+                        <td class="p-2 border">&lt;img srcset="img1.jpg 500w, img2.jpg 1000w"&gt;</td>
                     </tr>
                     <tr>
-                        <td class=" border"><code>usemap</code></td>
-                        <td class=" border">Reference image map</td>
-                        <td class=" border">&lt;img usemap="#mapname"&gt;</td>
+                        <td class="p-2 border"><code>usemap</code></td>
+                        <td class="p-2 border">Reference image map</td>
+                        <td class="p-2 border">&lt;img usemap="#mapname"&gt;</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/video" class="text-blue-600 hover:underline">Video Tag →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/image-formats') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Supported Formats</a></div>
+    <div><a href="<?= base_url('html/video') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Video Tag →</a></div>
+</div>
     </article>
 </main>

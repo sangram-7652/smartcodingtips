@@ -73,4 +73,8 @@ Content-Security-Policy: script-src 'nonce-abc123'
     💡 <strong>Tip:</strong> Start with <code>Content-Security-Policy-Report-Only</code> to monitor without breaking your site.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-slider" class="text-blue-600 hover:underline">Image Slider →</a></p>
+</div>
+
 </main>

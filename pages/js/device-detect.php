@@ -73,4 +73,8 @@ if ("geolocation" in navigator) {
         💡 <strong>Best Practice:</strong> Always prefer <strong>feature detection</strong> over device detection when handling cross-device compatibility.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/popups" class="text-blue-600 hover:underline">Popups & Controls →</a></p>
+</div>
+
 </main>

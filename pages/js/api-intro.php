@@ -71,4 +71,8 @@ console.log(obj.name); // "John"</code></pre>
         <li>APIs power modern web apps — from weather to login to search</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/fetch-api" class="text-blue-600 hover:underline">fetch() Basics →</a></p>
+</div>
+
 </main>

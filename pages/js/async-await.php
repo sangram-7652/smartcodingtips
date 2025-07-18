@@ -75,4 +75,8 @@ displayData();</code></pre>
         <li>Makes code cleaner and avoids chaining <code>.then()</code>.</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/error-handling" class="text-blue-600 hover:underline">Error Handling →</a></p>
+</div>
+
 </main>

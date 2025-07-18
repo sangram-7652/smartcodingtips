@@ -86,10 +86,9 @@ setName('');
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/form-libraries" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Form Libraries in React →
-    </a>
-  </div>
+ <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/validations') ?>" class="hover:underline">← Previous: Input Validation</a>
+  <a href="<?= base_url('react/form-libraries') ?>" class="hover:underline">Next: Formik / RHF / Yup →</a>
+</div>
 
 </main>

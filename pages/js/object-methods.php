@@ -80,4 +80,7 @@ console.log(Object.values(obj)); // [1, 2]</code></pre>
         💡 <strong>Tip:</strong> Use methods to organize behavior within objects and avoid repeating logic in your code.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/dom-intro" class="text-blue-600 hover:underline">What is the DOM? →</a></p>
+</div>
 </main>

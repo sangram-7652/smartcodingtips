@@ -126,10 +126,9 @@ export default BlogDetail;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-10 flex justify-end text-sm">
-    <a href="react.php?page=react/form-validation" class="text-blue-600 hover:underline dark:text-blue-400">
-      Next: Form Validation →
-    </a>
-  </div>
+  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('react/project-auth') ?>" class="hover:underline">← Previous: Login Form</a>
+  <a href="<?= base_url('react/build') ?>" class="hover:underline">Next: Build for Production →</a>
+</div>
 
 </main>

@@ -73,4 +73,7 @@ document.getElementById("child").addEventListener("click", () =&gt; {
         💡 <strong>Tip:</strong> Use <code>stopPropagation()</code> cautiously — it may block essential parent logic.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/let-const" class="text-blue-600 hover:underline">let & const →</a></p>
+</div>
 </main>

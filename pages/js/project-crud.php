@@ -108,4 +108,8 @@ renderUsers();</code></pre>
     💡 <strong>Tip:</strong> Always validate input and prevent empty values from being stored.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/vanilla-vs-frameworks" class="text-blue-600 hover:underline">Vanilla vs Frameworks →</a></p>
+</div>
+
 </main>

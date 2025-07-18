@@ -79,5 +79,7 @@
     <p class="mt-4">
         You’ve just taken your first step into the world of JavaScript. Next, we’ll explore how to work with variables and data types.
     </p>
-
+            <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/variables" class="text-blue-600 hover:underline">Variables: var, let, const →</a></p>
+</div>  
 </main>

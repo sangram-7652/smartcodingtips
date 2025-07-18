@@ -86,4 +86,7 @@ renderNotes();</code></pre>
     💡 <strong>Note:</strong> Since this app uses <code>localStorage</code>, your notes will persist in the browser but not sync across devices.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/project-crud" class="text-blue-600 hover:underline">Simple CRUD →</a></p>
+</div>
 </main>

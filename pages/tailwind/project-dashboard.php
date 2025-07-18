@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 dark:text-gray-300 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600  dark:text-blue-400 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600  dark:text-blue-400 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500 dark:text-gray-300">Dark Mode Dashboard</li>
@@ -28,10 +28,10 @@
         <aside class="md:col-span-1 bg-white dark:bg-gray-800 p-4 rounded shadow">
             <h2 class=" font-semibold mb-4 text-gray-800 dark:text-white">Menu</h2>
             <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
-                <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Dashboard</a></li>
-                <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Analytics</a></li>
-                <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Settings</a></li>
-                <li><a href="#" class="hover:text-blue-600 dark:hover:text-blue-400">Logout</a></li>
+                <li><a href="#" class="hover:text-blue-600  dark:text-blue-400 dark:hover:text-blue-400">Dashboard</a></li>
+                <li><a href="#" class="hover:text-blue-600  dark:text-blue-400 dark:hover:text-blue-400">Analytics</a></li>
+                <li><a href="#" class="hover:text-blue-600  dark:text-blue-400 dark:hover:text-blue-400">Settings</a></li>
+                <li><a href="#" class="hover:text-blue-600  dark:text-blue-400 dark:hover:text-blue-400">Logout</a></li>
             </ul>
         </aside>
 
@@ -72,9 +72,8 @@
     </div>
 
     <!-- Next -->
-    <div class="mt-6">
-        <p class=" font-semibold text-gray-700 dark:text-gray-300">
-            Next: <a href="tailwind.php?page=tailwind/project-blog" class="text-blue-600 dark:text-blue-400 hover:underline">Blog Layout with Prose →</a>
-        </p>
-    </div>
+    <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/project-pricing') ?>" class="hover:underline">← Previous: Pricing Table with Toggle</a>
+  <a href="<?= base_url('tailwind/optimize-purge') ?>" class="hover:underline">Next: Purging Unused CSS for Production →</a>
+</div>
 </main>

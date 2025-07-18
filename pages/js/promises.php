@@ -76,4 +76,7 @@ fetchData()
         💡 <strong>Tip:</strong> Promises are a foundation for modern JavaScript async tools like <code>fetch()</code> and <code>async/await</code>.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/async-await" class="text-blue-600 hover:underline">Async / Await →</a></p>
+</div>
 </main>

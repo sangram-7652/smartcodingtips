@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php" class="text-blue-600 hover:underline">Tailwind CSS</a>
+                <a href="tailwind.php" class="text-blue-600 dark:text-blue-400 hover:underline">Tailwind CSS</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Text Alignment and Decoration</li>
@@ -33,10 +33,10 @@ text-right    /* Align text to the right */
 text-justify  /* Justify text */
             </pre>
             <div class="space-y-2 mt-4">
-                <p class="text-left bg-gray-50 p-2 rounded">Left aligned text</p>
-                <p class="text-center bg-gray-50 p-2 rounded">Center aligned text</p>
-                <p class="text-right bg-gray-50 p-2 rounded">Right aligned text</p>
-                <p class="text-justify bg-gray-50 p-2 rounded">This paragraph is justified. It expands to fill the width of its container by adjusting the spacing between words and characters.</p>
+                <p class="text-left bg-gray-800 text-white p-2 rounded">Left aligned text</p>
+                <p class="text-center bg-gray-800 text-white p-2 rounded">Center aligned text</p>
+                <p class="text-right bg-gray-800 text-white p-2 rounded">Right aligned text</p>
+                <p class="text-justify bg-gray-800 text-white p-2 rounded">This paragraph is justified. It expands to fill the width of its container by adjusting the spacing between words and characters.</p>
             </div>
         </section>
 
@@ -54,7 +54,7 @@ decoration-wavy      /* Wavy underline */
 decoration-none      /* No decoration */
             </pre>
             <div class="space-y-2 mt-4">
-                <p class="underline text-blue-600">This is underlined text</p>
+                <p class="underline text-blue-600 dark:text-blue-400">This is underlined text</p>
                 <p class="line-through text-red-600">This text is struck through</p>
                 <p class="no-underline text-green-600">This text has no underline</p>
                 <p class="underline decoration-wavy decoration-blue-500">Wavy underline style</p>
@@ -93,8 +93,9 @@ decoration-2           /* Set decoration thickness */
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="tailwind.php?page=tailwind/text-truncate" class="text-blue-600 hover:underline">Text Truncation & Clamping →</a></p>
-        </div>
+        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/text-spacing') ?>" class="hover:underline">← Previous: Line Height, Letter Spacing</a>
+  <a href="<?= base_url('tailwind/text-truncate') ?>" class="hover:underline">Next: Text Truncation, Clamping →</a>
+</div>
     </article>
 </main>

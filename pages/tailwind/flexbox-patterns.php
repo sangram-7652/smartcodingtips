@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="tailwind.php?page=tailwind/flexbox-patterns" class="text-blue-600 hover:underline">Creating Real Layouts with Flexbox</a>
+                <a href="tailwind.php?page=tailwind/flexbox-patterns" class="text-blue-600 dark:text-blue-400 hover:underline">Creating Real Layouts with Flexbox</a>
             </li>
         </ol>
     </nav>
@@ -45,8 +45,8 @@
 &lt;/div&gt;</code></pre>
 
     <div class="flex rounded overflow-hidden mb-6">
-        <aside class="w-1/4 bg-gray-100 p-4">Sidebar</aside>
-        <main class="flex-1 bg-white p-4 border-l">Main Content</main>
+        <aside class="w-1/4 bg-gray-800 text-white dark p-4">Sidebar</aside>
+        <main class="flex-1 bg-gray-700 text-white p-4 border-l">Main Content</main>
     </div>
 
     <h2 class="text-2xl font-semibold mb-2">3️⃣ Card Layout with Flex Column</h2>
@@ -56,8 +56,8 @@
 &lt;/div&gt;</code></pre>
 
     <div class="flex flex-col md:flex-row gap-4 mb-6">
-        <div class="bg-white p-4 shadow rounded flex-1">Card 1</div>
-        <div class="bg-white p-4 shadow rounded flex-1">Card 2</div>
+        <div class="bg-gray-800 text-white p-4 shadow rounded flex-1">Card 1</div>
+        <div class="bg-gray-800 text-white p-4 shadow rounded flex-1">Card 2</div>
     </div>
 
     <h2 class="text-2xl font-semibold mb-2">4️⃣ Pricing Table with Equal Height</h2>
@@ -75,12 +75,12 @@
 &lt;/div&gt;</code></pre>
 
     <div class="flex flex-col md:flex-row gap-4 mb-6">
-        <div class="flex flex-col flex-1 bg-gray-100 p-6 rounded">
+        <div class="flex flex-col flex-1 bg-gray-800 text-white p-6 rounded">
             <h3 class="text-xl font-bold mb-2">Basic</h3>
             <p class="flex-grow">Some features</p>
             <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Select</button>
         </div>
-        <div class="flex flex-col flex-1 bg-gray-100 p-6 rounded">
+        <div class="flex flex-col flex-1 bg-gray-800 text-white p-6 rounded">
             <h3 class="text-xl font-bold mb-2">Pro</h3>
             <p class="flex-grow">All features</p>
             <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Select</button>
@@ -90,5 +90,10 @@
     <h2 class="text-2xl font-semibold mb-2">🧠 Summary</h2>
     <p>Flexbox lets you build responsive, consistent layouts like navbars, sidebars, cards, and pricing sections with minimal effort using Tailwind's utility classes.</p>
     <p class="mt-2 text-green-700 font-semibold">✅ Tip: Combine <code>flex</code>, <code>gap</code>, <code>justify-*</code>, and <code>items-*</code> for perfect control!</p>
+
+    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+  <a href="<?= base_url('tailwind/flexbox-gap-order') ?>" class="hover:underline">← Previous: Gap and Order Utilities</a>
+  <a href="<?= base_url('tailwind/grid-columns') ?>" class="hover:underline">Next: Grid Container and Template Columns/Rows →</a>
+</div>
 
 </main>

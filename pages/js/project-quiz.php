@@ -127,4 +127,7 @@ loadQuestion();</code></pre>
         <li>Dynamic UI generation</li>
     </ul>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/browser-bom" class="text-blue-600 hover:underline">Browser Object Model →</a></p>
+</div>
 </main>

@@ -68,5 +68,8 @@ document.getElementById("myBtn").addEventListener("click", () =&gt; {
     <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded mt-6">
         💡 <strong>Tip:</strong> Always use <code>addEventListener</code> instead of inline <code>onclick</code> for cleaner, scalable code.
     </div>
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/dom-create" class="text-blue-600 hover:underline">Creating/Removing Elements →</a></p>
+</div>
 
 </main>

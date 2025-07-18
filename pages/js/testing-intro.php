@@ -69,4 +69,7 @@ console.assert(result === 5, 'Expected 2 + 3 to equal 5');</code></pre>
     💡 <strong>Tip:</strong> Start testing small helper functions, then expand to larger components as you gain confidence.
   </div>
 
+  <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/jest-basics" class="text-blue-600 hover:underline">Testing with Jest →</a></p>
+</div>
 </main>

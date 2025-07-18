@@ -68,4 +68,7 @@ greet({ name: "Bob", age: 30 });</code></pre>
         💡 <strong>Tip:</strong> Destructuring makes your code cleaner, especially in functions and loops.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/spread-rest" class="text-blue-600 hover:underline">Spread & Rest →</a></p>
+</div>
 </main>

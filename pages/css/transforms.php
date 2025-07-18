@@ -101,8 +101,9 @@
             </p>
         </section>
 
-        <div class="mt-4">
-            <p class=" font-semibold">Next: <a href="css-media-queries.php" class="text-blue-600 hover:underline">CSS Media Queries →</a></p>
-        </div>
+       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('css/animations') ?>" class="text-blue-600 hover:underline">← Previous: Keyframe Animations</a></div>
+    <div><a href="<?= base_url('css/media-queries') ?>" class="text-blue-600 hover:underline">Next: Media Queries →</a></div>
+</div>
     </article>
 </main>

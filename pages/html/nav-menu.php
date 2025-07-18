@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="html.php" class="text-blue-600 hover:underline">HTML</a>
+                <a href="html.php" class="text-blue-600 dark:text-blue-400 hover:underline">HTML</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="text-gray-500">Navigation Menus with Lists</li>
@@ -26,10 +26,10 @@
             <h2 class="text-2xl font-semibold mb-2">Basic Nav Menu Example</h2>
             <nav>
                 <ul class="list-none flex space-x-6  font-medium">
-                    <li><a href="index.php" class="text-blue-600 hover:underline">Home</a></li>
-                    <li><a href="about.php" class="text-blue-600 hover:underline">About</a></li>
-                    <li><a href="services.php" class="text-blue-600 hover:underline">Services</a></li>
-                    <li><a href="contact.php" class="text-blue-600 hover:underline">Contact</a></li>
+                    <li><a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a></li>
+                    <li><a href="about.php" class="text-blue-600 dark:text-blue-400 hover:underline">About</a></li>
+                    <li><a href="services.php" class="text-blue-600 dark:text-blue-400 hover:underline">Services</a></li>
+                    <li><a href="contact.php" class="text-blue-600 dark:text-blue-400 hover:underline">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -40,15 +40,15 @@
             <nav>
                 <ul class="list-none space-y-2  font-medium">
                     <li>
-                        <a href="products.php" class="text-blue-600 hover:underline">Products</a>
+                        <a href="products.php" class="text-blue-600 dark:text-blue-400 hover:underline">Products</a>
                         <ul class="list-disc list-inside ml-5 mt-1">
-                            <li><a href="products/widgets.php" class="text-blue-600 hover:underline">Widgets</a></li>
-                            <li><a href="products/gadgets.php" class="text-blue-600 hover:underline">Gadgets</a></li>
-                            <li><a href="products/accessories.php" class="text-blue-600 hover:underline">Accessories</a></li>
+                            <li><a href="products/widgets.php" class="text-blue-600 dark:text-blue-400 hover:underline">Widgets</a></li>
+                            <li><a href="products/gadgets.php" class="text-blue-600 dark:text-blue-400 hover:underline">Gadgets</a></li>
+                            <li><a href="products/accessories.php" class="text-blue-600 dark:text-blue-400 hover:underline">Accessories</a></li>
                         </ul>
                     </li>
-                    <li><a href="pricing.php" class="text-blue-600 hover:underline">Pricing</a></li>
-                    <li><a href="support.php" class="text-blue-600 hover:underline">Support</a></li>
+                    <li><a href="pricing.php" class="text-blue-600 dark:text-blue-400 hover:underline">Pricing</a></li>
+                    <li><a href="support.php" class="text-blue-600 dark:text-blue-400 hover:underline">Support</a></li>
                 </ul>
             </nav>
         </section>
@@ -85,9 +85,10 @@ nav ul li a:focus {
             </code></pre>
         </section>
 
-         <div class="mt-4">
-            <p class="font-semibold">Next: <a href="html.php?page=html/images" class="text-blue-600 hover:underline">Images →</a></p>
-        </div>
+        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+    <div><a href="<?= base_url('html/relative-absolute') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Relative vs Absolute</a></div>
+    <div><a href="<?= base_url('html/images') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Images →</a></div>
+</div>
     </article>
 </main>
 

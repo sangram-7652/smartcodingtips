@@ -59,4 +59,8 @@
         💡 <strong>Tip:</strong> Use <code>continue</code> carefully to avoid skipping important logic. Always test your loop output.
     </div>
 
+    <div class="mt-4">
+    <p class="font-semibold">Next: <a href="js.php?page=js/ternary" class="text-blue-600 hover:underline">Ternary Operator →</a></p>
+</div>
+
 </main>
