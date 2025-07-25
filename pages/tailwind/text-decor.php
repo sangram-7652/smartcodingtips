@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Text Alignment</h2>
             <p class=" mb-2">Use these classes to control horizontal alignment of text:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 text-left     /* Align text to the left (default) */
 text-center   /* Align text to the center */
 text-right    /* Align text to the right */
@@ -44,7 +44,7 @@ text-justify  /* Justify text */
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Text Decoration</h2>
             <p class=" mb-2">Tailwind provides classes for common text decorations:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 underline            /* Underlines the text */
 line-through         /* Strikes through the text */
 no-underline         /* Removes underline */
@@ -65,7 +65,7 @@ decoration-none      /* No decoration */
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Decoration Color & Thickness</h2>
             <p class=" mb-2">You can also customize decoration color and thickness:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 decoration-pink-500    /* Set decoration color */
 decoration-2           /* Set decoration thickness */
             </pre>
@@ -93,9 +93,9 @@ decoration-2           /* Set decoration thickness */
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/text-spacing') ?>" class="hover:underline">← Previous: Line Height, Letter Spacing</a>
-  <a href="<?= base_url('tailwind/text-truncate') ?>" class="hover:underline">Next: Text Truncation, Clamping →</a>
+  <a href="<?= base_url('tailwind/text-truncate') ?>" class="hover:underline ms-auto">Next: Text Truncation, Clamping →</a>
 </div>
     </article>
 </main>

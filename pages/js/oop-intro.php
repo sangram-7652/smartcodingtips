@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/oop-intro" class="text-blue-600 hover:underline">Intro to OOP</a>
+        <a href="javascript.php?page=js/oop-intro" class="text-blue-600 dark:text-blue-400 hover:underline">Intro to OOP</a>
       </li>
     </ol>
   </nav>
@@ -28,7 +28,7 @@
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Creating a Class</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>class Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -43,7 +43,7 @@ const user = new Person("Alice", 25);
 user.greet();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧬 Inheritance</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>class Student extends Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>class Student extends Person {
   constructor(name, age, subject) {
     super(name, age); // Call parent constructor
     this.subject = subject;
@@ -59,7 +59,7 @@ s1.greet();
 s1.study();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Object Literals vs Classes</h2>
-  <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Object literal (simple use-case)
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Object literal (simple use-case)
 const user = {
   name: "Charlie",
   greet() {
@@ -81,7 +81,8 @@ const user = {
   </div>
 
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/prototypes" class="text-blue-600 hover:underline">Prototypes →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/modern-practice') ?>" class="hover:underline">← Previous: Modern Code Examples</a>
+    <a href="<?= base_url('js/prototypes') ?>" class="hover:underline ms-auto">Next: Prototypes →</a>
 </div>
 </main>

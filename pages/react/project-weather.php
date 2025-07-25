@@ -28,13 +28,13 @@
   <p class="text-black dark:text-gray-300 mb-4">
     Get your API key from <a href="https://openweathermap.org/api" target="_blank" class="text-blue-600 dark:text-blue-400 underline">OpenWeatherMap</a> and add it to your <code>.env</code> file:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 REACT_APP_WEATHER_API_KEY=your_api_key_here
 </code></pre>
 
   <!-- Step 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Build the Weather Component</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useState } from 'react';
 
 function WeatherApp() {
@@ -96,12 +96,12 @@ export default WeatherApp;
 
   <!-- Step 3 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 3. Use in App</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import WeatherApp from './WeatherApp';
 
 function App() {
   return (
-    &lt;main className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900"&gt;
+    &lt;main className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"&gt;
       &lt;WeatherApp /&gt;
     &lt;/main&gt;
   );
@@ -119,9 +119,9 @@ export default App;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/project-counter') ?>" class="hover:underline">← Previous: Counter App</a>
-  <a href="<?= base_url('react/project-todo') ?>" class="hover:underline">Next: Todo List →</a>
+  <a href="<?= base_url('react/project-todo') ?>" class="hover:underline ms-auto">Next: Todo List →</a>
 </div>
 
 </main>

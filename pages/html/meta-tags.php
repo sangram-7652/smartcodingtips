@@ -1,3 +1,8 @@
+<?php
+$title = "Meta Tags | SmartCodingTips";
+$description = "Learn about meta tags in HTML. Understand key concepts, examples, and usage.";
+$keywords = "meta, tags, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -36,7 +41,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
@@ -47,9 +52,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/heading-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Heading Structure</a></div>
-    <div><a href="<?= base_url('html/favicon') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Favicon →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/heading-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Heading Structure</a>
+    <a href="<?= base_url('html/favicon') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Favicon →</a>
 </div>
     </article>
 </main>

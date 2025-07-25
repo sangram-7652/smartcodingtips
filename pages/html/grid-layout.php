@@ -1,3 +1,8 @@
+<?php
+$title = "Grid Layout | SmartCodingTips";
+$description = "Learn about grid layout in HTML. Understand key concepts, examples, and usage.";
+$keywords = "grid, layout, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -24,7 +29,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Grid Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .grid-container {
     display: grid;
@@ -69,7 +74,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Grid</h2>
             <p class="mb-2">Using <code>repeat()</code> and <code>minmax()</code>, you can create responsive grids easily:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;style&gt;
   .responsive-grid {
     display: grid;
@@ -95,9 +100,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/flexbox-layout') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Flexbox Layout</a></div>
-    <div><a href="<?= base_url('html/sticky-footer') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Sticky Header/Footer →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/flexbox-layout') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Flexbox Layout</a>
+    <a href="<?= base_url('html/sticky-footer') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Sticky Header/Footer →</a>
 </div>
     </article>
 </main>

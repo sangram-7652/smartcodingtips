@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/debugging-techniques" class="text-blue-600 hover:underline">Debugging Techniques</a>
+        <a href="javascript.php?page=js/debugging-techniques" class="text-blue-600 dark:text-blue-400 hover:underline">Debugging Techniques</a>
       </li>
     </ol>
   </nav>
@@ -23,7 +23,7 @@
   <p class="mb-2">
     The simplest way to debug is by using <code>console.log()</code> to print values at various points in your code.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log("Value of x:", x);</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>console.log("Value of x:", x);</code></pre>
 
   <p class="mb-4">
     Other console methods:
@@ -39,7 +39,7 @@
   <p class="mb-4">
     The <code>debugger</code> keyword stops code execution and lets you inspect variables in the browser's DevTools.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function calculate(a, b) {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>function calculate(a, b) {
   debugger;
   return a + b;
 }</code></pre>
@@ -76,7 +76,8 @@
     💡 <strong>Pro Tip:</strong> Modern editors like VS Code can debug JavaScript directly using breakpoints inside the editor.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/async-debug" class="text-blue-600 hover:underline">Debug Async →</a></p>
+ <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/jest-basics') ?>" class="hover:underline">← Previous: Testing with Jest</a>
+    <a href="<?= base_url('js/async-debug') ?>" class="hover:underline ms-auto">Next: Debug Async →</a>
 </div>
 </main>

@@ -91,9 +91,9 @@
     <p>Flexbox lets you build responsive, consistent layouts like navbars, sidebars, cards, and pricing sections with minimal effort using Tailwind's utility classes.</p>
     <p class="mt-2 text-green-700 font-semibold">✅ Tip: Combine <code>flex</code>, <code>gap</code>, <code>justify-*</code>, and <code>items-*</code> for perfect control!</p>
 
-    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+    <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/flexbox-gap-order') ?>" class="hover:underline">← Previous: Gap and Order Utilities</a>
-  <a href="<?= base_url('tailwind/grid-columns') ?>" class="hover:underline">Next: Grid Container and Template Columns/Rows →</a>
+  <a href="<?= base_url('tailwind/grid-columns') ?>" class="hover:underline ms-auto">Next: Grid Container and Template Columns/Rows →</a>
 </div>
 
 </main>

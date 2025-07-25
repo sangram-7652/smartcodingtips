@@ -25,7 +25,7 @@
 
   <!-- Step 1 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧱 1. Build the Login Form</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useState } from 'react';
 
 function LoginForm() {
@@ -93,12 +93,12 @@ export default LoginForm;
 
   <!-- Step 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 2. Use in App</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import LoginForm from './LoginForm';
 
 function App() {
   return (
-    &lt;main className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900"&gt;
+    &lt;main className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800"&gt;
       &lt;LoginForm /&gt;
     &lt;/main&gt;
   );
@@ -116,9 +116,9 @@ export default App;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/project-todo') ?>" class="hover:underline">← Previous: Todo List</a>
-  <a href="<?= base_url('react/project-blog') ?>" class="hover:underline">Next: Blog App →</a>
+  <a href="<?= base_url('react/project-blog') ?>" class="hover:underline ms-auto">Next: Blog App →</a>
 </div>
 
 </main>

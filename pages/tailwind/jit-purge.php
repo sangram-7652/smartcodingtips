@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 JIT mode compiles your CSS on-demand, as you use classes in your HTML. It's fast, supports arbitrary values, and eliminates the need for manual purging.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 // tailwind.config.js
 module.exports = {
   content: ['./*.html', './src/**/*.{js,ts,jsx,tsx}'],
@@ -47,7 +47,7 @@ module.exports = {
             <p class=" mb-2">
                 With JIT, you can use arbitrary values without predefining them:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="w-[475px] bg-[#123456] text-[22px]"&gt;Custom Width, Color, and Font Size&lt;/div&gt;
             </pre>
         </section>
@@ -86,9 +86,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/variants') ?>" class="hover:underline">← Previous: Responsive, Hover, and Focus Variants</a>
-  <a href="<?= base_url('tailwind/apply-layer') ?>" class="hover:underline">Next: @apply, @layer and @variants Usage →</a>
+  <a href="<?= base_url('tailwind/apply-layer') ?>" class="hover:underline ms-auto">Next: @apply, @layer and @variants Usage →</a>
 </div>
     </article>
 </main>

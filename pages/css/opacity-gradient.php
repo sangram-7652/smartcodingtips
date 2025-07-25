@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The <code>opacity</code> property controls the transparency of an element. It accepts values from <code>0</code> (fully transparent) to <code>1</code> (fully opaque).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 img.transparent {
     opacity: 0.5;
 }
@@ -44,7 +44,7 @@ img.transparent {
             <p class=" mb-2">
                 Use <code>rgba()</code> or <code>hsla()</code> to set transparency for background only (not text).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div.bg {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
@@ -60,14 +60,14 @@ div.bg {
             </p>
 
             <h3 class="text-xl font-semibold mt-4 mb-2">Linear Gradient</h3>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div.linear {
     background: linear-gradient(to right, #4f46e5, #3b82f6);
 }
             </code></pre>
 
             <h3 class="text-xl font-semibold mt-4 mb-2">Radial Gradient</h3>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div.radial {
     background: radial-gradient(circle, #10b981, #065f46);
 }
@@ -84,7 +84,7 @@ div.radial {
             <p class=" mb-2">
                 Combine <code>rgba</code> in gradients for fade effects:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div.fade {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 }
@@ -99,9 +99,9 @@ div.fade {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Units: px, %, em, rem</a></div>
-    <div><a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: CSS Variables →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Units: px, %, em, rem</a> 
+   <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: CSS Variables →</a> 
 </div>
     </article>
 </main>

@@ -33,14 +33,14 @@
 
   <!-- react-window -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 2. Using <code>react-window</code></h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install react-window
 </code></pre>
 
   <p class="text-black dark:text-gray-300 mb-4">
     Example using <code>FixedSizeList</code> from <code>react-window</code>:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { FixedSizeList as List } from 'react-window';
 
 const Row = ({ index, style }) =&gt; (
@@ -87,9 +87,9 @@ function MyVirtualList() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/memoization') ?>" class="hover:underline">← Previous: Memoization</a>
-  <a href="<?= base_url('react/lazy') ?>" class="hover:underline">Next: Lazy Loading →</a>
+  <a href="<?= base_url('react/lazy') ?>" class="hover:underline ms-auto">Next: Lazy Loading →</a>
 </div>
 
 </main>

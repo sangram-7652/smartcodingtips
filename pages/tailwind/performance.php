@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Tailwind includes a built-in purge mechanism to remove unused styles in production. Configure this in your <code>tailwind.config.js</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: ['./src/**/*.{html,js,php}'],
   theme: {
@@ -46,7 +46,7 @@ module.exports = {
             <p class="">
                 Use the <code>loading="lazy"</code> attribute on images to defer off-screen image loading:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;img src="hero.jpg" alt="Hero" loading="lazy" class="w-full h-auto"&gt;
             </code></pre>
         </section>
@@ -99,7 +99,7 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/a11y') ?>" class="hover:underline">← Previous: Accessibility with Tailwind</a>
   <span></span>
 </div>

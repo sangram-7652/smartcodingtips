@@ -25,12 +25,12 @@
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 1. Installation</h2>
   <p class="mb-2 text-black dark:text-gray-300">For React:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install @emotion/react @emotion/styled
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧱 2. Using <code>@emotion/styled</code></h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import styled from '@emotion/styled';
 
 const Button = styled.button`
@@ -53,7 +53,7 @@ function App() {
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎨 3. Using <code>css</code> prop</h2>
   <p class="mb-2 text-black dark:text-gray-300">This lets you apply styles directly to elements:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -69,7 +69,7 @@ function Alert() {
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 4. Theming Support</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { ThemeProvider } from '@emotion/react';
 
 const theme = {
@@ -92,9 +92,9 @@ const theme = {
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/styled-components') ?>" class="hover:underline">← Previous: Styled Components</a>
-  <a href="<?= base_url('react/conditional-styles') ?>" class="hover:underline">Next: Conditional Styling →</a>
+  <a href="<?= base_url('react/conditional-styles') ?>" class="hover:underline ms-auto">Next: Conditional Styling →</a>
 </div>
 
 </main>

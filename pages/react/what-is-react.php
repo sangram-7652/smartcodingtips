@@ -27,7 +27,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     In React, the UI is built using components — small, reusable pieces of code that represent parts of a web page.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// A simple React component
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// A simple React component
 function Welcome() {
   return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
 }</code></pre>
@@ -38,7 +38,7 @@ function Welcome() {
   <p class="mb-4 text-black dark:text-gray-300">
     React uses JSX — a syntax that allows you to write HTML-like code in JavaScript.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>const greeting = &lt;h2&gt;Welcome back!&lt;/h2&gt;;</code></pre>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>const greeting = &lt;h2&gt;Welcome back!&lt;/h2&gt;;</code></pre>
 
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
@@ -46,7 +46,7 @@ function Welcome() {
   <p class="mb-4 text-black dark:text-gray-300">
     React uses a virtual DOM to efficiently update only the parts of the actual DOM that changed, making apps fast and responsive.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// React updates only what changes
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// React updates only what changes
 setCount(count + 1);</code></pre>
 
   <hr class="my-6 border-gray-300 dark:border-gray-700">
@@ -55,7 +55,7 @@ setCount(count + 1);</code></pre>
   <p class="mb-4 text-black dark:text-gray-300">
     Data flows from parent to child components via props. This makes the app predictable and easier to debug.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>&lt;UserProfile name="Sangram" age={28} /&gt;</code></pre>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>&lt;UserProfile name="Sangram" age={28} /&gt;</code></pre>
 
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
@@ -92,7 +92,7 @@ setCount(count + 1);</code></pre>
   <!-- Next Page -->
   <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
   <span></span>
-  <a href="<?= base_url('react/why-react') ?>" class="hover:underline">Next: Why Use React? →</a>
+  <a href="<?= base_url('react/why-react') ?>" class="hover:underline ms-auto">Next: Why Use React? →</a>
 </div>
 
 </main>

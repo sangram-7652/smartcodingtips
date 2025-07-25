@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/popups" class="text-blue-600 hover:underline">Popups & Controls</a>
+                <a href="javascript.php?page=js/popups" class="text-blue-600 dark:text-blue-400 hover:underline">Popups & Controls</a>
             </li>
         </ol>
     </nav>
@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔔 1. Alert, Prompt, and Confirm</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Simple alert box
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Simple alert box
 alert("This is an alert!");
 
 // Prompt for user input
@@ -40,7 +40,7 @@ console.log("User clicked:", confirmed);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🪟 2. Opening New Windows</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Open a new tab or window
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Open a new tab or window
 const newWin = window.open(
     "https://example.com",
     "_blank",
@@ -56,7 +56,7 @@ const newWin = window.open(
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧹 3. Closing Windows</h2>
     <p>If your script opened a window using <code>window.open()</code>, it can also close it:</p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Close the window (only if script opened it)
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Close the window (only if script opened it)
 newWin.close();</code></pre>
 
     <p class="text-sm text-gray-500 mt-2">Note: Most modern browsers block popups unless triggered by direct user actions (like clicking a button).</p>
@@ -72,7 +72,8 @@ newWin.close();</code></pre>
         ⚠️ <strong>Tip:</strong> Avoid using popups excessively. Use modal dialogs (via HTML/CSS/JS) for better UX.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/api-intro" class="text-blue-600 hover:underline">Intro to APIs →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/device-detect') ?>" class="hover:underline">← Previous: Device & Feature Detect</a>
+    <a href="<?= base_url('js/api-intro') ?>" class="hover:underline ms-auto">Next: Intro to APIs →</a>
 </div>
 </main>

@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/performance-tips" class="text-blue-600 hover:underline">Best Practices</a>
+        <a href="javascript.php?page=js/performance-tips" class="text-blue-600 dark:text-blue-400 hover:underline">Best Practices</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">Performance Tips</li>
@@ -27,7 +27,7 @@
   <p class="mb-4">
     Accessing and manipulating the DOM is relatively slow. Cache DOM lookups and avoid excessive changes.
   </p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ❌ Bad
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// ❌ Bad
 document.getElementById("user").style.display = "none";
 document.getElementById("user").style.color = "red";
 
@@ -42,7 +42,7 @@ userEl.style.color = "red";</code></pre>
   <p class="mb-4">
     Prevent rapid-fire event handlers (like <code>scroll</code> or <code>resize</code>) from bogging down performance.
   </p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// Debounce Example
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// Debounce Example
 function debounce(func, delay) {
   let timeout;
   return function () {
@@ -61,7 +61,7 @@ window.addEventListener("resize", debounce(() => {
   <p class="mb-4">
     Local variables are faster to access than globals or object properties.
   </p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ❌ Slower
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// ❌ Slower
 for (let i = 0; i < arr.length; i++) {}
 
 // ✅ Faster
@@ -91,7 +91,7 @@ for (let i = 0; i < len; i++) {}</code></pre>
     <li>Use <code>async</code> for third-party, non-blocking scripts.</li>
   </ul>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;script src="main.js" defer&gt;&lt;/script&gt;</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;script src="main.js" defer&gt;&lt;/script&gt;</code></pre>
 
   <hr class="my-6">
 
@@ -99,7 +99,7 @@ for (let i = 0; i < len; i++) {}</code></pre>
   <p class="mb-4">
     Always clean up timers, intervals, and event listeners to prevent memory bloat.
   </p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const interval = setInterval(() => {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const interval = setInterval(() => {
   // Do something
 }, 1000);
 
@@ -115,7 +115,7 @@ clearInterval(interval);</code></pre>
     <li>Look for slow scripts, reflows, and repaints</li>
   </ul>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.time("loop");
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>console.time("loop");
 for (let i = 0; i < 10000; i++) {
   // simulate task
 }
@@ -135,7 +135,8 @@ console.timeEnd("loop");</code></pre>
 
   <p class="mt-4">Apply these tips to every project for a smoother, faster JavaScript experience!</p>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/clean-code" class="text-blue-600 hover:underline">Writing Clean Code →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/naming') ?>" class="hover:underline">← Previous: Naming Conventions</a>
+    <a href="<?= base_url('js/clean-code') ?>" class="hover:underline ms-auto">Next: Writing Clean Code →</a>
 </div>
 </main>

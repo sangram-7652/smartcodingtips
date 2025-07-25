@@ -25,7 +25,7 @@
 
   <!-- Step 1 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 1. Setup Routes and Pages</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -47,7 +47,7 @@ export default App;
 
   <!-- Step 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📃 2. Create Sample Blog Data</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // data.js
 export const blogPosts = [
   {
@@ -65,7 +65,7 @@ export const blogPosts = [
 
   <!-- Step 3 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🏠 3. Home Page with Blog List</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // Home.jsx
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data';
@@ -94,7 +94,7 @@ export default Home;
 
   <!-- Step 4 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📄 4. Blog Detail Page</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // BlogDetail.jsx
 import { useParams } from 'react-router-dom';
 import { blogPosts } from '../data';
@@ -126,9 +126,9 @@ export default BlogDetail;
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/project-auth') ?>" class="hover:underline">← Previous: Login Form</a>
-  <a href="<?= base_url('react/build') ?>" class="hover:underline">Next: Build for Production →</a>
+  <a href="<?= base_url('react/build') ?>" class="hover:underline ms-auto">Next: Build for Production →</a>
 </div>
 
 </main>

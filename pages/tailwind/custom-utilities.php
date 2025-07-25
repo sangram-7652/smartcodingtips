@@ -37,7 +37,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Define Utilities with `addUtilities`</h2>
             <p class=" mb-2">Add custom utilities in your Tailwind plugin section:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 /** tailwind.config.js **/
 const plugin = require('tailwindcss/plugin');
 
@@ -71,7 +71,7 @@ module.exports = {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Use Your Custom Utility</h2>
             <p class=" mb-2">Once configured, use your new classes like any other Tailwind class:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="text-shadow text-xl text-gray-800"&gt;
   Custom Shadow Text
 &lt;/div&gt;
@@ -100,9 +100,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/css-variables') ?>" class="hover:underline">← Previous: Using :root CSS Variables</a>
-  <a href="<?= base_url('tailwind/dark-mode') ?>" class="hover:underline">Next: Dark Mode: Class vs Media Strategy →</a>
+  <a href="<?= base_url('tailwind/dark-mode') ?>" class="hover:underline ms-auto">Next: Dark Mode: Class vs Media Strategy →</a>
 </div>
     </article>
 </main>

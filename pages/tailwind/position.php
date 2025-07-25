@@ -37,7 +37,7 @@
         <!-- Utility Classes -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Tailwind Utility Classes</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 .position-static   { position: static; }
 .position-relative { position: relative; }
 .position-absolute { position: absolute; }
@@ -50,7 +50,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Example: Absolute Positioning</h2>
             <p class=" mb-2">This places an element inside a relatively positioned container:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="relative w-64 h-40 bg-gray-200"&gt;
     &lt;div class="absolute top-2 right-2 bg-blue-500 text-white px-2 py-1"&gt;
         Absolute Box
@@ -63,7 +63,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Example: Sticky Header</h2>
             <p class=" mb-2">Sticky headers remain visible as you scroll:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="sticky top-0 bg-white shadow z-10"&gt;
     &lt;h1 class="text-xl font-bold p-4"&gt;Sticky Header&lt;/h1&gt;
 &lt;/div&gt;
@@ -90,9 +90,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/animations') ?>" class="hover:underline">← Previous: Animating with Keyframes</a>
-  <a href="<?= base_url('tailwind/inset') ?>" class="hover:underline">Next: Top, Right, Bottom, Left Utilities →</a>
+  <a href="<?= base_url('tailwind/inset') ?>" class="hover:underline ms-auto">Next: Top, Right, Bottom, Left Utilities →</a>
 </div>
     </article>
 </main>

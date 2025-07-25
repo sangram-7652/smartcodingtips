@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/objects-properties" class="text-blue-600 hover:underline">Objects & Properties</a>
+                <a href="javascript.php?page=js/objects-properties" class="text-blue-600 dark:text-blue-400 hover:underline">Objects & Properties</a>
             </li>
         </ol>
     </nav>
@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Creating Objects</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// Object literal
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// Object literal
 const user = {
     name: "Alice",
     age: 25,
@@ -36,31 +36,31 @@ person.age = 30;
 </code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Accessing Properties</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.log(user.name);     // Dot notation
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>console.log(user.name);     // Dot notation
 console.log(user["age"]);   // Bracket notation
 
 let key = "isStudent";
 console.log(user[key]);     // Dynamic key access</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Modifying and Deleting</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>user.age = 26;              // Modify
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>user.age = 26;              // Modify
 user.city = "New York";     // Add new property
 delete user.isStudent;      // Delete property</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Looping Through Properties</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let key in user) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (let key in user) {
     console.log(key + ": " + user[key]);
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Property Existence</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.log("name" in user);    // true
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>console.log("name" in user);    // true
 console.log(user.hasOwnProperty("age")); // true</code></pre>
 
     <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded mt-6">
         💡 <strong>Tip:</strong> Object keys are always strings or symbols. Values can be any data type, including functions (methods).
     </div>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/object-methods" class="text-blue-600 hover:underline">Object Methods →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/looping-arrays') ?>" class="hover:underline">← Previous: Looping Through Arrays</a>
+    <a href="<?= base_url('js/object-methods') ?>" class="hover:underline ms-auto">Next: Object Methods →</a>
 </div>
-
 </main>

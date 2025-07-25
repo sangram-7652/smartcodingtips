@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/dom-mouse-keyboard" class="text-blue-600 hover:underline">Mouse & Keyboard Events</a>
+                <a href="javascript.php?page=js/dom-mouse-keyboard" class="text-blue-600 dark:text-blue-400 hover:underline">Mouse & Keyboard Events</a>
             </li>
         </ol>
     </nav>
@@ -30,7 +30,7 @@
         <li><code>mousemove</code> – Mouse movement</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("box").addEventListener("click", () =&gt; {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.getElementById("box").addEventListener("click", () =&gt; {
     alert("Box clicked!");
 });</code></pre>
 
@@ -41,7 +41,7 @@
         <li><code>keypress</code> – (deprecated) Use <code>keydown</code> instead</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("keydown", function(event) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.addEventListener("keydown", function(event) {
     console.log("Key pressed:", event.key);
     if (event.key === "Enter") {
         alert("You pressed Enter!");
@@ -49,12 +49,12 @@
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Accessing Event Data</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(e) {
     console.log("Mouse X:", e.clientX, "Mouse Y:", e.clientY);
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Example With HTML</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;input type="text" id="inputField" placeholder="Type something..."&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;input type="text" id="inputField" placeholder="Type something..."&gt;
 
 &lt;script&gt;
 document.getElementById("inputField").addEventListener("keyup", function(e) {
@@ -66,7 +66,8 @@ document.getElementById("inputField").addEventListener("keyup", function(e) {
         💡 <strong>Tip:</strong> Use <code>event.preventDefault()</code> if you want to stop default behavior like form submission.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/event-object" class="text-blue-600 hover:underline">Event Object →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/dom-create') ?>" class="hover:underline">← Previous: Creating/Removing Elements</a>
+    <a href="<?= base_url('js/event-object') ?>" class="hover:underline ms-auto">Next: Event Object →</a>
 </div>
 </main>

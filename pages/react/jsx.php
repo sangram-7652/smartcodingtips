@@ -30,7 +30,7 @@
     JSX allows you to write HTML-like code within your JavaScript files. It improves readability and provides a more visual structure for components.
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;
 </pre>
 
@@ -45,7 +45,7 @@ const element = &lt;h1&gt;Hello, JSX!&lt;/h1&gt;;
   <!-- Embedding JS -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 Embedding JavaScript in JSX</h2>
   <p class="mb-4 text-black dark:text-gray-300">You can use curly braces to insert any valid JavaScript expression inside JSX:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 const name = "React";
 const element = &lt;h1&gt;Welcome to {name}!&lt;/h1&gt;;
 </pre>
@@ -59,7 +59,7 @@ const element = &lt;h1&gt;Welcome to {name}!&lt;/h1&gt;;
     <li>Self-close empty tags like <code>&lt;br /&gt;</code></li>
   </ul>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 function App() {
   return (
     &lt;div&gt;
@@ -82,8 +82,8 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/first-app') ?>" class="hover:underline">← Previous: Your First React App</a>
-  <a href="<?= base_url('react/components') ?>" class="hover:underline">Next: Components →</a>
+  <a href="<?= base_url('react/components') ?>" class="hover:underline ms-auto">Next: Components →</a>
 </div>
 </main>

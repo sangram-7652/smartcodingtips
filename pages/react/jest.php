@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-2">
     If you're using Create React App (CRA), Jest is pre-installed. Otherwise, install manually:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npm install --save-dev jest babel-jest @testing-library/react @testing-library/jest-dom
 </code></pre>
 
@@ -37,7 +37,7 @@ npm install --save-dev jest babel-jest @testing-library/react @testing-library/j
   <p class="text-black dark:text-gray-300 mb-2">
     Create a file like <code>sum.test.js</code>:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // sum.js
 export function sum(a, b) {
   return a + b;
@@ -56,7 +56,7 @@ test('adds 2 + 3 to equal 5', () => {
   <p class="text-black dark:text-gray-300 mb-4">
     Run the tests using the following command:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npx jest
 </code></pre>
 
@@ -75,7 +75,7 @@ npx jest
   <p class="text-black dark:text-gray-300 mb-2">
     Automatically track component UI output:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { render } from '@testing-library/react';
 import MyComponent from './MyComponent';
 
@@ -90,7 +90,7 @@ test('renders correctly', () => {
   <p class="text-black dark:text-gray-300 mb-4">
     Jest lets you mock functions, modules, and timers. Example:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const mockFn = jest.fn();
 mockFn('hello');
 expect(mockFn).toHaveBeenCalledWith('hello');
@@ -105,9 +105,9 @@ expect(mockFn).toHaveBeenCalledWith('hello');
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/testing-intro') ?>" class="hover:underline">← Previous: Why Testing?</a>
-  <a href="<?= base_url('react/testing-library') ?>" class="hover:underline">Next: React Testing Library →</a>
+  <a href="<?= base_url('react/testing-library') ?>" class="hover:underline ms-auto">Next: React Testing Library →</a>
 </div>
 
 

@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Line Height (Leading)</h2>
             <p class=" mb-2">Use <code>leading-{size}</code> to adjust line height:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 leading-none      /* 1 */
 leading-tight     /* 1.25 */
 leading-snug      /* 1.375 */
@@ -44,7 +44,7 @@ leading-loose     /* 2 */
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Letter Spacing (Tracking)</h2>
             <p class=" mb-2">Use <code>tracking-{value}</code> to control space between characters:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 tracking-tighter   /* -0.05em */
 tracking-tight     /* -0.025em */
 tracking-normal    /* 0em */
@@ -76,9 +76,9 @@ tracking-widest    /* 0.1em */
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/text-fonts') ?>" class="hover:underline">← Previous: Font Size, Family, and Weight</a>
-  <a href="<?= base_url('tailwind/text-decor') ?>" class="hover:underline">Next: Text Alignment and Decoration →</a>
+  <a href="<?= base_url('tailwind/text-decor') ?>" class="hover:underline ms-auto">Next: Text Alignment and Decoration →</a>
 </div>
     </article>
 </main>

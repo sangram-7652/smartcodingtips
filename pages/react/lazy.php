@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     Use <code>React.lazy</code> to dynamically import a component. Wrap it with <code>Suspense</code> to show a fallback while it loads.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import React, { lazy, Suspense } from 'react';
 
 const LazyComponent = lazy(() =&gt; import('./MyComponent'));
@@ -47,7 +47,7 @@ function App() {
   <p class="text-black dark:text-gray-300 mb-4">
     Lazy loading is commonly used with routes to avoid loading all pages upfront.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const About = lazy(() =&gt; import('./pages/About'));
 const Home = lazy(() =&gt; import('./pages/Home'));
@@ -82,9 +82,9 @@ function App() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/virtualization') ?>" class="hover:underline">← Previous: Virtualization</a>
-  <a href="<?= base_url('react/code-splitting') ?>" class="hover:underline">Next: Code Splitting →</a>
+  <a href="<?= base_url('react/code-splitting') ?>" class="hover:underline ms-auto">Next: Code Splitting →</a>
 </div>
 
 </main>

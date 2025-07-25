@@ -1,3 +1,8 @@
+<?php
+$title = "Form Tag | SmartCodingTips";
+$description = "Learn about form tag in HTML. Understand key concepts, examples, and usage.";
+$keywords = "form, tag, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Structure</h2>
             <p class="mb-2">Here is a simple form with text input and a submit button:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="name"&gt;Name:&lt;/label&gt;
   &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
@@ -58,7 +63,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example with Multiple Inputs</h2>
             <p class="mb-2">This example demonstrates different input types in a form:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="email"&gt;Email:&lt;/label&gt;
   &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
@@ -76,9 +81,9 @@
             </code></pre>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/rowspan-colspan') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Rowspan & Colspan</a></div>
-    <div><a href="<?= base_url('html/form-input-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Input Types →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/rowspan-colspan') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Rowspan & Colspan</a>
+    <a href="<?= base_url('html/form-input-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Input Types →</a>
 </div>
     </article>
 </main>

@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/data-types" class="text-blue-600 hover:underline">JavaScript Data Types</a>
+                <a href="javascript.php?page=js/data-types" class="text-blue-600 dark:text-blue-400 hover:underline">JavaScript Data Types</a>
             </li>
         </ol>
     </nav>
@@ -33,7 +33,7 @@
         <li><strong>Symbol</strong> – Unique and immutable value often used as object keys</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let name = "Alice";     // String
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let name = "Alice";     // String
 let age = 30;           // Number
 let isAdmin = true;     // Boolean
 let x;                  // Undefined
@@ -51,7 +51,7 @@ let id = Symbol("id");  // Symbol
         <li><strong>Date, RegExp, Error</strong> – Built-in object types</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let person = { name: "Alice", age: 30 }; // Object
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let person = { name: "Alice", age: 30 }; // Object
 let colors = ["red", "green", "blue"];   // Array
 function greet() {
     console.log("Hello!");
@@ -62,7 +62,7 @@ function greet() {
 
     <p class="mb-4">You can check the type of a variable using the <code>typeof</code> operator:</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>typeof "hello"    // "string"
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>typeof "hello"    // "string"
 typeof 42         // "number"
 typeof true       // "boolean"
 typeof undefined  // "undefined"
@@ -93,8 +93,9 @@ typeof function() {}  // "function"
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">
         <strong>Best Practice:</strong> Learn to distinguish between primitive and reference types. Understanding how they are stored and compared will help you avoid bugs.
     </div>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/operators" class="text-blue-600 hover:underline">Operators →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/variables') ?>" class="hover:underline">← Previous: Variables: var, let, const</a>
+    <a href="<?= base_url('js/operators') ?>" class="hover:underline ms-auto">Next: Operators →</a>
 </div>
 
 </main>

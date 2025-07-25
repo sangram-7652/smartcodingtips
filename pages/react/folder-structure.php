@@ -25,7 +25,7 @@
 
   <!-- Overview -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 Typical Folder Layout</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 my-app/
 ├── public/
 │   └── index.html
@@ -69,7 +69,7 @@ my-app/
 
   <!-- Optional -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 Optional Advanced Structure</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 src/
 ├── features/
 │   └── blog/
@@ -80,9 +80,9 @@ src/
 </code></pre>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/free-domain') ?>" class="hover:underline">← Previous: Free Domain</a>
-  <a href="<?= base_url('react/naming') ?>" class="hover:underline">Next: Naming Conventions →</a>
+  <a href="<?= base_url('react/naming') ?>" class="hover:underline ms-auto">Next: Naming Conventions →</a>
 </div>
 
 </main>

@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/loops" class="text-blue-600 hover:underline">Loops</a>
+                <a href="javascript.php?page=js/loops" class="text-blue-600 dark:text-blue-400 hover:underline">Loops</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         A concise loop structure often used when the number of iterations is known.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     console.log("Iteration:", i);
 }</code></pre>
 
@@ -37,7 +37,7 @@
         Repeats a block of code as long as a condition is true.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 1;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let count = 1;
 
 while (count &lt;= 3) {
     console.log("Count:", count);
@@ -51,7 +51,7 @@ while (count &lt;= 3) {
         Executes the block once before checking the condition.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let num = 1;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let num = 1;
 
 do {
     console.log("Number:", num);
@@ -73,7 +73,8 @@ do {
         ✅ <strong>Tip:</strong> Always ensure your loop has a terminating condition to avoid infinite loops.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/break-continue" class="text-blue-600 hover:underline">Break & Continue →</a></p>
+   <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/if-else') ?>" class="hover:underline">← Previous: If, Else, Switch</a>
+    <a href="<?= base_url('js/break-continue') ?>" class="hover:underline ms-auto">Next: Break & Continue →</a>
 </div>
 </main>

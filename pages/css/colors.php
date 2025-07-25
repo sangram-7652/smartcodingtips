@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 Use the <code>color</code> property to change the text color.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     color: blue;
 }
@@ -47,7 +47,7 @@ a {
             <p class=" mb-2">
                 Use the <code>background-color</code> property to set an element's background.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 body {
     background-color: #f9fafb;
 }
@@ -74,7 +74,7 @@ div.highlight {
             <p class=" mb-2">
                 You can use classes and IDs to apply colors to specific elements:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 #warning {
     background-color: orange;
     color: white;
@@ -101,9 +101,9 @@ div.highlight {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Font Styles</a></div>
-    <div><a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Line & Letter Spacing →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Font Styles</a> 
+   <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Line & Letter Spacing →</a> 
 </div>
     </article>
 </main>

@@ -27,7 +27,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     Use <code>map()</code> to loop through arrays and render JSX elements dynamically.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 text-sm rounded overflow-x-auto text-black dark:text-white mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 text-sm rounded overflow-x-auto text-black dark:text-white mb-4"><code>
 const users = [
   { id: 1, name: 'Alice' },
   { id: 2, name: 'Bob' },
@@ -48,7 +48,7 @@ function UserList() {
   <p class="mb-4 text-black dark:text-gray-300">
     You can show loading states, handle empty lists, or show errors using conditionals.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 text-sm rounded overflow-x-auto text-black dark:text-white mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 text-sm rounded overflow-x-auto text-black dark:text-white mb-4"><code>
 if (loading) return &lt;p&gt;Loading...&lt;/p&gt;;
 if (error) return &lt;p&gt;Error: {error}&lt;/p&gt;;
 if (data.length === 0) return &lt;p&gt;No items found.&lt;/p&gt;;
@@ -64,9 +64,9 @@ if (data.length === 0) return &lt;p&gt;No items found.&lt;/p&gt;;
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/axios') ?>" class="hover:underline">← Previous: Axios</a>
-  <a href="<?= base_url('react/forms-controlled') ?>" class="hover:underline">Next: Controlled Forms →</a>
+  <a href="<?= base_url('react/forms-controlled') ?>" class="hover:underline ms-auto">Next: Controlled Forms →</a>
 </div>
 
 </main>

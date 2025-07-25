@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Traditional CSS relies on writing custom classes and stylesheets. Tailwind uses utility classes like <code>p-4</code>, <code>text-center</code>, and <code>bg-blue-500</code> to apply styling instantly without leaving your HTML.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;
     Click Me
 &lt;/button&gt;
@@ -81,9 +81,9 @@
         </section>
 
         <!-- Next Link -->
-       <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
-  <span></span>
-  <a href="<?= base_url('tailwind/why-utility-first') ?>" class="hover:underline">Next: Why Choose Utility-First Frameworks? →</a>
-</div>
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
+            <span></span>
+            <a href="<?= base_url('tailwind/why-utility-first') ?>" class="hover:underline ms-auto">Next: Why Choose Utility-First Frameworks? →</a>
+        </div>
     </article>
 </main>

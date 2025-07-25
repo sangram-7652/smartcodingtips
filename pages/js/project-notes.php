@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/project-notes-app" class="text-blue-600 hover:underline">Notes App</a>
+        <a href="javascript.php?page=js/project-notes-app" class="text-blue-600 dark:text-blue-400 hover:underline">Notes App</a>
       </li>
     </ol>
   </nav>
@@ -20,14 +20,14 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Structure</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;div id="app"&gt;
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>&lt;div id="app"&gt;
   &lt;textarea id="note-input" placeholder="Write your note here..." class="w-full p-2 border rounded"&gt;&lt;/textarea&gt;
   &lt;button id="add-note" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded"&gt;Add Note&lt;/button&gt;
   &lt;div id="notes-container" class="mt-6 space-y-4"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const noteInput = document.getElementById("note-input");
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>const noteInput = document.getElementById("note-input");
 const addBtn = document.getElementById("add-note");
 const notesContainer = document.getElementById("notes-container");
 
@@ -86,7 +86,8 @@ renderNotes();</code></pre>
     💡 <strong>Note:</strong> Since this app uses <code>localStorage</code>, your notes will persist in the browser but not sync across devices.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/project-crud" class="text-blue-600 hover:underline">Simple CRUD →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-quiz-2') ?>" class="hover:underline">← Previous: Advanced Quiz</a>
+    <a href="<?= base_url('js/project-crud') ?>" class="hover:underline ms-auto">Next: Simple CRUD →</a>
 </div>
 </main>

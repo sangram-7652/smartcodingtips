@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/async-await" class="text-blue-600 hover:underline">Async / Await</a>
+                <a href="javascript.php?page=js/async-await" class="text-blue-600 dark:text-blue-400 hover:underline">Async / Await</a>
             </li>
         </ol>
     </nav>
@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Declaring an Async Function</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function greet() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>async function greet() {
     return "Hello, Async!";
 }
 
 greet().then(msg => console.log(msg));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⏳ Awaiting a Promise</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function fetchData() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function fetchData() {
     return new Promise(resolve => {
         setTimeout(() => resolve("📦 Data fetched"), 2000);
     });
@@ -47,7 +47,7 @@ displayData();</code></pre>
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">❗ Error Handling with try...catch</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function loadUser() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>async function loadUser() {
     try {
         const user = await fetchUser(); // imaginary function
         console.log(user);
@@ -57,7 +57,7 @@ displayData();</code></pre>
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Multiple Awaits in Sequence</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function run() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>async function run() {
     const res1 = await fetchStep1();
     const res2 = await fetchStep2(res1);
     const res3 = await fetchStep3(res2);
@@ -75,8 +75,9 @@ displayData();</code></pre>
         <li>Makes code cleaner and avoids chaining <code>.then()</code>.</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/error-handling" class="text-blue-600 hover:underline">Error Handling →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/promises') ?>" class="hover:underline">← Previous: Promises</a>
+    <a href="<?= base_url('js/error-handling') ?>" class="hover:underline ms-auto">Next: Error Handling →</a>
 </div>
 
 </main>

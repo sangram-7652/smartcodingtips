@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/dom-changing-content" class="text-blue-600 hover:underline">Changing Content</a>
+                <a href="javascript.php?page=js/dom-changing-content" class="text-blue-600 dark:text-blue-400 hover:underline">Changing Content</a>
             </li>
         </ol>
     </nav>
@@ -25,23 +25,23 @@
     <p class="mb-4">
         Safely sets or gets the text content of an element. It does not render HTML.
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("p").textContent = "New text goes here.";</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.querySelector("p").textContent = "New text goes here.";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🌐 <code>innerHTML</code></h2>
     <p class="mb-4">
         Sets or gets HTML inside an element. Use with caution as it can be a security risk (XSS).
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("output").innerHTML = "&lt;strong&gt;Bold Text&lt;/strong&gt;";</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.getElementById("output").innerHTML = "&lt;strong&gt;Bold Text&lt;/strong&gt;";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ <code>innerText</code> (Less Common)</h2>
     <p class="mb-4">
         Similar to <code>textContent</code> but affected by CSS (like <code>display:none</code>).
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const title = document.querySelector("h1");
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const title = document.querySelector("h1");
 title.innerText = "Updated Title";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Updating Inputs and Forms</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("input").value = "New input value";</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.querySelector("input").value = "New input value";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 When to Use Each</h2>
     <ul class="list-disc list-inside mb-4">
@@ -54,9 +54,11 @@ title.innerText = "Updated Title";</code></pre>
         💡 <strong>Tip:</strong> Use <code>textContent</code> for security and performance. Avoid <code>innerHTML</code> unless HTML rendering is required.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/dom-events" class="text-blue-600 hover:underline">Event Listeners →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/selectors') ?>" class="hover:underline">← Previous: Selectors</a>
+    <a href="<?= base_url('js/dom-events') ?>" class="hover:underline ms-auto">Next: Event Listeners →</a>
 </div>
+
 
 
 </main>

@@ -40,7 +40,7 @@
                 <div class="h-10 w-10 rounded-full bg-red-500 animate-bounce"></div>
             </div>
 
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mt-4 text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mt-4 text-sm"><code>
 &lt;div class="animate-spin"&gt;&lt;/div&gt;
 &lt;div class="animate-ping"&gt;&lt;/div&gt;
 &lt;div class="animate-pulse"&gt;&lt;/div&gt;
@@ -53,7 +53,7 @@
             <h2 class="text-2xl font-semibold mb-2">2. Creating Custom Keyframe Animations</h2>
             <p class=" mb-2">You can define custom keyframes and animation classes in your <code>tailwind.config.js</code> file:</p>
 
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -72,7 +72,7 @@ module.exports = {
             </code></pre>
 
             <p class=" mt-4">Then apply it using:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="animate-wiggle"&gt;I'm wiggling!&lt;/div&gt;
             </code></pre>
         </section>
@@ -99,9 +99,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/transitions') ?>" class="hover:underline">← Previous: Transitions and Timing Functions</a>
-  <a href="<?= base_url('tailwind/position') ?>" class="hover:underline">Next: Position Types →</a>
+  <a href="<?= base_url('tailwind/position') ?>" class="hover:underline ms-auto">Next: Position Types →</a>
 </div>
     </article>
 </main>

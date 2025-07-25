@@ -36,7 +36,7 @@
         <!-- Example Code -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Example of Box Model in Code</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     width: 200px;
     padding: 20px;
@@ -55,7 +55,7 @@
             <p class=" mb-2">
                 By default, <code>width</code> only includes content. To include padding and border inside the defined width, use <code>box-sizing: border-box</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 * {
     box-sizing: border-box;
 }
@@ -90,9 +90,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: CSS Variables</a></div>
-    <div><a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Margin & Padding →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: CSS Variables</a> 
+   <a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Margin & Padding →</a> 
 </div>
 
     </article>

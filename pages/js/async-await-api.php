@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/async-await" class="text-blue-600 hover:underline">Async/Await with APIs</a>
+                <a href="javascript.php?page=js/async-await" class="text-blue-600 dark:text-blue-400 hover:underline">Async/Await with APIs</a>
             </li>
         </ol>
     </nav>
@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚀 Basic Example</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>async function getData() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>async function getData() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
     const data = await response.json();
@@ -42,7 +42,7 @@ getData();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Posting Data Example</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>async function postData() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>async function postData() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
@@ -70,7 +70,8 @@ postData();</code></pre>
         ✅ <strong>Next Tip:</strong> Combine multiple API calls using <code>Promise.all()</code> for parallel execution!
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/display-api" class="text-blue-600 hover:underline">Display Fetched Data →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/json') ?>" class="hover:underline">← Previous: Working with JSON</a>
+    <a href="<?= base_url('js/display-api') ?>" class="hover:underline ms-auto">Next: Display Fetched Data →</a>
 </div>
 </main>

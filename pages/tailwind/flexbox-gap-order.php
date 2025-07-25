@@ -69,8 +69,8 @@
 
     <p class="text-green-700 font-semibold">✅ Tip: Combine <code>order</code> with responsive prefixes for mobile-first reordering!</p>
 
-    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+    <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/flexbox-align') ?>" class="hover:underline">← Previous: Justify Content & Align Items</a>
-  <a href="<?= base_url('tailwind/flexbox-patterns') ?>" class="hover:underline">Next: Creating Real Layouts with Flexbox →</a>
+  <a href="<?= base_url('tailwind/flexbox-patterns') ?>" class="hover:underline ms-auto">Next: Creating Real Layouts with Flexbox →</a>
 </div>
 </main>

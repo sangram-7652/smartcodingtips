@@ -125,9 +125,9 @@
         </section>
 
         <!-- Next Link -->
-      <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+      <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/why-utility-first') ?>" class="hover:underline">← Previous: Why Choose Utility-First Frameworks?</a>
-  <a href="<?= base_url('tailwind/installation') ?>" class="hover:underline">Next: Installing Tailwind via CDN and NPM →</a>
+  <a href="<?= base_url('tailwind/installation') ?>" class="hover:underline ms-auto">Next: Installing Tailwind via CDN and NPM →</a>
 </div>
     </article>
 </main>

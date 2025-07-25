@@ -91,9 +91,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/code-splitting') ?>" class="hover:underline">← Previous: Code Splitting</a>
-  <a href="<?= base_url('react/testing-intro') ?>" class="hover:underline">Next: Why Testing? →</a>
+  <a href="<?= base_url('react/testing-intro') ?>" class="hover:underline ms-auto">Next: Why Testing? →</a>
 </div>
 
 </main>

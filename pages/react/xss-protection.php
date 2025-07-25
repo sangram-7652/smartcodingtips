@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-6">
     By default, React escapes all values embedded in JSX. This means user data rendered through JSX cannot run malicious scripts.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const name = "&lt;img src=x onerror=alert('XSS') /&gt;";
 return &lt;div&gt;Hello {name}&lt;/div&gt;; // Safe: React escapes it
 </code></pre>
@@ -38,7 +38,7 @@ return &lt;div&gt;Hello {name}&lt;/div&gt;; // Safe: React escapes it
   <p class="text-black dark:text-gray-300 mb-4">
     Using <code>dangerouslySetInnerHTML</code> can bypass React's XSS protections and allow attackers to inject scripts.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // ❌ Dangerous unless sanitized
 &lt;div dangerouslySetInnerHTML={{ __html: userInput }} /&gt;
 </code></pre>
@@ -46,7 +46,7 @@ return &lt;div&gt;Hello {name}&lt;/div&gt;; // Safe: React escapes it
   <p class="text-black dark:text-gray-300 mb-6">
     If absolutely necessary, sanitize input using libraries like <code>DOMPurify</code>:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import DOMPurify from 'dompurify';
 
 const safeHtml = DOMPurify.sanitize(userInput);
@@ -66,7 +66,7 @@ const safeHtml = DOMPurify.sanitize(userInput);
   <p class="text-black dark:text-gray-300 mb-4">
     Add a CSP header to prevent inline scripts and control script loading:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 Content-Security-Policy: default-src 'self'; script-src 'self';
 </code></pre>
 
@@ -80,9 +80,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self';
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/test-interactions') ?>" class="hover:underline">← Previous: User Interaction Testing</a>
-  <a href="<?= base_url('react/auth-tokens') ?>" class="hover:underline">Next: Auth Tokens →</a>
+  <a href="<?= base_url('react/auth-tokens') ?>" class="hover:underline ms-auto">Next: Auth Tokens →</a>
 </div>
 
 </main>

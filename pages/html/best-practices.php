@@ -1,3 +1,8 @@
+<?php
+$title = "Best Practices | SmartCodingTips";
+$description = "Learn about best practices in HTML. Understand key concepts, examples, and usage.";
+$keywords = "best, practices, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -38,7 +43,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Always Use the Doctype Declaration</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
             </code></pre>
             <p class=" mt-2">
@@ -82,9 +87,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/dom-basics') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: HTML DOM</a></div>
-    <div><a href="<?= base_url('html/resume-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Resume Page →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/dom-basics') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: HTML DOM</a>
+    <a href="<?= base_url('html/resume-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Resume Page →</a>
 </div>
     </article>
 </main>

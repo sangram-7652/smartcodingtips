@@ -1,3 +1,8 @@
+<?php
+$title = "Product Landing Page | SmartCodingTips";
+$description = "Learn about product landing page in HTML. Understand key concepts, examples, and usage.";
+$keywords = "product, landing, page, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -35,7 +40,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm dark:bg-gray-800 dark:text-white"><code>
 &lt;section class="text-center p-8 bg-gray-50"&gt;
   &lt;h1 class="text-4xl font-bold mb-4"&gt;Smart Gadget Pro&lt;/h1&gt;
   &lt;p class=" mb-4"&gt;Upgrade your life with our latest tech innovation.&lt;/p&gt;
@@ -65,9 +70,9 @@
             </ul>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/resume-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Resume Page</a></div>
-    <div><a href="<?= base_url('html/gallery-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Photo Gallery →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/resume-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Resume Page</a>
+    <a href="<?= base_url('html/gallery-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Photo Gallery →</a>
 </div>
     </article>
 </main>

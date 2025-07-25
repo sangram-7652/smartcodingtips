@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic HTML Structure</h2>
             <p class=" mb-2">Use a container with multiple images inside a wrapper:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 <div class="slider">
     <div class="slides">
         <img src="img1.jpg" alt="Slide 1" />
@@ -41,7 +41,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS for Auto Sliding</h2>
             <p class=" mb-2">Use keyframes to automatically move images left to right:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .slider {
     width: 100%;
     max-width: 800px;
@@ -74,7 +74,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Optional: Manual Navigation</h2>
             <p class=" mb-2">Use radio buttons and labels to control slides without JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 <!-- Add hidden radio buttons and labels to control -->
 <input type="radio" name="slider" id="slide1" checked hidden>
 <input type="radio" name="slider" id="slide2" hidden>
@@ -117,9 +117,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/navbar-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Animated Navbar</a></div>
-    <div><a href="<?= base_url('css/product-card') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Product Card →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/navbar-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Animated Navbar</a> 
+   <a href="<?= base_url('css/product-card') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Product Card →</a> 
 </div>
 
     </article>

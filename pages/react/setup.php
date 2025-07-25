@@ -28,7 +28,7 @@
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📄 Option 1: Use React via CDN (Quick Start)</h2>
   <p class="mb-4 text-black dark:text-gray-300">This is great for beginners or small experiments without needing a build process.</p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -50,7 +50,7 @@
   <!-- Option 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 Option 2: Create React App (CRA)</h2>
   <p class="mb-4 text-black dark:text-gray-300">CRA is an official way to scaffold a React project with zero config.</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white">
 npx create-react-app my-app
 cd my-app
 npm start
@@ -65,7 +65,7 @@ npm start
   <!-- Option 3 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚡ Option 3: Vite + React (Recommended)</h2>
   <p class="mb-4 text-black dark:text-gray-300">Vite is faster and more modern than CRA, perfect for new projects.</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 npm create vite@latest my-react-app -- --template react
 cd my-react-app
 npm install
@@ -87,9 +87,9 @@ npm run dev
   </ul>
 
   <!-- Next Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/react-vs-others') ?>" class="hover:underline">← Previous: React vs Vanilla JS / Angular / Vue</a>
-  <a href="<?= base_url('react/first-app') ?>" class="hover:underline">Next: Your First React App →</a>
+  <a href="<?= base_url('react/first-app') ?>" class="hover:underline ms-auto">Next: Your First React App →</a>
 </div>
 
 </main>

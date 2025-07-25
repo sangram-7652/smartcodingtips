@@ -1,3 +1,8 @@
+<?php
+$title = "Checkbox & Radio | SmartCodingTips";
+$description = "Learn about checkbox & radio in HTML. Understand key concepts, examples, and usage.";
+$keywords = "checkbox, radio, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2">
                 A checkbox allows users to select one or more options independently. Use the same <code>name</code> if multiple selections belong to the same group.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label&gt;
     &lt;input type="checkbox" name="hobby" value="reading"&gt; Reading
@@ -47,7 +52,7 @@
             <p class="mb-2">
                 Radio buttons allow users to select only one option from a group. All radio inputs in the same group must share the same <code>name</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label&gt;
     &lt;input type="radio" name="gender" value="male"&gt; Male
@@ -71,9 +76,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/labels-placeholders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Labels & Placeholders</a></div>
-    <div><a href="<?= base_url('html/select-textarea') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Select & Textarea →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/labels-placeholders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Labels & Placeholders</a>
+    <a href="<?= base_url('html/select-textarea') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Select & Textarea →</a>
 </div>
     </article>
 </main>

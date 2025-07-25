@@ -31,7 +31,7 @@
         <!-- Step 1: Product Card Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Product Card Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;div class="bg-white shadow-md rounded p-4"&gt;
     &lt;img src="product.jpg" alt="Product" class="w-full h-48 object-cover mb-4 rounded"&gt;
     &lt;h3 class=" font-semibold"&gt;Product Name&lt;/h3&gt;
@@ -48,7 +48,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Responsive Grid Layout</h2>
             <p class="">Use responsive Tailwind grid classes:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"&gt;
     &lt;!-- Repeat Product Card Here --&gt;
 &lt;/section&gt;
@@ -69,7 +69,7 @@
         <!-- Full Example -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-2">4. Complete Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"&gt;
   &lt;div class="bg-white rounded-lg shadow p-4 hover:shadow-xl transition"&gt;
     &lt;img src="shoe.jpg" alt="Sneakers" class="w-full h-48 object-cover mb-4 rounded"&gt;
@@ -94,9 +94,9 @@
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/project-portfolio') ?>" class="hover:underline">← Previous: Responsive Portfolio Page</a>
-  <a href="<?= base_url('tailwind/project-pricing') ?>" class="hover:underline">Next: Pricing Table with Toggle →</a>
+  <a href="<?= base_url('tailwind/project-pricing') ?>" class="hover:underline ms-auto">Next: Pricing Table with Toggle →</a>
 </div>
 
     </article>

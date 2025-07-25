@@ -1,3 +1,8 @@
+<?php
+$title = "Contact Us Form | SmartCodingTips";
+$description = "Learn about contact us form in HTML. Understand key concepts, examples, and usage.";
+$keywords = "contact, us, form, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
             <p class=" mb-2">Here is a simple and responsive contact form built using HTML and Tailwind CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto  text-sm dark:bg-gray-900 dark:text-white"><code>
 &lt;form action="submit-form.php" method="post" class="space-y-4"&gt;
   &lt;div&gt;
     &lt;label for="name" class="block  font-medium"&gt;Name:&lt;/label&gt;
@@ -61,9 +66,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/gallery-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Photo Gallery</a></div>
-    <div><a href="<?= base_url('html/blog-layout') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Simple Blog Layout →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/gallery-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Photo Gallery</a>
+    <a href="<?= base_url('html/blog-layout') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Simple Blog Layout →</a>
 </div>
     </article>
 </main>

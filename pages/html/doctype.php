@@ -1,3 +1,8 @@
+<?php
+$title = "Doctype Declaration | SmartCodingTips";
+$description = "Learn about doctype declaration in HTML. Understand key concepts, examples, and usage.";
+$keywords = "doctype, declaration, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 The doctype is an instruction to the web browser about what version of HTML the page is written in. In HTML5, it is simplified and looks like this:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
             </code></pre>
             <p class=" mt-2">
@@ -48,7 +53,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Older Doctype Examples</h2>
             <p class=" mb-2">Earlier versions of HTML used more complex doctype declarations:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
   "http://www.w3.org/TR/html4/loose.dtd"&gt;
             </code></pre>
@@ -64,9 +69,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/basic-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Basic Structure</a></div>
-    <div><a href="<?= base_url('html/head-body') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Head & Body →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/basic-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Basic Structure</a>
+    <a href="<?= base_url('html/head-body') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Head & Body →</a>
 </div>
     </article>
 </main>

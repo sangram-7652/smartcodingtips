@@ -1,3 +1,8 @@
+<?php
+$title = "Superscript & Subscript | SmartCodingTips";
+$description = "Learn about superscript & subscript in HTML. Understand key concepts, examples, and usage.";
+$keywords = "superscript, subscript, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Use the <code>&lt;sup&gt;</code> tag to raise text above the baseline.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
             </code></pre>
             <p class=" mt-2">
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 Use the <code>&lt;sub&gt;</code> tag to lower text below the baseline.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O is the chemical formula for water.&lt;/p&gt;
             </code></pre>
             <p class=" mt-2">
@@ -64,9 +69,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/text-formatting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Bold, Italic, etc.</a></div>
-    <div><a href="<?= base_url('html/semantic-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Semantic Tags →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/text-formatting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Bold, Italic, etc.</a>
+    <a href="<?= base_url('html/semantic-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Semantic Tags →</a>
 </div>
     </article>
 </main>

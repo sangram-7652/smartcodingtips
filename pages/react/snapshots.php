@@ -39,7 +39,7 @@
 
   <!-- Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 3. Basic Snapshot Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // Button.js
 export default function Button() {
   return &lt;button&gt;Click me&lt;/button&gt;;
@@ -66,7 +66,7 @@ test('renders correctly', () =&gt; {
   <p class="text-black dark:text-gray-300 mb-4">
     If your component’s UI has intentionally changed, update the snapshot with:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npm test -- -u
 </code></pre>
 
@@ -95,9 +95,9 @@ npm test -- -u
   </ul>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/testing-library') ?>" class="hover:underline">← Previous: React Testing Library</a>
-  <a href="<?= base_url('react/test-interactions') ?>" class="hover:underline">Next: User Interaction Testing →</a>
+  <a href="<?= base_url('react/test-interactions') ?>" class="hover:underline ms-auto">Next: User Interaction Testing →</a>
 </div>
 
 </main>

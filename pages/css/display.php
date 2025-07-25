@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Elements with <code>display: block;</code> take up the full width available and start on a new line.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div {
     display: block;
 }
@@ -44,7 +44,7 @@ div {
             <p class=" mb-2">
                 <code>inline</code> elements only take as much width as necessary and do not start on a new line.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 span {
     display: inline;
 }
@@ -60,7 +60,7 @@ span {
             <p class=" mb-2">
                 Combines characteristics of both block and inline. It flows inline but respects width and height.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -74,7 +74,7 @@ span {
             <p class=" mb-2">
                 Hides the element completely from the layout (no space is reserved).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .modal {
     display: none;
 }
@@ -87,7 +87,7 @@ span {
             <p class=" mb-2">
                 Enables flexbox layout, allowing responsive alignment and spacing.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ span {
             <p class=" mb-2">
                 Applies CSS Grid layout, useful for complex two-dimensional layouts.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -119,7 +119,7 @@ span {
             <p class=" mb-2">
                 Mimics the behavior of HTML tables. Useful when aligning content like a table.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .table {
     display: table;
 }
@@ -138,9 +138,9 @@ span {
             </p>
         </section>
 
-     <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/overflow-sizing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Overflow & Box Sizing</a></div>
-    <div><a href="<?= base_url('css/position') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Positioning →</a></div>
+     <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/overflow-sizing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Overflow & Box Sizing</a> 
+   <a href="<?= base_url('css/position') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Positioning →</a> 
 </div>
     </article>
 </main>

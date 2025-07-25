@@ -1,3 +1,9 @@
+<?php
+$title = "Rowspan & Colspan | SmartCodingTips";
+$description = "Learn about rowspan & colspan in HTML. Understand key concepts, examples, and usage.";
+$keywords = "rowspan, colspan, html tutorial, html basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +31,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">What is <code>colspan</code>?</h2>
             <p class="mb-2">The <code>colspan</code> attribute allows a cell to span across multiple columns:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;table border="1"&gt;
   &lt;tr&gt;
     &lt;th colspan="2"&gt;Employee Details&lt;/th&gt;
@@ -41,7 +47,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">What is <code>rowspan</code>?</h2>
             <p class="mb-2">The <code>rowspan</code> attribute allows a cell to span across multiple rows:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;table border="1"&gt;
   &lt;tr&gt;
     &lt;th rowspan="2"&gt;Name&lt;/th&gt;
@@ -57,7 +63,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Combined Example</h2>
             <p class="mb-2">Here’s an example combining both <code>rowspan</code> and <code>colspan</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;table border="1"&gt;
   &lt;tr&gt;
     &lt;th rowspan="2"&gt;Department&lt;/th&gt;
@@ -80,9 +86,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/table-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Table Styling</a></div>
-    <div><a href="<?= base_url('html/forms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Form Tag →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/table-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Table Styling</a>
+    <a href="<?= base_url('html/forms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Form Tag →</a>
 </div>
     </article>
 </main>

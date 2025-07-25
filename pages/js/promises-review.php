@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/promises" class="text-blue-600 hover:underline">Promises</a>
+        <a href="javascript.php?page=js/promises" class="text-blue-600 dark:text-blue-400 hover:underline">Promises</a>
       </li>
     </ol>
   </nav>
@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Creating a Promise</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const myPromise = new Promise((resolve, reject) => {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>const myPromise = new Promise((resolve, reject) => {
   const success = true;
 
   if (success) {
@@ -31,13 +31,13 @@
 });</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔗 Consuming a Promise</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>myPromise
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>myPromise
   .then(result => console.log(result))   // Success handler
   .catch(error => console.error(error)) // Error handler
   .finally(() => console.log("Done!")); // Always runs</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⏳ Real Example: Simulate API Delay</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function fetchData() {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>function fetchData() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("📡 Data received after 2 seconds");
@@ -55,7 +55,7 @@ fetchData().then(data => console.log(data));</code></pre>
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Chaining Promises</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>fetchUser()
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>fetchUser()
   .then(user => fetchPosts(user.id))
   .then(posts => fetchComments(posts[0].id))
   .then(comments => console.log(comments))
@@ -65,7 +65,9 @@ fetchData().then(data => console.log(data));</code></pre>
     💡 <strong>Tip:</strong> Promises allow you to write async logic in a more structured and maintainable way.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/async-error" class="text-blue-600 hover:underline">Error in Async Code →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/callback-hell') ?>" class="hover:underline">← Previous: Callback Hell</a>
+    <a href="<?= base_url('js/async-error') ?>" class="hover:underline ms-auto">Next: Error in Async Code →</a>
 </div>
+
 </main>

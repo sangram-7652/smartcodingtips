@@ -26,7 +26,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Add Custom Colors</h2>
             <p class=" mb-2">In your <code>tailwind.config.js</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -48,7 +48,7 @@ module.exports = {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Add Custom Fonts</h2>
             <p class=" mb-2">Include a Google Font or local font, then add it to your config:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -67,7 +67,7 @@ module.exports = {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Add or Override Breakpoints</h2>
             <p class=" mb-2">Define custom screens (breakpoints) to control responsiveness:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -100,9 +100,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/custom-config') ?>" class="hover:underline">← Previous: Configuring Tailwind</a>
-  <a href="<?= base_url('tailwind/css-variables') ?>" class="hover:underline">Next: Using :root CSS Variables →</a>
+  <a href="<?= base_url('tailwind/css-variables') ?>" class="hover:underline ms-auto">Next: Using :root CSS Variables →</a>
 </div>
     </article>
 </main>

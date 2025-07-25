@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/array-looping" class="text-blue-600 hover:underline">Looping Through Arrays</a>
+                <a href="javascript.php?page=js/array-looping" class="text-blue-600 dark:text-blue-400 hover:underline">Looping Through Arrays</a>
             </li>
         </ol>
     </nav>
@@ -22,19 +22,19 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Using a <code>for</code> Loop</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const fruits = ["apple", "banana", "cherry"];
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const fruits = ["apple", "banana", "cherry"];
 
 for (let i = 0; i &lt; fruits.length; i++) {
     console.log(fruits[i]);
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">➡️ Using <code>for...of</code> Loop</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (const fruit of fruits) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (const fruit of fruits) {
     console.log(fruit);
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 Using <code>forEach()</code> Method</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>fruits.forEach(function(fruit, index) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>fruits.forEach(function(fruit, index) {
     console.log(index + ": " + fruit);
 });</code></pre>
 
@@ -42,7 +42,7 @@ for (let i = 0; i &lt; fruits.length; i++) {
     <p class="mb-4">
         <code>map()</code> creates a new array by transforming each element.
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const upperFruits = fruits.map(fruit =&gt; fruit.toUpperCase());
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const upperFruits = fruits.map(fruit =&gt; fruit.toUpperCase());
 console.log(upperFruits); // ["APPLE", "BANANA", "CHERRY"]</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ Avoid <code>for...in</code> with Arrays</h2>
@@ -54,7 +54,8 @@ console.log(upperFruits); // ["APPLE", "BANANA", "CHERRY"]</code></pre>
         ⚠️ <strong>Tip:</strong> Use <code>for...of</code> or <code>forEach()</code> for clean array iteration.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/objects" class="text-blue-600 hover:underline">Objects and Properties →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/arrays') ?>" class="hover:underline">← Previous: Arrays and Methods</a>
+    <a href="<?= base_url('js/objects') ?>" class="hover:underline ms-auto">Next: Objects and Properties →</a>
 </div>
 </main>

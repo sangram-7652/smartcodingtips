@@ -24,13 +24,13 @@
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 1. Installation</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install zustand
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Create a Store</h2>
   <p class="mb-2 text-black dark:text-gray-300">Define your global state using a simple function:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // store.js
 import { create } from 'zustand';
 
@@ -45,7 +45,7 @@ export default useCounterStore;
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 3. Use the Store in Components</h2>
   <p class="mb-2 text-black dark:text-gray-300">Access the state and actions inside your components:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import useCounterStore from './store';
 
 function Counter() {
@@ -63,7 +63,7 @@ function Counter() {
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 4. Selectively Read State</h2>
   <p class="mb-2 text-black dark:text-gray-300">To avoid unnecessary re-renders, you can subscribe to just part of the store:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const count = useCounterStore((state) => state.count);
 </code></pre>
 
@@ -77,9 +77,9 @@ const count = useCounterStore((state) => state.count);
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/zustand') ?>" class="hover:underline">← Previous: Zustand</a>
-  <a href="<?= base_url('react/css-modules') ?>" class="hover:underline">Next: CSS Modules →</a>
+  <a href="<?= base_url('react/css-modules') ?>" class="hover:underline ms-auto">Next: CSS Modules →</a>
 </div>
 
 </main>

@@ -35,7 +35,7 @@
         <!-- Syntax -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Syntax</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .block { }
 .block__element { }
 .block--modifier { }
@@ -48,14 +48,14 @@
         <!-- Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mb-4"><code class="text-sm">
 <!-- HTML -->
 <div class="card card--featured">
     <h2 class="card__title">Featured Article</h2>
     <p class="card__description">Short summary of the content.</p>
 </div>
             </code></pre>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* CSS */
 .card {
     border: 1px solid #ccc;
@@ -107,9 +107,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/devtools') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: DevTools for CSS</a></div>
-    <div><a href="<?= base_url('css/performance') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Performance Tips →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/devtools') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: DevTools for CSS</a> 
+   <a href="<?= base_url('css/performance') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Performance Tips →</a> 
 </div>
 
     </article>

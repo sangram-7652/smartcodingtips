@@ -10,7 +10,7 @@
 
     <!-- Center: Navigation Links -->
     <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
-      <a href="about.php" class="hover:text-emerald-300 transition">About</a>
+      <a href="<?= base_url('about') ?>" class="hover:text-emerald-300 transition">About</a>
       <a href="contact.php" class="hover:text-emerald-300 transition">Contact</a>
       <a href="privacy-policy.php" class="hover:text-emerald-300 transition">Privacy Policy</a>
     </div>
@@ -31,7 +31,6 @@
 
 <!-- Font Awesome (replace with your own kit) -->
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-
 <!-- Scripts -->
 <script src="static/js/script.js"></script>
 
@@ -146,7 +145,78 @@
         }
       });
     });
+
+
   });
+
+  const toc = document.getElementById('mobileToc');
+  const openTocBtn = document.getElementById('openToc');
+  const closeTocBtn = document.getElementById('closeToc');
+
+  let tocScrollY = sessionStorage.getItem('toc-scroll') || 0;
+
+  // Function to update active link
+  function setActiveLink(href) {
+    const allLinks = toc.querySelectorAll('a.toc-link');
+    allLinks.forEach(link => link.classList.remove('active'));
+
+    const activeLink = toc.querySelector(`a[href="${href}"]`);
+    if (activeLink) {
+      activeLink.classList.add('active');
+      // Optional: center it in view
+      activeLink.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  }
+
+  // Restore scroll and active link on open
+  openTocBtn?.addEventListener('click', () => {
+    toc.classList.remove('-translate-x-full');
+
+    setTimeout(() => {
+      toc.scrollTop = tocScrollY;
+      setActiveLink(window.location.pathname + window.location.search);
+    }, 50);
+  });
+
+  // Save scroll on manual close
+  closeTocBtn?.addEventListener('click', () => {
+    tocScrollY = toc.scrollTop;
+    sessionStorage.setItem('toc-scroll', tocScrollY);
+    toc.classList.add('-translate-x-full');
+  });
+
+  // Link click: save scroll, close sidebar, and set active
+  toc.querySelectorAll('a.toc-link')?.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+
+      // Save active href to session
+      sessionStorage.setItem('active-toc-link', href);
+
+      if (window.innerWidth < 768) {
+        tocScrollY = toc.scrollTop;
+        sessionStorage.setItem('toc-scroll', tocScrollY);
+        toc.classList.add('-translate-x-full');
+      }
+
+      // Optional: immediately highlight link (for fast UX)
+      setActiveLink(href);
+    });
+  });
+
+  // Highlight correct link on page load (for desktop or refresh)
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedHref = sessionStorage.getItem('active-toc-link') || (window.location.pathname + window.location.search);
+    setActiveLink(savedHref);
+  });
+
+  setTimeout(() => {
+    const msg = document.querySelector('.subscribe_responese');
+    if (msg) msg.style.display = 'none';
+  }, 5000);
 </script>
 
 </body>

@@ -30,7 +30,7 @@
                 <li><code>box-border</code> – includes border and padding in element's total width and height</li>
                 <li><code>box-content</code> – excludes border and padding (default behavior)</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="w-64 p-4 border box-border"&gt;Box Border&lt;/div&gt;
 &lt;div class="w-64 p-4 border box-content"&gt;Box Content&lt;/div&gt;
             </pre>
@@ -47,7 +47,7 @@
                 <li><code>visible</code> – the element is shown (default)</li>
                 <li><code>invisible</code> – hides the element but retains its space in the layout</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="visible"&gt;I’m visible!&lt;/div&gt;
 &lt;div class="invisible"&gt;You won’t see me, but I take up space&lt;/div&gt;
             </pre>
@@ -72,9 +72,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
-  <a href="<?= base_url('tailwind/box-sizing') ?>" class="hover:underline">← Previous: Float, Clear, Overflow, Object Fit</a>
-  <a href="<?= base_url('tailwind/flexbox-intro') ?>" class="hover:underline">Next: Flex Containers and Items →</a>
-</div>
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
+            <a href="<?= base_url('tailwind/box-sizing') ?>" class="hover:underline">← Previous: Float, Clear, Overflow, Object Fit</a>
+            <a href="<?= base_url('tailwind/flexbox-intro') ?>" class="hover:underline ms-auto">Next: Flex Containers and Items →</a>
+        </div>
     </article>
 </main>

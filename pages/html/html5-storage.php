@@ -1,3 +1,8 @@
+<?php
+$title = "Web Storage | SmartCodingTips";
+$description = "Learn about web storage in HTML. Understand key concepts, examples, and usage.";
+$keywords = "web, storage, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -32,7 +37,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Local Storage Example</h2>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 // Save data
 localStorage.setItem("username", "SmartCoder");
 
@@ -64,9 +69,9 @@ sessionStorage.clear();
             </code></pre>
         </section>
 
-     <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-geo') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Geolocation</a></div>
-    <div><a href="<?= base_url('html/div-vs-section') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Div vs Section →</a></div>
+     <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-geo') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Geolocation</a>
+    <a href="<?= base_url('html/div-vs-section') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Div vs Section →</a>
 </div>
 
     </article>

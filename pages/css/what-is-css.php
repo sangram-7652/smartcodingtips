@@ -46,7 +46,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white l"><code class="text-sm ">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white l"><code class="text-sm ">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -59,7 +59,7 @@
 &lt;/html&gt;
             </code></pre>
             <p class=" mt-2">And the external CSS file <code>styles.css</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-whit break-alle"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-whit break-alle"><code class="text-sm">
 h1 {
     color: blue;
     text-align: center;
@@ -74,9 +74,9 @@ h1 {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
     <div></div>
-    <div><a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Why Use CSS? →</a></div>
+   <a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Why Use CSS? →</a> 
 </div>
     </article>
 </main>

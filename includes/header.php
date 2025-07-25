@@ -30,14 +30,13 @@
 </head>
 
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white overflow-x-hidden">
-    <!-- bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white -->
     <!-- Header Start -->
     <header
         class="w-full bg-gray-900 dark:bg-gray-800 text-white fixed top-0 left-0 z-50 shadow-md ">
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
 
             <!-- Logo -->
-            <a href="index.php" class="text-2xl font-bold text-white hover:text-teal-400 transition duration-200">
+            <a href="<?= base_url('') ?>" class="text-2xl font-bold text-white hover:text-teal-400 transition duration-200">
                 SmartCodingTips
             </a>
 
@@ -53,6 +52,7 @@
 
             <!-- Theme Toggle -->
             <button id="themeToggle" class="ml-4 text-xl" title="Toggle Theme">🌙</button>
+
 
             <!-- Mobile Menu Icon -->
             <button class="md:hidden focus:outline-none" id="mobile_nav">
@@ -76,8 +76,8 @@
                     <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('') ?>" class="block hover:text-teal-400 transition">Home</a></li>
                     <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('html/what-is-html') ?>" class="block hover:text-teal-400 transition">HTML</a></li>
                     <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('css/what-is-css') ?>" class="block hover:text-teal-400 transition">CSS</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('js/what-is-js') ?>" class="block hover:text-teal-400 transition">Tailwind CSS</a></li>
-                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="block hover:text-teal-400 transition">JavaScript</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="block hover:text-teal-400 transition">Tailwind CSS</a></li>
+                    <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('js/what-is-js') ?>" class="block hover:text-teal-400 transition">JavaScript</a></li>
                     <li class=" py-4 px-10 shadow-xl"><a href="<?= base_url('react/what-is-react') ?>" class="block hover:text-teal-400 transition">React</a></li>
                 </ul>
             </nav>

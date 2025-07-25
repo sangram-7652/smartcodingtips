@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
             <p class=" mb-2">Here’s a simple structure to get started:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;header&gt;...&lt;/header&gt;
 &lt;section id="about"&gt;...&lt;/section&gt;
 &lt;section id="projects"&gt;...&lt;/section&gt;
@@ -39,7 +39,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Hero Banner</h2>
             <p class=" mb-2">The landing section with your name and title:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background: linear-gradient(to right, #2563eb, #1e3a8a);
     color: white;
@@ -60,7 +60,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Project Showcase Grid</h2>
             <p class=" mb-2">Display projects using cards with CSS Grid:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -90,7 +90,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Contact Section</h2>
             <p class=" mb-2">Include a contact form or email/social links:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .contact-form {
     max-width: 500px;
     margin: auto;
@@ -127,9 +127,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/custom-checkbox') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Custom Checkbox/Radio</a></div>
-    <div><a href="<?= base_url('css/pricing-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Pricing Table →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/custom-checkbox') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Custom Checkbox/Radio</a> 
+   <a href="<?= base_url('css/pricing-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Pricing Table →</a> 
 </div>
     </article>
 </main>

@@ -82,8 +82,8 @@
     <h2 class="text-2xl font-semibold mb-2">🧠 Summary</h2>
     <p>Use <strong>justify-*</strong> for horizontal alignment and <strong>items-*</strong> (or <strong>self-*</strong>) for vertical alignment. Flexbox makes it simple to center, distribute, or stretch elements!</p>
 
-    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+    <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/flexbox-direction') ?>" class="hover:underline">← Previous: Direction, Wrapping, and Growth</a>
-  <a href="<?= base_url('tailwind/flexbox-gap-order') ?>" class="hover:underline">Next: Gap and Order Utilities →</a>
+  <a href="<?= base_url('tailwind/flexbox-gap-order') ?>" class="hover:underline ms-auto">Next: Gap and Order Utilities →</a>
 </div>
 </main>

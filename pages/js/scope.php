@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/scope-closure" class="text-blue-600 hover:underline">Scope & Closure</a>
+                <a href="javascript.php?page=js/scope-closure" class="text-blue-600 dark:text-blue-400 hover:underline">Scope & Closure</a>
             </li>
         </ol>
     </nav>
@@ -28,7 +28,7 @@
         <li><strong>Block Scope</strong> – Introduced by <code>let</code> and <code>const</code> inside <code>{ }</code></li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let globalVar = "Global";
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let globalVar = "Global";
 
 function testScope() {
     let functionVar = "Function";
@@ -47,7 +47,7 @@ testScope();
         A <strong>closure</strong> is when an inner function accesses variables from an outer function even after the outer function has finished executing.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function outer() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function outer() {
     let count = 0;
 
     return function inner() {
@@ -72,8 +72,9 @@ console.log(counter()); // 2
         🧠 <strong>Tip:</strong> Closures power many JS patterns including callbacks, modules, and event handlers.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/this" class="text-blue-600 hover:underline">The `this` Keyword →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/arrow-functions') ?>" class="hover:underline">← Previous: Arrow Functions</a>
+    <a href="<?= base_url('js/this') ?>" class="hover:underline ms-auto">Next: The `this` Keyword →</a>
 </div>
 
 </main>

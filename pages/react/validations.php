@@ -24,7 +24,7 @@
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 1. Basic Required Field</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 import { useState } from 'react';
 
 function SignupForm() {
@@ -60,7 +60,7 @@ function SignupForm() {
     Validate input as the user types for better user experience:
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 function handleChange(e) {
   const value = e.target.value;
   setEmail(value);
@@ -85,7 +85,7 @@ function handleChange(e) {
     Always prevent form submission if input fails validation:
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 if (!email || error) {
   return; // stop submission
 }
@@ -98,9 +98,9 @@ if (!email || error) {
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/forms-controlled') ?>" class="hover:underline">← Previous: Controlled Forms</a>
-  <a href="<?= base_url('react/form-submit') ?>" class="hover:underline">Next: Form Submission →</a>
+  <a href="<?= base_url('react/form-submit') ?>" class="hover:underline ms-auto">Next: Form Submission →</a>
 </div>
 
 </main>

@@ -27,7 +27,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Avoid re-running expensive calculations on every render by memoizing the result:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useMemo, useState } from 'react';
 
 function ExpensiveComponent({ num }) {
@@ -45,7 +45,7 @@ function ExpensiveComponent({ num }) {
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔗 2. Syntax</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const memoizedValue = useMemo(() =&gt; computeExpensiveValue(a, b), [a, b]);
 </code></pre>
 
@@ -66,9 +66,9 @@ const memoizedValue = useMemo(() =&gt; computeExpensiveValue(a, b), [a, b]);
   </p>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/use-reducer') ?>" class="hover:underline">← Previous: useReducer()</a>
-  <a href="<?= base_url('react/use-callback') ?>" class="hover:underline">Next: useCallback() →</a>
+  <a href="<?= base_url('react/use-callback') ?>" class="hover:underline ms-auto">Next: useCallback() →</a>
 </div>
 
 </main>

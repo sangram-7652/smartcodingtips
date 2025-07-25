@@ -84,9 +84,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/gradients') ?>" class="hover:underline">← Previous: Gradients</a>
-  <a href="<?= base_url('tailwind/ring-shadow') ?>" class="hover:underline">Next: Divide and Ring Utilities →</a>
+  <a href="<?= base_url('tailwind/ring-shadow') ?>" class="hover:underline ms-auto">Next: Divide and Ring Utilities →</a>
 </div>
     </article>
 </main>

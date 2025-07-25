@@ -24,13 +24,13 @@
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚀 1. Installation</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install @reduxjs/toolkit react-redux
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Create a Slice</h2>
   <p class="mb-2 text-black dark:text-gray-300">Slices include state, reducers, and actions in one place:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // features/counter/counterSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
@@ -48,7 +48,7 @@ export default counterSlice.reducer;
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🗃 3. Configure the Store</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // app/store.js
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
@@ -62,7 +62,7 @@ export const store = configureStore({
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔗 4. Provide the Store</h2>
   <p class="mb-2 text-black dark:text-gray-300">Wrap your app with <code>&lt;Provider&gt;</code> from <code>react-redux</code>:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
@@ -76,7 +76,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📥 5. Use Redux State in Components</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './features/counter/counterSlice';
 
@@ -103,9 +103,9 @@ function Counter() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/redux') ?>" class="hover:underline">← Previous: Redux Toolkit</a>
-  <a href="<?= base_url('react/comparison') ?>" class="hover:underline">Next: Tool Comparison →</a>
+  <a href="<?= base_url('react/comparison') ?>" class="hover:underline ms-auto">Next: Tool Comparison →</a>
 </div>
 
 </main>

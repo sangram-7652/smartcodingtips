@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/device-detect" class="text-blue-600 hover:underline">Device & Feature Detection</a>
+                <a href="javascript.php?page=js/device-detect" class="text-blue-600 dark:text-blue-400 hover:underline">Device & Feature Detection</a>
             </li>
         </ol>
     </nav>
@@ -25,7 +25,7 @@
         You can use the <code>navigator.userAgent</code> or screen size to detect the type of device:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// User agent detection
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// User agent detection
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 console.log("Is Mobile:", isMobile);
 
@@ -41,7 +41,7 @@ if (window.innerWidth < 768) {
         Feature detection helps check whether a browser supports a specific API or feature before using it.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Check for localStorage support
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Check for localStorage support
 if (typeof Storage !== "undefined") {
     console.log("localStorage is supported");
 } else {
@@ -73,8 +73,9 @@ if ("geolocation" in navigator) {
         💡 <strong>Best Practice:</strong> Always prefer <strong>feature detection</strong> over device detection when handling cross-device compatibility.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/popups" class="text-blue-600 hover:underline">Popups & Controls →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/storage') ?>" class="hover:underline">← Previous: LocalStorage / SessionStorage</a>
+    <a href="<?= base_url('js/popups') ?>" class="hover:underline ms-auto">Next: Popups & Controls →</a>
 </div>
 
 </main>

@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/window-navigator" class="text-blue-600 hover:underline">Window & Navigator</a>
+                <a href="javascript.php?page=js/window-navigator" class="text-blue-600 dark:text-blue-400 hover:underline">Window & Navigator</a>
             </li>
         </ol>
     </nav>
@@ -24,7 +24,7 @@
         The <code>window</code> object is the global object in the browser environment. All global variables and functions are properties of this object.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Accessing window properties
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Accessing window properties
 console.log(window.innerWidth);  // Width of the browser window
 console.log(window.innerHeight); // Height of the browser window
 
@@ -44,7 +44,7 @@ setTimeout(() => console.log("Executed after 2 seconds"), 2000);</code></pre>
         The <code>navigator</code> object contains information about the user's browser and operating system.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Basic browser info
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Basic browser info
 console.log(navigator.userAgent);    // Full user agent string
 console.log(navigator.language);     // Language (e.g., "en-US")
 console.log(navigator.onLine);       // Check if user is online
@@ -71,7 +71,9 @@ console.log(navigator.cookieEnabled); // true/false</code></pre>
         <li><strong>navigator</strong> gives you details about the browser and device (user agent, platform, etc.).</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/storage" class="text-blue-600 hover:underline">LocalStorage / SessionStorage →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/browser-bom') ?>" class="hover:underline">← Previous: Browser Object Model</a>
+    <a href="<?= base_url('js/storage') ?>" class="hover:underline ms-auto">Next: LocalStorage / SessionStorage →</a>
 </div>
+
 </main>

@@ -84,9 +84,9 @@ useEffect(() => {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/fetch-api') ?>" class="hover:underline">← Previous: Using fetch()</a>
-  <a href="<?= base_url('react/loading-error') ?>" class="hover:underline">Next: Loading & Error →</a>
+  <a href="<?= base_url('react/loading-error') ?>" class="hover:underline ms-auto">Next: Loading & Error →</a>
 </div>
 
 </main>

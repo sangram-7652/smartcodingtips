@@ -27,7 +27,7 @@
   <!-- Directory Overview -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📁 Project Structure</h2>
   <p class="mb-4 text-black dark:text-gray-300">If you used <code>Create React App</code> or <code>Vite</code>, you’ll see a structure like this:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 my-app/
 ├── public/
 ├── src/
@@ -44,7 +44,7 @@ my-app/
   <p class="mb-4 text-black dark:text-gray-300">
     Open <code>App.jsx</code> and replace the content with a simple React component:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 import React from 'react';
 
 function App() {
@@ -62,7 +62,7 @@ export default App;
   <p class="mt-4 mb-6 text-black dark:text-gray-300">
     In <code>main.jsx</code> (or <code>index.js</code>), React renders the App:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -76,7 +76,7 @@ root.render(&lt;App /&gt;);
   <!-- Run the App -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">💻 Run the App</h2>
   <p class="mb-4 text-black dark:text-gray-300">In your terminal, start the development server:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white">
 npm run dev
 </pre>
 
@@ -93,9 +93,9 @@ npm run dev
   </ul>
 
   <!-- Next Link -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/setup') ?>" class="hover:underline">← Previous: Setting Up React</a>
-  <a href="<?= base_url('react/jsx') ?>" class="hover:underline">Next: JSX →</a>
+  <a href="<?= base_url('react/jsx') ?>" class="hover:underline ms-auto">Next: JSX →</a>
 </div>
 
 </main>

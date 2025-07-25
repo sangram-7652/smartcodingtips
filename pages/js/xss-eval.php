@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/avoid-xss-eval" class="text-blue-600 hover:underline">Avoiding XSS & eval()</a>
+        <a href="javascript.php?page=js/avoid-xss-eval" class="text-blue-600 dark:text-blue-400 hover:underline">Avoiding XSS & eval()</a>
       </li>
     </ol>
   </nav>
@@ -25,12 +25,12 @@
   </p>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">❌ Bad Example (XSS Vulnerable)</h3>
-  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// User input directly added to innerHTML
+  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>// User input directly added to innerHTML
 const input = "&lt;script&gt;alert('XSS')&lt;/script&gt;";
 document.getElementById("output").innerHTML = input;</code></pre>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">✅ Good Example (Safe)</h3>
-  <pre class="bg-green-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// Use textContent to escape HTML
+  <pre class="bg-green-100 p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>// Use textContent to escape HTML
 const input = "&lt;script&gt;alert('XSS')&lt;/script&gt;";
 document.getElementById("output").textContent = input;</code></pre>
 
@@ -40,7 +40,7 @@ document.getElementById("output").textContent = input;</code></pre>
   </p>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">❌ Avoid This</h3>
-  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const userCode = prompt("Enter JS:");
+  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>const userCode = prompt("Enter JS:");
 eval(userCode); // 👈 Extremely dangerous!</code></pre>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">✅ Use Safe Alternatives</h3>
@@ -62,7 +62,8 @@ eval(userCode); // 👈 Extremely dangerous!</code></pre>
     💡 <strong>Pro Tip:</strong> Never trust user input — always treat it as unsafe until properly validated and sanitized.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/cors" class="text-blue-600 hover:underline">CORS Explained →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/security-intro') ?>" class="hover:underline">← Previous: Security Basics</a>
+    <a href="<?= base_url('js/cors') ?>" class="hover:underline ms-auto">Next: CORS Explained →</a>
 </div>
 </main>

@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Below, we define a parent grid with two columns and nest a child grid inside one of its items:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-2 gap-4 p-4 bg-gray-100"&gt;
     &lt;div class="bg-blue-200 p-4"&gt;Parent Item 1&lt;/div&gt;
 
@@ -61,7 +61,7 @@
             <p class=" mb-2">
                 You can apply responsive classes within nested grids to adapt the layout on different devices:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-1 md:grid-cols-2 gap-4"&gt;
     &lt;div class="p-4 bg-yellow-100"&gt;Sidebar&lt;/div&gt;
     &lt;div class="p-4 bg-yellow-200"&gt;
@@ -83,9 +83,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/grid-placement') ?>" class="hover:underline">← Previous: Grid Areas and Placement</a>
-  <a href="<?= base_url('tailwind/grid-responsive') ?>" class="hover:underline">Next: Responsive Grid Layouts →</a>
+  <a href="<?= base_url('tailwind/grid-responsive') ?>" class="hover:underline ms-auto">Next: Responsive Grid Layouts →</a>
 </div>
     </article>
 </main>

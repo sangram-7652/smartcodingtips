@@ -26,7 +26,7 @@
 
   <!-- Section: Basic Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📌 Basic Event Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function ClickButton() {
   function handleClick() {
     alert("Button was clicked!");
@@ -39,14 +39,14 @@ function ClickButton() {
   <!-- Section: Inline Event -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚡ Inline Event Handler</h2>
   <p class="text-black dark:text-gray-300 mb-4">You can define the function directly inside the JSX:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 &lt;button onClick={() =&gt; alert("Clicked!")}&gt;Click&lt;/button&gt;
 </code></pre>
 
   <!-- Section: Accessing Event Object -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📨 Accessing Event Object</h2>
   <p class="text-black dark:text-gray-300 mb-4">React automatically passes the event object to your handler:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function handleClick(event) {
   console.log(event.target);
 }
@@ -54,7 +54,7 @@ function handleClick(event) {
 
   <!-- Section: Prevent Default -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🚫 Preventing Default Behavior</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function MyForm() {
   function handleSubmit(e) {
     e.preventDefault();
@@ -92,9 +92,9 @@ function MyForm() {
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/empty-states') ?>" class="hover:underline">← Previous: Conditional Lists & Empty States</a>
-  <a href="<?= base_url('react/controlled-vs-uncontrolled') ?>" class="hover:underline">Next: Controlled vs Uncontrolled →</a>
+  <a href="<?= base_url('react/controlled-vs-uncontrolled') ?>" class="hover:underline ms-auto">Next: Controlled vs Uncontrolled →</a>
 </div>
 
 

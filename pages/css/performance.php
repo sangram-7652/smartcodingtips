@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Keep selectors short and specific. Deep nested selectors like <code>body div ul li a span</code> slow down CSS matching.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* ❌ Avoid */
 .container .nav .list li a span { color: red; }
 
@@ -43,7 +43,7 @@
             <p class=" mb-2">
                 Avoid layout-triggering properties like <code>width</code>, <code>height</code>, or <code>top</code> during animations. Use <code>transform</code> and <code>opacity</code> instead.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* ✅ Optimized animation */
 .element {
     transition: transform 0.3s ease;
@@ -96,7 +96,7 @@
             <p class=" mb-2">
                 Shorthand saves bytes and improves clarity:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* ❌ Long version */
 margin-top: 10px;
 margin-right: 20px;
@@ -116,8 +116,8 @@ margin: 10px 20px;
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/bem-naming') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: BEM Naming</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/bem-naming') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: BEM Naming</a> 
     <div></div>
 </div>
     </article>

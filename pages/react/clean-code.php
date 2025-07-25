@@ -63,7 +63,7 @@
   <p class="text-black dark:text-gray-300 mb-6">
     Move conditions, mapping, and calculations out of the return block. Example:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // ❌ Bad
 return &lt;div&gt;{items.map(i =&gt; &lt;Item key={i.id} /&gt;)}&lt;/div&gt;
 
@@ -76,7 +76,7 @@ return &lt;div&gt;{renderedItems}&lt;/div&gt;;
   <p class="text-black dark:text-gray-300 mb-6">
     Always clear subscriptions, intervals, and side effects to avoid memory leaks:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 useEffect(() =&gt; {
   const interval = setInterval(() =&gt; {
     console.log("tick");
@@ -97,8 +97,8 @@ useEffect(() =&gt; {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/naming') ?>" class="hover:underline">← Previous: Naming Conventions</a>
-  <a href="<?= base_url('react/a11y') ?>" class="hover:underline">Next: Accessibility →</a>
+  <a href="<?= base_url('react/a11y') ?>" class="hover:underline ms-auto">Next: Accessibility →</a>
 </div>
 </main>

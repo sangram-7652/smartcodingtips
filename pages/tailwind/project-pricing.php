@@ -80,9 +80,9 @@
         <p class="text-sm text-gray-500 mt-6 text-center">Toggle prices between monthly and yearly using the switch above. All plans are billed securely.</p>
 
         <!-- Next -->
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/project-product-grid') ?>" class="hover:underline">← Previous: E-Commerce Product Grid</a>
-  <a href="<?= base_url('tailwind/project-dashboard') ?>" class="hover:underline">Next: Dark Mode Dashboard UI →</a>
+  <a href="<?= base_url('tailwind/project-dashboard') ?>" class="hover:underline ms-auto">Next: Dark Mode Dashboard UI →</a>
 </div>
 
     </article>

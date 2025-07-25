@@ -49,7 +49,7 @@
             <p class=" mb-2">
                 You can add responsive variants by prefixing any utility with a breakpoint name:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="text-sm md:text-base lg:text-xl"&gt;
     Responsive Text
 &lt;/div&gt;
@@ -70,7 +70,7 @@
             <p class=" mb-2">
                 You can override or add breakpoints in your <code>tailwind.config.js</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {},
@@ -105,9 +105,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline">← Previous: Mobile-First Philosophy</a>
-  <a href="<?= base_url('tailwind/show-hide') ?>" class="hover:underline">Next: Hiding/Showing Elements Responsively →</a>
+  <a href="<?= base_url('tailwind/show-hide') ?>" class="hover:underline ms-auto">Next: Hiding/Showing Elements Responsively →</a>
 </div>
     </article>
 </main>

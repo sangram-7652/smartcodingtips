@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Box Shadow</h2>
             <p class=" mb-2">The <code>box-shadow</code> property applies shadow effects to containers:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .shadow-box {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -40,7 +40,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Multiple Box Shadows</h2>
             <p class=" mb-2">You can apply more than one shadow separated by commas:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .multi-shadow {
     box-shadow: 2px 2px 5px gray, -2px -2px 5px lightgray;
 }
@@ -51,7 +51,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Inset Shadow</h2>
             <p class=" mb-2">Use the <code>inset</code> keyword for an inner shadow:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .inset-shadow {
     box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
 }
@@ -62,7 +62,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Text Shadow</h2>
             <p class=" mb-2">The <code>text-shadow</code> property adds shadow to text content:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .shadow-text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -87,9 +87,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/borders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Borders</a></div>
-    <div><a href="<?= base_url('css/transitions') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: CSS Transitions →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/borders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Borders</a> 
+   <a href="<?= base_url('css/transitions') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: CSS Transitions →</a> 
 </div>
 
     </article>

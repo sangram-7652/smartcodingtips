@@ -34,7 +34,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     Throttling ensures a function (like an API call) is only triggered at most once every X ms.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useCallback } from 'react';
 import throttle from 'lodash.throttle';
 
@@ -54,7 +54,7 @@ function SearchBox() {
   <p class="text-black dark:text-gray-300 mb-4">
     Debouncing delays function execution until the user stops typing or interacting.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useCallback } from 'react';
 import debounce from 'lodash.debounce';
 
@@ -74,7 +74,7 @@ function SearchBox() {
   <p class="text-black dark:text-gray-300 mb-4">
     If the API responds with a <code>429 Too Many Requests</code> status, you can notify the user or implement retries:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 fetch('/api/data')
   .then(res =&gt; {
     if (res.status === 429) {
@@ -94,9 +94,9 @@ fetch('/api/data')
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/env-vars') ?>" class="hover:underline">← Previous: Environment Variables</a>
-  <a href="<?= base_url('react/protect-routes') ?>" class="hover:underline">Next: Protected Routes →</a>
+  <a href="<?= base_url('react/protect-routes') ?>" class="hover:underline ms-auto">Next: Protected Routes →</a>
 </div>
 
 </main>

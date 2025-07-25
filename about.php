@@ -1,4 +1,7 @@
-<?php include 'includes/header.php'; ?>
+<?php
+include 'config.php';
+include 'includes/header.php';
+?>
 
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <section class="bg-white p-6 rounded-xl shadow-md dark:bg-gray-900 dark:text-white">
@@ -35,7 +38,7 @@
         <div class="mt-8 text-sm  border-t pt-4">
             <p><strong>Founded:</strong> 2025</p>
             <p><strong>Location:</strong> India</p>
-            <p><strong>Email:</strong> smartcodingtips@gmail.com</p>
+            <p><strong>Email:</strong> sangramsingh.dev@gmail.com</p>
         </div>
     </section>
 </main>

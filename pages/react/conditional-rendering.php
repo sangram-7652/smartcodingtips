@@ -29,7 +29,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     You can conditionally render different elements using plain JavaScript:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 function Greeting({ isLoggedIn }) {
   if (isLoggedIn) {
     return &lt;h2&gt;Welcome back!&lt;/h2&gt;;
@@ -41,7 +41,7 @@ function Greeting({ isLoggedIn }) {
 
   <!-- Ternary Operator -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">2️⃣ Using Ternary Operator</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 function Greeting({ isLoggedIn }) {
   return (
     &lt;h2&gt;
@@ -53,7 +53,7 @@ function Greeting({ isLoggedIn }) {
 
   <!-- && Operator -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">3️⃣ Using Logical AND (<code>&&</code>)</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 function Warning({ show }) {
   return (
     &lt;div&gt;
@@ -65,7 +65,7 @@ function Warning({ show }) {
 
   <!-- Extracting JSX Logic -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">4️⃣ Separating JSX Logic</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 function Message({ status }) {
   let content;
   if (status === "loading") {
@@ -89,8 +89,8 @@ function Message({ status }) {
   </ul>
 
   <!-- Next Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/state') ?>" class="hover:underline">← Previous: State</a>
-  <a href="<?= base_url('react/rendering-lists') ?>" class="hover:underline">Next: Rendering Lists →</a>
+  <a href="<?= base_url('react/rendering-lists') ?>" class="hover:underline ms-auto">Next: Rendering Lists →</a>
 </div>
 </main>

@@ -1,3 +1,8 @@
+<?php
+$title = "iFrames | SmartCodingTips";
+$description = "Learn about iframes in HTML. Understand key concepts, examples, and usage.";
+$keywords = "iframes, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic iFrame Example</h2>
             <p class="mb-2">Embedding an external webpage or content inside an iframe:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;iframe src="https://www.example.com" width="600" height="400" title="Example Site"&gt;
   Your browser does not support iframes.
 &lt;/iframe&gt;
@@ -50,7 +55,7 @@
             <p class="mb-2">
                 The <code>sandbox</code> attribute restricts actions inside the iframe, improving security. You can allow specific features by listing tokens:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;iframe src="page.html" sandbox="allow-scripts allow-same-origin"&gt;&lt;/iframe&gt;
             </code></pre>
             <p>
@@ -63,7 +68,7 @@
             <p class="mb-2">
                 To make iframes responsive, use CSS techniques like aspect-ratio boxes or utility classes:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .responsive-iframe {
   position: relative;
   width: 100%;
@@ -91,9 +96,9 @@
             </ul>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/audio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Audio Tag</a></div>
-    <div><a href="<?= base_url('html/ol-ul-dl') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Types of Lists →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/audio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Audio Tag</a>
+    <a href="<?= base_url('html/ol-ul-dl') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Types of Lists →</a>
 </div>
     </article>
 </main>

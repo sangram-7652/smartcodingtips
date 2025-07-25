@@ -26,11 +26,11 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Importing from Google Fonts</h2>
             <p class=" mb-2">Visit <a href="https://fonts.google.com" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">Google Fonts</a>, choose a font, and include the provided link in your HTML <code>&lt;head&gt;</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"&gt;
             </code></pre>
             <p class=" mt-2">Then use it in your CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -41,7 +41,7 @@ body {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Using @font-face</h2>
             <p class=" mb-2">Host and load your own font files with <code>@font-face</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @font-face {
     font-family: 'MyCustomFont';
     src: url('fonts/MyCustomFont.woff2') format('woff2'),
@@ -74,7 +74,7 @@ h1 {
             <p class=" mb-2">
                 Always provide fallback fonts to ensure text is readable even if the custom font fails to load:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -99,9 +99,9 @@ body {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/grid-responsive') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Responsive Grids</a></div>
-    <div><a href="<?= base_url('css/calc-clamp') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: calc(), clamp() →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/grid-responsive') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Responsive Grids</a> 
+   <a href="<?= base_url('css/calc-clamp') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: calc(), clamp() →</a> 
 </div>
     </article>
 </main>

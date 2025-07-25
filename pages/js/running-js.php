@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/where-js-runs" class="text-blue-600 hover:underline">Where JavaScript Runs</a>
+                <a href="javascript.php?page=js/where-js-runs" class="text-blue-600 dark:text-blue-400 hover:underline">Where JavaScript Runs</a>
             </li>
         </ol>
     </nav>
@@ -74,7 +74,7 @@
         JavaScript started in the browser but now runs nearly everywhere:
     </p>
 
-    <div class="bg-gray-100 dark:bg-gray-900 dark:text-white p-4 rounded text-sm mb-6">
+    <div class="bg-gray-100 dark:bg-gray-800 dark:text-white p-4 rounded text-sm mb-6">
         <ul class="space-y-1 list-disc list-inside">
             <li>✅ Browsers – for front-end interactivity</li>
             <li>✅ Servers – with Node.js for backend APIs</li>
@@ -87,8 +87,11 @@
     <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded mb-4">
         <strong>Fun Fact:</strong> JavaScript is the only language that natively runs in every major web browser without plugins.
     </div>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/first-script" class="text-blue-600 hover:underline">Your First Script →</a></p>
-</div>
+
+        <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+            <a href="<?= base_url('js/js-vs-html-css') ?>" class="hover:underline">← Previous: JS vs HTML/CSS</a>
+            <a href="<?= base_url('js/first-script') ?>" class="hover:underline ms-auto">Next: Your First Script →</a>
+        </div>
+   
 
 </main>

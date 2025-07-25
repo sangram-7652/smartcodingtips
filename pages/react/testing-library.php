@@ -34,13 +34,13 @@
   <!-- Installation -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 2. Installation</h2>
   <p class="text-black dark:text-gray-300 mb-4">If you're using Create React App, it's already included. Otherwise:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npm install --save-dev @testing-library/react @testing-library/jest-dom
 </code></pre>
 
   <!-- Basic Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 3. Basic Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // Hello.js
 export default function Hello() {
   return &lt;h1&gt;Hello, World!&lt;/h1&gt;;
@@ -68,7 +68,7 @@ test('renders hello message', () =&gt; {
   <!-- Event Testing -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🖱️ 5. Simulating Events</h2>
   <p class="text-black dark:text-gray-300 mb-4">Use <code>fireEvent</code> or <code>userEvent</code> to simulate interactions.</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { render, screen, fireEvent } from '@testing-library/react';
 import Counter from './Counter';
 
@@ -97,9 +97,9 @@ test('increments counter', () =&gt; {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/jest') ?>" class="hover:underline">← Previous: Jest</a>
-  <a href="<?= base_url('react/snapshots') ?>" class="hover:underline">Next: Snapshot Testing →</a>
+  <a href="<?= base_url('react/snapshots') ?>" class="hover:underline ms-auto">Next: Snapshot Testing →</a>
 </div>
 
 </main>

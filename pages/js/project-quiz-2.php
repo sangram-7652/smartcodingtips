@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/project-quiz-advanced" class="text-blue-600 hover:underline">Advanced Quiz</a>
+        <a href="javascript.php?page=js/project-quiz-advanced" class="text-blue-600 dark:text-blue-400 hover:underline">Advanced Quiz</a>
       </li>
     </ol>
   </nav>
@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Layout</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;div id="quiz-container"&gt;
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>&lt;div id="quiz-container"&gt;
   &lt;h2 id="question"&gt;&lt;/h2&gt;
   &lt;div id="answers"&gt;&lt;/div&gt;
   &lt;button id="next-btn"&gt;Next&lt;/button&gt;
@@ -28,7 +28,7 @@
 &lt;/div&gt;</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const questions = [
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>const questions = [
   {
     question: "Which method is used to parse JSON in JavaScript?",
     options: ["JSON.parse()", "JSON.stringify()", "parseJSON()", "convertJSON()"],
@@ -115,7 +115,8 @@ showQuestion();</code></pre>
     💡 <strong>Tip:</strong> Wrap questions in a JSON file for loading via <code>fetch()</code> to make it scalable.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/project-notes" class="text-blue-600 hover:underline">Notes App →</a></p>
+ <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-slider') ?>" class="hover:underline">← Previous: Image Slider</a>
+    <a href="<?= base_url('js/project-notes') ?>" class="hover:underline ms-auto">Next: Notes App →</a>
 </div>
 </main>

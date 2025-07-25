@@ -26,11 +26,11 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Creating the Config File</h2>
             <p class=" mb-2">Generate the file using the CLI:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npx tailwindcss init
             </code></pre>
             <p class=" mt-2">This will create a minimal config file:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: [],
   theme: {
@@ -45,7 +45,7 @@ module.exports = {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Specify Content Sources</h2>
             <p class=" mb-2">Update the <code>content</code> array with paths to your HTML/JS files so Tailwind can purge unused styles:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 content: [
   "./index.html",
   "./src/**/*.{js,ts,jsx,tsx,php}"
@@ -57,7 +57,7 @@ content: [
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing the Theme</h2>
             <p class=" mb-2">You can add custom colors, spacing, fonts, and more inside <code>theme.extend</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 theme: {
   extend: {
     colors: {
@@ -80,7 +80,7 @@ theme: {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">4. Dark Mode Settings</h2>
             <p class=" mb-2">Enable dark mode using either <code>'media'</code> or <code>'class'</code> strategy:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 darkMode: 'class', // or 'media'
             </code></pre>
             <p class=" mt-2">Use <code>dark:</code> utilities in your HTML to style for dark mode.</p>
@@ -90,7 +90,7 @@ darkMode: 'class', // or 'media'
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">5. Adding Plugins</h2>
             <p class=" mb-2">Add official or custom plugins under the <code>plugins</code> array:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 plugins: [
   require('@tailwindcss/forms'),
   require('@tailwindcss/typography'),
@@ -106,9 +106,9 @@ plugins: [
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/forms-validation') ?>" class="hover:underline">← Previous: Interactive Forms with Validation Styling</a>
-  <a href="<?= base_url('tailwind/extending') ?>" class="hover:underline">Next: Extending Colors, Fonts, Breakpoints →</a>
+  <a href="<?= base_url('tailwind/extending') ?>" class="hover:underline ms-auto">Next: Extending Colors, Fonts, Breakpoints →</a>
 </div>
     </article>
 </main>

@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Using <code>hidden</code> and <code>block</code></h2>
             <p class=" mb-2">The simplest way to hide or show content:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="hidden md:block"&gt;
     This will only show on medium (768px+) and larger screens.
 &lt;/div&gt;
@@ -43,7 +43,7 @@
             <p class=" mb-2">
                 You can use <code>inline</code>, <code>flex</code>, <code>grid</code>, etc., instead of just <code>block</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="hidden lg:flex"&gt;
     Visible as a flexbox only on large (1024px+) screens
 &lt;/div&gt;
@@ -56,7 +56,7 @@
             <p class=" mb-2">
                 Tailwind is mobile-first, so use the <code>hidden</code> class as the default, and apply visibility as screens get larger:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="hidden md:block"&gt;
     Hidden by default, shown from md (768px) and up
 &lt;/div&gt;
@@ -67,7 +67,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Conditional Visibility with JS</h2>
             <p class=" mb-2">You can toggle these classes dynamically using frameworks like Alpine.js or custom JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div x-data="{ open: false }"&gt;
     &lt;button @click="open = !open"&gt;Toggle Menu&lt;/button&gt;
     &lt;div x-show="open" class="mt-2"&gt;
@@ -95,9 +95,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/breakpoints') ?>" class="hover:underline">← Previous: Breakpoints</a>
-  <a href="<?= base_url('tailwind/mobile-nav') ?>" class="hover:underline">Next: Building a Mobile-First Navbar →</a>
+  <a href="<?= base_url('tailwind/mobile-nav') ?>" class="hover:underline ms-auto">Next: Building a Mobile-First Navbar →</a>
 </div>
     </article>
 </main>

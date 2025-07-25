@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/callbacks" class="text-blue-600 hover:underline">Callbacks</a>
+                <a href="javascript.php?page=js/callbacks" class="text-blue-600 dark:text-blue-400 hover:underline">Callbacks</a>
             </li>
         </ol>
     </nav>
@@ -27,7 +27,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Basic Example</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function greet(name, callback) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function greet(name, callback) {
     console.log("Hello " + name);
     callback();
 }
@@ -45,12 +45,12 @@ greet("Alice", sayBye);</code></pre>
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⏱ With setTimeout</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>setTimeout(function() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>setTimeout(function() {
     console.log("Executed after 2 seconds");
 }, 2000);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔄 Callback as Function Parameter</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function processUserInput(callback) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function processUserInput(callback) {
     const name = "Bob";
     callback(name);
 }
@@ -64,7 +64,7 @@ processUserInput(function(name) {
         Too many nested callbacks can lead to unreadable code.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>doSomething(function(result1) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>doSomething(function(result1) {
     doSomethingElse(result1, function(result2) {
         doMore(result2, function(result3) {
             // ...
@@ -83,7 +83,8 @@ processUserInput(function(name) {
         <li>Can be anonymous functions or named functions.</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/promises" class="text-blue-600 hover:underline">Promises →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/modules') ?>" class="hover:underline">← Previous: Modules: import/export</a>
+    <a href="<?= base_url('js/promises') ?>" class="hover:underline ms-auto">Next: Promises →</a>
 </div>
 </main>

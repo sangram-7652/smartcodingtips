@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Creating a Grid Container</h2>
             <p class=" mb-2">To start using grid, apply the <code>grid</code> class to your container:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid"&gt;
     &lt;div&gt;Item 1&lt;/div&gt;
     &lt;div&gt;Item 2&lt;/div&gt;
@@ -41,7 +41,7 @@
             <p class=" mb-2">
                 Use <code>grid-cols-{n}</code> to set the number of equal-width columns. For example, <code>grid-cols-3</code> creates 3 columns:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 gap-4"&gt;
     &lt;div class="bg-gray-200 p-4"&gt;1&lt;/div&gt;
     &lt;div class="bg-gray-200 p-4"&gt;2&lt;/div&gt;
@@ -56,7 +56,7 @@
             <p class=" mb-2">
                 Use <code>grid-rows-{n}</code> to create a specific number of rows:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-rows-2 grid-flow-col gap-4"&gt;
     &lt;div class="bg-blue-100 p-4"&gt;A&lt;/div&gt;
     &lt;div class="bg-blue-100 p-4"&gt;B&lt;/div&gt;
@@ -75,7 +75,7 @@
             <p class=" mb-2">
                 Use <code>auto-cols-</code> and <code>auto-rows-</code> to define default sizes:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 auto-rows-fr gap-2"&gt;
     &lt;div class="bg-green-100 p-4"&gt;Item 1&lt;/div&gt;
     &lt;div class="bg-green-100 p-4"&gt;Item 2&lt;/div&gt;
@@ -92,9 +92,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/flexbox-patterns') ?>" class="hover:underline">← Previous: Creating Real Layouts with Flexbox</a>
-  <a href="<?= base_url('tailwind/grid-gap') ?>" class="hover:underline">Next: Gap, Auto-Fill, Auto-Fit →</a>
+  <a href="<?= base_url('tailwind/grid-gap') ?>" class="hover:underline ms-auto">Next: Gap, Auto-Fill, Auto-Fit →</a>
 </div>
     </article>
 </main>

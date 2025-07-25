@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The <code>z-index</code> only works on positioned elements (<code>position: relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>). Higher values appear above lower values.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box1 {
     position: absolute;
     z-index: 1;
@@ -58,7 +58,7 @@
             <p class=" mb-2">
                 Some properties (like <code>position</code> + <code>z-index</code>, <code>opacity</code> &lt; 1, <code>transform</code>, <code>filter</code>, etc.) create a new stacking context. This confines z-index comparisons within that context.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     position: relative;
     z-index: 10;
@@ -78,7 +78,7 @@
             <p class=" mb-2">
                 You can assign negative z-index values to send elements behind others — even behind the page's background in some cases.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .behind {
     position: absolute;
     z-index: -1;
@@ -105,9 +105,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/position') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Positioning</a></div>
-    <div><a href="<?= base_url('css/centering') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Centering Elements →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/position') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Positioning</a> 
+   <a href="<?= base_url('css/centering') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Centering Elements →</a> 
 </div>
     </article>
 </main>

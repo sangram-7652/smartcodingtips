@@ -31,7 +31,7 @@
                     Hover Me
                 </button>
             </div>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;button class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded"&gt;
     Hover Me
 &lt;/button&gt;
@@ -84,9 +84,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/opacity') ?>" class="hover:underline">← Previous: Box Shadows and Opacity Control</a>
-  <a href="<?= base_url('tailwind/states-group') ?>" class="hover:underline">Next: Group Hover, Focus Within →</a>
+  <a href="<?= base_url('tailwind/states-group') ?>" class="hover:underline ms-auto">Next: Group Hover, Focus Within →</a>
 </div>
     </article>
 </main>

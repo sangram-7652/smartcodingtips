@@ -1,3 +1,8 @@
+<?php
+$title = "Tag Nesting | SmartCodingTips";
+$description = "Learn about tag nesting in HTML. Understand key concepts, examples, and usage.";
+$keywords = "tag, nesting, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Tag nesting is when HTML elements are placed within other elements. This is common when structuring content.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;div&gt;
     &lt;p&gt;This is a &lt;strong&gt;strong&lt;/strong&gt; word.&lt;/p&gt;
 &lt;/div&gt;
@@ -44,7 +49,7 @@
                 <li>Improper nesting can break layout and styling.</li>
                 <li>Do not overlap tags (e.g., <code>&lt;i&gt;&lt;b&gt;text&lt;/i&gt;&lt;/b&gt;</code> is incorrect).</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!-- Correct --&gt;
 &lt;em&gt;&lt;strong&gt;Important&lt;/strong&gt;&lt;/em&gt;
 
@@ -69,9 +74,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/empty-vs-container') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Empty vs Container</a></div>
-    <div><a href="<?= base_url('html/reserved-chars') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Reserved Characters →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/empty-vs-container') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Empty vs Container</a>
+    <a href="<?= base_url('html/reserved-chars') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Reserved Characters →</a>
 </div>
     </article>
 </main>

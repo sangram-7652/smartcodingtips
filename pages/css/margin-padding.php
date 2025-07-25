@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The <code>margin</code> property sets the outer space around an element. It pushes the element away from others.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     margin: 20px;
 }
@@ -53,7 +53,7 @@
             <p class=" mb-2">
                 The <code>padding</code> property adds space inside the element, between the content and the border.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .card {
     padding: 16px;
 }
@@ -72,7 +72,7 @@
             <p class=" mb-2">
                 When vertical margins of two elements meet, the larger one remains and the smaller one collapses. This is called <strong>margin collapsing</strong>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 {
     margin-bottom: 20px;
 }
@@ -104,9 +104,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Box Model Basics</a></div>
-    <div><a href="<?= base_url('css/overflow-sizing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Overflow & Box Sizing →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Box Model Basics</a> 
+   <a href="<?= base_url('css/overflow-sizing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Overflow & Box Sizing →</a> 
 </div>
 
     </article>

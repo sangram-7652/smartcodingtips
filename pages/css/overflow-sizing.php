@@ -34,7 +34,7 @@
                 <li><code>scroll</code> – adds scrollbars always.</li>
                 <li><code>auto</code> – adds scrollbars only when needed.</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     width: 300px;
     height: 100px;
@@ -49,7 +49,7 @@
             <p class=" mb-2">
                 You can control horizontal and vertical overflow separately:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -67,7 +67,7 @@
                 <li><code>content-box</code> – default. Width/height includes only content (padding and border are added).</li>
                 <li><code>border-box</code> – includes padding and border in the width/height.</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Common practice */
 * {
     box-sizing: border-box;
@@ -82,7 +82,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Example Comparison</h2>
             <p class=" mb-2">Both elements have <code>width: 200px</code> and <code>padding: 20px</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* content-box (default) */
 .box1 {
     width: 200px;
@@ -106,9 +106,9 @@
                 Use <code>overflow</code> to control how excess content behaves, and <code>box-sizing: border-box</code> for reliable layouts. These two properties are essential for building robust and flexible designs.
             </p>
         </section>
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Margin & Padding</a></div>
-    <div><a href="<?= base_url('css/display') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Display Types →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Margin & Padding</a> 
+   <a href="<?= base_url('css/display') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Display Types →</a> 
 </div>
 
     </article>

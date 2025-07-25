@@ -26,7 +26,7 @@
 
   <!-- Basic Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">✅ Basic Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 import React, { useState } from 'react';
 
 function Counter() {
@@ -50,7 +50,7 @@ function Counter() {
 
   <!-- Multiple States -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 Using Multiple States</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function Profile() {
   const [name, setName] = useState('');
   const [age, setAge] = useState(18);
@@ -75,7 +75,7 @@ function Profile() {
 
   <!-- State with Objects -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 Updating Objects in State</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 const [formData, setFormData] = useState({ username: "", email: "" });
 
 const handleChange = (e) =&gt; {
@@ -100,9 +100,9 @@ const handleChange = (e) =&gt; {
   </ul>
 
   <!-- Next Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/refs') ?>" class="hover:underline">← Previous: Refs with useRef()</a>
-  <a href="<?= base_url('react/use-effect') ?>" class="hover:underline">Next: useEffect() →</a>
+  <a href="<?= base_url('react/use-effect') ?>" class="hover:underline ms-auto">Next: useEffect() →</a>
 </div>
 
 </main>

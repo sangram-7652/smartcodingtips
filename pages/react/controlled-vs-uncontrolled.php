@@ -29,7 +29,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     Controlled components have their state fully managed by React. Input values are linked to state variables, and changes are handled through events.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function ControlledInput() {
   const [name, setName] = React.useState("");
 
@@ -52,7 +52,7 @@ function ControlledInput() {
   <p class="mb-4 text-black dark:text-gray-300">
     Uncontrolled components rely on the DOM to manage their values using a <code>ref</code>. React doesn’t track the input's state directly.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function UncontrolledInput() {
   const inputRef = React.useRef();
 
@@ -123,9 +123,9 @@ function UncontrolledInput() {
   </p>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/events') ?>" class="hover:underline">← Previous: Handling Events</a>
-  <a href="<?= base_url('react/forms') ?>" class="hover:underline">Next: Forms →</a>
+  <a href="<?= base_url('react/forms') ?>" class="hover:underline ms-auto">Next: Forms →</a>
 </div>
 
 </main>

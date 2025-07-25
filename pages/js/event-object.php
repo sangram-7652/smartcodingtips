@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/dom-event-object" class="text-blue-600 hover:underline">Event Object</a>
+                <a href="javascript.php?page=js/dom-event-object" class="text-blue-600 dark:text-blue-400 hover:underline">Event Object</a>
             </li>
         </ol>
     </nav>
@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Example: Accessing the Event Object</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(event) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.addEventListener("click", function(event) {
     console.log(event); // Logs the entire event object
 });</code></pre>
 
@@ -38,7 +38,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Example: Using `event.target`</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("ul").addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.querySelector("ul").addEventListener("click", function(e) {
     console.log("You clicked on:", e.target.tagName);
 });</code></pre>
 
@@ -46,7 +46,7 @@
     <p class="mb-4">
         Used to stop things like form submission, link redirection, etc.
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.querySelector("form").addEventListener("submit", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault(); // Stops form from submitting
     alert("Form intercepted!");
 });</code></pre>
@@ -55,7 +55,7 @@
     <p class="mb-4">
         Use this when you don’t want an event to bubble up to parent elements.
     </p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>button.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>button.addEventListener("click", function(e) {
     e.stopPropagation();
     console.log("Button clicked without bubbling up");
 });</code></pre>
@@ -64,7 +64,8 @@
         💡 <strong>Tip:</strong> Always use the <code>event</code> object to get dynamic and context-aware responses from your JavaScript code.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/delegation" class="text-blue-600 hover:underline">Event Delegation →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/mouse-key-events') ?>" class="hover:underline">← Previous: Mouse & Keyboard Events</a>
+    <a href="<?= base_url('js/delegation') ?>" class="hover:underline ms-auto">Next: Event Delegation →</a>
 </div>
 </main>

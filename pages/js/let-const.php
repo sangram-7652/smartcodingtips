@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/variables-let-const" class="text-blue-600 hover:underline">let & const</a>
+                <a href="javascript.php?page=js/variables-let-const" class="text-blue-600 dark:text-blue-400 hover:underline">let & const</a>
             </li>
         </ol>
     </nav>
@@ -24,7 +24,7 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 <code>let</code> – Mutable Variable</h2>
     <p class="mb-2">Use <code>let</code> when the value of a variable might change later.</p>
     
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 0;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let count = 0;
 count = count + 1; // ✅ valid
 console.log(count); // 1</code></pre>
 
@@ -33,12 +33,12 @@ console.log(count); // 1</code></pre>
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔒 <code>const</code> – Constant (Read-only)</h2>
     <p class="mb-2">Use <code>const</code> when the value should not be reassigned.</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const pi = 3.14;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const pi = 3.14;
 pi = 3.1415; // ❌ Error: Assignment to constant variable</code></pre>
 
     <p><strong>Note:</strong> Objects and arrays declared with <code>const</code> can still be mutated:</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = { name: "John" };
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const user = { name: "John" };
 user.name = "Jane"; // ✅ Allowed
 
 const arr = [1, 2, 3];
@@ -82,8 +82,9 @@ arr.push(4); // ✅ Allowed</code></pre>
         ✅ <strong>Tip:</strong> Avoid <code>var</code> unless you're working in older environments or need function scope specifically.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/destructuring" class="text-blue-600 hover:underline">Destructuring →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/bubbling') ?>" class="hover:underline">← Previous: Bubbling vs Capturing</a>
+    <a href="<?= base_url('js/destructuring') ?>" class="hover:underline ms-auto">Next: Destructuring →</a>
 </div>
 
 </main>

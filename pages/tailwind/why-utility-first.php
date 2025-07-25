@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Utility classes are single-purpose, low-level classes that do one thing only — like <code>text-center</code> or <code>mt-4</code>. They eliminate the need to write separate CSS for layout and styling.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;div class="bg-white p-6 rounded shadow-md"&gt;
     &lt;h2 class="text-xl font-semibold mb-2"&gt;Hello World&lt;/h2&gt;
     &lt;p class="text-gray-600"&gt;This card is styled entirely with utilities.&lt;/p&gt;
@@ -79,10 +79,15 @@
         </section>
 
         <!-- Next Link -->
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
-  <a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="hover:underline">← Previous: What is Tailwind CSS?</a>
-  <a href="<?= base_url('tailwind/comparison') ?>" class="hover:underline">Next: Tailwind vs Bootstrap vs Custom CSS →</a>
-</div>
+      
+        <div class="mt-4 flex justify-between flex-wrap gap-4 items-center text-blue-600 dark:text-blue-400 font-semibold">
+            <div>
+                <a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="hover:underline">← Previous: What is Tailwind CSS?</a>
+            </div>
+          <div>
+              <a href="<?= base_url('tailwind/comparison') ?>" class="hover:underline ms-auto">Next: Tailwind vs Bootstrap vs Custom CSS →</a>
+          </div>
+        </div>
 
     </article>
 </main>

@@ -33,7 +33,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
             <p class="">Start with a responsive container and sections:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;body class="bg-gray-100 text-gray-800"&gt;
   &lt;header class="text-center py-10"&gt;
     &lt;h1 class="text-4xl font-bold"&gt;John Doe&lt;/h1&gt;
@@ -55,7 +55,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Project Grid</h2>
             <p class="">Use a responsive grid for portfolio cards:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-12"&gt;
   &lt;div class="bg-white rounded-lg shadow p-4"&gt;
     &lt;img src="project1.jpg" alt="Project 1" class="rounded mb-4"&gt;
@@ -76,7 +76,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Contact Section</h2>
             <p class="">Add a simple contact form or email link:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;section class="text-center"&gt;
   &lt;h2 class="text-2xl font-bold mb-4"&gt;Let’s Work Together&lt;/h2&gt;
   &lt;p class="mb-6"&gt;Email me at &lt;a href="mailto:you@example.com" class="text-blue-600  dark:text-blue-400 hover:underline"&gt;you@example.com&lt;/a&gt;&lt;/p&gt;
@@ -102,9 +102,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/integration') ?>" class="hover:underline">← Previous: Integration with PostCSS and Vite</a>
-  <a href="<?= base_url('tailwind/project-product-grid') ?>" class="hover:underline">Next: E-Commerce Product Grid →</a>
+  <a href="<?= base_url('tailwind/project-product-grid') ?>" class="hover:underline ms-auto">Next: E-Commerce Product Grid →</a>
 </div>
 
     </article>

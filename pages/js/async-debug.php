@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/debug-async" class="text-blue-600 hover:underline">Debug Async JS</a>
+        <a href="javascript.php?page=js/debug-async" class="text-blue-600 dark:text-blue-400 hover:underline">Debug Async JS</a>
       </li>
     </ol>
   </nav>
@@ -26,7 +26,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛑 2. Use <code>async</code>/<code>await</code> for Cleaner Debugging</h2>
   <p class="mb-2">Instead of chaining <code>.then()</code>, use <code>async</code>/<code>await</code> to keep your code linear and easier to step through.</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>async function fetchData() {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>async function fetchData() {
   try {
     const res = await fetch('https://api.example.com/data');
     const data = await res.json();
@@ -44,7 +44,7 @@ fetchData();</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 4. Use <code>console.trace()</code> in Callbacks</h2>
   <p class="mb-4">This prints the stack trace to show where the callback originated from:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>setTimeout(() => {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>setTimeout(() => {
   console.trace("Inside timeout");
 }, 1000);</code></pre>
 
@@ -70,7 +70,8 @@ fetchData();</code></pre>
     💡 <strong>Tip:</strong> Always handle errors in async code with <code>try...catch</code> to avoid silent failures.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/security-intro" class="text-blue-600 hover:underline">Security Basics →</a></p>
+ <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/debugging') ?>" class="hover:underline">← Previous: Debugging Techniques</a>
+    <a href="<?= base_url('js/security-intro') ?>" class="hover:underline ms-auto">Next: Security Basics →</a>
 </div>
 </main>

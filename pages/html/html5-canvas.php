@@ -1,3 +1,8 @@
+<?php
+$title = "Canvas | SmartCodingTips";
+$description = "Learn about canvas in HTML. Understand key concepts, examples, and usage.";
+$keywords = "canvas, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2">
                 The <code>&lt;canvas&gt;</code> element creates a drawable region in your HTML, which is accessed and manipulated using JavaScript.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;canvas id="myCanvas" width="300" height="150" style="border:1px solid #000000;"&gt;
   Your browser does not support the HTML5 canvas tag.
 &lt;/canvas&gt;
@@ -37,7 +42,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Drawing with JavaScript</h2>
             <p class="mb-2">To draw on the canvas, you need to access its context in JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;script&gt;
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
@@ -59,9 +64,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-media') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Audio & Video</a></div>
-    <div><a href="<?= base_url('html/html5-geo') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Geolocation →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-media') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Audio & Video</a>
+    <a href="<?= base_url('html/html5-geo') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Geolocation →</a>
 </div>
     </article>
 </main>

@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/naming-conventions" class="text-blue-600 hover:underline">Best Practices</a>
+        <a href="javascript.php?page=js/naming-conventions" class="text-blue-600 dark:text-blue-400 hover:underline">Best Practices</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">Naming Conventions</li>
@@ -37,7 +37,7 @@
 
   <h2 class="text-xl font-semibold mb-4">📦 Variables and Functions – <code>camelCase</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 let userName = "John";
 const maxItems = 10;
 
@@ -51,7 +51,7 @@ function getUserData() {
 
   <h2 class="text-xl font-semibold mb-4">🏗️ Classes and Constructors – <code>PascalCase</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 class UserProfile {
   constructor(name) {
     this.name = name;
@@ -64,7 +64,7 @@ class UserProfile {
 
   <h2 class="text-xl font-semibold mb-4">🔒 Constants – <code>UPPER_SNAKE_CASE</code></h2>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// ✅ Recommended
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// ✅ Recommended
 const MAX_RETRIES = 3;
 const API_KEY = "abcd1234";</code></pre>
 
@@ -92,8 +92,9 @@ const API_KEY = "abcd1234";</code></pre>
 
   <p class="mt-4">By following naming conventions, your JavaScript will be cleaner and easier to maintain, especially in team environments.</p>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/performance" class="text-blue-600 hover:underline">Performance Tips →</a></p>
+ <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/dry-kiss') ?>" class="hover:underline">← Previous: DRY & KISS</a>
+    <a href="<?= base_url('js/performance') ?>" class="hover:underline ms-auto">Next: Performance Tips →</a>
 </div>
 </main>
 

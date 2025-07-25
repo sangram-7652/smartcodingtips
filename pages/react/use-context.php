@@ -27,7 +27,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Use <code>createContext()</code> to define your global state container.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { createContext } from 'react';
 
 export const ThemeContext = createContext();
@@ -37,7 +37,7 @@ export const ThemeContext = createContext();
   <p class="mb-2 text-black dark:text-gray-300">
     Wrap your components with the <code>Provider</code> to share values.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { ThemeContext } from './ThemeContext';
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
   <p class="mb-2 text-black dark:text-gray-300">
     Access the shared value using <code>useContext()</code> in any child component.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 
@@ -76,9 +76,9 @@ function Home() {
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/route-guards') ?>" class="hover:underline">← Previous: 404 & Protected Routes</a>
-  <a href="<?= base_url('react/use-reducer') ?>" class="hover:underline">Next: useReducer() →</a>
+  <a href="<?= base_url('react/use-reducer') ?>" class="hover:underline ms-auto">Next: useReducer() →</a>
 </div>
 
 </main>

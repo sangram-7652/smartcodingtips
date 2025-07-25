@@ -1,3 +1,8 @@
+<?php
+$title = "New Input Types | SmartCodingTips";
+$description = "Learn about new input types in HTML. Understand key concepts, examples, and usage.";
+$keywords = "new, input, types, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -41,7 +46,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   Email: &lt;input type="email" name="userEmail"&gt;&lt;br&gt;
   URL: &lt;input type="url" name="homepage"&gt;&lt;br&gt;
@@ -52,9 +57,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: New Tags</a></div>
-    <div><a href="<?= base_url('html/html5-media') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Audio & Video →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: New Tags</a>
+    <a href="<?= base_url('html/html5-media') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Audio & Video →</a>
 </div>
     </article>
 </main>

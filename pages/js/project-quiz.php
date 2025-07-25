@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/quiz-app" class="text-blue-600 hover:underline">Quiz App</a>
+                <a href="javascript.php?page=js/quiz-app" class="text-blue-600 dark:text-blue-400 hover:underline">Quiz App</a>
             </li>
         </ol>
     </nav>
@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 HTML Markup</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="quiz-container"&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;div id="quiz-container"&gt;
     &lt;h2 id="question"&gt;&lt;/h2&gt;
     &lt;ul id="answers"&gt;&lt;/ul&gt;
     &lt;button id="nextBtn"&gt;Next&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📜 JavaScript Logic</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const questions = [
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const questions = [
     {
         question: "Which language runs in a web browser?",
         options: ["Java", "C", "Python", "JavaScript"],
@@ -93,7 +93,7 @@ nextBtn.addEventListener("click", () => {
 loadQuestion();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎨 Optional Styling</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;style&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;style&gt;
 #quiz-container {
     max-width: 500px;
     margin: auto;
@@ -127,7 +127,8 @@ loadQuestion();</code></pre>
         <li>Dynamic UI generation</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/browser-bom" class="text-blue-600 hover:underline">Browser Object Model →</a></p>
+   <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-calculator') ?>" class="hover:underline">← Previous: Calculator</a>
+    <a href="<?= base_url('js/browser-bom') ?>" class="hover:underline ms-auto">Next: Browser Object Model →</a>
 </div>
 </main>

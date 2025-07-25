@@ -40,7 +40,7 @@
                 <li><code>sr-only</code> – Hides content visually but keeps it for screen readers</li>
                 <li><code>not-sr-only</code> – Makes visually hidden content visible again</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;span class="sr-only"&gt;Screen reader only text&lt;/span&gt;
             </code></pre>
         </section>
@@ -51,7 +51,7 @@
             <p class=" mb-2">
                 Tailwind gives you control over focus states with <code>focus:</code> and <code>focus-visible:</code>. Always provide a visual indication of focus, especially for keyboard users.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;button class="focus:outline-none focus:ring-2 focus:ring-blue-500"&gt;Submit&lt;/button&gt;
             </code></pre>
         </section>
@@ -78,7 +78,7 @@
             <p class="">
                 Avoid overusing ARIA. Native HTML is always preferred, but when needed, Tailwind doesn’t interfere with ARIA attributes:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div role="alert" aria-live="polite"&gt;New notification received&lt;/div&gt;
             </code></pre>
         </section>
@@ -91,9 +91,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/optimize-bloat') ?>" class="hover:underline">← Previous: Avoiding Class Bloat</a>
-  <a href="<?= base_url('tailwind/performance') ?>" class="hover:underline">Next: Performance and SEO Tips →</a>
+  <a href="<?= base_url('tailwind/performance') ?>" class="hover:underline ms-auto">Next: Performance and SEO Tips →</a>
 </div>
 
     </article>

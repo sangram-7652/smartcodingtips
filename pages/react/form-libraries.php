@@ -28,7 +28,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     Formik simplifies form state, validation, and submission. It integrates well with Yup for schema-based validation.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 &lt;Formik
@@ -48,7 +48,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
   <p class="mb-4 text-black dark:text-gray-300">
     A lightweight and performant form library that uses React hooks. Very fast and requires minimal re-renders.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
 import { useForm } from 'react-hook-form';
 
 const { register, handleSubmit } = useForm();
@@ -65,7 +65,7 @@ const onSubmit = data =&gt; console.log(data);
   <p class="mb-4 text-black dark:text-gray-300">
     Yup is a JavaScript schema builder for validating values. Commonly used with Formik or RHF.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-4 overflow-x-auto"><code>
 import * as Yup from 'yup';
 
 const schema = Yup.object({
@@ -87,9 +87,9 @@ const schema = Yup.object({
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/form-submit') ?>" class="hover:underline">← Previous: Form Submission</a>
-  <a href="<?= base_url('react/login-example') ?>" class="hover:underline">Next: Login Example →</a>
+  <a href="<?= base_url('react/login-example') ?>" class="hover:underline ms-auto">Next: Login Example →</a>
 </div>
 
 </main>

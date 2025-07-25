@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
             <p class=" mb-2">Define grid layout areas using quoted strings for each row:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-areas:
@@ -38,7 +38,7 @@
 }
             </code></pre>
             <p class=" mt-2">Then, assign areas to items:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .header  { grid-area: header; }
 .sidebar { grid-area: sidebar; }
 .main    { grid-area: main; }
@@ -65,7 +65,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Empty Grid Cells</h2>
             <p class=" mb-2">Use a period (<code>.</code>) to represent an empty cell:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 grid-template-areas:
     "header header"
     ".      main"
@@ -91,9 +91,9 @@ grid-template-areas:
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Grid Basics</a></div>
-    <div><a href="<?= base_url('css/grid-responsive') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Responsive Grids →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Grid Basics</a> 
+   <a href="<?= base_url('css/grid-responsive') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Responsive Grids →</a> 
 </div>
     </article>
 </main>

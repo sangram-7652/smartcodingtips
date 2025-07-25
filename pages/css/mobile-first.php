@@ -39,7 +39,7 @@
             <p class=" mb-2">
                 With mobile-first design, you write base styles for mobile devices first, then use <code>min-width</code> media queries to add styles for larger screens:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Base styles for mobile */
 .container {
     padding: 10px;
@@ -94,9 +94,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/media-queries') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Media Queries</a></div>
-    <div><a href="<?= base_url('css/breakpoints') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Breakpoints →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/media-queries') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Media Queries</a> 
+   <a href="<?= base_url('css/breakpoints') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Breakpoints →</a> 
 </div>
 
     </article>

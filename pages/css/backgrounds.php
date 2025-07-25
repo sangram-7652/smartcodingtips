@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Background Color</h2>
             <p class=" mb-2">Set a background color using <code>background-color</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     background-color: #f0f0f0;
 }
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Background Image</h2>
             <p class=" mb-2">Use <code>background-image</code> to apply an image:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background-image: url('banner.jpg');
 }
@@ -48,7 +48,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Background Repeat</h2>
             <p class=" mb-2">Control whether the image repeats:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background-repeat: no-repeat;
 }
@@ -59,7 +59,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Background Position</h2>
             <p class=" mb-2">Position the background image inside the element:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background-position: center center;
 }
@@ -70,7 +70,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Background Size</h2>
             <p class=" mb-2">Control the scaling of the background image:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background-size: cover;
 }
@@ -85,7 +85,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Background Attachment</h2>
             <p class=" mb-2">Set whether the background scrolls with the content or is fixed:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background-attachment: fixed;
 }
@@ -96,7 +96,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">7. Shorthand Background Property</h2>
             <p class=" mb-2">Combine multiple background properties in one line:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .hero {
     background: url('bg.jpg') no-repeat center center / cover;
 }
@@ -107,7 +107,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">8. Multiple Backgrounds</h2>
             <p class=" mb-2">You can layer several background images:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .layered {
     background: url('overlay.png'), url('main.jpg');
     background-repeat: no-repeat;
@@ -124,9 +124,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/centering') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Centering Elements</a></div>
-    <div><a href="<?= base_url('css/borders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Borders →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/centering') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Centering Elements</a> 
+   <a href="<?= base_url('css/borders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Borders →</a> 
 </div>
 
     </article>

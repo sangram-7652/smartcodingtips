@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     Use three pieces of state: <code>isLoading</code>, <code>data</code>, and <code>error</code>.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useState, useEffect } from "react";
 
 function Users() {
@@ -56,7 +56,7 @@ function Users() {
 
   <!-- Display States -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔍 2. Displaying Loading / Error / Data</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;;
 if (error) return &lt;p className="text-red-600"&gt;Error: {error}&lt;/p&gt;;
 
@@ -79,7 +79,7 @@ return (
 
   <!-- With Custom Hook -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔁 4. Create a Reusable Hook</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -117,9 +117,9 @@ function useFetch(url) {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/promises') ?>" class="hover:underline">← Previous: Promises & Async/Await</a>
-  <a href="<?= base_url('react/loading-skeletons') ?>" class="hover:underline">Next: Loading Indicators →</a>
+  <a href="<?= base_url('react/loading-skeletons') ?>" class="hover:underline ms-auto">Next: Loading Indicators →</a>
 </div>
 
 </main>

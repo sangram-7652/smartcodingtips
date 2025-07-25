@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/project-crud" class="text-blue-600 hover:underline">Simple CRUD</a>
+        <a href="javascript.php?page=js/project-crud" class="text-blue-600 dark:text-blue-400 hover:underline">Simple CRUD</a>
       </li>
     </ol>
   </nav>
@@ -20,13 +20,13 @@
   </p>
 
   <h2 class="text-xl font-semibold mt-6 mb-2">📄 HTML Structure</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>&lt;input type="text" id="name-input" placeholder="Enter name" class="border p-2 rounded w-full mb-2"&gt;
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>&lt;input type="text" id="name-input" placeholder="Enter name" class="border p-2 rounded w-full mb-2"&gt;
 &lt;button id="add-btn" class="bg-green-500 text-white px-4 py-2 rounded"&gt;Add&lt;/button&gt;
 
 &lt;ul id="user-list" class="mt-4 space-y-2"&gt;&lt;/ul&gt;</code></pre>
 
   <h2 class="text-xl font-semibold mt-6 mb-2">⚙️ JavaScript Logic</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white mb-4"><code>const input = document.getElementById("name-input");
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white mb-4"><code>const input = document.getElementById("name-input");
 const addBtn = document.getElementById("add-btn");
 const userList = document.getElementById("user-list");
 
@@ -108,8 +108,9 @@ renderUsers();</code></pre>
     💡 <strong>Tip:</strong> Always validate input and prevent empty values from being stored.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/vanilla-vs-frameworks" class="text-blue-600 hover:underline">Vanilla vs Frameworks →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-notes') ?>" class="hover:underline">← Previous: Notes App</a>
+    <a href="<?= base_url('js/vanilla-vs-frameworks') ?>" class="hover:underline ms-auto">Next: Vanilla vs Frameworks →</a>
 </div>
 
 </main>

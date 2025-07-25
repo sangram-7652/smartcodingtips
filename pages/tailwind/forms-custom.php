@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Native Checkbox and Radio Styling</h2>
             <p class=" mb-2">Apply padding, spacing, and custom styles directly to labels for styling:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;label class="inline-flex items-center space-x-2"&gt;
   &lt;input type="checkbox" class="form-checkbox text-blue-600"&gt;
   &lt;span&gt;Subscribe&lt;/span&gt;
@@ -43,7 +43,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Fully Custom Checkbox Example</h2>
             <p class=" mb-2">You can visually hide the native input and style a custom span:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;label class="inline-flex items-center cursor-pointer space-x-2"&gt;
   &lt;input type="checkbox" class="sr-only peer"&gt;
   &lt;div class="w-5 h-5 rounded border-2 border-gray-400 peer-checked:bg-blue-600 peer-checked:border-blue-600"&gt;&lt;/div&gt;
@@ -56,7 +56,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Fully Custom Radio Button</h2>
             <p class=" mb-2">Use the same strategy for radio buttons using Tailwind’s <code>peer</code> and custom divs:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;label class="inline-flex items-center cursor-pointer space-x-2"&gt;
   &lt;input type="radio" name="choice" class="sr-only peer"&gt;
   &lt;div class="w-5 h-5 rounded-full border-2 border-gray-400 peer-checked:border-blue-600 peer-checked:bg-blue-600"&gt;&lt;/div&gt;
@@ -71,7 +71,7 @@
             <p class=" mb-2">
                 Tailwind’s official <code>@tailwindcss/forms</code> plugin provides minimal, cross-browser form styling to make checkboxes and radios look more consistent.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 // Install the plugin
 npm install -D @tailwindcss/forms
 
@@ -90,9 +90,9 @@ plugins: [
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/forms-basic') ?>" class="hover:underline">← Previous: Styling Inputs, Selects, Buttons</a>
-  <a href="<?= base_url('tailwind/forms-labels') ?>" class="hover:underline">Next: Floating Labels and Focus Styles →</a>
+  <a href="<?= base_url('tailwind/forms-labels') ?>" class="hover:underline ms-auto">Next: Floating Labels and Focus Styles →</a>
 </div>
     </article>
 </main>

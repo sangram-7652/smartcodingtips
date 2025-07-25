@@ -29,7 +29,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     A controlled component is tied to the component’s state. Every change updates the state in real-time.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function MyForm() {
   const [name, setName] = React.useState("");
 
@@ -65,7 +65,7 @@ function MyForm() {
     Each input type can be managed with state and <code>onChange</code> handlers.
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function Preferences() {
   const [selectedOption, setSelectedOption] = React.useState("light");
   const [acceptTerms, setAcceptTerms] = React.useState(false);
@@ -107,9 +107,9 @@ function Preferences() {
   </ul>
 
   <!-- Next Link -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/controlled-vs-uncontrolled') ?>" class="hover:underline">← Previous: Controlled vs Uncontrolled</a>
-  <a href="<?= base_url('react/submissions') ?>" class="hover:underline">Next: Handling Submissions →</a>
+  <a href="<?= base_url('react/submissions') ?>" class="hover:underline ms-auto">Next: Handling Submissions →</a>
 </div>
 
 

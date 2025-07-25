@@ -26,7 +26,7 @@
 
   <!-- Basic Map -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">1️⃣ Rendering with <code>.map()</code></h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 const names = ["Alice", "Bob", "Charlie"];
 
 function NameList() {
@@ -45,7 +45,7 @@ function NameList() {
   <p class="mb-4 text-black dark:text-gray-300">
     Keys help React identify which items changed, are added, or removed:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 const users = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" },
@@ -64,7 +64,7 @@ function UserList() {
 
   <!-- Conditional List -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">3️⃣ Conditional List Rendering</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto">
 function ProductList({ products }) {
   if (products.length === 0) {
     return &lt;p&gt;No products found.&lt;/p&gt;;
@@ -89,8 +89,8 @@ function ProductList({ products }) {
   </ul>
 
   <!-- Next Page Link -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/conditional-rendering') ?>" class="hover:underline">← Previous: Conditional Rendering</a>
-  <a href="<?= base_url('react/keys') ?>" class="hover:underline">Next: Keys in Lists →</a>
+  <a href="<?= base_url('react/keys') ?>" class="hover:underline ms-auto">Next: Keys in Lists →</a>
 </div>
 </main>

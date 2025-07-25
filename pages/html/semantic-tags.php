@@ -1,3 +1,8 @@
+<?php
+$title = "Semantic Tags | SmartCodingTips";
+$description = "Learn about semantic tags in HTML. Understand key concepts, examples, and usage.";
+$keywords = "semantic, tags, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -44,7 +49,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Usage</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;article&gt;
     &lt;header&gt;
         &lt;h2&gt;News Title&lt;/h2&gt;
@@ -71,9 +76,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/super-sub') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Superscript & Subscript</a></div>
-    <div><a href="<?= base_url('html/quote-cite') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Quote & Citation →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/super-sub') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Superscript & Subscript</a>
+    <a href="<?= base_url('html/quote-cite') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Quote & Citation →</a>
 </div>
     </article>
 </main>

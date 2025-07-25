@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 Select elements based on the presence or value of attributes.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 input[type="text"] {
     border: 1px solid #ccc;
     padding: 5px;
@@ -43,7 +43,7 @@ input[type="text"] {
             <p class=" mb-2">
                 Pseudo-classes target elements based on their state or position.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 a:hover {
     color: red;
     text-decoration: underline;
@@ -63,7 +63,7 @@ li:first-child {
             <p class=" mb-2">
                 Target specific parts of an element, like the first line or add content before/after.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p::first-line {
     font-weight: bold;
 }
@@ -93,7 +93,7 @@ p::before {
             <p class=" mb-2">
                 Use <code>:not()</code> to exclude elements from a rule.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p:not(.highlight) {
     color: gray;
 }
@@ -107,9 +107,9 @@ p:not(.highlight) {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/selectors-basic') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Basic Selectors</a></div>
-    <div><a href="<?= base_url('css/combinators') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Combinators →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/selectors-basic') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Basic Selectors</a> 
+   <a href="<?= base_url('css/combinators') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Combinators →</a> 
 </div>
     </article>
 </main>

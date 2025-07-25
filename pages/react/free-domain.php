@@ -63,9 +63,9 @@
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/cicd') ?>" class="hover:underline">← Previous: CI/CD Basics</a>
-  <a href="<?= base_url('react/folder-structure') ?>" class="hover:underline">Next: Folder Structure →</a>
+  <a href="<?= base_url('react/folder-structure') ?>" class="hover:underline ms-auto">Next: Folder Structure →</a>
 </div>
 
 </main>

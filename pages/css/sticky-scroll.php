@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 To make an element stick to the top of its parent when scrolling:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .sticky-header {
     position: sticky;
     top: 0;
@@ -57,7 +57,7 @@
             <p class=" mb-2">
                 You can also make an element stick horizontally using <code>left</code> or <code>right</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .sidebar {
     position: sticky;
     left: 0;
@@ -91,9 +91,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/calc-clamp') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: calc(), clamp()</a></div>
-    <div><a href="<?= base_url('css/dark-mode') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Dark Mode →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/calc-clamp') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: calc(), clamp()</a> 
+   <a href="<?= base_url('css/dark-mode') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Dark Mode →</a> 
 </div>
 
     </article>

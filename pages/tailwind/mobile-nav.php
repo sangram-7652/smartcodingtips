@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
             <p class=" mb-2">Here’s a simple navbar layout that is optimized for mobile first, then enhanced for desktop:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;nav class="bg-white shadow-md"&gt;
     &lt;div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"&gt;
         &lt;div class="text-xl font-bold"&gt;Brand&lt;/div&gt;
@@ -47,7 +47,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Toggle Menu on Mobile</h2>
             <p class=" mb-2">Use JavaScript or Alpine.js to toggle the visibility of the mobile menu:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 // JS example
 document.getElementById('menu-toggle').addEventListener('click', function () {
     const menu = document.getElementById('menu');
@@ -60,7 +60,7 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Alpine.js Version (Optional)</h2>
             <p class=" mb-2">For a more reactive setup without external JS:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;nav x-data="{ open: false }" class="bg-white shadow-md"&gt;
     &lt;div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"&gt;
         &lt;div class="text-xl font-bold"&gt;Brand&lt;/div&gt;
@@ -93,9 +93,9 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/show-hide') ?>" class="hover:underline">← Previous: Hiding/Showing Elements Responsively</a>
-  <a href="<?= base_url('tailwind/forms-basic') ?>" class="hover:underline">Next: Styling Inputs, Selects, Buttons →</a>
+  <a href="<?= base_url('tailwind/forms-basic') ?>" class="hover:underline ms-auto">Next: Styling Inputs, Selects, Buttons →</a>
 </div>
     </article>
 </main>

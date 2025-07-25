@@ -36,7 +36,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. How to Enable Purge in Tailwind</h2>
             <p class=" mb-2">In your <code>tailwind.config.js</code> file, set the `content` option like this:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: [
     './*.html',
@@ -56,7 +56,7 @@ module.exports = {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Build CSS for Production</h2>
             <p class=" mb-2">Use the Tailwind CLI or your build tool (PostCSS, Laravel Mix, Vite, etc.):</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npx tailwindcss -o build.css --minify
             </code></pre>
             <p class=" mt-2">The <code>--minify</code> flag ensures the CSS is purged and compressed.</p>
@@ -76,7 +76,7 @@ npx tailwindcss -o build.css --minify
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Safelisting Classes</h2>
             <p class=" mb-2">Add dynamic or conditionally-used classes manually like this:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: [...],
   safelist: [
@@ -96,9 +96,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/project-dashboard') ?>" class="hover:underline">← Previous: Dark Mode Dashboard UI</a>
-  <a href="<?= base_url('tailwind/optimize-minify') ?>" class="hover:underline">Next: Minifying with PostCSS →</a>
+  <a href="<?= base_url('tailwind/optimize-minify') ?>" class="hover:underline ms-auto">Next: Minifying with PostCSS →</a>
 </div>
 
     </article>

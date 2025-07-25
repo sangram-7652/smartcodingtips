@@ -1,3 +1,8 @@
+<?php
+$title = "Your First HTML Page | SmartCodingTips";
+$description = "Learn about your first html page in HTML. Understand key concepts, examples, and usage.";
+$keywords = "your, first, html, page, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Setting Up a Basic HTML Page</h2>
             <p class=" mb-2">Here’s what the most basic HTML page looks like:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -67,9 +72,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How HTML Works</a></div>
-    <div><a href="<?= base_url('html/basic-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Basic Structure →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How HTML Works</a>
+    <a href="<?= base_url('html/basic-structure') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Basic Structure →</a>
 </div>
     </article>
 </main>

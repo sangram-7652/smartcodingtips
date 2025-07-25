@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/fetch-basics" class="text-blue-600 hover:underline">fetch() Basics</a>
+                <a href="javascript.php?page=js/fetch-basics" class="text-blue-600 dark:text-blue-400 hover:underline">fetch() Basics</a>
             </li>
         </ol>
     </nav>
@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚀 Syntax</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch(url)
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -32,7 +32,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔎 Example – Fetching Users from JSONPlaceholder</h2>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/users")
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(users => {
         users.forEach(user => {
@@ -43,10 +43,10 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">📥 GET vs POST with fetch</h2>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">GET (default)</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/data")</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>fetch("https://api.example.com/data")</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">POST with JSON</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/submit", {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>fetch("https://api.example.com/submit", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -65,7 +65,7 @@
         <li><strong>Check response.ok</strong> for HTTP errors</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://api.example.com/data")
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white"><code>fetch("https://api.example.com/data")
     .then(response => {
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);
@@ -80,7 +80,8 @@
     </div>
 
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/json" class="text-blue-600 hover:underline">Working with JSON →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/api-intro') ?>" class="hover:underline">← Previous: Intro to APIs</a>
+    <a href="<?= base_url('js/json') ?>" class="hover:underline ms-auto">Next: Working with JSON →</a>
 </div>
 </main>

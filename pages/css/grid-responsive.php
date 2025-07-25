@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Use <code>auto-fit</code> or <code>auto-fill</code> with <code>minmax()</code> to create flexible grid columns:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -47,7 +47,7 @@
             <p class=" mb-2">
                 Combine Grid with media queries for more control:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid {
     display: grid;
     gap: 20px;
@@ -71,7 +71,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Responsive Card Grid Example</h2>
             <p class=" mb-2">This pattern is great for blog cards, product listings, etc.:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,9 +105,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/grid-template') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Grid Template Areas</a></div>
-    <div><a href="<?= base_url('css/font-face') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Custom Fonts →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/grid-template') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Grid Template Areas</a> 
+   <a href="<?= base_url('css/font-face') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Custom Fonts →</a> 
 </div>
 
     </article>

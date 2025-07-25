@@ -1,3 +1,9 @@
+<?php
+$title = "Attributes | SmartCodingTips";
+$description = "Learn about attributes in HTML. Understand key concepts, examples, and usage.";
+$keywords = "attributes, html tutorial, html basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +33,7 @@
             <p class=" mb-2">
                 An attribute is written inside the start tag of an element. Here's an example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
             </code></pre>
             <p class=" mt-2">
@@ -63,7 +69,7 @@
             <p class=" mb-2">
                 Boolean attributes do not require a value. Their mere presence implies truth. Example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;input type="checkbox" checked&gt;
             </code></pre>
         </section>
@@ -75,9 +81,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/elements-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Elements & Tags</a></div>
-    <div><a href="<?= base_url('html/empty-vs-container') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Empty vs Container →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/elements-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Elements & Tags</a>
+    <a href="<?= base_url('html/empty-vs-container') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Empty vs Container →</a>
 </div>
     </article>
 </main>

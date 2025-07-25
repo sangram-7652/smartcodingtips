@@ -59,8 +59,8 @@
     <h2 class="text-2xl font-semibold mb-2">🧠 Pro Tip</h2>
     <p>Use <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">gap-x-4</code> or <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">gap-y-2</code> to control spacing between flex items instead of using margins.</p>
 
-    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+    <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/visibility') ?>" class="hover:underline">← Previous: Box Sizing and Visibility</a>
-  <a href="<?= base_url('tailwind/flexbox-direction') ?>" class="hover:underline">Next: Direction, Wrapping, and Growth →</a>
+  <a href="<?= base_url('tailwind/flexbox-direction') ?>" class="hover:underline ms-auto">Next: Direction, Wrapping, and Growth →</a>
 </div>
 </main>

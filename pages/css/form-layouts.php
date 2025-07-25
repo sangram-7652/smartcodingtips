@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Single Column Form</h2>
             <p class=" mb-2">A simple vertical layout, perfect for mobile devices:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 form {
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ input, select, textarea {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Two-Column Layout Using Grid</h2>
             <p class=" mb-2">Great for desktop forms with grouped fields:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,7 +68,7 @@ input, select, textarea {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Inline Inputs & Buttons</h2>
             <p class=" mb-2">Useful for search bars or compact login forms:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .inline-form {
     display: flex;
     gap: 10px;
@@ -84,7 +84,7 @@ input, select, textarea {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Using <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code></h2>
             <p class=" mb-2">These help group related form fields semantically and visually:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 fieldset {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -116,9 +116,9 @@ legend {
             </p>
         </section>
 
-      <<div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/form-styling') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Input & Button Styling</a></div>
-    <div><a href="<?= base_url('css/form-focus') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Focus & States →</a></div>
+      <<div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/form-styling') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Input & Button Styling</a> 
+   <a href="<?= base_url('css/form-focus') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Focus & States →</a> 
 </div>
     </article>
 </main>

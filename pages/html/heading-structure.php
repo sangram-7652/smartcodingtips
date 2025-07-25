@@ -1,3 +1,8 @@
+<?php
+$title = "Heading Structure | SmartCodingTips";
+$description = "Learn about heading structure in HTML. Understand key concepts, examples, and usage.";
+$keywords = "heading, structure, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -43,7 +48,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;h1&gt;HTML Tutorial&lt;/h1&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;h2&gt;Basic Tags&lt;/h2&gt;
@@ -55,9 +60,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/screen-readers') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Screen Readers</a></div>
-    <div><a href="<?= base_url('html/meta-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Meta Tags →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/screen-readers') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Screen Readers</a>
+    <a href="<?= base_url('html/meta-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Meta Tags →</a>
 </div>
     </article>
 </main>

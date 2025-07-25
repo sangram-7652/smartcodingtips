@@ -1,3 +1,8 @@
+<?php
+$title = "Div vs Section | SmartCodingTips";
+$description = "Learn about div vs section in HTML. Understand key concepts, examples, and usage.";
+$keywords = "div, vs, section, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2 ">
                 The <code>&lt;div&gt;</code> element is a generic container with no semantic meaning. It is mainly used for layout and styling with CSS or JavaScript.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto  dark:bg-gray-900 dark:text-white"><code class="text-sm">
 &lt;div class="header"&gt;
   &lt;h1&gt;Welcome&lt;/h1&gt;
 &lt;/div&gt;
@@ -39,7 +44,7 @@
             <p class="mb-2 ">
                 The <code>&lt;section&gt;</code> element is a semantic container used to group related content under a thematic grouping, typically with a heading.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm break-all">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-900 dark:text-white"><code class="text-sm break-all">
 &lt;section&gt;
   &lt;h2&gt;About Us&lt;/h2&gt;
   &lt;p&gt;We are a software company...&lt;/p&gt;
@@ -91,9 +96,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-storage') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Web Storage</a></div>
-    <div><a href="<?= base_url('html/columns-with-div') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Columns with Div →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-storage') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Web Storage</a>
+    <a href="<?= base_url('html/columns-with-div') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Columns with Div →</a>
 </div>
     </article>
 </main>

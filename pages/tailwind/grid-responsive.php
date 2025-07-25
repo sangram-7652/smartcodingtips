@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Breakpoint-Based Grids</h2>
             <p class=" mb-2">Create layouts that change based on screen size:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"&gt;
     &lt;div class="bg-blue-100 p-4"&gt;Item 1&lt;/div&gt;
     &lt;div class="bg-blue-100 p-4"&gt;Item 2&lt;/div&gt;
@@ -40,7 +40,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Auto-Fit with <code>minmax</code></h2>
             <p class=" mb-2">Use <code>grid-cols-[repeat(auto-fit,...)]</code> to create dynamic columns:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid [grid-template-columns:repeat(auto-fit,minmax(150px,1fr))] gap-4"&gt;
     &lt;div class="bg-green-100 p-4"&gt;Card 1&lt;/div&gt;
     &lt;div class="bg-green-100 p-4"&gt;Card 2&lt;/div&gt;
@@ -79,9 +79,9 @@
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/grid-nested') ?>" class="hover:underline">← Previous: Nested Grids</a>
-  <a href="<?= base_url('tailwind/text-fonts') ?>" class="hover:underline">Next: Font Size, Family, and Weight →</a>
+  <a href="<?= base_url('tailwind/text-fonts') ?>" class="hover:underline ms-auto">Next: Font Size, Family, and Weight →</a>
 </div>
     </article>
 </main>

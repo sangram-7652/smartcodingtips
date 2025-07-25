@@ -1,3 +1,8 @@
+<?php
+$title = "Paragraphs & Headings | SmartCodingTips";
+$description = "Learn about paragraphs & headings in HTML. Understand key concepts, examples, and usage.";
+$keywords = "paragraphs, headings, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Paragraphs are defined using the <code>&lt;p&gt;</code> tag. They are used to group sentences together into meaningful blocks of text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is a paragraph of text in HTML.&lt;/p&gt;
             </code></pre>
             <p class=" mt-2">
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 Headings are used to define titles and subtitles. HTML offers six levels of headings, from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important).
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;h1&gt;Main Title&lt;/h1&gt;
 &lt;h2&gt;Subheading&lt;/h2&gt;
 &lt;h3&gt;Section Title&lt;/h3&gt;
@@ -67,9 +72,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/reserved-chars') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Reserved Characters</a></div>
-    <div><a href="<?= base_url('html/text-formatting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Bold, Italic, etc. →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/reserved-chars') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Reserved Characters</a>
+    <a href="<?= base_url('html/text-formatting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Bold, Italic, etc. →</a>
 </div>
 
     </article>

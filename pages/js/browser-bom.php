@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/browser-object-model" class="text-blue-600 hover:underline">Browser Object Model</a>
+                <a href="javascript.php?page=js/browser-object-model" class="text-blue-600 dark:text-blue-400 hover:underline">Browser Object Model</a>
             </li>
         </ol>
     </nav>
@@ -21,31 +21,31 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🪟 The <code>window</code> Object</h2>
     <p>The global object in the browser is <code>window</code>. All BOM features are accessed through it.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(window.innerWidth);  // Width of the viewport
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>console.log(window.innerWidth);  // Width of the viewport
 alert("Hello!");                  // Same as window.alert()</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🌍 The <code>navigator</code> Object</h2>
     <p>Provides information about the user's browser and device.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(navigator.userAgent);   // Browser info
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>console.log(navigator.userAgent);   // Browser info
 console.log(navigator.language);    // Language settings</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📍 The <code>location</code> Object</h2>
     <p>Gives info about the current URL and allows redirection.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(location.href);        // Full URL
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>console.log(location.href);        // Full URL
 location.href = "https://example.com";  // Redirect to another page</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⏮️ The <code>history</code> Object</h2>
     <p>Enables navigation through the browser history.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>history.back();   // Go to the previous page
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>history.back();   // Go to the previous page
 history.forward(); // Go to the next page</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🪟 Opening New Windows</h2>
     <p>You can open popups or new tabs using <code>window.open()</code>.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>window.open("https://google.com", "_blank");</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>window.open("https://google.com", "_blank");</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📏 Screen Object</h2>
     <p>Access screen resolution and color depth.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(screen.width, screen.height);
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 dark:bg-gray-800 dark:text-white"><code>console.log(screen.width, screen.height);
 console.log(screen.colorDepth);</code></pre>
 
     <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded mt-6">
@@ -61,8 +61,9 @@ console.log(screen.colorDepth);</code></pre>
         <li><strong>screen:</strong> Info about user's screen</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/window-navigator" class="text-blue-600 hover:underline">Window & Navigator →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-quiz') ?>" class="hover:underline">← Previous: Quiz App</a>
+    <a href="<?= base_url('js/window-navigator') ?>" class="hover:underline ms-auto">Next: Window & Navigator →</a>
 </div>
 
 </main>

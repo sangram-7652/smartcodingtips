@@ -1,3 +1,8 @@
+<?php
+$title = "Image Attributes | SmartCodingTips";
+$description = "Learn about image attributes in HTML. Understand key concepts, examples, and usage.";
+$keywords = "image, attributes, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Specifies the path or URL of the image file to display.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="images/photo.jpg" alt="A beautiful scenery"&gt;
             </code></pre>
         </section>
@@ -37,7 +42,7 @@
             <p class=" mb-2">
                 Provides descriptive text for the image, shown if the image cannot load and used by screen readers for accessibility.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="logo.png" alt="Company Logo"&gt;
             </code></pre>
         </section>
@@ -47,7 +52,7 @@
             <p class=" mb-2">
                 Defines the displayed width and height of the image in pixels. Using these can help prevent layout shifts while the image loads.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="photo.jpg" alt="Scenery" width="600" height="400"&gt;
             </code></pre>
         </section>
@@ -57,7 +62,7 @@
             <p class=" mb-2">
                 Provides additional information shown as a tooltip when the user hovers over the image.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="icon.png" alt="Settings" title="Settings Icon"&gt;
             </code></pre>
         </section>
@@ -71,7 +76,7 @@
                 <li><code>lazy</code>: Defer loading the image until it’s near the viewport.</li>
                 <li><code>eager</code>: Load the image immediately (default behavior).</li>
             </ul>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="large-photo.jpg" alt="Landscape" loading="lazy"&gt;
             </code></pre>
         </section>
@@ -81,7 +86,7 @@
             <p class=" mb-2">
                 Allow specifying multiple image sources for different screen sizes or resolutions.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100  rounded overflow-x-auto  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img 
   src="small.jpg" 
   srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500w" 
@@ -98,7 +103,7 @@
             <p class=" mb-2">
                 Specifies a reference to an image map defined elsewhere in the document, allowing clickable areas on the image.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm break-all">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-sm break-all">
 &lt;img src="plan.jpg" alt="Floor Plan" usemap="#floorplan"&gt;
 
 &lt;map name="floorplan"&gt;
@@ -163,9 +168,9 @@
             </table>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/image-formats') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Supported Formats</a></div>
-    <div><a href="<?= base_url('html/video') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Video Tag →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/image-formats') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Supported Formats</a>
+    <a href="<?= base_url('html/video') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Video Tag →</a>
 </div>
     </article>
 </main>

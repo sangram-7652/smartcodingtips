@@ -1,3 +1,8 @@
+<?php
+$title = "Reserved Characters | SmartCodingTips";
+$description = "Learn about reserved characters in HTML. Understand key concepts, examples, and usage.";
+$keywords = "reserved, characters, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -41,7 +46,7 @@
             <p class=" mb-2">
                 To show reserved characters in HTML content, use character entities. These begin with <code>&amp;</code> and end with <code>;</code>. Here are common examples:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt; -- &amp;lt;
 &gt; -- &amp;gt;
 &amp; -- &amp;amp;
@@ -64,9 +69,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/nesting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Tag Nesting</a></div>
-    <div><a href="<?= base_url('html/text-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Paragraphs & Headings →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/nesting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Tag Nesting</a>
+    <a href="<?= base_url('html/text-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Paragraphs & Headings →</a>
 </div>
     </article>
 </main>

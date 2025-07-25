@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/history-evolution" class="text-blue-600 hover:underline">History & Evolution</a>
+                <a href="javascript.php?page=js/history-evolution" class="text-blue-600 dark:text-blue-400 hover:underline">History & Evolution</a>
             </li>
         </ol>
     </nav>
@@ -54,7 +54,7 @@
 
     <h2 class="text-2xl font-semibold mb-2">🧠 Summary Timeline</h2>
 
-    <div class="bg-gray-100  dark:text-white dark:bg-gray-900 p-4 rounded text-sm mb-6">
+    <div class="bg-gray-100  dark:text-white dark:bg-gray-800 p-4 rounded text-sm mb-6">
         <ul class="space-y-1 list-disc list-inside ">
             <li><strong>1995</strong> – JavaScript created by Brendan Eich at Netscape</li>
             <li><strong>1997</strong> – ECMAScript standard established</li>
@@ -69,7 +69,9 @@
     </div>
 
     <p class="text-green-700 font-semibold">✅ Today, JavaScript powers everything from websites and APIs to desktop apps and IoT devices.</p>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/js-vs-html-css" class="text-blue-600 hover:underline">JS vs HTML/CSS →</a></p>
-</div>
+
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
+        <a href="<?= base_url('js/what-is-js') ?>" class="hover:underline">← Previous: What is JavaScript?</a>
+        <a href="<?= base_url('js/js-vs-html-css') ?>" class="hover:underline ms-auto ">Next: JS vs HTML/CSS →</a>
+    </div>
 </main>

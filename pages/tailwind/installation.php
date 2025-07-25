@@ -28,13 +28,13 @@
             <p class=" mb-2">
                 This is ideal for quick experiments or small static projects. Just include this CDN link in your HTML:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
             </pre>
             <p class=" mt-2">
                 You can also customize Tailwind using the CDN’s <code>tailwind.config</code> like this:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;script&gt;
     tailwind.config = {
         theme: {
@@ -95,9 +95,9 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
         </section>
 
         <!-- Next Link -->
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/comparison') ?>" class="hover:underline">← Previous: Tailwind vs Bootstrap vs Custom CSS</a>
-  <a href="<?= base_url('tailwind/config-file') ?>" class="hover:underline">Next: Tailwind CLI and Configuration File →</a>
+  <a href="<?= base_url('tailwind/config-file') ?>" class="hover:underline ms-auto">Next: Tailwind CLI and Configuration File →</a>
 </div>
     </article>
 </main>

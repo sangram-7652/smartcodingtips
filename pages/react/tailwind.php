@@ -24,13 +24,13 @@
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 1. Installation (Vite Example)</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 </code></pre>
 
   <p class="mb-2 text-black dark:text-gray-300">Then configure <code>tailwind.config.js</code>:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // tailwind.config.js
 content: ["./index.html", "./src/**/*.{js,jsx}"],
 theme: {
@@ -41,14 +41,14 @@ plugins: [],
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎨 2. Add Tailwind Directives</h2>
   <p class="mb-2 text-black dark:text-gray-300">In your <code>index.css</code> or <code>App.css</code>, include:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 3. Example Usage</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 function Button() {
   return (
     &lt;button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"&gt;
@@ -60,7 +60,7 @@ function Button() {
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🌙 4. Enable Dark Mode</h2>
   <p class="mb-2 text-black dark:text-gray-300">In <code>tailwind.config.js</code>:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 darkMode: 'class',
 </code></pre>
   <p class="text-black dark:text-gray-300 mb-6">
@@ -76,9 +76,9 @@ darkMode: 'class',
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/css-modules') ?>" class="hover:underline">← Previous: CSS Modules</a>
-  <a href="<?= base_url('react/styled-components') ?>" class="hover:underline">Next: Styled Components →</a>
+  <a href="<?= base_url('react/styled-components') ?>" class="hover:underline ms-auto">Next: Styled Components →</a>
 </div>
 
 </main>

@@ -1,3 +1,8 @@
+<?php
+$title = "Intro to HTML5 | SmartCodingTips";
+$description = "Learn about intro to html5 in HTML. Understand key concepts, examples, and usage.";
+$keywords = "intro, to, html5, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -45,7 +50,7 @@
             <p class="mb-2">
                 HTML5 simplifies the doctype declaration to a single line:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
             </code></pre>
         </section>
@@ -57,9 +62,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/form-submit') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Submission</a></div>
-    <div><a href="<?= base_url('html/html5-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: New Tags →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/form-submit') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Submission</a>
+    <a href="<?= base_url('html/html5-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: New Tags →</a>
 </div>
     </article>
 </main>

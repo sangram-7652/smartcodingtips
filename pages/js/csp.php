@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/content-security-policy" class="text-blue-600 hover:underline">Content Security Policy</a>
+        <a href="javascript.php?page=js/content-security-policy" class="text-blue-600 dark:text-blue-400 hover:underline">Content Security Policy</a>
       </li>
     </ol>
   </nav>
@@ -25,7 +25,7 @@
   </p>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">📦 Example CSP Header</h3>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.example.com; object-src 'none';</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.example.com; object-src 'none';</code></pre>
 
   <ul class="list-disc list-inside mb-4">
     <li><code>default-src 'self'</code>: Only allow resources from the same origin</li>
@@ -37,7 +37,7 @@
   <p class="mb-4">
     By default, CSP blocks inline JavaScript unless you allow it explicitly using <code>'unsafe-inline'</code> (which is not recommended).
   </p>
-  <pre class="bg-red-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// ❌ This will be blocked if CSP disallows inline scripts
+  <pre class="bg-red-100 overflow-x-auto p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>// ❌ This will be blocked if CSP disallows inline scripts
 &lt;script&gt;alert("XSS!")&lt;/script&gt;
 </code></pre>
 
@@ -48,7 +48,7 @@
   </ul>
 
   <h3 class="text-xl font-semibold mt-4 mb-2">🔑 Example with Nonce</h3>
-  <pre class="bg-green-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// Header:
+  <pre class="bg-green-100 overflow-x-auto p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>// Header:
 Content-Security-Policy: script-src 'nonce-abc123'
 
 // HTML:
@@ -57,10 +57,10 @@ Content-Security-Policy: script-src 'nonce-abc123'
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Setting CSP in Different Languages</h2>
 
   <h4 class="font-semibold mt-4 mb-1">PHP:</h4>
-  <pre class="bg-blue-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>header("Content-Security-Policy: default-src 'self'; script-src 'self';");</code></pre>
+  <pre class="bg-blue-100 overflow-x-auto p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>header("Content-Security-Policy: default-src 'self'; script-src 'self';");</code></pre>
 
   <h4 class="font-semibold mt-4 mb-1">Express (Node.js):</h4>
-  <pre class="bg-blue-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>res.setHeader("Content-Security-Policy", "default-src 'self'; script-src 'self'");</code></pre>
+  <pre class="bg-blue-100 overflow-x-auto p-4 rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>res.setHeader("Content-Security-Policy", "default-src 'self'; script-src 'self'");</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Testing Your CSP</h2>
   <ul class="list-disc list-inside mb-4">
@@ -73,8 +73,9 @@ Content-Security-Policy: script-src 'nonce-abc123'
     💡 <strong>Tip:</strong> Start with <code>Content-Security-Policy-Report-Only</code> to monitor without breaking your site.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/project-slider" class="text-blue-600 hover:underline">Image Slider →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/cors') ?>" class="hover:underline">← Previous: CORS Explained</a>
+    <a href="<?= base_url('js/project-slider') ?>" class="hover:underline ms-auto">Next: Image Slider →</a>
 </div>
 
 </main>

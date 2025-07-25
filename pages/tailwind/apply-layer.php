@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The <code>@apply</code> directive lets you extract commonly-used utility classes into custom CSS classes.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 /* styles.css */
 .btn {
     @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
@@ -43,7 +43,7 @@
             <p class=" mb-2">
                 Tailwind has three layers: <code>base</code>, <code>components</code>, and <code>utilities</code>. Use <code>@layer</code> to add styles to the correct part of the cascade.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -62,7 +62,7 @@
             <p class=" mb-2">
                 While <code>@variants</code> is no longer required with JIT, it used to define variants like <code>:hover</code> or <code>:focus</code>. With JIT, just use them inline or inside @layer.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 @layer components {
     .btn-danger {
         @apply bg-red-500 text-white hover:bg-red-600;
@@ -89,9 +89,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/jit-purge') ?>" class="hover:underline">← Previous: How Tailwind Applies Styles</a>
-  <a href="<?= base_url('tailwind/spacing') ?>" class="hover:underline">Next: Container, Spacing (Padding, Margin) →</a>
+  <a href="<?= base_url('tailwind/spacing') ?>" class="hover:underline ms-auto">Next: Container, Spacing (Padding, Margin) →</a>
 </div>
 
     </article>

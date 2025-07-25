@@ -27,7 +27,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Define Variables in <code>:root</code></h2>
             <p class=" mb-2">Add custom variables in your global CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 :root {
   --primary-color: #0084ff;
   --accent-color: #3AB0FF;
@@ -40,7 +40,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Use in Tailwind with Arbitrary Values</h2>
             <p class=" mb-2">Use Tailwind's support for arbitrary values like:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;button class="bg-[var(--primary-color)] text-white px-4 py-2 rounded"&gt;
   Click Me
 &lt;/button&gt;
@@ -56,7 +56,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Change Theme with JavaScript</h2>
             <p class=" mb-2">Use JS to change themes dynamically:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 document.documentElement.style.setProperty('--primary-color', '#16a34a'); // green-600
             </code></pre>
         </section>
@@ -80,9 +80,9 @@ document.documentElement.style.setProperty('--primary-color', '#16a34a'); // gre
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/extending') ?>" class="hover:underline">← Previous: Extending Colors, Fonts, Breakpoints</a>
-  <a href="<?= base_url('tailwind/custom-utilities') ?>" class="hover:underline">Next: Creating Custom Utility Classes →</a>
+  <a href="<?= base_url('tailwind/custom-utilities') ?>" class="hover:underline ms-auto">Next: Creating Custom Utility Classes →</a>
 </div>
     </article>
 </main>

@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Gradient Syntax</h2>
             <p class=" mb-2">Apply gradient direction with <code>bg-gradient-to-*</code> and color stops:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-gradient-to-r from-purple-400 to-pink-500 p-6 rounded text-white"&gt;
     Gradient Background
 &lt;/div&gt;
@@ -60,7 +60,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Using <code>via-*</code> for Midpoints</h2>
             <p class=" mb-2">You can create three-color gradients by adding a <code>via-</code> stop:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 text-white rounded"&gt;
     Multicolor Gradient
 &lt;/div&gt;
@@ -74,7 +74,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Text Gradients (with <code>bg-clip-text</code>)</h2>
             <p class=" mb-2">To apply gradients to text:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;h2 class="text-3xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 text-transparent bg-clip-text"&gt;
     Gradient Text
 &lt;/h2&gt;
@@ -102,9 +102,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/colors-bg') ?>" class="hover:underline">← Previous: Text and Background Colors</a>
-  <a href="<?= base_url('tailwind/borders') ?>" class="hover:underline">Next: Border Width, Color, and Radius →</a>
+  <a href="<?= base_url('tailwind/borders') ?>" class="hover:underline ms-auto">Next: Border Width, Color, and Radius →</a>
 </div>
     </article>
 </main>

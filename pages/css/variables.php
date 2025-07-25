@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 CSS variables are defined inside a selector using the <code>--</code> prefix. They are often placed inside the <code>:root</code> pseudo-class to make them globally accessible.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 :root {
     --primary-color: #4f46e5;
     --secondary-color: #3b82f6;
@@ -43,7 +43,7 @@
             <p class=" mb-2">
                 Use the <code>var()</code> function to apply the value of a variable.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 body {
     background-color: var(--primary-color);
     font-size: var(--font-size-lg);
@@ -61,7 +61,7 @@ button {
             <p class=" mb-2">
                 Variables defined in <code>:root</code> are global, but you can define them in any selector for local usage:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .card {
     --card-padding: 20px;
     padding: var(--card-padding);
@@ -75,7 +75,7 @@ button {
             <p class=" mb-2">
                 You can provide a fallback in case the variable is not defined:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 {
     color: var(--title-color, black);
 }
@@ -88,7 +88,7 @@ h1 {
             <p class=" mb-2">
                 CSS variables are powerful for implementing themes. Change the variables at runtime using JavaScript or apply them conditionally via classes.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .theme-dark {
     --background: #1f2937;
     --text: #f9fafb;
@@ -109,9 +109,9 @@ body {
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Opacity & Gradients</a></div>
-    <div><a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Box Model Basics →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Opacity & Gradients</a> 
+   <a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Box Model Basics →</a> 
 </div>
     </article>
 </main>

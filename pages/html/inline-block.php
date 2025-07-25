@@ -1,3 +1,8 @@
+<?php
+$title = "Inline vs Block | SmartCodingTips";
+$description = "Learn about inline vs block in HTML. Understand key concepts, examples, and usage.";
+$keywords = "inline, vs, block, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -52,7 +57,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Visual Example</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!-- Block Element --&gt;
 &lt;div&gt;
   &lt;p&gt;This is a paragraph.&lt;/p&gt;
@@ -64,9 +69,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/entities') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: HTML Entities</a></div>
-    <div><a href="<?= base_url('html/dom-basics') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: HTML DOM →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/entities') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: HTML Entities</a>
+    <a href="<?= base_url('html/dom-basics') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: HTML DOM →</a>
 </div>
     </article>
 </main>

@@ -24,7 +24,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 selector {
     property: value;
 }
@@ -41,7 +41,7 @@ selector {
             <p class=" mb-2">
                 Here’s a simple rule that styles all paragraphs:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     color: blue;
     font-size: 16px;
@@ -57,7 +57,7 @@ p {
             <p class=" mb-2">
                 You can apply multiple properties in one rule by separating them with semicolons:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 {
     color: #1e3a8a;
     text-align: center;
@@ -71,7 +71,7 @@ h1 {
             <p class=" mb-2">
                 Use comments to explain your code. Comments are ignored by the browser.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* This is a CSS comment */
 p {
     color: gray;
@@ -93,9 +93,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/setup') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Setup Your First File</a></div>
-    <div><a href="<?= base_url('css/selectors-basic') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Basic Selectors →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/setup') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Setup Your First File</a> 
+   <a href="<?= base_url('css/selectors-basic') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Basic Selectors →</a> 
 </div>
     </article>
 </main>

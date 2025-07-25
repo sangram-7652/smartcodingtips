@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/storage" class="text-blue-600 hover:underline">LocalStorage / SessionStorage</a>
+                <a href="javascript.php?page=js/storage" class="text-blue-600 dark:text-blue-400 hover:underline">LocalStorage / SessionStorage</a>
             </li>
         </ol>
     </nav>
@@ -21,7 +21,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 LocalStorage</h2>
     <p>Data in <code>localStorage</code> persists even after the browser is closed. It has no expiration time.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Store data
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Store data
 localStorage.setItem("username", "John");
 
 // Retrieve data
@@ -36,7 +36,7 @@ localStorage.clear();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🕒 SessionStorage</h2>
     <p>Data in <code>sessionStorage</code> is cleared when the page session ends (usually when the tab or window is closed).</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Store session data
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Store session data
 sessionStorage.setItem("theme", "dark");
 
 // Retrieve data
@@ -56,7 +56,7 @@ sessionStorage.clear();</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Storing Objects</h2>
     <p>You must stringify objects before storing them.</p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const user = { name: "Alice", age: 25 };
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>const user = { name: "Alice", age: 25 };
 localStorage.setItem("user", JSON.stringify(user));
 
 // Later...
@@ -74,7 +74,8 @@ console.log(data.name); // Alice</code></pre>
         <li>Use <code>JSON.stringify</code> and <code>JSON.parse</code> for storing/retrieving objects.</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/device-detect" class="text-blue-600 hover:underline">Device & Feature Detect →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/window-navigator') ?>" class="hover:underline">← Previous: Window & Navigator</a>
+    <a href="<?= base_url('js/device-detect') ?>" class="hover:underline ms-auto">Next: Device & Feature Detect →</a>
 </div>
 </main>

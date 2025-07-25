@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/if-else-switch" class="text-blue-600 hover:underline">If, Else, Switch</a>
+                <a href="javascript.php?page=js/if-else-switch" class="text-blue-600 dark:text-blue-400 hover:underline">If, Else, Switch</a>
             </li>
         </ol>
     </nav>
@@ -24,7 +24,7 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 1. <code>if</code> Statement</h2>
     <p class="mb-4">Executes a block of code if a condition is true.</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 18;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let age = 18;
 
 if (age &gt;= 18) {
     console.log("You are an adult.");
@@ -33,7 +33,7 @@ if (age &gt;= 18) {
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 2. <code>if...else</code> Statement</h2>
     <p class="mb-4">Provides an alternative if the condition is false.</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = false;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let isLoggedIn = false;
 
 if (isLoggedIn) {
     console.log("Welcome back!");
@@ -44,7 +44,7 @@ if (isLoggedIn) {
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ 3. <code>if...else if...else</code> Chain</h2>
     <p class="mb-4">Checks multiple conditions in order.</p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let score = 75;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let score = 75;
 
 if (score &gt;= 90) {
     console.log("Grade: A");
@@ -59,7 +59,7 @@ if (score &gt;= 90) {
         A cleaner way to compare a variable against many values.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let day = "Wednesday";
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let day = "Wednesday";
 
 switch (day) {
     case "Monday":
@@ -91,7 +91,9 @@ switch (day) {
         ✅ <strong>Tip:</strong> Use <code>switch</code> when checking one variable against multiple fixed values. Use <code>if</code> for more flexible or complex conditions.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/loops" class="text-blue-600 hover:underline">Loops: for, while →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/alert-console') ?>" class="hover:underline">← Previous: Alert, Prompt, Console</a>
+    <a href="<?= base_url('js/loops') ?>" class="hover:underline ms-auto">Next: Loops: for, while →</a>
 </div>
+
 </main>

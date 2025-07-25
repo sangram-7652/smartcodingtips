@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/comments" class="text-blue-600 hover:underline">JavaScript Comments</a>
+                <a href="javascript.php?page=js/comments" class="text-blue-600 dark:text-blue-400 hover:underline">JavaScript Comments</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         Use <code>//</code> to write single-line comments.
     </p>
     
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// This is a single-line comment
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// This is a single-line comment
 let x = 10; // Declaring a variable</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 2. Multi-Line Comments</h2>
@@ -34,7 +34,7 @@ let x = 10; // Declaring a variable</code></pre>
         Use <code>/* ... */</code> to write multi-line comments.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>/*
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>/*
  This is a multi-line comment.
  It can span multiple lines.
 */
@@ -45,7 +45,7 @@ let y = 20;</code></pre>
         Comments are often used to "turn off" code for testing/debugging:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// console.log("This won't run");
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// console.log("This won't run");
 
 let name = "Alice";
 console.log(name); // This will run</code></pre>
@@ -62,7 +62,8 @@ console.log(name); // This will run</code></pre>
         💡 <strong>Tip:</strong> Clean, self-explanatory code reduces the need for excessive comments.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/alert-console" class="text-blue-600 hover:underline">Alert, Prompt, Console →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/operators') ?>" class="hover:underline">← Previous: Operators</a>
+    <a href="<?= base_url('js/alert-console') ?>" class="hover:underline ms-auto">Next: Alert, Prompt, Console →</a>
 </div>
 </main>

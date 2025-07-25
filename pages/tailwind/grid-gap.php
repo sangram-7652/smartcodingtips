@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Gap Utilities</h2>
             <p class=" mb-2">Use <code>gap</code>, <code>gap-x</code>, or <code>gap-y</code> to define spacing between grid rows or columns:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 gap-4"&gt;
     &lt;div class="bg-gray-200 p-4"&gt;1&lt;/div&gt;
     &lt;div class="bg-gray-200 p-4"&gt;2&lt;/div&gt;
@@ -44,7 +44,7 @@
             <p class=" mb-2">
                 Auto-fill fills the row with as many columns as will fit, and leaves empty slots if necessary. Define this using Tailwind’s <code>grid-cols-[repeat(auto-fill,...)]</code> syntax.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid [grid-template-columns:repeat(auto-fill,minmax(150px,1fr))] gap-4"&gt;
     &lt;div class="bg-blue-200 p-4"&gt;A&lt;/div&gt;
     &lt;div class="bg-blue-200 p-4"&gt;B&lt;/div&gt;
@@ -59,7 +59,7 @@
             <p class=" mb-2">
                 Auto-fit behaves like auto-fill, but collapses empty columns — resulting in tighter, more responsive layouts:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid [grid-template-columns:repeat(auto-fit,minmax(150px,1fr))] gap-4"&gt;
     &lt;div class="bg-green-200 p-4"&gt;Item 1&lt;/div&gt;
     &lt;div class="bg-green-200 p-4"&gt;Item 2&lt;/div&gt;
@@ -78,9 +78,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/grid-columns') ?>" class="hover:underline">← Previous: Grid Container and Template Columns/Rows</a>
-  <a href="<?= base_url('tailwind/grid-placement') ?>" class="hover:underline">Next: Grid Areas and Placement →</a>
+  <a href="<?= base_url('tailwind/grid-placement') ?>" class="hover:underline ms-auto">Next: Grid Areas and Placement →</a>
 </div>
     </article>
 </main>

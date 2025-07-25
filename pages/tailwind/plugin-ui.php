@@ -105,9 +105,9 @@
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/plugin-typography') ?>" class="hover:underline">← Previous: Typography, Aspect-Ratio, Line-Clamp</a>
-  <a href="<?= base_url('tailwind/integration') ?>" class="hover:underline">Next: Integration with PostCSS and Vite →</a>
+  <a href="<?= base_url('tailwind/integration') ?>" class="hover:underline ms-auto">Next: Integration with PostCSS and Vite →</a>
 </div>
     </article>
 </main>

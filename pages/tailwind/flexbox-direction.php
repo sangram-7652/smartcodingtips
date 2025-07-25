@@ -82,9 +82,9 @@
     <h2 class="text-2xl font-semibold mb-2">🧠 Quick Tip</h2>
     <p>Use <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">basis-1/2</code> or <code class="bg-gray-200 dark:bg-gray-900 px-1 rounded text-sm">basis-full</code> to control item size with great flexibility!</p>
 
-    <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+    <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
         <a href="<?= base_url('tailwind/flexbox-intro') ?>" class="hover:underline">← Previous: Flex Containers and Items</a>
-        <a href="<?= base_url('tailwind/flexbox-align') ?>" class="hover:underline">Next: Justify Content & Align Items →</a>
+        <a href="<?= base_url('tailwind/flexbox-align') ?>" class="hover:underline ms-auto">Next: Justify Content & Align Items →</a>
     </div>
 
 </main>

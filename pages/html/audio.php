@@ -1,3 +1,8 @@
+<?php
+$title = "Audio Tag | SmartCodingTips";
+$description = "Learn about audio tag in HTML. Understand key concepts, examples, and usage.";
+$keywords = "audio, tag, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Audio Example</h2>
             <p class="mb-2">A simple audio element with controls:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;audio controls&gt;
   &lt;source src="audio.mp3" type="audio/mpeg"&gt;
   Your browser does not support the audio element.
@@ -50,7 +55,7 @@
             <p class="mb-2">
                 Providing multiple audio sources in different formats improves browser compatibility.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;audio controls preload="auto"&gt;
   &lt;source src="audio.mp3" type="audio/mpeg"&gt;
   &lt;source src="audio.ogg" type="audio/ogg"&gt;
@@ -68,9 +73,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/video') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Video Tag</a></div>
-    <div><a href="<?= base_url('html/iframe') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: iFrames →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/video') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Video Tag</a>
+    <a href="<?= base_url('html/iframe') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: iFrames →</a>
 </div>
     </article>
 </main>

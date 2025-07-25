@@ -34,7 +34,7 @@
 
   <!-- Correct Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">✅ Using Unique Keys</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 const users = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" }
@@ -56,7 +56,7 @@ function UserList() {
   <p class="mb-4 text-black dark:text-gray-300">
     Keys should be stable and unique. Using the array index may lead to unexpected behavior when the list is modified.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 // ❌ Not recommended
 {items.map((item, index) =&gt; (
   &lt;li key={index}&gt;{item}&lt;/li&gt;
@@ -85,9 +85,9 @@ function UserList() {
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/rendering-lists') ?>" class="hover:underline">← Previous: Rendering Lists</a>
-  <a href="<?= base_url('react/dynamic-lists') ?>" class="hover:underline">Next: Dynamic List Rendering →</a>
+  <a href="<?= base_url('react/dynamic-lists') ?>" class="hover:underline ms-auto">Next: Dynamic List Rendering →</a>
 </div>
 
 </main>

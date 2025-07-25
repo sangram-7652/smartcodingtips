@@ -30,7 +30,7 @@
     A common use case for <code>useRef</code> is to access a DOM element directly — like focusing an input.
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 import React, { useRef } from "react";
 
 function InputFocus() {
@@ -59,7 +59,7 @@ function InputFocus() {
     <code>useRef</code> can also store values across renders without triggering a re-render.
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function RenderCounter() {
   const count = useRef(0);
 
@@ -85,9 +85,9 @@ function RenderCounter() {
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/submissions') ?>" class="hover:underline">← Previous: Handling Submissions</a>
-  <a href="<?= base_url('react/use-state') ?>" class="hover:underline">Next: useState() →</a>
+  <a href="<?= base_url('react/use-state') ?>" class="hover:underline ms-auto">Next: useState() →</a>
 </div>
 
 </main>

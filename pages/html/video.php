@@ -1,3 +1,8 @@
+<?php
+$title = "Video Tag | SmartCodingTips";
+$description = "Learn about video tag in HTML. Understand key concepts, examples, and usage.";
+$keywords = "video, tag, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Video Example</h2>
             <p class="mb-2">A simple video element with controls:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;video width="640" height="360" controls&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   Your browser does not support the video tag.
@@ -51,7 +56,7 @@
             <p class="mb-2">
                 You can provide multiple source files in different formats to ensure browser compatibility.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;video controls width="640" height="360" poster="thumbnail.jpg"&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   &lt;source src="video.webm" type="video/webm"&gt;
@@ -72,7 +77,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example with Captions</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;video controls width="640" height="360"&gt;
   &lt;source src="movie.mp4" type="video/mp4"&gt;
   &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
@@ -81,9 +86,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/image-attrs') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Image Attributes</a></div>
-    <div><a href="<?= base_url('html/audio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Audio Tag →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/image-attrs') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Image Attributes</a>
+    <a href="<?= base_url('html/audio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Audio Tag →</a>
 </div>
     </article>
 </main>

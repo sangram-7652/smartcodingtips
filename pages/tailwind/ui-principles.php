@@ -29,7 +29,7 @@
             <p class=" mb-2">
                 Instead of writing custom CSS classes for every component, Tailwind encourages combining small utility classes to create complex UIs. This promotes design consistency and avoids CSS bloat.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"&gt;
   Click Me
 &lt;/button&gt;
@@ -42,7 +42,7 @@
             <p class=" mb-2">
                 Use <code>@apply</code> in your CSS or component files to abstract common utility combinations and avoid repetition.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 /* styles.css */
 .btn-primary {
   @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
@@ -56,7 +56,7 @@
             <p class=" mb-2">
                 Tailwind's config lets you define and reuse spacing, color, typography, and more using a shared design token system via the `tailwind.config.js`.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 theme: {
   colors: {
     primary: '#1D4ED8',
@@ -100,9 +100,9 @@ theme: {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/dark-mode') ?>" class="hover:underline">← Previous: Dark Mode: Class vs Media Strategy</a>
-  <a href="<?= base_url('tailwind/reuse') ?>" class="hover:underline">Next: Extracting Reusable Components →</a>
+  <a href="<?= base_url('tailwind/reuse') ?>" class="hover:underline ms-auto">Next: Extracting Reusable Components →</a>
 </div>
 
     </article>

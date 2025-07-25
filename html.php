@@ -176,7 +176,7 @@ function tocLink($label, $link, $currentPage)
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-2 mt-4 md:mt-0">
+    <main class="flex-1 p-2 mt-4 md:mt-0 w-full max-w-full overflow-hidden">
         <?php echo $pageContent; ?>
     </main>
 </div>

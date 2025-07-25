@@ -67,9 +67,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/folder-structure') ?>" class="hover:underline">← Previous: Folder Structure</a>
-  <a href="<?= base_url('react/clean-code') ?>" class="hover:underline">Next: Clean Code →</a>
+  <a href="<?= base_url('react/clean-code') ?>" class="hover:underline ms-auto">Next: Clean Code →</a>
 </div>
 
 </main>

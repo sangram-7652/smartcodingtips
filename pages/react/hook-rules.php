@@ -31,7 +31,7 @@
     <li><strong>Only call Hooks from React functions:</strong> They should only be used inside function components or custom hooks.</li>
   </ul>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ✅ Correct
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ✅ Correct
 function MyComponent() {
   const [count, setCount] = useState(0);
 }
@@ -50,7 +50,7 @@ if (condition) {
   <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">1. Keep Hook dependencies accurate</h3>
   <p class="text-black dark:text-gray-300 mb-4">Always include all external values used in <code>useEffect</code> inside its dependency array.</p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ✅ Correct
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ✅ Correct
 useEffect(() => {
   console.log(user.name);
 }, [user]);
@@ -59,7 +59,7 @@ useEffect(() => {
   <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">2. Use multiple Hooks for separation</h3>
   <p class="text-black dark:text-gray-300 mb-4">Don’t cram everything into one effect or state. Separate logic using multiple hooks.</p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// Better structure
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// Better structure
 useEffect(() => { fetchData(); }, []);
 useEffect(() => { listenToScroll(); }, []);
 </code></pre>
@@ -67,7 +67,7 @@ useEffect(() => { listenToScroll(); }, []);
   <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">3. Extract reusable logic into custom hooks</h3>
   <p class="text-black dark:text-gray-300 mb-4">Encapsulate shared logic across components into custom hooks for readability and reuse.</p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// Example
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// Example
 function useOnlineStatus() {
   const [isOnline, setIsOnline] = useState(true);
   useEffect(() => {
@@ -86,7 +86,7 @@ function useOnlineStatus() {
   <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">4. Avoid unnecessary state</h3>
   <p class="text-black dark:text-gray-300 mb-4">Don’t use state when a derived value can be calculated directly from props or other state.</p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ❌ Don’t store derived state
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>// ❌ Don’t store derived state
 const [total, setTotal] = useState(price * quantity);
 
 // ✅ Derive it directly
@@ -109,8 +109,8 @@ const total = price * quantity;
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/use-effect-cleanup') ?>" class="hover:underline">← Previous: Cleanup in useEffect</a>
-  <a href="<?= base_url('react/hook-examples') ?>" class="hover:underline">Next: Hook Examples →</a>
+  <a href="<?= base_url('react/hook-examples') ?>" class="hover:underline ms-auto">Next: Hook Examples →</a>
 </div>
 </main>

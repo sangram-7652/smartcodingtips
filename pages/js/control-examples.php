@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/control-flow-examples" class="text-blue-600 hover:underline">Control Flow Examples</a>
+                <a href="javascript.php?page=js/control-flow-examples" class="text-blue-600 dark:text-blue-400 hover:underline">Control Flow Examples</a>
             </li>
         </ol>
     </nav>
@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 1: Login Access Check</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
 
 if (isLoggedIn) {
     console.log("Welcome back!");
@@ -33,7 +33,7 @@ if (isLoggedIn) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 2: Grade Evaluation</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let marks = 85;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let marks = 85;
 
 if (marks &gt;= 90) {
     console.log("Grade: A");
@@ -45,7 +45,7 @@ if (marks &gt;= 90) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 3: Day of the Week using Switch</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let day = "Saturday";
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let day = "Saturday";
 
 switch (day) {
     case "Monday":
@@ -61,7 +61,7 @@ switch (day) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 4: Loop with Continue</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         continue; // Skip 3
     }
@@ -70,7 +70,7 @@ switch (day) {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example 5: Loop with Break</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let count = 0;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let count = 0;
 
 while (true) {
     count++;
@@ -93,8 +93,9 @@ while (true) {
         ✅ Practice these patterns to master control flow logic in JavaScript!
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/functions" class="text-blue-600 hover:underline">Defining Functions →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/ternary') ?>" class="hover:underline">← Previous: Ternary Operator</a>
+    <a href="<?= base_url('js/functions') ?>" class="hover:underline ms-auto">Next: Defining Functions →</a>
 </div>
 
 </main>

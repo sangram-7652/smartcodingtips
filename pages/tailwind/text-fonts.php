@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Font Sizes</h2>
             <p class=" mb-2">Use <code>text-{size}</code> to set font size. Example sizes:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 text-xs     /* Extra small */
 text-sm     /* Small */
 text-base   /* Default body text */
@@ -45,7 +45,7 @@ text-2xl to text-9xl  /* Larger heading sizes */
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Font Family</h2>
             <p class=" mb-2">Use <code>font-sans</code>, <code>font-serif</code>, or <code>font-mono</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 font-sans   /* Default: Inter, system-ui, etc. */
 font-serif  /* Georgia, Times New Roman */
 font-mono   /* Menlo, Courier New */
@@ -61,7 +61,7 @@ font-mono   /* Menlo, Courier New */
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Font Weight</h2>
             <p class=" mb-2">Control font weight with <code>font-{weight}</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 font-thin        /* 100 */
 font-extralight  /* 200 */
 font-light       /* 300 */
@@ -87,9 +87,9 @@ font-black       /* 900 */
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/grid-responsive') ?>" class="hover:underline">← Previous: Responsive Grid Layouts</a>
-  <a href="<?= base_url('tailwind/text-spacing') ?>" class="hover:underline">Next: Line Height, Letter Spacing →</a>
+  <a href="<?= base_url('tailwind/text-spacing') ?>" class="hover:underline ms-auto">Next: Line Height, Letter Spacing →</a>
 </div>
     </article>
 </main>

@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/arrow-functions" class="text-blue-600 hover:underline">Arrow Functions</a>
+                <a href="javascript.php?page=js/arrow-functions" class="text-blue-600 dark:text-blue-400 hover:underline">Arrow Functions</a>
             </li>
         </ol>
     </nav>
@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📝 Basic Syntax</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>// Traditional function
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>// Traditional function
 function add(a, b) {
     return a + b;
 }
@@ -42,12 +42,12 @@ console.log(add(2, 3)); // Output: 5</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 One-Liner Arrow Functions</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const square = x =&gt; x * x;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const square = x =&gt; x * x;
 console.log(square(5)); // Output: 25</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Multiple Lines & Return</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const greet = name =&gt; {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const greet = name =&gt; {
     const message = "Hello, " + name;
     return message;
 };
@@ -60,7 +60,7 @@ console.log(greet("Alice"));</code></pre>
         Unlike regular functions, arrow functions do <strong>not</strong> have their own <code>this</code>. They inherit it from the surrounding lexical scope.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const person = {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const person = {
     name: "Bob",
     greet: function() {
         setTimeout(() =&gt; {
@@ -75,8 +75,8 @@ person.greet(); // Output: "Hi, I'm Bob"</code></pre>
         💡 Use arrow functions to preserve <code>this</code> in methods or inside timeouts and event handlers.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/scope" class="text-blue-600 hover:underline">Scope & Closure →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/functions') ?>" class="hover:underline">← Previous: Defining Functions</a>
+    <a href="<?= base_url('js/scope') ?>" class="hover:underline ms-auto">Next: Scope & Closure →</a>
 </div>
-
 </main>

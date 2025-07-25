@@ -1,27 +1,40 @@
 RewriteEngine On
 RewriteBase /smartcodingtips/
 
-# Allow existing files and folders (like index.php, style.css)
+# 🔁 Redirect old dynamic URLs to clean SEO URLs
 
+RewriteCond %{THE_REQUEST} \s/js\.php\?page=js/([^&\s]+) [NC]
+RewriteRule ^js\.php$ /smartcodingtips/js/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/css\.php\?page=css/([^&\s]+) [NC]
+RewriteRule ^css\.php$ /smartcodingtips/css/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/html\.php\?page=html/([^&\s]+) [NC]
+RewriteRule ^html\.php$ /smartcodingtips/html/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/tailwind\.php\?page=tailwind/([^&\s]+) [NC]
+RewriteRule ^tailwind\.php$ /smartcodingtips/tailwind/%1? [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/react\.php\?page=react/([^&\s]+) [NC]
+RewriteRule ^react\.php$ /smartcodingtips/react/%1? [R=301,L]
+
+# ✅ Handle existing files/folders normally
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# HTML Pages
+# 🔃 Rewrite clean SEO-friendly URLs to PHP logic
 
 RewriteRule ^html/([^/]+)$ html.php?page=html/$1 [L,QSA]
-
-# CSS Pages
-
 RewriteRule ^css/([^/]+)$ css.php?page=css/$1 [L,QSA]
-
-# JS Pages
-
 RewriteRule ^js/([^/]+)$ js.php?page=js/$1 [L,QSA]
-
-# Tailwind Pages
-
 RewriteRule ^tailwind/([^/]+)$ tailwind.php?page=tailwind/$1 [L,QSA]
-
-# React Pages
-
 RewriteRule ^react/([^/]+)$ react.php?page=react/$1 [L,QSA]
+RewriteRule ^subscribed/([^/]+)$ index.php?subscribed=$1 [L,QSA]
+
+
+# Rewrite /about to about.php
+RewriteRule ^about$ about.php [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^privacy-policy$ privacy-policy.php [L]
+RewriteRule ^subscribe$ subscribe.php [L]
+

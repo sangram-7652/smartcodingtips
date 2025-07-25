@@ -74,9 +74,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/borders') ?>" class="hover:underline">← Previous: Border Width, Color, and Radius</a>
-  <a href="<?= base_url('tailwind/opacity') ?>" class="hover:underline">Next: Box Shadows and Opacity Control →</a>
+  <a href="<?= base_url('tailwind/opacity') ?>" class="hover:underline ms-auto">Next: Box Shadows and Opacity Control →</a>
 </div>
     </article>
 </main>

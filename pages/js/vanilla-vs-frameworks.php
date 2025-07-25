@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/vanilla-vs-frameworks" class="text-blue-600 hover:underline">Vanilla vs Frameworks</a>
+        <a href="javascript.php?page=js/vanilla-vs-frameworks" class="text-blue-600 dark:text-blue-400 hover:underline">Vanilla vs Frameworks</a>
       </li>
     </ol>
   </nav>
@@ -80,7 +80,8 @@
     💡 <strong>Pro Tip:</strong> Start with Vanilla JavaScript to master the core. Once you're confident, move to frameworks for better scalability and productivity.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/react-vue-angular" class="text-blue-600 hover:underline">React / Vue / Angular →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/vanilla-vs-frameworks') ?>" class="hover:underline">← Previous: Vanilla vs Frameworks</a>
+    <a href="<?= base_url('js/node-npm') ?>" class="hover:underline ms-auto">Next: Node.js & npm →</a>
 </div>
 </main>

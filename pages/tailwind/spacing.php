@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The <code>container</code> class centers your content and applies responsive max-widths:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="container mx-auto px-4"&gt;
     &lt;p&gt;This content is centered and padded.&lt;/p&gt;
 &lt;/div&gt;
@@ -40,7 +40,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Margin Utilities</h2>
             <p class=" mb-2">Use <code>m-</code>, <code>mt-</code>, <code>mb-</code>, <code>ml-</code>, <code>mr-</code>, and <code>mx-</code>/<code>my-</code> for margin control:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="mt-6 mb-4"&gt;Top and bottom margins&lt;/div&gt;
 &lt;div class="mx-2"&gt;Horizontal margin (left + right)&lt;/div&gt;
 &lt;div class="m-0"&gt;No margin&lt;/div&gt;
@@ -51,7 +51,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Padding Utilities</h2>
             <p class=" mb-2">Use <code>p-</code>, <code>pt-</code>, <code>pb-</code>, <code>pl-</code>, <code>pr-</code>, and <code>px-</code>/<code>py-</code> for padding:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="p-4"&gt;Uniform padding&lt;/div&gt;
 &lt;div class="pt-8 pb-2"&gt;Top and bottom padding&lt;/div&gt;
 &lt;div class="px-6"&gt;Left and right padding&lt;/div&gt;
@@ -62,7 +62,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Responsive Spacing</h2>
             <p class=" mb-2">You can apply different spacing values for each breakpoint:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="p-2 md:p-6 lg:p-10"&gt;Responsive padding changes with screen size&lt;/div&gt;
             </pre>
         </section>
@@ -71,7 +71,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Negative Margin</h2>
             <p class=" mb-2">Use <code>-m-</code> classes to pull elements closer together:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="-mt-4"&gt;Moves element up by 1rem (mt-4 in reverse)&lt;/div&gt;
             </pre>
         </section>
@@ -84,9 +84,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/apply-layer') ?>" class="hover:underline">← Previous: @apply, @layer and @variants Usage</a>
-  <a href="<?= base_url('tailwind/sizing') ?>" class="hover:underline">Next: Widths, Heights, Max/Min Sizing →</a>
+  <a href="<?= base_url('tailwind/sizing') ?>" class="hover:underline ms-auto">Next: Widths, Heights, Max/Min Sizing →</a>
 </div>
 
     </article>

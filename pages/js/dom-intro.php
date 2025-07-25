@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/dom-intro" class="text-blue-600 hover:underline">What is the DOM?</a>
+                <a href="javascript.php?page=js/dom-intro" class="text-blue-600 dark:text-blue-400 hover:underline">What is the DOM?</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 DOM Structure Example</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;html&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello&lt;/h1&gt;
@@ -47,7 +47,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ DOM Access via JavaScript</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const heading = document.querySelector("h1");
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const heading = document.querySelector("h1");
 console.log(heading.textContent); // "Hello"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Why Learn the DOM?</h2>
@@ -62,7 +62,8 @@ console.log(heading.textContent); // "Hello"</code></pre>
         ✅ <strong>In Summary:</strong> The DOM lets JavaScript talk to the HTML structure of a page. Mastering the DOM is essential for building interactive websites.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/selectors" class="text-blue-600 hover:underline">Selectors →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/object-methods') ?>" class="hover:underline">← Previous: Object Methods</a>
+    <a href="<?= base_url('js/selectors') ?>" class="hover:underline ms-auto">Next: Selectors →</a>
 </div>
 </main>

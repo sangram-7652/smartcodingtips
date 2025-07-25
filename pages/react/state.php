@@ -31,7 +31,7 @@
   </p>
 
   <h3 class="text-xl font-semibold mb-2 text-black dark:text-white">Example:</h3>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 import React, { useState } from 'react';
 
 function Counter() {
@@ -61,7 +61,7 @@ function Counter() {
 
   <!-- Multiple State Variables -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧩 Multiple State Variables</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 function Profile() {
   const [name, setName] = useState("Sangram");
   const [age, setAge] = useState(25);
@@ -84,9 +84,9 @@ function Profile() {
   </ul>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/props') ?>" class="hover:underline">← Previous: Props</a>
-  <a href="<?= base_url('react/conditional-rendering') ?>" class="hover:underline">Next: Conditional Rendering →</a>
+  <a href="<?= base_url('react/conditional-rendering') ?>" class="hover:underline ms-auto">Next: Conditional Rendering →</a>
 </div>
 
 </main>

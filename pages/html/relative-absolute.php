@@ -1,3 +1,8 @@
+<?php
+$title = "Relative vs Absolute | SmartCodingTips";
+$description = "Learn about relative vs absolute in HTML. Understand key concepts, examples, and usage.";
+$keywords = "relative, vs, absolute, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main  class="content-area px-4  lg:px-8 max-w-screen-lg mx-auto">
     <!-- Breadcrumb Navigation -->
@@ -28,7 +33,7 @@
             <p class="mb-2">
                 A relative URL points to a file or location relative to the current page. These are ideal for internal site navigation.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white">
 <code class="text-sm">
 &lt;a href="about.html"&gt;About Us&lt;/a&gt;
 &lt;img src="images/logo.png" alt="Logo"&gt;
@@ -106,9 +111,9 @@
         </section>
 
         <!-- ✅ Next Page -->
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/page-jump') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Page Jumps</a></div>
-    <div><a href="<?= base_url('html/nav-menu') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Nav Menus with Lists →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/page-jump') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Page Jumps</a>
+    <a href="<?= base_url('html/nav-menu') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Nav Menus with Lists →</a>
 </div>
     </article>
 </main>

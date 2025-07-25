@@ -25,7 +25,7 @@
         <!-- React Setup -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">1. Setting Up Tailwind in React (Vite or CRA)</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 // Install dependencies
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -46,7 +46,7 @@ content: [
         <!-- React Example -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">2. React Component Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 function Card() {
   return (
     &lt;div className="bg-white rounded shadow p-4"&gt;
@@ -61,7 +61,7 @@ function Card() {
         <!-- Vue Setup -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">3. Setting Up Tailwind in Vue (Vite or Vue CLI)</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 // Install dependencies
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -78,7 +78,7 @@ content: [
 @tailwind utilities;
             </code></pre>
             <p class=" mt-2">Import the CSS file in <code>main.js</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 import './assets/tailwind.css';
             </code></pre>
         </section>
@@ -86,7 +86,7 @@ import './assets/tailwind.css';
         <!-- Vue Example -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">4. Vue Component Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;template&gt;
   &lt;div class="bg-white rounded shadow p-4"&gt;
     &lt;h2 class="text-xl font-bold"&gt;Tailwind + Vue&lt;/h2&gt;
@@ -115,9 +115,9 @@ import './assets/tailwind.css';
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/components') ?>" class="hover:underline">← Previous: Responsive Navbar, Cards, Modals</a>
-  <a href="<?= base_url('tailwind/plugins-install') ?>" class="hover:underline">Next: Installing and Using Official Plugins →</a>
+  <a href="<?= base_url('tailwind/plugins-install') ?>" class="hover:underline ms-auto">Next: Installing and Using Official Plugins →</a>
 </div>
     </article>
 </main>

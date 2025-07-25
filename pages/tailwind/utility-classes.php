@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Common Examples</h2>
             <p class=" mb-2">Here are a few utility classes you’ll use often:</p>
-            <div class="grid grid-cols-2 gap-4 text-sm bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white">
+            <div class="grid grid-cols-2 gap-4 text-sm bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white">
                 <div><code>p-4</code> → padding: 1rem</div>
                 <div><code>text-center</code> → text-align: center</div>
                 <div><code>bg-blue-500</code> → background-color: blue</div>
@@ -51,7 +51,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Without vs With Utility Classes</h2>
             <p class=" mb-2 font-medium">Traditional CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 .card {
     background-color: white;
     padding: 1rem;
@@ -60,7 +60,7 @@
 }
             </pre>
             <p class=" mt-2 font-medium">Tailwind Utility Classes:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-white p-4 rounded shadow"&gt;...&lt;/div&gt;
             </pre>
         </section>
@@ -81,9 +81,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/config-file') ?>" class="hover:underline">← Previous: Tailwind CLI and Configuration File</a>
-  <a href="<?= base_url('tailwind/semantic-html') ?>" class="hover:underline">Next: Writing Semantic HTML with Utilities →</a>
+  <a href="<?= base_url('tailwind/semantic-html') ?>" class="hover:underline ms-auto">Next: Writing Semantic HTML with Utilities →</a>
 </div>
     </article>
 </main>

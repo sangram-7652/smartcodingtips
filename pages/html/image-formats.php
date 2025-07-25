@@ -1,3 +1,8 @@
+<?php
+$title = "Supported Formats | SmartCodingTips";
+$description = "Learn about supported formats in HTML. Understand key concepts, examples, and usage.";
+$keywords = "supported, formats, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -105,9 +110,9 @@
             </ul>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/images') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Images</a></div>
-    <div><a href="<?= base_url('html/image-attrs') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Image Attributes →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/images') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Images</a>
+    <a href="<?= base_url('html/image-attrs') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Image Attributes →</a>
 </div>
 
     </article>

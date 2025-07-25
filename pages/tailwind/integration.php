@@ -34,7 +34,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Setting Up Tailwind with Vite</h2>
             <p class=" mb-2">Vite is a modern frontend tool that offers fast dev servers and instant HMR. Here’s how to integrate Tailwind:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 // 1. Initialize Vite project
 npm create vite@latest my-app
 cd my-app
@@ -68,7 +68,7 @@ import './index.css';
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Using Tailwind with PostCSS (without Vite)</h2>
             <p class="">If you use Webpack or another bundler, configure a <code>postcss.config.js</code> like:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 // postcss.config.js
 module.exports = {
   plugins: {
@@ -97,9 +97,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/plugin-ui') ?>" class="hover:underline">← Previous: Tailwind UI (Paid) and Headless UI (Free)</a>
-  <a href="<?= base_url('tailwind/project-portfolio') ?>" class="hover:underline">Next: Responsive Portfolio Page →</a>
+  <a href="<?= base_url('tailwind/project-portfolio') ?>" class="hover:underline ms-auto">Next: Responsive Portfolio Page →</a>
 </div>
     </article>
 </main>

@@ -1,3 +1,8 @@
+<?php
+$title = "Resume Page | SmartCodingTips";
+$description = "Learn about resume page in HTML. Understand key concepts, examples, and usage.";
+$keywords = "resume, page, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -79,9 +84,9 @@
             <p class="">English, Hindi</p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/best-practices') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Best Practices</a></div>
-    <div><a href="<?= base_url('html/landing-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Product Landing Page →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/best-practices') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Best Practices</a>
+    <a href="<?= base_url('html/landing-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Product Landing Page →</a>
 </div>
 
     </article>

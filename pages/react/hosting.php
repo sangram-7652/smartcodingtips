@@ -87,7 +87,7 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/build') ?>" class="hover:underline">← Previous: Build for Production</a>
   <a href="<?= base_url('react/env-vars-deploy') ?>" class="hover:underline">Next: Env Variables →</a>
 </div>

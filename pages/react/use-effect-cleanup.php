@@ -34,7 +34,7 @@
 
   <!-- Example: setInterval -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🕒 Example: setInterval Cleanup</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import React, { useState, useEffect } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import React, { useState, useEffect } from "react";
 
 function Timer() {
   const [count, setCount] = useState(0);
@@ -59,7 +59,7 @@ function Timer() {
 
   <!-- Example: Event Listener -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🖱️ Example: Event Listener Cleanup</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
   function handleResize() {
     console.log("Window resized");
   }
@@ -92,9 +92,9 @@ function Timer() {
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/use-effect') ?>" class="hover:underline">← Previous: useEffect()</a>
-  <a href="<?= base_url('react/hook-rules') ?>" class="hover:underline">Next: Hook Rules & Best Practices →</a>
+  <a href="<?= base_url('react/hook-rules') ?>" class="hover:underline ms-auto">Next: Hook Rules & Best Practices →</a>
 </div>
 
 </main>

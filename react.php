@@ -55,13 +55,13 @@ function tocLink($label, $link, $currentPage)
     <!-- TOC Sidebar -->
     <aside
         id="mobileToc"
-        class="fixed top-0 left-0 h-[1200px] w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll max-h-screen md:max-h-[1200px]">
+        class="fixed top-0 left-0 h-screen w-[18rem] bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:z-10 md:relative md:translate-x-0 md:flex md:flex-col md:px-6 md:space-y-6 md:text-sm md:font-medium overflow-y-scroll max-h-screen md:max-h-[1200px]">
 
         <!-- Mobile-only close button -->
         <button id="closeToc" class="absolute top-4 right-4 text-2xl md:hidden">&#10006;</button>
 
         <!-- TOC Content -->
-        <div class="px-4 py-4 space-y-4 ">
+        <div class="px-4 py-10 md:px-4 space-y-4 ">
             <?php
             $sections = [
                 '1. Introduction to React' => [
@@ -217,7 +217,7 @@ function tocLink($label, $link, $currentPage)
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 p-2 mt-4 md:mt-0">
+    <main class="flex-1 p-2 mt-4 md:mt-0 w-full max-w-full overflow-hidden">
         <?php echo $pageContent; ?>
     </main>
 </div>

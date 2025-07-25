@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/error-handling" class="text-blue-600 hover:underline">Error Handling</a>
+                <a href="javascript.php?page=js/error-handling" class="text-blue-600 dark:text-blue-400 hover:underline">Error Handling</a>
             </li>
         </ol>
     </nav>
@@ -22,7 +22,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ try...catch Syntax</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>try {
     // Code that might throw an error
     let result = riskyFunction();
     console.log(result);
@@ -32,7 +32,7 @@
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ Common Error Example</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>try {
     nonExistentFunction(); // This will throw a ReferenceError
 } catch (err) {
     console.error("Caught error:", err);
@@ -40,7 +40,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Optional finally Block</h2>
     <p class="mb-2">Use <code>finally</code> to run code after <code>try/catch</code> regardless of the outcome.</p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>try {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>try {
     console.log("Trying something risky...");
 } catch (err) {
     console.error("Caught an error");
@@ -49,7 +49,7 @@
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚨 Throwing Custom Errors</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function divide(a, b) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function divide(a, b) {
     if (b === 0) {
         throw new Error("Division by zero is not allowed.");
     }
@@ -64,7 +64,7 @@ try {
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Async Error Handling</h2>
     <p class="mb-2">Use <code>try...catch</code> inside <code>async</code> functions for asynchronous error handling.</p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>async function fetchData() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>async function fetchData() {
     try {
         const res = await fetch("https://api.example.com/data");
         const data = await res.json();
@@ -78,8 +78,9 @@ try {
         💡 <strong>Tip:</strong> Always handle both synchronous and asynchronous errors to prevent app crashes.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/project-todo" class="text-blue-600 hover:underline">To-Do List →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/async-await') ?>" class="hover:underline">← Previous: Async / Await</a>
+    <a href="<?= base_url('js/project-todo') ?>" class="hover:underline ms-auto">Next: To-Do List →</a>
 </div>
 
 </main>

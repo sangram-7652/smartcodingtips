@@ -1,3 +1,8 @@
+<?php
+$title = "Empty vs Container | SmartCodingTips";
+$description = "Learn about empty vs container in HTML. Understand key concepts, examples, and usage.";
+$keywords = "empty, vs, container, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Empty elements are self-contained and do not have any content between opening and closing tags. They don’t require a closing tag.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;br&gt; &lt;hr&gt; &lt;img src="logo.png" alt="Logo"&gt; &lt;input type="text"&gt;
             </code></pre>
             <p class=" mt-2">
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 Container elements wrap other content or elements. They consist of an opening tag, content inside, and a closing tag.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is a paragraph.&lt;/p&gt;
 &lt;div&gt;
   &lt;h1&gt;Heading&lt;/h1&gt;
@@ -67,9 +72,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/attributes') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Attributes</a></div>
-    <div><a href="<?= base_url('html/nesting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Tag Nesting →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/attributes') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Attributes</a>
+    <a href="<?= base_url('html/nesting') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Tag Nesting →</a>
 </div>
     </article>
 </main>

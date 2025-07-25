@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Centered Content</h2>
             <p class=" mb-2">Vertically and horizontally center elements using Flexbox:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .center {
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Holy Grail Layout</h2>
             <p class=" mb-2">A classic layout with header, footer, main content, and two sidebars:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-areas:
@@ -57,7 +57,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Sidebar Layout</h2>
             <p class=" mb-2">Two-column layout with sidebar and content:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .wrapper {
     display: flex;
 }
@@ -76,7 +76,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Card Grid Layout</h2>
             <p class=" mb-2">Responsive card grid using CSS Grid:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -89,7 +89,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Sticky Header/Footer</h2>
             <p class=" mb-2">Keep elements fixed to the top or bottom of the viewport:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .header {
     position: sticky;
     top: 0;
@@ -107,9 +107,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Wrapping & Direction</a></div>
-    <div><a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Grid Basics →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Wrapping & Direction</a> 
+   <a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Grid Basics →</a> 
 </div>
 
     </article>

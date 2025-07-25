@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/variables" class="text-blue-600 hover:underline">JavaScript Variables</a>
+                <a href="javascript.php?page=js/variables" class="text-blue-600 dark:text-blue-400 hover:underline">JavaScript Variables</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         <code>var</code> was the original way to declare variables in JavaScript. It has function-level scope and can be redeclared.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>var name = "Alice";
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>var name = "Alice";
 console.log(name); // Alice
 
 var name = "Bob";  // Redeclared
@@ -44,7 +44,7 @@ console.log(name); // Bob
         <code>let</code> is block-scoped and prevents variable redeclaration.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 25;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let age = 25;
 age = 26;      // ✅ Reassignment allowed
 
 let age = 30;  // ❌ Error: Cannot redeclare
@@ -61,7 +61,7 @@ let age = 30;  // ❌ Error: Cannot redeclare
         <code>const</code> is also block-scoped and must be initialized when declared. The value cannot be reassigned.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const PI = 3.1416;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const PI = 3.1416;
 PI = 3.14; // ❌ Error: Assignment to constant variable
 
 const user = { name: "Alice" };
@@ -76,8 +76,8 @@ user.name = "Bob"; // ✅ Allowed (object itself not reassigned)
 
     <h2 class="text-2xl font-semibold mb-2">⚖️ Summary: When to Use What?</h2>
 
-    <div class="dark:bg-gray-900 dark:text-white mb-6">
-        <table class="min-w-full border border-gray-300 text-sm">
+    <div class="dark:bg-gray-800 overflow-x-auto dark:text-white mb-6">
+        <table class="min-w-full  border border-gray-300 text-sm">
             <thead class="bg-gray-100 dark:text-black">
                 <tr>
                     <th class="border dark:border-black px-4 py-2 text-left">Feature</th>
@@ -118,7 +118,8 @@ user.name = "Bob"; // ✅ Allowed (object itself not reassigned)
     <div class="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded">
         <strong>Best Practice:</strong> Use <code>let</code> for variables that will change, and <code>const</code> for those that shouldn’t. Avoid <code>var</code> in modern JavaScript.
     </div>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/data-types" class="text-blue-600 hover:underline">Data Types →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/first-script') ?>" class="hover:underline">← Previous: Your First Script</a>
+    <a href="<?= base_url('js/data-types') ?>" class="hover:underline ms-auto">Next: Data Types →</a>
 </div>
 </main>

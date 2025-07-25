@@ -1,3 +1,8 @@
+<?php
+$title = "Anchor Tag | SmartCodingTips";
+$description = "Learn about anchor tag in HTML. Understand key concepts, examples, and usage.";
+$keywords = "anchor, tag, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 The most common use of the anchor tag is to link to another webpage using the <code>href</code> attribute.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
             </code></pre>
             <p class=" mt-2">
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 Use the <code>target="_blank"</code> attribute to open the link in a new browser tab or window.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example in New Tab&lt;/a&gt;
             </code></pre>
         </section>
@@ -50,7 +55,7 @@
             <p class=" mb-2">
                 You can use the <code>mailto:</code> scheme to let users send an email by clicking the link.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="mailto:info@example.com"&gt;Email Us&lt;/a&gt;
             </code></pre>
         </section>
@@ -60,7 +65,7 @@
             <p class=" mb-2">
                 You can link to an element on the same page using the <code>id</code> attribute.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="#section2"&gt;Go to Section 2&lt;/a&gt;
 
 ...
@@ -86,9 +91,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/quote-cite') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Quote & Citation</a></div>
-    <div><a href="<?= base_url('html/new-tab') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Open in New Tab →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/quote-cite') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Quote & Citation</a>
+    <a href="<?= base_url('html/new-tab') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Open in New Tab →</a>
 </div>
     </article>
 </main>

@@ -82,7 +82,8 @@ include 'includes/header.php';
     <section class="bg-indigo-50 p-6 rounded-lg text-center bg-white text-black dark:bg-gray-900 dark:text-white dark:border">
         <h2 class="text-2xl font-bold mb-2">Join Our Newsletter</h2>
         <p class="text-gray-700 mb-4">Stay updated with the latest tutorials, tips, and tricks.</p>
-        <?php
+        <div class="subscribe_responese">
+             <?php
         if (isset($_GET['subscribed'])) {
             echo '<p class="mt-3 font-semibold">';
             switch ($_GET['subscribed']) {
@@ -102,8 +103,9 @@ include 'includes/header.php';
             echo '</p>';
         }
         ?>
+        </div>
 
-        <form action="subscribe.php" method="POST" class="flex flex-col sm:flex-row justify-center gap-2 max-w-md mx-auto">
+        <form action="<?= base_url('subscribe') ?>" method="POST" class="flex flex-col sm:flex-row justify-center gap-2 max-w-md mx-auto">
             <input type="email" name="email" placeholder="Your email" class="px-4 py-2 rounded border border-gray-300 w-full" required>
             <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Subscribe</button>
         </form>

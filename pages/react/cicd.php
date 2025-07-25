@@ -25,7 +25,7 @@
 
   <!-- Step 1 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📁 1. Create a <code>.env</code> File</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 REACT_APP_API_URL=https://api.example.com
 REACT_APP_FIREBASE_KEY=your-firebase-api-key
 </code></pre>
@@ -36,7 +36,7 @@ REACT_APP_FIREBASE_KEY=your-firebase-api-key
 
   <!-- Step 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 2. Use in Your Code</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const apiUrl = process.env.REACT_APP_API_URL;
 
 fetch(`${apiUrl}/posts`)
@@ -49,7 +49,7 @@ fetch(`${apiUrl}/posts`)
   <p class="text-black dark:text-gray-300 mb-4">
     After editing <code>.env</code>, restart the dev server:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npm start
 # or
 yarn start
@@ -60,7 +60,7 @@ yarn start
   <p class="text-black dark:text-gray-300">
     Add your <code>.env</code> file to <code>.gitignore</code> to prevent accidental leaks of secrets:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 # .gitignore
 .env
 </code></pre>
@@ -79,9 +79,9 @@ yarn start
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/env-vars-deploy') ?>" class="hover:underline">← Previous: Env Variables</a>
-  <a href="<?= base_url('react/free-domain') ?>" class="hover:underline">Next: Free Domain →</a>
+  <a href="<?= base_url('react/free-domain') ?>" class="hover:underline ms-auto">Next: Free Domain →</a>
 </div>
 
 </main>

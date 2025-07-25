@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. flex-direction</h2>
             <p class=" mb-2">The <code>flex-direction</code> property sets the direction of the main axis along which flex items are placed:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     flex-direction: row;        /* default: left to right */
@@ -41,7 +41,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. flex-wrap</h2>
             <p class=" mb-2">The <code>flex-wrap</code> property allows items to wrap onto multiple lines if needed:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-wrap: nowrap;      /* default */
     flex-wrap: wrap;        /* wrap items to next line */
@@ -54,7 +54,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. flex-flow (Shorthand)</h2>
             <p class=" mb-2">The <code>flex-flow</code> shorthand combines <code>flex-direction</code> and <code>flex-wrap</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-container {
     flex-flow: row wrap;
 }
@@ -65,7 +65,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Responsive Layout Example</h2>
             <p class=" mb-2">Allow content to wrap on smaller screens for better responsiveness:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -92,9 +92,9 @@
                 Understanding <code>flex-direction</code> and <code>flex-wrap</code> helps you create adaptable, fluid layouts that respond well to different screen sizes and content volumes.
             </p>
         </section>
-<div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/flexbox-align') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Aligning Items</a></div>
-    <div><a href="<?= base_url('css/flexbox-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Layout Patterns →</a></div>
+<div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/flexbox-align') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Aligning Items</a> 
+   <a href="<?= base_url('css/flexbox-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Layout Patterns →</a> 
 </div>
     </article>
 </main>

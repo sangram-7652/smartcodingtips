@@ -99,8 +99,8 @@
   </p>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/why-react') ?>" class="hover:underline">← Previous: Why Use React?</a>
-  <a href="<?= base_url('react/setup') ?>" class="hover:underline">Next: Setting Up React →</a>
+  <a href="<?= base_url('react/setup') ?>" class="hover:underline ms-auto">Next: Setting Up React →</a>
 </div>
 </main>

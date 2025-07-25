@@ -1,3 +1,8 @@
+<?php
+$title = "Images | SmartCodingTips";
+$description = "Learn about images in HTML. Understand key concepts, examples, and usage.";
+$keywords = "images, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -102,9 +107,9 @@ img {
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/nav-menu') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Nav Menus with Lists</a></div>
-    <div><a href="<?= base_url('html/image-formats') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Supported Formats →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/nav-menu') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Nav Menus with Lists</a>
+    <a href="<?= base_url('html/image-formats') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Supported Formats →</a>
 </div>
     </article>
 </main>

@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/js-vs-html-css" class="text-blue-600 hover:underline">JavaScript vs HTML/CSS</a>
+                <a href="javascript.php?page=js/js-vs-html-css" class="text-blue-600 dark:text-blue-400 hover:underline">JavaScript vs HTML/CSS</a>
             </li>
         </ol>
     </nav>
@@ -22,7 +22,7 @@
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <div class="bg-blue-100 dark:bg-gray-900 dark:text-white p-4 rounded shadow">
+        <div class="bg-blue-100 dark:bg-gray-800 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">🔤 HTML (Structure)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Defines page content & structure</li>
@@ -32,7 +32,7 @@
             </ul>
         </div>
 
-        <div class="bg-green-100  dark:bg-gray-900 dark:text-white p-4 rounded shadow">
+        <div class="bg-green-100  dark:bg-gray-800 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">🎨 CSS (Style)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Controls design and presentation</li>
@@ -42,7 +42,7 @@
             </ul>
         </div>
 
-        <div class="bg-yellow-100  dark:bg-gray-900 dark:text-white p-4 rounded shadow">
+        <div class="bg-yellow-100  dark:bg-gray-800 dark:text-white p-4 rounded shadow">
             <h2 class="text-xl font-bold mb-2">⚙️ JavaScript (Behavior)</h2>
             <ul class="list-disc list-inside text-sm">
                 <li>Adds interactivity & logic</li>
@@ -54,7 +54,7 @@
     </div>
 
     <h2 class="text-2xl font-semibold mb-2">📊 Comparison Table</h2>
-    <div class="dark:bg-gray-900 dark:text-white mb-6">
+    <div class="dark:bg-gray-800 dark:text-white mb-6">
         <table class="min-w-full border border-gray-300 text-sm">
             <thead class="bg-gray-100 dark:text-black text-left">
                 <tr>
@@ -101,9 +101,11 @@
 
     <div class="bg-green-50 border-l-4 border-green-400 text-green-800 p-4 rounded">
         <strong>Tip:</strong> Think of it like this: <em>HTML is the skeleton, CSS is the skin, JavaScript is the brain.</em>
-    </div>
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/running-js" class="text-blue-600 hover:underline">Where JavaScript Runs →</a></p>
+    </div>        
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/history') ?>" class="hover:underline">← Previous: History and Evolution</a>
+    <a href="<?= base_url('js/running-js') ?>" class="hover:underline ms-auto">Next: Where JavaScript Runs →</a>
+
 </div>
 
 

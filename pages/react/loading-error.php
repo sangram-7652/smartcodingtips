@@ -81,9 +81,9 @@ export default UsersList;
   <p class="text-black dark:text-white">This pattern is helpful in real-world apps where user feedback is critical.</p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/fetch-with-effect') ?>" class="hover:underline">← Previous: useEffect + fetch</a>
-  <a href="<?= base_url('react/axios') ?>" class="hover:underline">Next: Axios →</a>
+  <a href="<?= base_url('react/axios') ?>" class="hover:underline ms-auto">Next: Axios →</a>
 </div>
 
 </main>

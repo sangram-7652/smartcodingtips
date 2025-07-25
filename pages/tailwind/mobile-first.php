@@ -38,7 +38,7 @@
             <p class=" mb-2">
                 Any utility class without a prefix is applied to **all screen sizes**, starting from the smallest. For example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="text-sm md:text-base lg:text-xl"&gt;Responsive Text&lt;/div&gt;
             </code></pre>
             <p class=" mt-2">
@@ -65,7 +65,7 @@
             <p class=" mt-2">
                 These breakpoints allow you to scale layouts and styles progressively:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="p-2 md:p-4 lg:p-6"&gt;Adaptive Padding&lt;/div&gt;
             </code></pre>
         </section>
@@ -76,7 +76,7 @@
             <p class=" mb-2">
                 A responsive card layout might look like:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"&gt;
     &lt;!-- Cards here --&gt;
 &lt;/div&gt;
@@ -104,9 +104,9 @@
             </p>
         </section>
 
-      <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+      <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/translate') ?>" class="hover:underline">← Previous: Translate, Skew, Rotate, Origin</a>
-  <a href="<?= base_url('tailwind/breakpoints') ?>" class="hover:underline">Next: Breakpoints →</a>
+  <a href="<?= base_url('tailwind/breakpoints') ?>" class="hover:underline ms-auto">Next: Breakpoints →</a>
 </div>
 
     </article>

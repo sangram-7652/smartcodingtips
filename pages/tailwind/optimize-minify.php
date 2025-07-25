@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Setting Up PostCSS</h2>
             <p class=" mb-2">Install PostCSS, Tailwind, and Autoprefixer using npm:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
             </code></pre>
@@ -36,7 +36,7 @@ npx tailwindcss init -p
         <!-- PostCSS Config -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Configure <code>postcss.config.js</code></h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -51,7 +51,7 @@ module.exports = {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Build and Minify</h2>
             <p class=" mb-2">Run the Tailwind CLI with <code>--minify</code> to minify the CSS:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
             </code></pre>
             <p class=" mt-2">This creates a compact production-ready CSS file.</p>
@@ -60,7 +60,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
         <!-- Example Structure -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Typical Project Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 ├── src/
 │   └── input.css     ← @tailwind base/components/utilities
 ├── dist/
@@ -88,9 +88,9 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/optimize-purge') ?>" class="hover:underline">← Previous: Purging Unused CSS for Production</a>
-  <a href="<?= base_url('tailwind/optimize-bloat') ?>" class="hover:underline">Next: Avoiding Class Bloat →</a>
+  <a href="<?= base_url('tailwind/optimize-bloat') ?>" class="hover:underline ms-auto">Next: Avoiding Class Bloat →</a>
 </div>
     </article>
 </main>

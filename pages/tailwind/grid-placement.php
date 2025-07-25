@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Column and Row Placement</h2>
             <p class=" mb-2">You can control where elements appear in the grid using start and span utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-4 gap-4"&gt;
     &lt;div class="bg-indigo-200 col-start-2 col-span-2 p-4"&gt;
         Spans from column 2 to 4
@@ -44,7 +44,7 @@
             <p class=" mb-2">
                 Tailwind does not support named grid areas directly, but you can extend it via <code>@layer</code> and apply custom CSS:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 /* tailwind.config.js */
 module.exports = {
   theme: {
@@ -62,7 +62,7 @@ module.exports = {
 }
             </pre>
 
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mt-4">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mt-4">
 &lt;div class="grid [grid-template-areas:'header_header''sidebar_content''footer_footer'] grid-cols-2 gap-4"&gt;
     &lt;header class="[grid-area:header] bg-blue-300 p-4"&gt;Header&lt;/header&gt;
     &lt;aside class="[grid-area:sidebar] bg-blue-200 p-4"&gt;Sidebar&lt;/aside&gt;
@@ -81,7 +81,7 @@ module.exports = {
             <p class=" mb-2">
                 If you don’t specify start or span, Tailwind will auto-place items based on document order:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 gap-4"&gt;
     &lt;div class="bg-gray-200 p-4"&gt;1&lt;/div&gt;
     &lt;div class="bg-gray-300 p-4"&gt;2&lt;/div&gt;
@@ -98,9 +98,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/grid-gap') ?>" class="hover:underline">← Previous: Gap, Auto-Fill, Auto-Fit</a>
-  <a href="<?= base_url('tailwind/grid-nested') ?>" class="hover:underline">Next: Nested Grids →</a>
+  <a href="<?= base_url('tailwind/grid-nested') ?>" class="hover:underline ms-auto">Next: Nested Grids →</a>
 </div>
     </article>
 </main>

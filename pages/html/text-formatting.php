@@ -1,3 +1,9 @@
+<?php
+$title = "Bold, Italic, etc. | SmartCodingTips";
+$description = "Learn about bold, italic, etc. in HTML. Understand key concepts, examples, and usage.";
+$keywords = "bold, italic, etc, html tutorial, html basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +33,7 @@
             <p class=" mb-2">
                 Use the <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> tag to make text bold. <code>&lt;strong&gt;</code> also adds semantic importance.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;
 &lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
             </code></pre>
@@ -38,7 +44,7 @@
             <p class=" mb-2">
                 Italic text is used for emphasis or citation. Use <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> tags.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is &lt;i&gt;italic&lt;/i&gt; text.&lt;/p&gt;
 &lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
             </code></pre>
@@ -49,7 +55,7 @@
             <p class=" mb-2">
                 The <code>&lt;u&gt;</code> tag is used for underlining, though it's not commonly used for emphasis in modern HTML.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;This is &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt;
             </code></pre>
         </section>
@@ -59,7 +65,7 @@
             <p class=" mb-2">
                 You can combine these tags to apply multiple styles to the same piece of text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Bold and Italic&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
             </code></pre>
         </section>
@@ -71,9 +77,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/text-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Paragraphs & Headings</a></div>
-    <div><a href="<?= base_url('html/super-sub') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Superscript & Subscript →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/text-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Paragraphs & Headings</a>
+    <a href="<?= base_url('html/super-sub') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Superscript & Subscript →</a>
 </div>
     </article>
 </main>

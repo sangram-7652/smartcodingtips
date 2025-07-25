@@ -1,3 +1,8 @@
+<?php
+$title = "Open in New Tab | SmartCodingTips";
+$description = "Learn about open in new tab in HTML. Understand key concepts, examples, and usage.";
+$keywords = "open, in, new, tab, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 To open a link in a new tab, set the <code>target</code> attribute to <code>_blank</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
             </code></pre>
             <p class=" mt-2">
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 For better security and performance, it's recommended to also include the <code>rel="noopener noreferrer"</code> attribute when using <code>target="_blank"</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white    "><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white    "><code class="text-sm">
 &lt;a href="https://www.example.com" target="_blank" rel="noopener noreferrer"&gt;Secure Link&lt;/a&gt;
             </code></pre>
             <p class=" mt-2">
@@ -64,9 +69,9 @@
             </p>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/anchor-tag') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Anchor Tag</a></div>
-    <div><a href="<?= base_url('html/page-jump') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Page Jumps →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/anchor-tag') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Anchor Tag</a>
+    <a href="<?= base_url('html/page-jump') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Page Jumps →</a>
 </div>
     </article>
 </main>

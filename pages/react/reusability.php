@@ -34,7 +34,7 @@
   <!-- Principle 2 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Component Abstraction</h2>
   <p class="mb-2 text-black dark:text-gray-300">Break UI into smaller, self-contained components:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // Reusable Button component
 function Button({ children, onClick }) {
   return (
@@ -48,7 +48,7 @@ function Button({ children, onClick }) {
   <!-- Principle 3 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎣 3. Reusable Hooks</h2>
   <p class="mb-2 text-black dark:text-gray-300">Encapsulate logic in custom hooks to avoid repetition:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useState, useEffect } from 'react';
 
 function useFetch(url) {
@@ -65,7 +65,7 @@ function useFetch(url) {
   <!-- Principle 4 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎛️ 4. Props for Configurability</h2>
   <p class="mb-2 text-black dark:text-gray-300">Design components to accept props for flexible reuse:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 function Alert({ type, message }) {
   const bg = type === 'error' ? 'bg-red-500' : 'bg-green-500';
   return &lt;div className={`text-white p-3 rounded ${bg}`}&gt;{message}&lt;/div&gt;;
@@ -77,7 +77,7 @@ function Alert({ type, message }) {
   <p class="text-black dark:text-gray-300 mb-6">
     React encourages composing components with children instead of extending them.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function Card({ children }) {
   return &lt;div className="shadow p-4 rounded"&gt;{children}&lt;/div&gt;;
 }
@@ -100,9 +100,9 @@ function Card({ children }) {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/conditional-styles') ?>" class="hover:underline">← Previous: Conditional Styling</a>
-  <a href="<?= base_url('react/compound') ?>" class="hover:underline">Next: Compound Components →</a>
+  <a href="<?= base_url('react/compound') ?>" class="hover:underline ms-auto">Next: Compound Components →</a>
 </div>
 
 </main>

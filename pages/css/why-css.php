@@ -78,9 +78,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/what-is-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: What is CSS?</a></div>
-    <div><a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Types of CSS →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/what-is-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: What is CSS?</a> 
+   <a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Types of CSS →</a> 
 </div>
     </article>
 </main>

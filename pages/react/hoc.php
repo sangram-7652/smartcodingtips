@@ -31,7 +31,7 @@
 
   <!-- Basic Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 2. Example: WithLoading HOC</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function withLoading(Component) {
   return function WrappedComponent({ isLoading, ...props }) {
     if (isLoading) {
@@ -44,7 +44,7 @@ function withLoading(Component) {
 
   <!-- Usage -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 3. Usage</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function UserList({ users }) {
   return (
     &lt;ul&gt;
@@ -85,8 +85,8 @@ const UserListWithLoading = withLoading(UserList);
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/render-props') ?>" class="hover:underline">← Previous: Render Props</a>
-  <a href="<?= base_url('react/component-libs') ?>" class="hover:underline">Next: UI Libraries →</a>
+  <a href="<?= base_url('react/component-libs') ?>" class="hover:underline ms-auto">Next: UI Libraries →</a>
 </div>
 </main>

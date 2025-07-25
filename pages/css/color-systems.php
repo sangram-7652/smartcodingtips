@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 Hex values use a <code>#</code> followed by six (or three) digits representing red, green, and blue in hexadecimal.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Full hex */
 h1 {
     color: #1e90ff;
@@ -48,7 +48,7 @@ p {
             <p class=" mb-2">
                 RGB defines color using Red, Green, and Blue components (0 to 255). RGBA adds an alpha (opacity) channel.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div {
     background-color: rgb(255, 99, 71); /* Tomato */
 }
@@ -64,7 +64,7 @@ div.transparent {
             <p class=" mb-2">
                 HSL stands for Hue (0–360), Saturation (%), and Lightness (%). HSLA includes Alpha (opacity).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     background-color: hsl(200, 100%, 50%);
 }
@@ -94,9 +94,9 @@ div.transparent {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Alignment & Decoration</a></div>
-    <div><a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Units: px, %, em, rem →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Alignment & Decoration</a> 
+   <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Units: px, %, em, rem →</a> 
 </div>
     </article>
 </main>

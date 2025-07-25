@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/promises" class="text-blue-600 hover:underline">Promises</a>
+                <a href="javascript.php?page=js/promises" class="text-blue-600 dark:text-blue-400 hover:underline">Promises</a>
             </li>
         </ol>
     </nav>
@@ -29,7 +29,7 @@
     </ul>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 Basic Syntax</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const promise = new Promise((resolve, reject) => {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const promise = new Promise((resolve, reject) => {
     const success = true;
 
     if (success) {
@@ -44,7 +44,7 @@ promise
     .catch(error => console.error(error));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">💡 Example: Simulate API</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function fetchData() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function fetchData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("📦 Data received");
@@ -57,7 +57,7 @@ fetchData()
     .catch(err => console.error(err));</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Chaining Promises</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>fetchData()
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>fetchData()
     .then(data => {
         console.log(data);
         return "🔍 Processing data";
@@ -76,7 +76,8 @@ fetchData()
         💡 <strong>Tip:</strong> Promises are a foundation for modern JavaScript async tools like <code>fetch()</code> and <code>async/await</code>.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/async-await" class="text-blue-600 hover:underline">Async / Await →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/callbacks') ?>" class="hover:underline">← Previous: Callbacks</a>
+    <a href="<?= base_url('js/async-await') ?>" class="hover:underline ms-auto">Next: Async / Await →</a>
 </div>
 </main>

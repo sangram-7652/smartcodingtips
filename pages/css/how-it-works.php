@@ -40,7 +40,7 @@
             <p class=" mb-2">
                 CSS uses selectors to target HTML elements, and applies rules (properties and values) to style them.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     color: red;
     font-size: 18px;
@@ -92,9 +92,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Types of CSS</a></div>
-    <div><a href="<?= base_url('css/setup') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Setup Your First File →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Types of CSS</a> 
+   <a href="<?= base_url('css/setup') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Setup Your First File →</a> 
 </div>
     </article>
 </main>

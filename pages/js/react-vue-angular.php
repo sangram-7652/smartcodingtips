@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/framework-comparison" class="text-blue-600 hover:underline">React / Vue / Angular</a>
+        <a href="javascript.php?page=js/framework-comparison" class="text-blue-600 dark:text-blue-400 hover:underline">React / Vue / Angular</a>
       </li>
     </ol>
   </nav>
@@ -47,7 +47,7 @@
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📋 Feature Comparison Table</h2>
-  <div class="dark:bg-gray-900 dark:text-white">
+  <div class="dark:bg-gray-800 dark:text-white">
     <table class="table-auto w-full text-left border border-gray-300 text-sm mb-6">
       <thead class="bg-gray-100  dark:text-black">">
         <tr>
@@ -106,7 +106,9 @@
     ✨ <strong>Tip:</strong> Start with React or Vue if you're new. Learn Angular if you're planning to work in enterprise-level teams or with TypeScript-heavy stacks.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/node-npm" class="text-blue-600 hover:underline">Node.js & npm →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-crud') ?>" class="hover:underline">← Previous: Simple CRUD</a>
+    <a href="<?= base_url('js/react-vue-angular') ?>" class="hover:underline ms-auto">Next: React / Vue / Angular →</a>
 </div>
+
 </main>

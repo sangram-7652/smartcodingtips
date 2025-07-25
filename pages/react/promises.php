@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     A Promise is an object that represents a future value. It can be in one of three states: <code>pending</code>, <code>fulfilled</code>, or <code>rejected</code>.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Data loaded!");
@@ -43,7 +43,7 @@ promise.then(data => console.log(data));
   <p class="text-black dark:text-gray-300 mb-4">
     <code>async/await</code> is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 async function fetchData() {
   const response = await fetch("https://api.example.com/data");
   const data = await response.json();
@@ -55,7 +55,7 @@ fetchData();
 
   <!-- Try/Catch -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚠️ 3. Error Handling with try/catch</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 async function fetchUser() {
   try {
     const res = await fetch("/user");
@@ -72,7 +72,7 @@ async function fetchUser() {
   <p class="text-black dark:text-gray-300 mb-4">
     Async calls should be handled inside <code>useEffect</code> for side effects like API calls:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useEffect, useState } from "react";
 
 function Users() {
@@ -105,9 +105,9 @@ function Users() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/component-libs') ?>" class="hover:underline">← Previous: UI Libraries</a>
-  <a href="<?= base_url('react/async-state') ?>" class="hover:underline">Next: Handling Async State →</a>
+  <a href="<?= base_url('react/async-state') ?>" class="hover:underline ms-auto">Next: Handling Async State →</a>
 </div>
 
 </main>

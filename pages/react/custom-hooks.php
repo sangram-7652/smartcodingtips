@@ -27,7 +27,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Custom hooks start with <code>use</code> and can contain any reusable logic.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // useCounter.js
 import { useState } from 'react';
 
@@ -47,7 +47,7 @@ export default useCounter;
   <p class="mb-2 text-black dark:text-gray-300">
     Use it just like a built-in hook:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import useCounter from './useCounter';
 
 function CounterComponent() {
@@ -80,9 +80,9 @@ function CounterComponent() {
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/use-callback') ?>" class="hover:underline">← Previous: useCallback()</a>
-  <a href="<?= base_url('react/state-strategies') ?>" class="hover:underline">Next: Props vs Context vs Redux →</a>
+  <a href="<?= base_url('react/state-strategies') ?>" class="hover:underline ms-auto">Next: Props vs Context vs Redux →</a>
 </div>
 
 </main>

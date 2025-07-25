@@ -26,7 +26,7 @@
 
   <!-- Basic Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 Basic Usage</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import React, { useEffect, useState } from 'react';
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import React, { useEffect, useState } from 'react';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -50,7 +50,7 @@ function App() {
 
   <!-- Dependency Array -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📌 useEffect with Dependency Array</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
   console.log('Runs only once on mount');
 }, []);
 </code></pre>
@@ -62,7 +62,7 @@ function App() {
 
   <!-- Fetching Data -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🌐 Fetching Data</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
   async function fetchData() {
     const res = await fetch('https://api.example.com/data');
     const data = await res.json();
@@ -78,7 +78,7 @@ function App() {
 
   <!-- Cleanup -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧹 Cleanup Function</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>useEffect(() => {
   const interval = setInterval(() => {
     console.log('Running every second...');
   }, 1000);
@@ -101,9 +101,9 @@ function App() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/use-state') ?>" class="hover:underline">← Previous: useState()</a>
-  <a href="<?= base_url('react/use-effect-cleanup') ?>" class="hover:underline">Next: Cleanup in useEffect →</a>
+  <a href="<?= base_url('react/use-effect-cleanup') ?>" class="hover:underline ms-auto">Next: Cleanup in useEffect →</a>
 </div>
 
 </main>

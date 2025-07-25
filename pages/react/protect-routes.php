@@ -25,7 +25,7 @@
 
   <!-- Setup Auth Context -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔧 1. Setup Authentication Context</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
@@ -44,7 +44,7 @@ export const useAuth = () =&gt; useContext(AuthContext);
 
   <!-- Create Protected Route -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🛡️ 2. Create a ProtectedRoute Component</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { Navigate } from 'react-router-dom';
 import { useAuth } from './AuthContext';
 
@@ -61,7 +61,7 @@ function ProtectedRoute({ children }) {
 
   <!-- Use in Routes -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🗺️ 3. Using ProtectedRoute in App</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
@@ -86,7 +86,7 @@ function App() {
 
   <!-- Set Auth on Login -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔑 4. Updating Auth State on Login</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { useAuth } from './AuthContext';
 
 function Login() {
@@ -111,9 +111,9 @@ function Login() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/rate-limit') ?>" class="hover:underline">← Previous: Rate Limiting</a>
-  <a href="<?= base_url('react/project-counter') ?>" class="hover:underline">Next: Counter App →</a>
+  <a href="<?= base_url('react/project-counter') ?>" class="hover:underline ms-auto">Next: Counter App →</a>
 </div>
 
 </main>

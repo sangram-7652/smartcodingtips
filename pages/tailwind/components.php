@@ -25,7 +25,7 @@
         <!-- Navbar -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">1. Responsive Navbar</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;nav class="bg-gray-800 text-white p-4"&gt;
     &lt;div class="max-w-6xl mx-auto flex justify-between items-center"&gt;
         &lt;div class="text-xl font-bold"&gt;MySite&lt;/div&gt;
@@ -44,7 +44,7 @@
         <!-- Card -->
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">2. Reusable Card Component</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="max-w-sm bg-white shadow-md rounded-lg overflow-hidden"&gt;
     &lt;img src="https://via.placeholder.com/400x200" alt="Card Image" class="w-full"&gt;
     &lt;div class="p-4"&gt;
@@ -60,7 +60,7 @@
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">3. Modal Component</h2>
             <p class=" mb-2">Use Tailwind classes and Alpine.js or JavaScript to control modal visibility.</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;!-- Modal Background --&gt;
 &lt;div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden" id="modal"&gt;
     &lt;div class="bg-white p-6 rounded shadow-lg w-1/2"&gt;
@@ -86,9 +86,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/reuse') ?>" class="hover:underline">← Previous: Extracting Reusable Components</a>
-  <a href="<?= base_url('tailwind/js-frameworks') ?>" class="hover:underline">Next: Tailwind with React/Vue Templates →</a>
+  <a href="<?= base_url('tailwind/js-frameworks') ?>" class="hover:underline ms-auto">Next: Tailwind with React/Vue Templates →</a>
 </div>
 
     </article>

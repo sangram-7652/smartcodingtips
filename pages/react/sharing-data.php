@@ -72,9 +72,9 @@ const theme = React.useContext(ThemeContext);</code></pre>
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/callback-props') ?>" class="hover:underline">← Previous: Callback Props</a>
-  <a href="<?= base_url('react/context-intro') ?>" class="hover:underline">Next: Context API Intro →</a>
+  <a href="<?= base_url('react/context-intro') ?>" class="hover:underline ms-auto">Next: Context API Intro →</a>
 </div>
 
 </main>

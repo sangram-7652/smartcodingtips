@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. HTML Structure</h2>
             <p class=" mb-2">Use a simple flex or grid layout for your pricing cards:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 <div class="pricing-table">
     <div class="pricing-card">
         <h3>Basic</h3>
@@ -47,7 +47,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. CSS Styling</h2>
             <p class=" mb-2">Here's a basic responsive pricing table style using Flexbox:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .pricing-table {
     display: flex;
     flex-wrap: wrap;
@@ -108,7 +108,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Highlight Featured Plan</h2>
             <p class=" mb-2">Use a special class to draw attention to the most popular plan:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .pricing-card.featured {
     border: 2px solid #2563eb;
     background-color: #f0f9ff;
@@ -135,9 +135,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/portfolio-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Portfolio Project</a></div>
-    <div><a href="<?= base_url('css/navbar-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Animated Navbar →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/portfolio-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Portfolio Project</a> 
+   <a href="<?= base_url('css/navbar-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Animated Navbar →</a> 
 </div>
     </article>
 </main>

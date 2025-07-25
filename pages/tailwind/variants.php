@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Prefix classes with breakpoints like <code>sm:</code>, <code>md:</code>, <code>lg:</code> to apply styles at specific screen widths.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="text-sm sm:text-base md: lg:text-xl"&gt;
   Responsive Text Size
 &lt;/div&gt;
@@ -42,7 +42,7 @@
             <p class=" mb-2">
                 Tailwind includes variants for interaction states like <code>hover:</code>, <code>focus:</code>, <code>active:</code>, and more.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;button class="bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 text-white py-2 px-4 rounded"&gt;
   Hover & Focus Me
 &lt;/button&gt;
@@ -53,7 +53,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Group Hover Example</h2>
             <p class=" mb-2">Use <code>group</code> on the parent and <code>group-hover:</code> on child elements:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="group p-4 bg-gray-100 hover:bg-gray-200"&gt;
   &lt;h3 class="text-xl font-semibold group-hover:text-blue-600 dark:text-blue-400"&gt;
     Hover to change heading color
@@ -66,7 +66,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Combining Variants</h2>
             <p class=" mb-2">You can combine responsive and state variants:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;button class="text-sm sm:text-base hover:bg-green-500 focus:outline-none focus:ring-2"&gt;
   Responsive Button
 &lt;/button&gt;
@@ -79,7 +79,7 @@
             <p class=" mb-2">
                 You can control which variants are generated in your <code>tailwind.config.js</code> file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 // tailwind.config.js
 module.exports = {
   variants: {
@@ -100,9 +100,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/semantic-html') ?>" class="hover:underline">← Previous: Writing Semantic HTML with Utilities</a>
-  <a href="<?= base_url('tailwind/jit-purge') ?>" class="hover:underline">Next: How Tailwind Applies Styles →</a>
+  <a href="<?= base_url('tailwind/jit-purge') ?>" class="hover:underline ms-auto">Next: How Tailwind Applies Styles →</a>
 </div>
 
     </article>

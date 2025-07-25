@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 <code>calc()</code> lets you perform calculations within CSS property values.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .element {
     width: calc(100% - 40px);
     margin-top: calc(2rem + 10px);
@@ -46,7 +46,7 @@
             <p class=" mb-2">
                 <code>clamp()</code> defines a value that adapts between a minimum, preferred, and maximum:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 {
     font-size: clamp(1.5rem, 4vw, 3rem);
 }
@@ -86,9 +86,9 @@ h1 {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/font-face') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Custom Fonts</a></div>
-    <div><a href="<?= base_url('css/sticky-scroll') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Sticky Scroll →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/font-face') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Custom Fonts</a> 
+   <a href="<?= base_url('css/sticky-scroll') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Sticky Scroll →</a> 
 </div>
     </article>
 </main>

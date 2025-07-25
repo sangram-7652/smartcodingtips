@@ -1,7 +1,7 @@
 <?php
 $title = "What is HTML? | SmartCodingTips";
-$description = "HTML is the standard language for building web pages. Learn what HTML is, its structure, and key features.";
-$keywords = "what is html, html tutorial, html basics";
+$description = "Learn about what is html? in HTML. Understand key concepts, examples, and usage.";
+$keywords = "what, is, html, html tutorial, html basics";
 ?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
@@ -39,7 +39,7 @@ $keywords = "what is html, html tutorial, html basics";
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic Structure of an HTML Document</h2>
             <p class="  mb-2">Every HTML page follows a specific structure, like this:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap bg-white text-black dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto  bg-white text-black dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -67,9 +67,9 @@ $keywords = "what is html, html tutorial, html basics";
             <p class=" ">HTML is the first language every web developer must learn. It lays the foundation for structuring and displaying content on the web. With its simple syntax and powerful features, HTML is the stepping stone toward building websites and web applications.</p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
             <div></div>
-            <div><a href="<?= base_url('html/features') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Features of HTML →</a></div>
+            <a href="<?= base_url('html/features') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Features of HTML →</a>
         </div>
     </article>
 </main>

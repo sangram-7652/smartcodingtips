@@ -1,3 +1,8 @@
+<?php
+$title = "Importance in Web Dev | SmartCodingTips";
+$description = "Learn about importance in web dev in HTML. Understand key concepts, examples, and usage.";
+$keywords = "importance, in, web, dev, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -48,9 +53,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/features') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Features of HTML</a></div>
-    <div><a href="<?= base_url('html/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: How HTML Works →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/features') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Features of HTML</a>
+    <a href="<?= base_url('html/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: How HTML Works →</a>
 </div>
     </article>
 </main>

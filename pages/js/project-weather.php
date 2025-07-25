@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/weather-app" class="text-blue-600 hover:underline">Weather App</a>
+                <a href="javascript.php?page=js/weather-app" class="text-blue-600 dark:text-blue-400 hover:underline">Weather App</a>
             </li>
         </ol>
     </nav>
@@ -22,14 +22,14 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔧 HTML Structure</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;div id="weather-container"&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;div id="weather-container"&gt;
     &lt;input type="text" id="city" placeholder="Enter city" /&gt;
     &lt;button id="getWeather"&gt;Get Weather&lt;/button&gt;
     &lt;div id="weatherResult"&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📜 JavaScript Code</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
 
 document.getElementById("getWeather").addEventListener("click", () => {
     const city = document.getElementById("city").value;
@@ -61,7 +61,7 @@ document.getElementById("getWeather").addEventListener("click", () => {
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎨 Optional Styling</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;style&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;style&gt;
 #weather-container {
     max-width: 400px;
     margin: auto;
@@ -93,7 +93,8 @@ button {
         <li>Error handling and validation</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/project-calculator" class="text-blue-600 hover:underline">Calculator →</a></p>
-</div>  
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/project-todo') ?>" class="hover:underline">← Previous: To-Do List</a>
+    <a href="<?= base_url('js/project-calculator') ?>" class="hover:underline ms-auto">Next: Calculator →</a>
+</div>
 </main>

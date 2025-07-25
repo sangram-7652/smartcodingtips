@@ -105,9 +105,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/product-card') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Product Card</a></div>
-    <div><a href="<?= base_url('css/bem-naming') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: BEM Naming →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/product-card') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Product Card</a> 
+   <a href="<?= base_url('css/bem-naming') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: BEM Naming →</a> 
 </div>
 
     </article>

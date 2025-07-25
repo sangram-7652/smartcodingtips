@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Enabling Grid</h2>
             <p class=" mb-2">To start using grid, apply <code>display: grid;</code> to the container element:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
 }
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Defining Columns and Rows</h2>
             <p class=" mb-2">Use <code>grid-template-columns</code> and <code>grid-template-rows</code> to define structure:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     grid-template-columns: 200px 1fr 100px;
@@ -50,7 +50,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Adding Gaps</h2>
             <p class=" mb-2">Use <code>gap</code> (or <code>row-gap</code> and <code>column-gap</code>) to create spacing between grid items:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     display: grid;
     gap: 20px;
@@ -62,7 +62,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Placing Items</h2>
             <p class=" mb-2">You can place items in specific grid areas using line numbers:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .item {
     grid-column: 1 / 3;  /* spans column 1 to 2 */
     grid-row: 2 / 4;     /* spans row 2 to 3 */
@@ -74,7 +74,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Repeat Syntax</h2>
             <p class=" mb-2">Use <code>repeat()</code> to simplify repeated values:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -85,7 +85,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">6. Auto-fit and Auto-fill</h2>
             <p class=" mb-2">Create responsive grids with flexible columns:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -100,9 +100,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/flexbox-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Layout Patterns</a></div>
-    <div><a href="<?= base_url('css/grid-template') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Grid Template Areas →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/flexbox-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Layout Patterns</a> 
+   <a href="<?= base_url('css/grid-template') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Grid Template Areas →</a> 
 </div>
     </article>
 </main>

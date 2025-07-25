@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Applying Text Color</h2>
             <p class=" mb-2">Use <code>text-{color}</code> to set text color:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;p class="text-red-600"&gt;This is red text&lt;/p&gt;
 &lt;p class="text-green-500"&gt;Success message&lt;/p&gt;
 &lt;p class="text-gray-700"&gt;Subtle gray text&lt;/p&gt;
@@ -42,7 +42,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Applying Background Color</h2>
             <p class=" mb-2">Use <code>bg-{color}</code> to set background color:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-blue-100 text-blue-800 p-4 rounded"&gt;Informational box&lt;/div&gt;
 &lt;div class="bg-yellow-200 text-yellow-800 p-4 rounded"&gt;Warning message&lt;/div&gt;
 &lt;div class="bg-gray-100 text-gray-700 p-4 rounded"&gt;Note&lt;/div&gt;
@@ -58,7 +58,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Interactive States</h2>
             <p class=" mb-2">Combine with state prefixes like <code>hover:</code>, <code>focus:</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"&gt;Hover Me&lt;/button&gt;
             </pre>
             <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mt-2">Hover Me</button>
@@ -68,7 +68,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Color Opacity</h2>
             <p class=" mb-2">Use <code>/opacity</code> to make colors more transparent:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-red-500/20 p-4"&gt;Subtle red background&lt;/div&gt;
 &lt;p class="text-black/60"&gt;Muted black text&lt;/p&gt;
             </pre>
@@ -96,9 +96,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/text-color') ?>" class="hover:underline">← Previous: Color Utilities and Custom Colors</a>
-  <a href="<?= base_url('tailwind/gradients') ?>" class="hover:underline">Next: Gradients →</a>
+  <a href="<?= base_url('tailwind/gradients') ?>" class="hover:underline ms-auto">Next: Gradients →</a>
 </div>
     </article>
 </main>

@@ -25,7 +25,7 @@
 
   <!-- Section 1: Inline Conditional Styling -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 1. Inline Styling with Ternary</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 function Button({ isActive }) {
   return (
     &lt;button
@@ -44,7 +44,7 @@ function Button({ isActive }) {
   <!-- Section 2: Class-based Conditional (Tailwind / CSS Modules) -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎨 2. Class-based Styling</h2>
   <p class="mb-2 text-black dark:text-gray-300">Use ternary logic in the <code>className</code> attribute:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 function Card({ selected }) {
   return (
     &lt;div
@@ -60,7 +60,7 @@ function Card({ selected }) {
 
   <!-- Section 3: Conditional Styling with CSS Modules -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 3. CSS Modules</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // Card.module.css
 .card {
   padding: 1rem;
@@ -71,7 +71,7 @@ function Card({ selected }) {
   color: white;
 }
 </code></pre>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import styles from './Card.module.css';
 
 function Card({ selected }) {
@@ -85,7 +85,7 @@ function Card({ selected }) {
 
   <!-- Section 4: Conditional Styling in Styled Components -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">💅 4. Styled Components</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import styled from 'styled-components';
 
 const Box = styled.div`
@@ -103,7 +103,7 @@ function StatusBox({ active }) {
   <!-- Section 5: Libraries like clsx -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔧 5. Using clsx / classnames</h2>
   <p class="mb-2 text-black dark:text-gray-300">To cleanly manage conditional classes:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import clsx from 'clsx';
 
 function Button({ primary }) {
@@ -130,9 +130,9 @@ function Button({ primary }) {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/emotion') ?>" class="hover:underline">← Previous: Emotion</a>
-  <a href="<?= base_url('react/reusability') ?>" class="hover:underline">Next: Reusability Principles →</a>
+  <a href="<?= base_url('react/reusability') ?>" class="hover:underline ms-auto">Next: Reusability Principles →</a>
 </div>
 
 </main>

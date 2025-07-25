@@ -33,7 +33,7 @@
 
   <!-- Function Example -->
   <h2 class="text-xl font-semibold mb-2 text-black dark:text-white">✅ Function Component Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 function Welcome() {
   return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
 }
@@ -41,7 +41,7 @@ function Welcome() {
 
   <!-- Class Example -->
   <h2 class="text-xl font-semibold mt-6 mb-2 text-black dark:text-white">🏫 Class Component Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 class Welcome extends React.Component {
   render() {
     return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
@@ -62,7 +62,7 @@ class Welcome extends React.Component {
   <p class="mb-4 text-black dark:text-gray-300">
     You can place components inside other components just like HTML elements:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto text-black dark:text-white">
 function App() {
   return (
     &lt;div&gt;
@@ -92,9 +92,9 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/jsx') ?>" class="hover:underline">← Previous: JSX</a>
-  <a href="<?= base_url('react/props') ?>" class="hover:underline">Next: Props →</a>
+  <a href="<?= base_url('react/props') ?>" class="hover:underline ms-auto">Next: Props →</a>
 </div>
 
 </main>

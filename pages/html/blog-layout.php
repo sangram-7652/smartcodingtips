@@ -1,3 +1,9 @@
+<?php
+$title = "Simple Blog Layout | SmartCodingTips";
+$description = "Learn about simple blog layout in HTML. Understand key concepts, examples, and usage.";
+$keywords = "simple, blog, layout, html tutorial, html basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
   <!-- Breadcrumb Navigation -->
@@ -23,7 +29,7 @@
 
     <section class="mb-6">
       <h2 class="text-2xl font-semibold mb-2">HTML Code Example</h2>
-      <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+      <pre class="bg-gray-100 p-4 rounded overflow-x-auto  text-sm dark:bg-gray-800 dark:text-white"><code>
 &lt;div class="grid md:grid-cols-3 gap-6"&gt;
   &lt;!-- Main Blog Area --&gt;
   &lt;div class="md:col-span-2 space-y-6"&gt;
@@ -80,8 +86,8 @@
       </ul>
     </section>
 
-    <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 hover:underline">← Previous: Contact Us Form</a></div>
+    <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 hover:underline">← Previous: Contact Us Form</a>
     <div></div>
 </div>
   </article>

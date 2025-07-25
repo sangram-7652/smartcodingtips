@@ -1,3 +1,8 @@
+<?php
+$title = "Input Types | SmartCodingTips";
+$description = "Learn about input types in HTML. Understand key concepts, examples, and usage.";
+$keywords = "input, types, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -40,7 +45,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example Form with Various Input Types</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="username"&gt;Username:&lt;/label&gt;
   &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
@@ -75,9 +80,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/forms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Tag</a></div>
-    <div><a href="<?= base_url('html/labels-placeholders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Labels & Placeholders →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/forms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Tag</a>
+    <a href="<?= base_url('html/labels-placeholders') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Labels & Placeholders →</a>
 </div>
 
     </article>

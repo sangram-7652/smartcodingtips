@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Applies when the user hovers over an element (like a link or button).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 button:hover {
     background-color: #1e40af;
     color: white;
@@ -42,7 +42,7 @@ button:hover {
             <p class=" mb-2">
                 Applies when an element (e.g., input, button) is selected via mouse, tap, or keyboard.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 input:focus {
     outline: 2px solid #2563eb;
     background-color: #f0f9ff;
@@ -59,7 +59,7 @@ input:focus {
             <p class=" mb-2">
                 Applies while an element is being clicked (mouse down).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 a:active {
     color: red;
 }
@@ -72,7 +72,7 @@ a:active {
             <p class=" mb-2">
                 Applies to links that the user has already visited.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 a:visited {
     color: purple;
 }
@@ -85,7 +85,7 @@ a:visited {
             <p class=" mb-2">
                 Applies to form elements that are disabled:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 button:disabled,
 input:disabled {
     background-color: #f3f4f6;
@@ -101,7 +101,7 @@ input:disabled {
             <p class=" mb-2">
                 Follow this order to prevent styles from being overridden:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* LVHA */
 a:link {
     color: blue;
@@ -126,9 +126,9 @@ a:active {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/form-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Layout</a></div>
-    <div><a href="<?= base_url('css/custom-checkbox') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Custom Checkbox/Radio →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/form-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Form Layout</a> 
+   <a href="<?= base_url('css/custom-checkbox') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Custom Checkbox/Radio →</a> 
 </div>
     </article>
 </main>

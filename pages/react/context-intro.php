@@ -74,9 +74,9 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/sharing-data') ?>" class="hover:underline">← Previous: Sharing Between Components</a>
-  <a href="<?= base_url('react/fetch-api') ?>" class="hover:underline">Next: Using fetch() →</a>
+  <a href="<?= base_url('react/fetch-api') ?>" class="hover:underline ms-auto">Next: Using fetch() →</a>
 </div>
 
 </main>

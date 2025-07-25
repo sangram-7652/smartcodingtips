@@ -1,4 +1,7 @@
-<?php include 'includes/header.php'; ?>
+<?php
+include 'config.php';
+include 'includes/header.php';
+?>
 
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
 
@@ -13,7 +16,7 @@
         <p class="text-gray-700 dark:text-white mb-4">We use your data to improve the website, provide support, respond to queries, and show relevant ads. We do not sell your personal information.</p>
 
         <h2 class="text-xl font-semibold mt-6 mb-2 text-gray-700 dark:text-white">3. Google AdSense and Cookies</h2>
-        <p class="text-gray-700 dark:text-white mb-4">This website uses Google AdSense. Google may use cookies to personalize ads based on your interests. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" class="text-blue-600 underline" target="_blank">Google Ads Settings</a>.</p>
+        <p class="text-gray-700 dark:text-white mb-4">This website uses Google AdSense. Google may use cookies to personalize ads based on your interests..</p>
 
         <h2 class="text-xl font-semibold mt-6 mb-2 text-gray-700 dark:text-white">4. Third-Party Links</h2>
         <p class="text-gray-700 dark:text-white mb-4">Our website may link to third-party sites. We are not responsible for their content or privacy policies.</p>
@@ -30,7 +33,7 @@
         <h2 class="text-xl font-semibold mt-6 mb-2 text-gray-700 dark:text-white">8. Contact Us</h2>
         <p class="text-gray-700 dark:text-white mb-4">If you have any questions about this Privacy Policy, you can contact us at:</p>
         <ul class="list-disc pl-6 text-gray-700 dark:text-white">
-            <li>Email: <strong>smartcodingtips@gmail.com</strong></li>
+            <li>Email: <strong>sangramsingh.dev@gmail.com</strong></li>
             <li>Website: <strong>https://smartcodingtips.com</strong></li>
         </ul>
     </section>

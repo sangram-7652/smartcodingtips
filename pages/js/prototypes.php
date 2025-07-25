@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/prototypes" class="text-blue-600 hover:underline">Prototypes</a>
+        <a href="javascript.php?page=js/prototypes" class="text-blue-600 dark:text-blue-400 hover:underline">Prototypes</a>
       </li>
     </ol>
   </nav>
@@ -25,7 +25,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Constructor Function and Prototype</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>function Person(name) {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>function Person(name) {
   this.name = name;
 }
 
@@ -39,7 +39,7 @@ john.greet(); // "Hi, I’m John"
 </code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Prototype Chain Example</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>console.log(john.__proto__ === Person.prototype); // true
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>console.log(john.__proto__ === Person.prototype); // true
 console.log(Person.prototype.__proto__ === Object.prototype); // true
 </code></pre>
 
@@ -47,7 +47,7 @@ console.log(Person.prototype.__proto__ === Object.prototype); // true
   <p class="mb-2">
     You can also manually create objects with a specific prototype using <code>Object.create()</code>.
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>const animal = {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>const animal = {
   speak() {
     console.log("I can speak");
   }
@@ -69,8 +69,9 @@ dog.speak(); // "I can speak"
     💡 <strong>Tip:</strong> Understanding prototypes helps in debugging, memory optimization, and writing reusable object-oriented code.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/classes" class="text-blue-600 hover:underline">Classes & Inheritance →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/oop-intro') ?>" class="hover:underline">← Previous: Intro to OOP</a>
+    <a href="<?= base_url('js/classes') ?>" class="hover:underline ms-auto">Next: Classes & Inheritance →</a>
 </div>
 
 </main>

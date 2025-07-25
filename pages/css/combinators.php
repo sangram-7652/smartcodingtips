@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 Selects all elements that are inside another element.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div p {
     color: green;
 }
@@ -42,7 +42,7 @@ div p {
             <p class=" mb-2">
                 Selects all direct child elements.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 ul > li {
     list-style-type: square;
 }
@@ -57,7 +57,7 @@ ul > li {
             <p class=" mb-2">
                 Selects the element that is immediately next to another element.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 + p {
     font-style: italic;
 }
@@ -72,7 +72,7 @@ h1 + p {
             <p class=" mb-2">
                 Selects all sibling elements that appear after a specified element.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 ~ p {
     color: darkgray;
 }
@@ -89,9 +89,9 @@ h1 ~ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/selectors-advanced') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Advanced Selectors</a></div>
-    <div><a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Font Styles →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/selectors-advanced') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Advanced Selectors</a> 
+   <a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Font Styles →</a> 
 </div>
     </article>
 </main>

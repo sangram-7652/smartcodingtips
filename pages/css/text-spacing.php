@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 The <code>line-height</code> property sets the vertical spacing between lines of text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     line-height: 1.6;
 }
@@ -42,7 +42,7 @@ p {
             <p class=" mb-2">
                 The <code>letter-spacing</code> property adjusts the space between characters.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1 {
     letter-spacing: 2px;
 }
@@ -57,7 +57,7 @@ h1 {
             <p class=" mb-2">
                 The <code>word-spacing</code> property adds space between words.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p.intro {
     word-spacing: 5px;
 }
@@ -66,7 +66,7 @@ p.intro {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Practical Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p.readable-text {
     font-size: 18px;
     line-height: 1.75;
@@ -86,9 +86,9 @@ p.readable-text {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/colors') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Text & Background Colors</a></div>
-    <div><a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Alignment & Decoration →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/colors') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Text & Background Colors</a> 
+   <a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Alignment & Decoration →</a> 
 </div>
     </article>
 </main>

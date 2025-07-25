@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Border Syntax</h2>
             <p class=" mb-2">The simplest way to define a border:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     border: 2px solid black;
 }
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Individual Sides</h2>
             <p class=" mb-2">You can set borders on specific sides:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .top {
     border-top: 2px solid red;
 }
@@ -60,7 +60,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Width, Style & Color</h2>
             <p class=" mb-2">Each component of a border can be set individually:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .custom-border {
     border-width: 3px;
     border-style: dashed;
@@ -73,7 +73,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Border Radius</h2>
             <p class=" mb-2">Use <code>border-radius</code> to create rounded corners:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .rounded {
     border: 2px solid #333;
     border-radius: 10px;
@@ -85,7 +85,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Shorthand Syntax</h2>
             <p class=" mb-2">Combine all border properties into one line:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     border: 4px dotted purple;
 }
@@ -98,7 +98,7 @@
             <p class=" mb-2">
                 Borders are part of the box model and affect layout. Outlines do not affect layout and sit outside the border.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .outlined {
     outline: 2px solid red;
 }
@@ -113,10 +113,10 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/backgrounds') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Backgrounds</a></div>
-    <div><a href="<?= base_url('css/shadows') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Shadows →</a></div>
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+           <a href="<?= base_url('css/backgrounds') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Backgrounds</a> 
+           <a href="<?= base_url('css/shadows') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Shadows →</a> 
+        </div>
 
     </article>
 </main>

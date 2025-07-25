@@ -1,3 +1,8 @@
+<?php
+$title = "Photo Gallery | SmartCodingTips";
+$description = "Learn about photo gallery in HTML. Understand key concepts, examples, and usage.";
+$keywords = "photo, gallery, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -26,7 +31,7 @@
             <h2 class="text-2xl font-semibold mb-2">HTML Structure</h2>
             <p class=" mb-2">You can use a combination of HTML elements and CSS (Flexbox or Grid) to layout your gallery. Below is a simple example:</p>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto  text-sm dark:bg-gray-800 dark:text-white"><code>
 &lt;div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"&gt;
   &lt;img src="img1.jpg" alt="Image 1" class="w-full h-auto rounded"&gt;
   &lt;img src="img2.jpg" alt="Image 2" class="w-full h-auto rounded"&gt;
@@ -49,7 +54,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Gallery with Tailwind</h2>
             <p class=" mb-2">Tailwind's grid utilities help create responsive galleries easily:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap text-sm dark:bg-gray-900 dark:text-white"><code>
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm dark:bg-gray-800 dark:text-white"><code>
 &lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"&gt;
   &lt;img src="gallery1.jpg" class="w-full rounded shadow"&gt;
   &lt;img src="gallery2.jpg" class="w-full rounded shadow"&gt;
@@ -59,9 +64,9 @@
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/landing-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Product Landing Page</a></div>
-    <div><a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Contact Us Form →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/landing-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Product Landing Page</a>
+    <a href="<?= base_url('html/contact-project') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Contact Us Form →</a>
 </div>
     </article>
 </main>

@@ -41,7 +41,7 @@
     <li>Includes themes, accessibility, and dark mode support</li>
     <li>Large ecosystem of pre-made components</li>
   </ul>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install @mui/material @emotion/react @emotion/styled
 </code></pre>
 
@@ -117,8 +117,8 @@ npm install @mui/material @emotion/react @emotion/styled
   </div>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/hoc') ?>" class="hover:underline">← Previous: HOC</a>
-  <a href="<?= base_url('react/promises') ?>" class="hover:underline">Next: Promises & Async/Await →</a>
+  <a href="<?= base_url('react/promises') ?>" class="hover:underline ms-auto">Next: Promises & Async/Await →</a>
 </div>
 </main>

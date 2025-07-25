@@ -1,3 +1,8 @@
+<?php
+$title = "Audio & Video | SmartCodingTips";
+$description = "Learn about audio & video in HTML. Understand key concepts, examples, and usage.";
+$keywords = "audio, video, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 The <code>&lt;audio&gt;</code> tag is used to embed sound content in a web page. It supports multiple source formats to ensure compatibility across browsers.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;audio controls&gt;
   &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
   &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
@@ -41,7 +46,7 @@
             <p class=" mb-2">
                 The <code>&lt;video&gt;</code> tag embeds a video player with playback options like play, pause, and volume control. It also supports multiple formats.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;video width="320" height="240" controls&gt;
   &lt;source src="video-file.mp4" type="video/mp4"&gt;
   &lt;source src="video-file.ogg" type="video/ogg"&gt;
@@ -58,9 +63,9 @@
             </ul>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-input') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: New Input Types</a></div>
-    <div><a href="<?= base_url('html/html5-canvas') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Canvas →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-input') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: New Input Types</a>
+    <a href="<?= base_url('html/html5-canvas') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Canvas →</a>
 </div>
     </article>
 </main>

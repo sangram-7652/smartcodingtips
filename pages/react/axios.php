@@ -79,9 +79,9 @@ export default UsersList;
   <p class="text-black dark:text-white">Install Axios via <code>npm install axios</code> before using it.</p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/loading-error') ?>" class="hover:underline">← Previous: Loading & Error</a>
-  <a href="<?= base_url('react/display-data') ?>" class="hover:underline">Next: Displaying Data →</a>
+  <a href="<?= base_url('react/display-data') ?>" class="hover:underline ms-auto">Next: Displaying Data →</a>
 </div>
 
 </main>

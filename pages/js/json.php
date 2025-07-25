@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/json" class="text-blue-600 hover:underline">Working with JSON</a>
+                <a href="javascript.php?page=js/json" class="text-blue-600 dark:text-blue-400 hover:underline">Working with JSON</a>
             </li>
         </ol>
     </nav>
@@ -20,7 +20,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📄 JSON Format Example</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>{
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>{
   "name": "Alice",
   "age": 25,
   "skills": ["HTML", "CSS", "JavaScript"]
@@ -29,19 +29,19 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Converting Between JSON and JS</h2>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">✅ JSON to JavaScript Object</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const jsonString = '{"name":"Alice","age":25}';
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>const jsonString = '{"name":"Alice","age":25}';
 const obj = JSON.parse(jsonString);
 
 console.log(obj.name); // Alice</code></pre>
 
     <h3 class="text-xl font-semibold mt-4 mb-2">✅ JavaScript Object to JSON</h3>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const person = { name: "Bob", age: 30 };
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>const person = { name: "Bob", age: 30 };
 const json = JSON.stringify(person);
 
 console.log(json); // {"name":"Bob","age":30}</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 JSON with fetch()</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/posts/1")
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(response => response.json())
   .then(data => {
     console.log(data.title);
@@ -54,7 +54,7 @@ console.log(json); // {"name":"Bob","age":30}</code></pre>
         <li>Use <code>try...catch</code> when parsing JSON</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>try {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white"><code>try {
   const obj = JSON.parse('{"name":"Eve"}');
   console.log(obj.name);
 } catch (error) {
@@ -66,7 +66,8 @@ console.log(json); // {"name":"Bob","age":30}</code></pre>
     </div>
 
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/async-await-api" class="text-blue-600 hover:underline">Async/Await with APIs →</a></p>
-</div>  
+   <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/fetch-api') ?>" class="hover:underline">← Previous: fetch() Basics</a>
+    <a href="<?= base_url('js/async-await-api') ?>" class="hover:underline ms-auto">Next: Async/Await with APIs →</a>
+</div>
 </main>

@@ -25,7 +25,7 @@
         <!-- Basic Navbar HTML -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Navbar Structure</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 <nav class="navbar">
     <div class="logo">MySite</div>
     <ul class="nav-links">
@@ -42,7 +42,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Hover Underline Animation</h2>
             <p class=" mb-2">Use pseudo-elements and transitions for a smooth underline effect on hover:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Mobile Toggle Animation (Optional)</h2>
             <p class=" mb-2">Add an animated hamburger icon and slide-in menu for small screens:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -115,7 +115,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Keyframe Animation (Slide In)</h2>
             <p class=" mb-2">You can animate nav items appearing on load with <code>@keyframes</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @keyframes slideIn {
     0% {
         transform: translateY(-20px);
@@ -147,9 +147,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/pricing-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Pricing Table</a></div>
-    <div><a href="<?= base_url('css/image-slider') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Image Slider →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/pricing-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Pricing Table</a> 
+   <a href="<?= base_url('css/image-slider') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Image Slider →</a> 
 </div>
 
     </article>

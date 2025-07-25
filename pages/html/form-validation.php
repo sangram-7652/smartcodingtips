@@ -1,3 +1,8 @@
+<?php
+$title = "Validation | SmartCodingTips";
+$description = "Learn about validation in HTML. Understand key concepts, examples, and usage.";
+$keywords = "validation, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Required Field</h2>
             <p class="mb-2">Use the <code>required</code> attribute to make a field mandatory before form submission.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label for="email"&gt;Email:&lt;/label&gt;
   &lt;input type="email" id="email" name="email" required&gt;
@@ -38,7 +43,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Input Constraints</h2>
             <p class="mb-2">Use attributes like <code>minlength</code>, <code>maxlength</code>, <code>min</code>, <code>max</code>, and <code>pattern</code> to control what data is accepted.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form&gt;
   &lt;label for="username"&gt;Username (5-10 characters):&lt;/label&gt;
   &lt;input type="text" id="username" name="username" minlength="5" maxlength="10" required&gt;
@@ -66,9 +71,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/select-textarea') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Select & Textarea</a></div>
-    <div><a href="<?= base_url('html/form-submit') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Form Submission →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/select-textarea') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Select & Textarea</a>
+    <a href="<?= base_url('html/form-submit') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Form Submission →</a>
 </div>
     </article>
 </main>

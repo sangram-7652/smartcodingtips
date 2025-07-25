@@ -25,7 +25,7 @@
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 1. Installation</h2>
   <p class="mb-2 text-black dark:text-gray-300">Run this command in your project folder:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
 npm install react-router-dom
   </code></pre>
 
@@ -33,7 +33,7 @@ npm install react-router-dom
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 2. Basic Setup in <code>App.jsx</code></h2>
   <p class="mb-2 text-black dark:text-gray-300">Wrap your app with <code>BrowserRouter</code> and define your routes:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -56,7 +56,7 @@ export default App;
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔗 3. Navigation with Links</h2>
   <p class="mb-2 text-black dark:text-gray-300">Use <code>&lt;Link&gt;</code> to navigate without page reload:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-4"><code>
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -74,9 +74,9 @@ function Navbar() {
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/router-intro') ?>" class="hover:underline">← Previous: React Router Intro</a>
-  <a href="<?= base_url('react/router-links') ?>" class="hover:underline">Next: Route / Link / Navigate →</a>
+  <a href="<?= base_url('react/router-links') ?>" class="hover:underline ms-auto">Next: Route / Link / Navigate →</a>
 </div>
 
 </main>

@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/testing-intro" class="text-blue-600 hover:underline">Intro to Testing</a>
+        <a href="javascript.php?page=js/testing-intro" class="text-blue-600 dark:text-blue-400 hover:underline">Intro to Testing</a>
       </li>
     </ol>
   </nav>
@@ -36,7 +36,7 @@
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">⚙️ Writing a Simple Unit Test</h2>
   <p class="mb-2">Let’s test a basic function:</p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>// math.js
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>// math.js
 function add(a, b) {
   return a + b;
 }
@@ -58,7 +58,7 @@ console.assert(result === 5, 'Expected 2 + 3 to equal 5');</code></pre>
   </ul>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📁 File Structure Example</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>project/
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>project/
 ├── src/
 │   └── math.js
 ├── tests/
@@ -69,7 +69,8 @@ console.assert(result === 5, 'Expected 2 + 3 to equal 5');</code></pre>
     💡 <strong>Tip:</strong> Start testing small helper functions, then expand to larger components as you gain confidence.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/jest-basics" class="text-blue-600 hover:underline">Testing with Jest →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/async-error') ?>" class="hover:underline">← Previous: Error in Async Code</a>
+    <a href="<?= base_url('js/jest-basics') ?>" class="hover:underline ms-auto">Next: Testing with Jest →</a>
 </div>
 </main>

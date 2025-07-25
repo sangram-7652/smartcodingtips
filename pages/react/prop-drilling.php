@@ -91,9 +91,9 @@ function TargetComponent() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/hook-examples') ?>" class="hover:underline">← Previous: Hook Examples</a>
-  <a href="<?= base_url('react/lifting-state') ?>" class="hover:underline">Next: Lifting State Up →</a>
+  <a href="<?= base_url('react/lifting-state') ?>" class="hover:underline ms-auto">Next: Lifting State Up →</a>
 </div>
 
 </main>

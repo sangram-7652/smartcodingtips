@@ -28,7 +28,7 @@
     Here's how to bind an input value to React state:
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 import { useState } from 'react';
 
 function NameForm() {
@@ -59,7 +59,7 @@ function NameForm() {
     You can manage multiple inputs by using one state object:
   </p>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 const [form, setForm] = useState({ name: '', email: '' });
 
 function handleChange(e) {
@@ -69,7 +69,7 @@ function handleChange(e) {
   </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📋 4. Submit the Form</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 function handleSubmit(e) {
   e.preventDefault();
   console.log(form);
@@ -83,9 +83,9 @@ function handleSubmit(e) {
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/display-data') ?>" class="hover:underline">← Previous: Displaying Data</a>
-  <a href="<?= base_url('react/validations') ?>" class="hover:underline">Next: Input Validation →</a>
+  <a href="<?= base_url('react/validations') ?>" class="hover:underline ms-auto">Next: Input Validation →</a>
 </div>
 
 </main>

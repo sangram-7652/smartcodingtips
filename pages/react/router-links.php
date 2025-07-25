@@ -28,7 +28,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Use <code>&lt;Route&gt;</code> inside <code>&lt;Routes&gt;</code> to define which component renders at each path.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -48,7 +48,7 @@ function App() {
   <p class="mb-2 text-black dark:text-gray-300">
     Replace anchor tags with <code>&lt;Link&gt;</code> to enable client-side navigation without reloading.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -66,7 +66,7 @@ function Navbar() {
   <p class="mb-2 text-black dark:text-gray-300">
     Use <code>useNavigate()</code> to navigate via code — helpful after form submission or button click.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useNavigate } from 'react-router-dom';
 
 function LoginButton() {
@@ -86,9 +86,9 @@ function LoginButton() {
   </p>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/router-setup') ?>" class="hover:underline">← Previous: Setup react-router-dom</a>
-  <a href="<?= base_url('react/dynamic-routes') ?>" class="hover:underline">Next: Dynamic Routing →</a>
+  <a href="<?= base_url('react/dynamic-routes') ?>" class="hover:underline ms-auto">Next: Dynamic Routing →</a>
 </div>
 
 

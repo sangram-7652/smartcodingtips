@@ -25,7 +25,7 @@
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧱 1. Create a Context</h2>
   <p class="mb-2 text-black dark:text-gray-300">Use <code>createContext()</code> to define your shared state container:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { createContext } from 'react';
 
 export const UserContext = createContext();
@@ -33,7 +33,7 @@ export const UserContext = createContext();
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Provide the Context</h2>
   <p class="mb-2 text-black dark:text-gray-300">Wrap your component tree with the <code>Provider</code> and pass in the value:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { UserContext } from './UserContext';
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📥 3. Use the Context</h2>
   <p class="mb-2 text-black dark:text-gray-300">Inside any child component, access the shared data using <code>useContext()</code>:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useContext } from 'react';
 import { UserContext } from './UserContext';
 
@@ -73,9 +73,9 @@ function Dashboard() {
   </p>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/state-strategies') ?>" class="hover:underline">← Previous: Props vs Context vs Redux</a>
-  <a href="<?= base_url('react/redux') ?>" class="hover:underline">Next: Redux Toolkit →</a>
+  <a href="<?= base_url('react/redux') ?>" class="hover:underline ms-auto">Next: Redux Toolkit →</a>
 </div>
 
 </main>

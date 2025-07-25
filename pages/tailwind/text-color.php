@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Text and Background Colors</h2>
             <p class=" mb-2">Tailwind provides predefined color classes like:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;p class="text-red-500"&gt;This is red text&lt;/p&gt;
 &lt;div class="bg-blue-100 text-blue-800 p-4"&gt;Info box&lt;/div&gt;
             </pre>
@@ -40,7 +40,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Hover and Focus States</h2>
             <p class=" mb-2">You can change colors on interaction:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;button class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"&gt;
     Submit
 &lt;/button&gt;
@@ -52,7 +52,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing Colors in Tailwind</h2>
             <p class=" mb-2">You can define your own palette in <code>tailwind.config.js</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 // tailwind.config.js
 module.exports = {
   theme: {
@@ -69,7 +69,7 @@ module.exports = {
 }
             </pre>
             <p class=" mt-2">Then use it like this:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-brand text-white p-4"&gt;Brand Primary Background&lt;/div&gt;
             </pre>
         </section>
@@ -78,7 +78,7 @@ module.exports = {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Color Opacity</h2>
             <p class=" mb-2">Tailwind supports color opacity using <code>/</code> notation:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="bg-red-500/30 p-4"&gt;Light red background&lt;/div&gt;
 &lt;p class="text-blue-700/80"&gt;Faded blue text&lt;/p&gt;
             </pre>
@@ -106,9 +106,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/text-truncate') ?>" class="hover:underline">← Previous: Text Truncation, Clamping</a>
-  <a href="<?= base_url('tailwind/colors-bg') ?>" class="hover:underline">Next: Text and Background Colors →</a>
+  <a href="<?= base_url('tailwind/colors-bg') ?>" class="hover:underline ms-auto">Next: Text and Background Colors →</a>
 </div>
     </article>
 </main>

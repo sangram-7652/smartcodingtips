@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/break-continue" class="text-blue-600 hover:underline">Break & Continue</a>
+                <a href="javascript.php?page=js/break-continue" class="text-blue-600 dark:text-blue-400 hover:underline">Break & Continue</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         The <code>break</code> statement immediately exits the loop or switch block it's in.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         break;
     }
@@ -40,7 +40,7 @@
         The <code>continue</code> statement skips the current iteration and moves to the next one.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>for (let i = 1; i &lt;= 5; i++) {
     if (i === 3) {
         continue;
     }
@@ -59,8 +59,9 @@
         💡 <strong>Tip:</strong> Use <code>continue</code> carefully to avoid skipping important logic. Always test your loop output.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/ternary" class="text-blue-600 hover:underline">Ternary Operator →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/loops') ?>" class="hover:underline">← Previous: Loops: for, while</a>
+    <a href="<?= base_url('js/ternary') ?>" class="hover:underline ms-auto">Next: Ternary Operator →</a>
 </div>
 
 </main>

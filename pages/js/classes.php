@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/classes-inheritance" class="text-blue-600 hover:underline">Classes & Inheritance</a>
+        <a href="javascript.php?page=js/classes-inheritance" class="text-blue-600 dark:text-blue-400 hover:underline">Classes & Inheritance</a>
       </li>
     </ol>
   </nav>
@@ -20,7 +20,7 @@
   </p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🎓 Declaring a Class</h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>class Person {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -36,7 +36,7 @@ alice.greet();
 </code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📚 Inheritance with <code>extends</code></h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class Student extends Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>class Student extends Person {
   constructor(name, age, subject) {
     super(name, age); // Call parent constructor
     this.subject = subject;
@@ -56,7 +56,7 @@ bob.study();
   <p class="mb-2">
     Child classes can override parent methods:
   </p>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class Teacher extends Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>class Teacher extends Person {
   greet() {
     console.log(`Hello students, I'm Professor ${this.name}.`);
   }
@@ -67,7 +67,7 @@ prof.greet(); // Overridden version
 </code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🚀 Using <code>super()</code> and <code>super.method()</code></h2>
-  <pre class="bg-gray-100 p-4 rounded text-sm mb-4 dark:bg-gray-900 dark:text-white"><code>class Developer extends Person {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm mb-4 dark:bg-gray-800 dark:text-white"><code>class Developer extends Person {
   greet() {
     super.greet(); // Call parent greet()
     console.log("I write code every day!");
@@ -90,7 +90,8 @@ dev.greet();
     💡 <strong>Tip:</strong> Classes are syntactic sugar over JavaScript's prototypal inheritance. Behind the scenes, it's still using prototypes!
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/oop-realworld" class="text-blue-600 hover:underline">Real-World OOP →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/prototypes') ?>" class="hover:underline">← Previous: Prototypes</a>
+    <a href="<?= base_url('js/oop-realworld') ?>" class="hover:underline ms-auto">Next: Real-World OOP →</a>
 </div>
 </main>

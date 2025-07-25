@@ -29,7 +29,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     Use a conditional check to render the list only when there’s data.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function TodoList({ todos }) {
   return (
     &lt;div&gt;
@@ -50,7 +50,7 @@ function TodoList({ todos }) {
   <p class="text-black dark:text-gray-300 mb-4">
     When no data is present, show a message or fallback UI.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function TodoList({ todos }) {
   if (todos.length === 0) {
     return &lt;p&gt;No tasks found. You're all caught up! 🎉&lt;/p&gt;;
@@ -71,7 +71,7 @@ function TodoList({ todos }) {
   <p class="text-black dark:text-gray-300 mb-4">
     You can also write a concise version using a ternary expression:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function TodoList({ todos }) {
   return (
     &lt;div&gt;
@@ -105,9 +105,9 @@ function TodoList({ todos }) {
   </ul>
 
   <!-- Next Page -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/dynamic-lists') ?>" class="hover:underline">← Previous: Dynamic List Rendering</a>
-  <a href="<?= base_url('react/events') ?>" class="hover:underline">Next: Handling Events →</a>
+  <a href="<?= base_url('react/events') ?>" class="hover:underline ms-auto">Next: Handling Events →</a>
 </div>
 
 </main>

@@ -26,7 +26,7 @@
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">1. Installation Example</h2>
             <p class=" mb-2">Install one or more plugins via npm:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npm install @tailwindcss/forms @tailwindcss/typography @tailwindcss/aspect-ratio @tailwindcss/line-clamp
             </code></pre>
         </section>
@@ -35,7 +35,7 @@ npm install @tailwindcss/forms @tailwindcss/typography @tailwindcss/aspect-ratio
         <section class="mb-10">
             <h2 class="text-2xl font-semibold mb-4">2. Add to tailwind.config.js</h2>
             <p class=" mb-2">Update your <code>tailwind.config.js</code> file to use them:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: [
     "./index.html",
@@ -59,7 +59,7 @@ module.exports = {
             <h2 class="text-2xl font-semibold mb-4">3. Usage Examples</h2>
             <p class=" font-semibold mt-4">📄 Typography Plugin:</p>
             <p class="">Wrap content in a <code>prose</code> class for elegant text formatting:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;article class="prose"&gt;
   &lt;h1&gt;Tailwind Typography Example&lt;/h1&gt;
   &lt;p&gt;This paragraph will look nice out of the box!&lt;/p&gt;
@@ -67,19 +67,19 @@ module.exports = {
             </code></pre>
 
             <p class=" font-semibold mt-6">📷 Aspect-Ratio Plugin:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="aspect-w-16 aspect-h-9"&gt;
   &lt;iframe src="https://www.youtube.com/embed/..." frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
             </code></pre>
 
             <p class=" font-semibold mt-6">✅ Forms Plugin:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;input type="text" class="form-input" placeholder="Styled with Tailwind Forms"&gt;
             </code></pre>
 
             <p class=" font-semibold mt-6">🔠 Line Clamp Plugin:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;p class="line-clamp-3"&gt;
   This paragraph will be truncated after three lines...
 &lt;/p&gt;
@@ -104,9 +104,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/js-frameworks') ?>" class="hover:underline">← Previous: Tailwind with React/Vue Templates</a>
-  <a href="<?= base_url('tailwind/plugin-examples') ?>" class="hover:underline">Next: Community Plugins and Examples →</a>
+  <a href="<?= base_url('tailwind/plugin-examples') ?>" class="hover:underline ms-auto">Next: Community Plugins and Examples →</a>
 </div>
 
     </article>

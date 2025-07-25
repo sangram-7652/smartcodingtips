@@ -1,3 +1,8 @@
+<?php
+$title = "Deprecated Tags | SmartCodingTips";
+$description = "Learn about deprecated tags in HTML. Understand key concepts, examples, and usage.";
+$keywords = "deprecated, tags, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -48,7 +53,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Recommended Alternatives</h2>
             <p class=" mb-2">Instead of deprecated tags, use modern HTML and CSS practices. For example:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!-- Instead of &lt;font color="red"&gt; --&gt;
 &lt;p style="color: red;"&gt;Text&lt;/p&gt;
 
@@ -57,9 +62,9 @@
             </code></pre>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/favicon') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Favicon</a></div>
-    <div><a href="<?= base_url('html/entities') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: HTML Entities →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/favicon') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Favicon</a>
+    <a href="<?= base_url('html/entities') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: HTML Entities →</a>
 </div>
     </article>
 </main>

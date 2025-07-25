@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 A pixel is a fixed unit and doesn’t scale. It's great for precise control but not ideal for responsiveness.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     font-size: 16px;
     margin: 10px;
@@ -40,7 +40,7 @@ p {
             <p class=" mb-2">
                 Percentages are relative to the parent element’s size.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     width: 80%;
 }
@@ -59,7 +59,7 @@ img {
             <p class=" mb-2">
                 <code>em</code> is relative to the font-size of the current element or its parent.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 div {
     font-size: 16px;
 }
@@ -78,7 +78,7 @@ p {
             <p class=" mb-2">
                 <code>rem</code> is relative to the root element’s (<code>html</code>) font-size. It's consistent across all elements regardless of nesting.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 html {
     font-size: 16px;
 }
@@ -109,9 +109,9 @@ h1 {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Hex, RGB, HSL</a></div>
-    <div><a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Opacity & Gradients →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Hex, RGB, HSL</a> 
+   <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Opacity & Gradients →</a> 
 </div>
     </article>
 </main>

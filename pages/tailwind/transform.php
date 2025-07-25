@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Before applying transform utilities, you must include the base class <code>transform</code> to enable the feature:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform scale-110"&gt;Zoomed&lt;/div&gt;
             </code></pre>
         </section>
@@ -51,7 +51,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Rotate and Skew</h2>
             <p class=" mb-2">Tailwind supports rotation and skewing using:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform rotate-12"&gt;Rotated&lt;/div&gt;
 &lt;div class="transform -skew-x-6"&gt;Skewed Left&lt;/div&gt;
             </code></pre>
@@ -63,7 +63,7 @@
             <p class=" mb-2">
                 Move elements along X or Y axes using <code>translate-x-*</code> and <code>translate-y-*</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform translate-x-4"&gt;Moved Right&lt;/div&gt;
 &lt;div class="transform -translate-y-2"&gt;Moved Up&lt;/div&gt;
             </code></pre>
@@ -81,7 +81,7 @@
             <p class=" mt-2">
                 You can combine multiple transform utilities for powerful effects:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform scale-110 rotate-3 -translate-y-1 origin-top-right"&gt;Fancy Box&lt;/div&gt;
             </code></pre>
         </section>
@@ -102,9 +102,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/transform') ?>" class="hover:underline">← Previous: Transform and Scale</a>
-  <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline">Next: Mobile-First Philosophy →</a>
+  <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline ms-auto">Next: Mobile-First Philosophy →</a>
 </div>
     </article>
 </main>

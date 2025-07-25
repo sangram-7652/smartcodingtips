@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Use <code>:invalid</code>, <code>:valid</code>, and <code>:required</code> pseudo-classes to style form controls based on their validation state.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;input type="email" required
   class="peer w-full border rounded px-3 py-2 
          border-gray-300 focus:outline-none 
@@ -43,7 +43,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Showing Error Messages</h2>
             <p class=" mb-2">You can use the <code>.peer</code> class to conditionally show error messages:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div&gt;
   &lt;input type="text" required class="peer w-full border px-3 py-2 border-gray-300 
        invalid:border-red-500 invalid:ring-red-500"&gt;
@@ -58,7 +58,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">3. Interactive Example</h2>
             <p class=" mb-2">Here's a full form example with validation feedback:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;form class="space-y-4"&gt;
   &lt;div&gt;
     &lt;label class="block text-sm font-medium text-gray-700"&gt;Email&lt;/label&gt;
@@ -107,9 +107,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/forms-plugin') ?>" class="hover:underline">← Previous: Tailwind Forms Plugin</a>
-  <a href="<?= base_url('tailwind/custom-config') ?>" class="hover:underline">Next: Configuring Tailwind →</a>
+  <a href="<?= base_url('tailwind/custom-config') ?>" class="hover:underline ms-auto">Next: Configuring Tailwind →</a>
 </div>
     </article>
 </main>

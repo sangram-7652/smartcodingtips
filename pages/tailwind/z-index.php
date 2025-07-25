@@ -36,7 +36,7 @@
         <!-- Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Example: Overlapping Cards</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="relative"&gt;
   &lt;div class="absolute left-4 top-4 w-32 h-32 bg-blue-300 z-10"&gt;Box A&lt;/div&gt;
   &lt;div class="absolute left-8 top-8 w-32 h-32 bg-red-300 z-20"&gt;Box B&lt;/div&gt;
@@ -51,7 +51,7 @@
             <p class=" mb-2">
                 You can add custom z-index values in <code>tailwind.config.js</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -84,9 +84,9 @@ module.exports = {
             </p>
         </section>
 
-      <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+      <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/inset') ?>" class="hover:underline">← Previous: Top, Right, Bottom, Left Utilities</a>
-  <a href="<?= base_url('tailwind/transform') ?>" class="hover:underline">Next: Transform and Scale →</a>
+  <a href="<?= base_url('tailwind/transform') ?>" class="hover:underline border ms-auto">Next: Transform and Scale →</a>
 </div>
 
     </article>

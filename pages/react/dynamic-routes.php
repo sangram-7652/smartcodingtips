@@ -27,7 +27,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Use the <code>:param</code> syntax to declare a dynamic segment in the path.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { Routes, Route } from 'react-router-dom';
 import ProductPage from './pages/ProductPage';
 
@@ -44,7 +44,7 @@ function App() {
   <p class="mb-2 text-black dark:text-gray-300">
     Inside your component, use the <code>useParams()</code> hook from <code>react-router-dom</code> to retrieve the dynamic value.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { useParams } from 'react-router-dom';
 
 function ProductPage() {
@@ -61,7 +61,7 @@ function ProductPage() {
   </ul>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 4. Multiple Parameters</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 &lt;Route path="/post/:category/:slug" element={&lt;BlogPost /&gt;} /&gt;
 
 const { category, slug } = useParams();
@@ -72,9 +72,9 @@ const { category, slug } = useParams();
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/router-links') ?>" class="hover:underline">← Previous: Route / Link / Navigate</a>
-  <a href="<?= base_url('react/route-guards') ?>" class="hover:underline">Next: 404 & Protected Routes →</a>
+  <a href="<?= base_url('react/route-guards') ?>" class="hover:underline ms-auto">Next: 404 & Protected Routes →</a>
 </div>
 
 </main>

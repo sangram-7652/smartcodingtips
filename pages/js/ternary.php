@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/ternary-operator" class="text-blue-600 hover:underline">Ternary Operator</a>
+                <a href="javascript.php?page=js/ternary-operator" class="text-blue-600 dark:text-blue-400 hover:underline">Ternary Operator</a>
             </li>
         </ol>
     </nav>
@@ -23,7 +23,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 Syntax</h2>
     
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>condition ? expressionIfTrue : expressionIfFalse</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>condition ? expressionIfTrue : expressionIfFalse</code></pre>
 
     <p class="mb-4">
         If the condition is true, it evaluates and returns <code>expressionIfTrue</code>; otherwise, it returns <code>expressionIfFalse</code>.
@@ -31,13 +31,13 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Example 1: Assigning a Value</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let age = 20;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let age = 20;
 let result = (age &gt;= 18) ? "Adult" : "Minor";
 console.log(result); // "Adult"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Example 2: Inside HTML or JSX</h2>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let isLoggedIn = true;
 let message = isLoggedIn ? "Welcome!" : "Please log in.";</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Why Use the Ternary Operator?</h2>
@@ -51,7 +51,8 @@ let message = isLoggedIn ? "Welcome!" : "Please log in.";</code></pre>
         ✅ <strong>Tip:</strong> Avoid nesting ternary operators. It can make code harder to read.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/control-examples" class="text-blue-600 hover:underline">Control Flow Examples →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/break-continue') ?>" class="hover:underline">← Previous: Break & Continue</a>
+    <a href="<?= base_url('js/control-examples') ?>" class="hover:underline ms-auto">Next: Control Flow Examples →</a>
 </div>
 </main>

@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/display-fetched-data" class="text-blue-600 hover:underline">Display Fetched Data</a>
+                <a href="javascript.php?page=js/display-fetched-data" class="text-blue-600 dark:text-blue-400 hover:underline">Display Fetched Data</a>
             </li>
         </ol>
     </nav>
@@ -21,14 +21,14 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Example: Displaying a List of Users</h2>
 
-    <div class="bg-gray-100 p-4 rounded mb-6  dark:bg-gray-900 dark:text-white"> text-sm">
+    <div class="bg-gray-100 p-4 overflow-x-auto rounded mb-6  dark:bg-gray-800 dark:text-white"> text-sm">
         <strong>HTML Structure:</strong>
-        <pre class="dark:bg-gray-900 dark:text-white"><code>&lt;ul id="userList"&gt;&lt;/ul&gt;</code></pre>
+        <pre class="dark:bg-gray-800 dark:text-white"><code>&lt;ul id="userList"&gt;&lt;/ul&gt;</code></pre>
     </div>
 
-    <div class="bg-gray-100 p-4 rounded mb-6  dark:bg-gray-900 dark:text-white"> text-sm">
+    <div class="bg-gray-100 p-4 overflow-x-auto rounded mb-6  dark:bg-gray-800 dark:text-white"> text-sm">
         <strong>JavaScript Code:</strong>
-        <pre class="dark:bg-gray-900 dark:text-white"><code>async function loadUsers() {
+        <pre class="dark:bg-gray-800 dark:text-white"><code>async function loadUsers() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
 
@@ -46,7 +46,7 @@ loadUsers();</code></pre>
     </div>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎯 Output Example</h2>
-    <ul id="userList" class="list-disc list-inside bg-white shadow p-4 rounded mb-4 dark:bg-gray-900 dark:text-white">">
+    <ul id="userList" class="list-disc list-inside bg-white shadow p-4 rounded mb-4 dark:bg-gray-800 dark:text-white">">
         <li>Leanne Graham (Sincere@april.biz)</li>
         <li>Ervin Howell (Shanna@melissa.tv)</li>
         <li>Clementine Bauch (Nathan@yesenia.net)</li>
@@ -64,7 +64,9 @@ loadUsers();</code></pre>
         💡 <strong>Bonus:</strong> Try building a "Search Users" input box to filter the displayed data!
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/es6-overview" class="text-blue-600 hover:underline">ES6+ Overview →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/async-await-api') ?>" class="hover:underline">← Previous: Async/Await with APIs</a>
+    <a href="<?= base_url('js/es6-overview') ?>" class="hover:underline ms-auto">Next: ES6+ Overview →</a>
 </div>
+
 </main>

@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Move elements on the X and Y axes using <code>translate-x-*</code> and <code>translate-y-*</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform translate-x-4"&gt;Moves right 1rem (4)&lt;/div&gt;
 &lt;div class="transform -translate-y-2"&gt;Moves up 0.5rem (-2)&lt;/div&gt;
             </code></pre>
@@ -40,7 +40,7 @@
             <p class=" mb-2">
                 Rotate elements using <code>rotate-{angle}</code>. Available values include: <code>rotate-45</code>, <code>rotate-90</code>, <code>-rotate-45</code>, etc.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform rotate-12"&gt;12 degrees rotated&lt;/div&gt;
 &lt;div class="transform -rotate-6"&gt;Rotated -6 degrees&lt;/div&gt;
             </code></pre>
@@ -52,7 +52,7 @@
             <p class=" mb-2">
                 Skew elements along the X or Y axis:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform skew-x-6"&gt;Skewed Right&lt;/div&gt;
 &lt;div class="transform -skew-y-3"&gt;Skewed Upward&lt;/div&gt;
             </code></pre>
@@ -68,7 +68,7 @@
                 <li><code>origin-top</code>, <code>origin-left</code>, <code>origin-center</code></li>
                 <li><code>origin-top-right</code>, <code>origin-bottom-left</code>, etc.</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform scale-125 origin-top-left"&gt;Scaled from top-left&lt;/div&gt;
             </code></pre>
         </section>
@@ -79,7 +79,7 @@
             <p class=" mb-2">
                 You can combine translate, rotate, skew, and origin in a single element for complex effects:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="transform translate-x-2 rotate-6 skew-y-3 origin-bottom-left"&gt;
     Complex Motion Element
 &lt;/div&gt;
@@ -104,9 +104,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/transform') ?>" class="hover:underline">← Previous: Transform and Scale</a>
-  <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline">Next: Mobile-First Philosophy →</a>
+  <a href="<?= base_url('tailwind/mobile-first') ?>" class="hover:underline ms-auto">Next: Mobile-First Philosophy →</a>
 </div>
     </article>
 </main>

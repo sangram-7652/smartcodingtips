@@ -49,7 +49,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Example: Article with Tailwind</h2>
             <p class=" mb-2">Here’s a semantic structure styled entirely with Tailwind:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;article class="prose max-w-none"&gt;
   &lt;header class="mb-4"&gt;
     &lt;h1 class="text-3xl font-bold"&gt;Tailwind Makes HTML Look Great&lt;/h1&gt;
@@ -86,9 +86,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/utility-classes') ?>" class="hover:underline">← Previous: What Are Utility Classes?</a>
-  <a href="<?= base_url('tailwind/variants') ?>" class="hover:underline">Next: Responsive, Hover, and Focus Variants →</a>
+  <a href="<?= base_url('tailwind/variants') ?>" class="hover:underline ms-auto">Next: Responsive, Hover, and Focus Variants →</a>
 </div>
 
     </article>

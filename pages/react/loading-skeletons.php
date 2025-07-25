@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     You can show a loading message or a custom spinner using conditional rendering:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function UserList({ isLoading, users }) {
   if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;;
 
@@ -45,7 +45,7 @@ function UserList({ isLoading, users }) {
   <p class="text-black dark:text-gray-300 mb-4">
     Use Tailwind utility classes to make a basic spinning loader:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 &lt;div className="flex justify-center items-center"&gt;
   &lt;div className="w-6 h-6 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -56,7 +56,7 @@ function UserList({ isLoading, users }) {
   <p class="text-black dark:text-gray-300 mb-4">
     You can encapsulate a spinner into a reusable component:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function Spinner() {
   return (
     &lt;div className="flex justify-center items-center"&gt;
@@ -77,7 +77,7 @@ function Spinner() {
     <li><code>lottie-react</code> for animated illustrations</li>
   </ul>
 
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 // Example: react-loader-spinner
 import { Circles } from 'react-loader-spinner';
 
@@ -93,9 +93,9 @@ import { Circles } from 'react-loader-spinner';
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/async-state') ?>" class="hover:underline">← Previous: Handling Async State</a>
-  <a href="<?= base_url('react/debounce') ?>" class="hover:underline">Next: Retry / Debounce →</a>
+  <a href="<?= base_url('react/debounce') ?>" class="hover:underline ms-auto">Next: Retry / Debounce →</a>
 </div>
 
 </main>

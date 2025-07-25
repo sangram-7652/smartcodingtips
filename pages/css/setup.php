@@ -28,7 +28,7 @@
                 Start with a basic HTML structure and save it as
                  <code>index.html</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -54,7 +54,7 @@
             <p class=" mb-2">
                 Now, create a new file called <code>style.css</code> in the same folder. This file will contain your styling rules.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 body {
     background-color: #f0f4f8;
     font-family: Arial, sans-serif;
@@ -81,7 +81,7 @@ p {
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Folder Structure (Example)</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /my-first-css-project
 │
 ├── index.html
@@ -99,9 +99,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How CSS Works</a></div>
-    <div><a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Syntax Overview →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How CSS Works</a> 
+   <a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Syntax Overview →</a> 
 </div>
     </article>
 </main>

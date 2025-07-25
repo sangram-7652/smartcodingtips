@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 Applies styles to all elements on the page.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
             <p class=" mb-2">
                 Targets all elements of a specific type (e.g., all <code>&lt;p&gt;</code> or <code>&lt;h1&gt;</code> tags).
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     font-size: 18px;
     color: #333;
@@ -54,7 +54,7 @@ p {
             <p class=" mb-2">
                 Targets elements with a specific <code>class</code> attribute. Classes can be reused on multiple elements.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .highlight {
     background-color: yellow;
     font-weight: bold;
@@ -71,7 +71,7 @@ p {
             <p class=" mb-2">
                 Targets a single element with a specific <code>id</code>. IDs should be unique on each page.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 #header {
     background-color: #1e3a8a;
     color: white;
@@ -89,7 +89,7 @@ p {
             <p class=" mb-2">
                 Apply the same styles to multiple elements by separating selectors with commas.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 h1, h2, h3 {
  font-family: 'Segoe UI', sans-serif;
  color: #1f2937;
@@ -104,9 +104,9 @@ h1, h2, h3 {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Syntax Overview</a></div>
-    <div><a href="<?= base_url('css/selectors-advanced') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Advanced Selectors →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Syntax Overview</a> 
+   <a href="<?= base_url('css/selectors-advanced') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Advanced Selectors →</a> 
 </div>
     </article>
 </main>

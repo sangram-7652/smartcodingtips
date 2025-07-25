@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 CSS can automatically apply dark mode styles based on the user's system settings using the <code>prefers-color-scheme</code> media query:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Default (Light Mode) */
 body {
     background: white;
@@ -51,7 +51,7 @@ body {
             <p class=" mb-2">
                 You can create a toggle switch using JavaScript by applying a <code>.dark</code> class to the <code>&lt;body&gt;</code> or <code>&lt;html&gt;</code> tag.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Light Theme */
 body {
     background: #fff;
@@ -65,7 +65,7 @@ body.dark {
 }
             </code></pre>
             <p class=" mt-2">Then toggle the class with JavaScript:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 document.querySelector('#toggle-theme').addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
@@ -78,7 +78,7 @@ document.querySelector('#toggle-theme').addEventListener('click', () => {
             <p class=" mb-2">
                 Centralize your color values using variables for easy theme switching:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 :root {
     --bg: #ffffff;
     --text: #111111;
@@ -113,9 +113,9 @@ body {
             </p>
         </section>
 
-     <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/sticky-scroll') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Sticky Scroll</a></div>
-    <div><a href="<?= base_url('css/form-styling') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Input & Button Styling →</a></div>
+     <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/sticky-scroll') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Sticky Scroll</a> 
+   <a href="<?= base_url('css/form-styling') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Input & Button Styling →</a> 
 </div>
     </article>
 </main>

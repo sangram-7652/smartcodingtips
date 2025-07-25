@@ -1,3 +1,8 @@
+<?php
+$title = "Quote & Citation | SmartCodingTips";
+$description = "Learn about quote & citation in HTML. Understand key concepts, examples, and usage.";
+$keywords = "quote, citation, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Use the <code>&lt;blockquote&gt;</code> tag for long quotations. It usually indents the quoted text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;blockquote&gt;
     The greatest glory in living lies not in never falling, but in rising every time we fall.
 &lt;/blockquote&gt;
@@ -42,7 +47,7 @@
             <p class=" mb-2">
                 Use the <code>&lt;q&gt;</code> tag for short inline quotes. Browsers typically surround the text with quotation marks.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;Steve Jobs once said, &lt;q&gt;Innovation distinguishes between a leader and a follower.&lt;/q&gt;&lt;/p&gt;
             </code></pre>
         </section>
@@ -52,7 +57,7 @@
             <p class=" mb-2">
                 The <code>&lt;cite&gt;</code> tag is used to reference the title of a work or source, such as a book, website, or article.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p&gt;Read more in &lt;cite&gt;The Art of War&lt;/cite&gt; by Sun Tzu.&lt;/p&gt;
             </code></pre>
         </section>
@@ -74,9 +79,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/semantic-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Semantic Tags</a></div>
-    <div><a href="<?= base_url('html/anchor-tag') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Anchor Tag →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/semantic-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Semantic Tags</a>
+    <a href="<?= base_url('html/anchor-tag') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Anchor Tag →</a>
 </div>
     </article>
 </main>

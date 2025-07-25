@@ -1,3 +1,9 @@
+<?php
+$title = "HTML DOM | SmartCodingTips";
+$description = "Learn about html dom in HTML. Understand key concepts, examples, and usage.";
+$keywords = "html, dom, html tutorial, html basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -34,7 +40,7 @@
             <p class=" mb-2">
                 Here's a simplified example of how HTML is represented in the DOM:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm break-all">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm break-all">
 &lt;html&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello World&lt;/h1&gt;
@@ -50,7 +56,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Accessing DOM Elements with JavaScript</h2>
             <p class=" mb-2">You can use JavaScript to access and modify elements like this:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm break-all">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm break-all">
 // Get an element by ID
 const heading = document.getElementById("mainHeading");
 heading.textContent = "Updated Heading";
@@ -69,9 +75,9 @@ heading.textContent = "Updated Heading";
             </ul>
         </section>
 
-         <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/inline-block') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Inline vs Block</a></div>
-    <div><a href="<?= base_url('html/best-practices') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Best Practices →</a></div>
+         <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/inline-block') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Inline vs Block</a>
+    <a href="<?= base_url('html/best-practices') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Best Practices →</a>
 </div>
 
     </article>

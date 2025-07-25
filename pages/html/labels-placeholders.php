@@ -1,3 +1,8 @@
+<?php
+$title = "Labels & Placeholders | SmartCodingTips";
+$description = "Learn about labels & placeholders in HTML. Understand key concepts, examples, and usage.";
+$keywords = "labels, placeholders, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2">
                 The <code>&lt;label&gt;</code> tag is used to define a label for an input element. When clicked, the label focuses the associated input field.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;label for="email"&gt;Email Address:&lt;/label&gt;
 &lt;input type="email" id="email" name="email"&gt;
             </code></pre>
@@ -41,7 +46,7 @@
             <p class="mb-2">
                 The <code>placeholder</code> attribute displays temporary text in the input field. It gives a hint about what to enter.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;input type="text" name="name" placeholder="Enter your full name"&gt;
             </code></pre>
             <p class="mt-2 ">
@@ -51,7 +56,7 @@
 
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Example: Using Labels and Placeholders</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;form action="submit.php" method="post"&gt;
   &lt;label for="name"&gt;Full Name:&lt;/label&gt;
   &lt;input type="text" id="name" name="name" placeholder="John Doe"&gt;&lt;br&gt;&lt;br&gt;
@@ -73,9 +78,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/form-input-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Input Types</a></div>
-    <div><a href="<?= base_url('html/checkbox-radio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Checkbox & Radio →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/form-input-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Input Types</a>
+    <a href="<?= base_url('html/checkbox-radio') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Checkbox & Radio →</a>
 </div>
     </article>
 </main>

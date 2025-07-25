@@ -81,7 +81,7 @@
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/a11y') ?>" class="hover:underline">← Previous: Accessibility</a>
   <span></span>
 </div>

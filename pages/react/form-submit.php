@@ -27,7 +27,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     Use the <code>onSubmit</code> event handler on the <code>&lt;form&gt;</code> tag:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 import { useState } from 'react';
 
 function ContactForm() {
@@ -61,7 +61,7 @@ function ContactForm() {
   <p class="mb-4 text-black dark:text-gray-300">
     You can send form data to an API using <code>fetch()</code> or <code>axios</code> inside the <code>handleSubmit()</code>:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 fetch('/api/submit', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -75,7 +75,7 @@ fetch('/api/submit', {
   <p class="text-black dark:text-gray-300 mb-4">
     Reset the state after a successful submission:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 text-black dark:text-white p-4 text-sm rounded overflow-x-auto mb-4"><code>
 setName('');
   </code></pre>
 
@@ -86,9 +86,9 @@ setName('');
   </p>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/validations') ?>" class="hover:underline">← Previous: Input Validation</a>
-  <a href="<?= base_url('react/form-libraries') ?>" class="hover:underline">Next: Formik / RHF / Yup →</a>
+  <a href="<?= base_url('react/form-libraries') ?>" class="hover:underline ms-auto">Next: Formik / RHF / Yup →</a>
 </div>
 
 </main>

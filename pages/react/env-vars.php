@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     In Create React App, you can declare variables in a file named <code>.env</code>:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 REACT_APP_API_URL=https://api.example.com
 REACT_APP_VERSION=1.0.0
 </code></pre>
@@ -39,7 +39,7 @@ REACT_APP_VERSION=1.0.0
 
   <!-- Accessing in Code -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 2. Accessing Variables in Code</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const apiUrl = process.env.REACT_APP_API_URL;
 
 console.log('Backend API URL:', apiUrl);
@@ -50,7 +50,7 @@ console.log('Backend API URL:', apiUrl);
   <p class="text-black dark:text-gray-300 mb-4">
     Use environment variables to dynamically set base URLs for APIs:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 fetch(`${process.env.REACT_APP_API_URL}/users`)
   .then(res =&gt; res.json())
   .then(data =&gt; console.log(data));
@@ -71,7 +71,7 @@ fetch(`${process.env.REACT_APP_API_URL}/users`)
   <p class="text-black dark:text-gray-300 mb-4">
     React injects environment variables at build time. So if you change a variable, you need to restart your dev server:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 npm start
 </code></pre>
 
@@ -91,9 +91,9 @@ npm start
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/auth-tokens') ?>" class="hover:underline">← Previous: Auth Tokens</a>
-  <a href="<?= base_url('react/rate-limit') ?>" class="hover:underline">Next: Rate Limiting →</a>
+  <a href="<?= base_url('react/rate-limit') ?>" class="hover:underline ms-auto">Next: Rate Limiting →</a>
 </div>
 
 </main>

@@ -44,7 +44,7 @@
   <p class="text-black dark:text-gray-300 mb-2">
     Include the token in the <code>Authorization</code> header of API calls:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const token = localStorage.getItem('authToken');
 
 fetch('/api/user', {
@@ -80,9 +80,9 @@ fetch('/api/user', {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/xss-protection') ?>" class="hover:underline">← Previous: XSS Protection</a>
-  <a href="<?= base_url('react/env-vars') ?>" class="hover:underline">Next: Environment Variables →</a>
+  <a href="<?= base_url('react/env-vars') ?>" class="hover:underline ms-auto">Next: Environment Variables →</a>
 </div>
 
 </main>

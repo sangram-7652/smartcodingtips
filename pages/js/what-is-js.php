@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/what-is-javascript" class="text-blue-600 hover:underline">What is JavaScript?</a>
+                <a href="javascript.php?page=js/what-is-javascript" class="text-blue-600 dark:text-blue-400 hover:underline">What is JavaScript?</a>
             </li>
         </ol>
     </nav>
@@ -37,7 +37,7 @@
     <h2 class="text-2xl font-semibold mb-2">⚙️ JavaScript Basics</h2>
     <p class="mb-2">Here’s a simple JavaScript snippet:</p>
 
-    <pre class="bg-gray-900 text-white text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;script&gt;
+    <pre class="bg-gray-100 dark:bg-gray-800 dark:text-white  text-sm p-4 rounded mb-4 overflow-auto"><code>&lt;script&gt;
   function greet(name) {
     alert('Hello, ' + name + '!');
   }
@@ -68,8 +68,10 @@
     <p>
         JavaScript is the scripting language that powers the interactive web. Whether you're building simple animations or full-stack applications, learning JavaScript is essential for modern developers.
     </p>
-    <div class="mt-4">
-        <p class="font-semibold">Next: <a href="js.php?page=js/history" class="text-blue-600 hover:underline">History and Evolution →</a></p>
+
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
+        <div></div>
+        <a href="<?= base_url('js/history') ?>" class="hover:underline ms-auto">Next: History and Evolution →</a>
     </div>
 
 </main>

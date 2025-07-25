@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/dom-event-delegation" class="text-blue-600 hover:underline">Event Delegation</a>
+                <a href="javascript.php?page=js/dom-event-delegation" class="text-blue-600 dark:text-blue-400 hover:underline">Event Delegation</a>
             </li>
         </ol>
     </nav>
@@ -33,21 +33,21 @@
         Events "bubble" up from the target element to its ancestors. You can use <code>event.target</code> to detect which child was clicked.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>document.getElementById("list").addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>document.getElementById("list").addEventListener("click", function(e) {
     if (e.target.tagName === "LI") {
         alert("You clicked: " + e.target.textContent);
     }
 });</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Example With HTML</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;ul id="list"&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;ul id="list"&gt;
     &lt;li&gt;Apple&lt;/li&gt;
     &lt;li&gt;Banana&lt;/li&gt;
     &lt;li&gt;Cherry&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🚨 Filtering by Class or Attribute</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>container.addEventListener("click", function(e) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>container.addEventListener("click", function(e) {
     if (e.target.classList.contains("delete-btn")) {
         e.target.parentElement.remove(); // Remove the item
     }
@@ -64,8 +64,9 @@
         ✅ <strong>Pro Tip:</strong> Use delegation with lists, tables, and components where elements may be added or removed dynamically.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/bubbling" class="text-blue-600 hover:underline">Bubbling vs Capturing →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/event-object') ?>" class="hover:underline">← Previous: Event Object</a>
+    <a href="<?= base_url('js/bubbling') ?>" class="hover:underline ms-auto">Next: Bubbling vs Capturing →</a>
 </div>
 
 </main>

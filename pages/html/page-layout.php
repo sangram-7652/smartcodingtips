@@ -1,3 +1,8 @@
+<?php
+$title = "Page Layout Tips | SmartCodingTips";
+$description = "Learn about page layout tips in HTML. Understand key concepts, examples, and usage.";
+$keywords = "page, layout, tips, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class=" mb-2">
                 Use elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to define meaningful sections of your page.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;header&gt;Site Header&lt;/header&gt;
 &lt;nav&gt;Navigation Menu&lt;/nav&gt;
 &lt;main&gt;Main Content&lt;/main&gt;
@@ -40,7 +45,7 @@
             <p class=" mb-2">
                 Use <code>&lt;div&gt;</code> or semantic wrappers with CSS classes to group content and control layout with styles.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;div class="container"&gt;
   &lt;section class="intro"&gt;...&lt;/section&gt;
   &lt;section class="features"&gt;...&lt;/section&gt;
@@ -75,9 +80,9 @@
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/comments') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Comments in HTML</a></div>
-    <div><a href="<?= base_url('html/elements-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Elements & Tags →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/comments') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Comments in HTML</a>
+    <a href="<?= base_url('html/elements-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Elements & Tags →</a>
 </div>
     </article>
 </main>

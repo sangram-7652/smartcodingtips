@@ -25,11 +25,11 @@
         <!-- Installation -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Installation</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 npm install @tailwindcss/forms
             </code></pre>
             <p class=" mt-2">Then add the plugin to your <code>tailwind.config.js</code> file:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   content: ['./**/*.html'],
   plugins: [
@@ -43,7 +43,7 @@ module.exports = {
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">2. Default Styles Example</h2>
             <p class=" mb-2">Here’s how a form looks after applying the plugin:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;form class="space-y-4"&gt;
   &lt;label class="block"&gt;
     &lt;span class="text-gray-700"&gt;Email&lt;/span&gt;
@@ -64,7 +64,7 @@ module.exports = {
             <p class="">
                 You can still apply custom utilities like <code>border</code>, <code>rounded</code>, <code>focus:ring</code>, etc., on top of the plugin styles:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;input type="text"
   class="w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
 /&gt;
@@ -89,9 +89,9 @@ module.exports = {
             </p>
         </section>
 
-       <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+       <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/forms-labels') ?>" class="hover:underline">← Previous: Floating Labels and Focus Styles</a>
-  <a href="<?= base_url('tailwind/forms-validation') ?>" class="hover:underline">Next: Interactive Forms with Validation Styling →</a>
+  <a href="<?= base_url('tailwind/forms-validation') ?>" class="hover:underline ms-auto">Next: Interactive Forms with Validation Styling →</a>
 </div>
     </article>
 </main>

@@ -28,7 +28,7 @@
   <p class="mb-2 text-black dark:text-gray-300">
     Use a wildcard path <code>*</code> to show a custom page for unknown URLs.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // NotFound.jsx
 export default function NotFound() {
   return &lt;h2&gt;404 - Page Not Found&lt;/h2&gt;;
@@ -46,7 +46,7 @@ export default function NotFound() {
   <p class="mb-2 text-black dark:text-gray-300">
     Use a wrapper component to restrict access based on authentication.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 // ProtectedRoute.jsx
 import { Navigate } from 'react-router-dom';
 
@@ -57,7 +57,7 @@ function ProtectedRoute({ children }) {
 </code></pre>
 
   <h2 class="text-xl font-semibold mb-4 text-black dark:text-white">🔗 3. Use It in Your Routes</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 &lt;Routes&gt;
   &lt;Route path="/dashboard" element={
     &lt;ProtectedRoute&gt;
@@ -72,9 +72,9 @@ function ProtectedRoute({ children }) {
   </p>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/dynamic-routes') ?>" class="hover:underline">← Previous: Dynamic Routing</a>
-  <a href="<?= base_url('react/use-context') ?>" class="hover:underline">Next: useContext() →</a>
+  <a href="<?= base_url('react/use-context') ?>" class="hover:underline ms-auto">Next: useContext() →</a>
 </div>
 
 </main>

@@ -41,7 +41,7 @@
   <p class="mb-4 text-black dark:text-gray-300">
     Instead of telling the browser how to update the UI, you describe what it should look like, and React handles the rest.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// Declarative code
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm mb-4 text-black dark:text-white overflow-x-auto"><code>// Declarative code
 const App = () =&gt; &lt;h1&gt;Hello World&lt;/h1&gt;;</code></pre>
 
   <hr class="my-6 border-gray-300 dark:border-gray-700">
@@ -85,9 +85,9 @@ const App = () =&gt; &lt;h1&gt;Hello World&lt;/h1&gt;;</code></pre>
   </p>
 
   <!-- Next Page Navigation -->
-<div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+<div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/what-is-react') ?>" class="hover:underline">← Previous: What is React?</a>
-  <a href="<?= base_url('react/react-vs-others') ?>" class="hover:underline">Next: React vs Vanilla JS / Angular / Vue →</a>
+  <a href="<?= base_url('react/react-vs-others') ?>" class="hover:underline ms-auto">Next: React vs Vanilla JS / Angular / Vue →</a>
 </div>
 
 </main>

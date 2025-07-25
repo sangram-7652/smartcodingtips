@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
             <p class=" mb-2">Use the <code>@keyframes</code> rule to define animation stages, and apply the animation using the <code>animation</code> property:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @keyframes slideRight {
     from {
         transform: translateX(0);
@@ -46,7 +46,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Multiple Steps with Percentages</h2>
             <p class=" mb-2">Define multiple stages using percentages:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @keyframes bounce {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-50px); }
@@ -76,7 +76,7 @@
         <!-- Shorthand Example -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Shorthand Example</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .animate {
     animation: pulse 1.5s ease-in-out infinite;
 }
@@ -108,9 +108,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/transitions') ?>" class="text-blue-600 hover:underline">← Previous: CSS Transitions</a></div>
-    <div><a href="<?= base_url('css/transforms') ?>" class="text-blue-600 hover:underline">Next: 2D & 3D Transforms →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/transitions') ?>" class="text-blue-600 hover:underline">← Previous: CSS Transitions</a> 
+   <a href="<?= base_url('css/transforms') ?>" class="text-blue-600 hover:underline ms-auto">Next: 2D & 3D Transforms →</a> 
 </div>
     </article>
 </main>

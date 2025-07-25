@@ -25,10 +25,10 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Inline CSS</h2>
             <p class=" mb-2">
-                Inline CSS is used to apply a unique style directly to a single HTML element using the 
+                Inline CSS is used to apply a unique style directly to a single HTML element using the
                 <code>style</code> attribute.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;p style="color: red; 
 font-size: 18px;"&gt;
 This is a red paragraph.&lt;/p&gt;
@@ -46,7 +46,7 @@ This is a red paragraph.&lt;/p&gt;
 
                 </code> tag within the <code>&lt;head&gt;</code> section of the HTML document.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;head&gt;
     &lt;style&gt;
         p {
@@ -67,7 +67,7 @@ This is a red paragraph.&lt;/p&gt;
             <p class=" mb-2">
                 External CSS is written in a separate file with a <code>.css</code> extension and linked using the <code>&lt;link&gt;</code> tag.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;head&gt;
     &lt;link rel="stylesheet"
      href="styles.css"&gt;
@@ -76,7 +76,7 @@ This is a red paragraph.&lt;/p&gt;
             <p class=" mt-2">
                 The <code>styles.css</code> file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p {
     color: blue;
     font-size: 22px;
@@ -95,9 +95,9 @@ p {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Why Use CSS?</a></div>
-    <div><a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: How CSS Works →</a></div>
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+           <a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Why Use CSS?</a> 
+           <a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: How CSS Works →</a> 
+        </div>
     </article>
 </main>

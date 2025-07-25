@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Input Fields</h2>
             <p class=" mb-2">Here’s a styled text input with Tailwind utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;input type="text" placeholder="Your Name"
   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"&gt;
             </code></pre>
@@ -36,7 +36,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Select Boxes</h2>
             <p class=" mb-2">Customize the look of native dropdowns:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;select
   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"&gt;
   &lt;option&gt;Option 1&lt;/option&gt;
@@ -49,7 +49,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Buttons</h2>
             <p class=" mb-2">Buttons can be styled for different states:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;button
   class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"&gt;
   Submit
@@ -61,7 +61,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Full Form Example</h2>
             <p class=" mb-2">A compact form layout using grid and spacing:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;form class="grid gap-4 max-w-md"&gt;
   &lt;input type="email" placeholder="Email"
     class="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"&gt;
@@ -99,9 +99,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/mobile-nav') ?>" class="hover:underline">← Previous: Building a Mobile-First Navbar</a>
-  <a href="<?= base_url('tailwind/forms-custom') ?>" class="hover:underline">Next: Custom Checkbox and Radio Buttons →</a>
+  <a href="<?= base_url('tailwind/forms-custom') ?>" class="hover:underline ms-auto">Next: Custom Checkbox and Radio Buttons →</a>
 </div>
     </article>
 </main>

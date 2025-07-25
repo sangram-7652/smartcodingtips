@@ -37,7 +37,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     This is the most common approach to split components dynamically:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import React, { lazy, Suspense } from 'react';
 
 const AboutPage = lazy(() => import('./pages/About'));
@@ -56,7 +56,7 @@ function App() {
   <p class="text-black dark:text-gray-300 mb-4">
     Works great with <code>react-router</code> to load pages only when needed.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const Home = lazy(() => import('./pages/Home'));
 const Contact = lazy(() => import('./pages/Contact'));
 
@@ -71,7 +71,7 @@ const Contact = lazy(() => import('./pages/Contact'));
   <p class="text-black dark:text-gray-300 mb-4">
     You can name your chunks for easier debugging:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const LazySettings = lazy(() =&gt; import(/* webpackChunkName: "settings" */ './Settings'));
 </code></pre>
 
@@ -93,9 +93,9 @@ const LazySettings = lazy(() =&gt; import(/* webpackChunkName: "settings" */ './
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/lazy') ?>" class="hover:underline">← Previous: Lazy Loading</a>
-  <a href="<?= base_url('react/performance-tips') ?>" class="hover:underline">Next: Performance Tips →</a>
+  <a href="<?= base_url('react/performance-tips') ?>" class="hover:underline ms-auto">Next: Performance Tips →</a>
 </div>
 
 </main>

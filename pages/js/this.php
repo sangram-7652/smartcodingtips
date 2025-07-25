@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/this-keyword" class="text-blue-600 hover:underline">The <code>this</code> Keyword</a>
+                <a href="javascript.php?page=js/this-keyword" class="text-blue-600 dark:text-blue-400 hover:underline">The <code>this</code> Keyword</a>
             </li>
         </ol>
     </nav>
@@ -22,11 +22,11 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔍 Global Context</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.log(this); 
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>console.log(this); 
 // In browsers, this refers to the global window object</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Inside an Object Method</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const user = {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const user = {
     name: "Alice",
     greet: function() {
         console.log("Hi, I'm " + this.name);
@@ -36,7 +36,7 @@
 user.greet(); // "Hi, I'm Alice"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚠️ In a Regular Function</h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function show() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function show() {
     console.log(this);
 }
 
@@ -46,7 +46,7 @@ show();
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">⚡ With Arrow Functions</h2>
     <p class="mb-4">Arrow functions do not bind their own <code>this</code>. They inherit it from the outer lexical scope.</p>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>const person = {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>const person = {
     name: "Bob",
     greet: () => {
         console.log("Hi, I'm " + this.name);
@@ -56,7 +56,7 @@ show();
 person.greet(); // "Hi, I'm undefined"</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🧠 Using <code>bind()</code>, <code>call()</code>, and <code>apply()</code></h2>
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>function sayHello() {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>function sayHello() {
     console.log("Hello, " + this.name);
 }
 
@@ -72,8 +72,10 @@ boundFunc();            // Hello, Charlie</code></pre>
         💡 <strong>Tip:</strong> Always be mindful of how a function is called — that's what determines what <code>this</code> refers to.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/arrays" class="text-blue-600 hover:underline">Arrays and Methods →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/scope') ?>" class="hover:underline">← Previous: Scope & Closure</a>
+    <a href="<?= base_url('js/arrays') ?>" class="hover:underline ms-auto">Next: Arrays and Methods →</a>
 </div>
+
 
 </main>

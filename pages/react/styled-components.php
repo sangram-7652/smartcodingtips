@@ -24,13 +24,13 @@
   <hr class="my-6 border-gray-300 dark:border-gray-700">
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 1. Installation</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install styled-components
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🎨 2. Basic Usage</h2>
   <p class="mb-2 text-black dark:text-gray-300">Create a styled component using the <code>styled</code> object:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -53,7 +53,7 @@ function App() {
 </code></pre>
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🌈 3. Dynamic Styles with Props</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 const Button = styled.button`
   background-color: ${(props) => (props.primary ? '#4f46e5' : '#6b7280')};
 `;
@@ -64,7 +64,7 @@ const Button = styled.button`
 
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🌙 4. Theme Support</h2>
   <p class="mb-2 text-black dark:text-gray-300">Styled Components supports theming with <code>ThemeProvider</code>:</p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
@@ -88,9 +88,9 @@ const theme = {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/tailwind') ?>" class="hover:underline">← Previous: Tailwind CSS</a>
-  <a href="<?= base_url('react/emotion') ?>" class="hover:underline">Next: Emotion →</a>
+  <a href="<?= base_url('react/emotion') ?>" class="hover:underline ms-auto">Next: Emotion →</a>
 </div>
 
 

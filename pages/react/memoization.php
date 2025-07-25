@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     <code>useMemo</code> caches the result of a function. It's useful for expensive calculations.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const expensiveValue = useMemo(() =&gt; {
   return computeHeavyTask(input);
 }, [input]);
@@ -39,7 +39,7 @@ const expensiveValue = useMemo(() =&gt; {
   <p class="text-black dark:text-gray-300 mb-4">
     <code>useCallback</code> memoizes a function itself, preventing it from being re-created unless dependencies change.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const handleClick = useCallback(() =&gt; {
   console.log("Clicked");
 }, []);
@@ -50,7 +50,7 @@ const handleClick = useCallback(() =&gt; {
   <p class="text-black dark:text-gray-300 mb-4">
     Wrap components with <code>React.memo</code> to prevent re-renders when props haven't changed.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 const Button = React.memo(({ onClick, children }) =&gt; {
   return &lt;button onClick={onClick}&gt;{children}&lt;/button&gt;;
 });
@@ -81,9 +81,9 @@ const Button = React.memo(({ onClick, children }) =&gt; {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/react-query') ?>" class="hover:underline">← Previous: React Query</a>
-  <a href="<?= base_url('react/virtualization') ?>" class="hover:underline">Next: Virtualization →</a>
+  <a href="<?= base_url('react/virtualization') ?>" class="hover:underline ms-auto">Next: Virtualization →</a>
 </div>
 
 </main>

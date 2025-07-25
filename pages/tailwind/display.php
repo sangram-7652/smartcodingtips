@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Block and Inline Display</h2>
             <p class=" mb-2">Control whether elements behave like block or inline elements:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="block"&gt;Block-level element&lt;/div&gt;
 &lt;span class="inline"&gt;Inline element&lt;/span&gt;
 &lt;div class="inline-block"&gt;Inline Block Element&lt;/div&gt;
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Flex Display</h2>
             <p class=" mb-2">Enable flexbox layout using <code>flex</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="flex space-x-4"&gt;
     &lt;div&gt;Item 1&lt;/div&gt;
     &lt;div&gt;Item 2&lt;/div&gt;
@@ -50,7 +50,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Grid Display</h2>
             <p class=" mb-2">Activate CSS Grid layout with <code>grid</code> class:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 &lt;div class="grid grid-cols-3 gap-4"&gt;
     &lt;div&gt;Grid 1&lt;/div&gt;
     &lt;div&gt;Grid 2&lt;/div&gt;
@@ -79,9 +79,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/sizing') ?>" class="hover:underline">← Previous: Widths, Heights, Max/Min Sizing</a>
-  <a href="<?= base_url('tailwind/box-sizing') ?>" class="hover:underline">Next: Float, Clear, Overflow, Object Fit →</a>
+  <a href="<?= base_url('tailwind/box-sizing') ?>" class="hover:underline ms-auto">Next: Float, Clear, Overflow, Object Fit →</a>
 </div>
 
     </article>

@@ -1,3 +1,8 @@
+<?php
+$title = "Geolocation | SmartCodingTips";
+$description = "Learn about geolocation in HTML. Understand key concepts, examples, and usage.";
+$keywords = "geolocation, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2 break-all">
                 To get the user's location, you use the <code>navigator.geolocation.getCurrentPosition()</code> method.
             </p>
-            <pre class="bg-gray-100  rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-xs break-all">
+            <pre class="bg-gray-100  rounded overflow-x-auto dark:bg-gray-800 dark:text-white"><code class="text-xs break-all">
 &lt;button onclick="getLocation()"&gt;Get My Location&lt;/button&gt;
 
 &lt;p id="location"&gt;&lt;/p&gt;
@@ -74,9 +79,9 @@ function showError(error) {
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/html5-canvas') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Canvas</a></div>
-    <div><a href="<?= base_url('html/html5-storage') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Web Storage →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/html5-canvas') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Canvas</a>
+    <a href="<?= base_url('html/html5-storage') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Web Storage →</a>
 </div>
     </article>
 </main>

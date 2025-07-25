@@ -37,7 +37,7 @@
         <!-- Example Usage -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Example: Inset with Absolute Positioning</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="relative w-64 h-32 bg-gray-200"&gt;
     &lt;div class="absolute top-2 right-2 bg-blue-500 text-white px-3 py-1 rounded"&gt;
         Top Right Box
@@ -50,7 +50,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Full Coverage (Inset 0)</h2>
             <p class=" mb-2">Using <code>inset-0</code> can make an element stretch fully over its parent:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="relative w-64 h-32 bg-gray-300"&gt;
     &lt;div class="absolute inset-0 bg-black opacity-30"&gt;&lt;/div&gt;
     &lt;p class="relative z-10 text-white p-4"&gt;Overlay Content&lt;/p&gt;
@@ -64,7 +64,7 @@
             <p class=" mb-2">
                 You can extend the theme in <code>tailwind.config.js</code> to include custom spacing values:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   theme: {
     extend: {
@@ -96,9 +96,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/position') ?>" class="hover:underline">← Previous: Position Types</a>
-  <a href="<?= base_url('tailwind/z-index') ?>" class="hover:underline">Next: z-Index Layers →</a>
+  <a href="<?= base_url('tailwind/z-index') ?>" class="hover:underline ms-auto">Next: z-Index Layers →</a>
 </div>
 
     </article>

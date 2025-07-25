@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/first-script" class="text-blue-600 hover:underline">Your First Script</a>
+                <a href="javascript.php?page=js/first-script" class="text-blue-600 dark:text-blue-400 hover:underline">Your First Script</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         Create a file named <code>index.html</code> and write the following code:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>&lt;!DOCTYPE html&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -70,7 +70,7 @@
         Modify your script to experiment:
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>&lt;script&gt;
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded  dark:bg-gray-800 dark:text-white text-sm"><code>&lt;script&gt;
     let name = prompt("What is your name?");
     alert("Welcome, " + name + "!");
 &lt;/script&gt;
@@ -79,7 +79,9 @@
     <p class="mt-4">
         You’ve just taken your first step into the world of JavaScript. Next, we’ll explore how to work with variables and data types.
     </p>
-            <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/variables" class="text-blue-600 hover:underline">Variables: var, let, const →</a></p>
-</div>  
+            
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/running-js') ?>" class="hover:underline">← Previous: Where JavaScript Runs</a>
+    <a href="<?= base_url('js/variables') ?>" class="hover:underline ms-auto">Next: Variables: var, let, const →</a>
+</div>
 </main>

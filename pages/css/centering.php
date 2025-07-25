@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Centering Text</h2>
             <p class=" mb-2">Use <code>text-align: center;</code> on the parent container:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .center-text {
     text-align: center;
 }
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Horizontally Center a Block Element</h2>
             <p class=" mb-2">Use <code>margin: 0 auto;</code> and set a width:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .center-block {
     width: 300px;
     margin: 0 auto;
@@ -49,7 +49,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Centering with Flexbox</h2>
             <p class=" mb-2">Flexbox makes it easy to center content both horizontally and vertically:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-center {
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Centering with CSS Grid</h2>
             <p class=" mb-2">CSS Grid allows centering using <code>place-items</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid-center {
     display: grid;
     place-items: center;
@@ -76,7 +76,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Center with Absolute Positioning</h2>
             <p class=" mb-2">Using transforms is another method to center an element:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .absolute-center {
     position: absolute;
     top: 50%;
@@ -94,9 +94,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/z-index') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Z-index & Layering</a></div>
-    <div><a href="<?= base_url('css/backgrounds') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Backgrounds →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/z-index') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Z-index & Layering</a> 
+   <a href="<?= base_url('css/backgrounds') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Backgrounds →</a> 
 </div>
     </article>
 </main>

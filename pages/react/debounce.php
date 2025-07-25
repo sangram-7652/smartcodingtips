@@ -28,7 +28,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     If an API fails (e.g., due to network issues), retry a few times before showing an error:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 async function fetchWithRetry(url, retries = 3, delay = 1000) {
   try {
     const res = await fetch(url);
@@ -50,7 +50,7 @@ async function fetchWithRetry(url, retries = 3, delay = 1000) {
   <p class="text-black dark:text-gray-300 mb-4">
     Debouncing limits how often a function is called during rapid events (like typing):
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function useDebounce(value, delay) {
   const [debounced, setDebounced] = useState(value);
 
@@ -68,7 +68,7 @@ const search = useDebounce(inputValue, 500);
 
   <!-- With lodash -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 3. Debounce with Lodash</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import { debounce } from "lodash";
 
 const handleChange = debounce((value) =&gt; {
@@ -87,9 +87,9 @@ const handleChange = debounce((value) =&gt; {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/loading-skeletons') ?>" class="hover:underline">← Previous: Loading Indicators</a>
-  <a href="<?= base_url('react/react-query') ?>" class="hover:underline">Next: React Query →</a>
+  <a href="<?= base_url('react/react-query') ?>" class="hover:underline ms-auto">Next: React Query →</a>
 </div>
 
 </main>

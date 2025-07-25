@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/es6-overview" class="text-blue-600 hover:underline">ES6+ Overview</a>
+                <a href="javascript.php?page=js/es6-overview" class="text-blue-600 dark:text-blue-400 hover:underline">ES6+ Overview</a>
             </li>
         </ol>
     </nav>
@@ -21,11 +21,11 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 let & const</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>let count = 10;  // Mutable
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>let count = 10;  // Mutable
 const PI = 3.14; // Immutable</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🔻 Arrow Functions</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Traditional
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Traditional
 function greet(name) {
   return "Hello " + name;
 }
@@ -34,11 +34,11 @@ function greet(name) {
 const greet = name => `Hello ${name}`;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Template Literals</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>const user = "Alice";
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>const user = "Alice";
 console.log(`Welcome, ${user}!`);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🛠️ Destructuring</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Object
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Object
 const user = { name: "Bob", age: 25 };
 const { name, age } = user;
 
@@ -47,7 +47,7 @@ const colors = ["red", "green"];
 const [first, second] = colors;</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🌀 Spread & Rest Operators</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Spread
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Spread
 const nums = [1, 2, 3];
 const newNums = [...nums, 4, 5];
 
@@ -57,14 +57,14 @@ function sum(...args) {
 }</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📁 Modules</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>// Exporting
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>// Exporting
 export const sayHello = () => console.log("Hello");
 
 // Importing
 import { sayHello } from './utils.js';</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">📌 Default Parameters</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name = "Guest") {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>function greet(name = "Guest") {
   console.log(`Hello, ${name}`);
 }</code></pre>
 
@@ -72,8 +72,9 @@ import { sayHello } from './utils.js';</code></pre>
         💡 <strong>Next:</strong> Dive into classes, inheritance, and OOP with ES6+!
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/default-params" class="text-blue-600 hover:underline">Default Params →</a></p>
+   <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/display-api') ?>" class="hover:underline">← Previous: Display Fetched Data</a>
+    <a href="<?= base_url('js/default-params') ?>" class="hover:underline ms-auto">Next: Default Params →</a>
 </div>
 
 </main>

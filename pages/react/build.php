@@ -25,7 +25,7 @@
 
   <!-- Step 1 -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧱 1. Run Build Command</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm run build
 </code></pre>
   <p class="text-black dark:text-gray-300">
@@ -49,7 +49,7 @@ npm run build
   <p class="text-black dark:text-gray-300 mb-2">
     Use a static server to preview your build locally:
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 npm install -g serve
 serve -s build
 </code></pre>
@@ -68,7 +68,7 @@ serve -s build
   <p class="text-black dark:text-gray-300 mb-2">
     In production, React reads variables from <code>.env</code> files starting with <code>REACT_APP_</code>.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white mb-6 overflow-x-auto"><code>
 REACT_APP_API_URL=https://api.example.com
 </code></pre>
 
@@ -81,9 +81,9 @@ REACT_APP_API_URL=https://api.example.com
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/project-blog') ?>" class="hover:underline">← Previous: Blog App</a>
-  <a href="<?= base_url('react/hosting') ?>" class="hover:underline">Next: Hosting Platforms →</a>
+  <a href="<?= base_url('react/hosting') ?>" class="hover:underline ms-auto">Next: Hosting Platforms →</a>
 </div>
 
 </main>

@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Use <code>@apply</code> to Extract Reusable Styles</h2>
             <p class=" mb-2">Instead of repeating long utility chains, use <code>@apply</code> in your CSS files to extract styles:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 .btn-primary {
     @apply bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700;
 }
@@ -37,7 +37,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Create Component Partials</h2>
             <p class=" mb-2">Break your UI into reusable components (cards, buttons, navbars), especially in frameworks like React or Vue.</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 // Example: Button.vue (Vue)
 &lt;button class="btn-primary"&gt;Submit&lt;/button&gt;
             </code></pre>
@@ -57,7 +57,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Use Purge Effectively</h2>
             <p class=" mb-2">Tailwind uses PurgeCSS (or JIT mode) to remove unused classes from the final CSS build. Make sure your paths are correctly set in <code>tailwind.config.js</code>:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 content: [
   "./src/**/*.{html,js}",
   "./components/**/*.{js,vue}",
@@ -81,9 +81,9 @@ content: [
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/optimize-minify') ?>" class="hover:underline">← Previous: Minifying with PostCSS</a>
-  <a href="<?= base_url('tailwind/a11y') ?>" class="hover:underline">Next: Accessibility with Tailwind →</a>
+  <a href="<?= base_url('tailwind/a11y') ?>" class="hover:underline ms-auto">Next: Accessibility with Tailwind →</a>
 </div>
     </article>
 </main>

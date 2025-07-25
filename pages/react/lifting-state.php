@@ -76,9 +76,9 @@ function Increment({ onClick }) {
   </ul>
 
   <!-- Next Page Navigation -->
- <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
+ <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600 dark:text-blue-400  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/prop-drilling') ?>" class="hover:underline">← Previous: Props Drilling</a>
-  <a href="<?= base_url('react/callback-props') ?>" class="hover:underline">Next: Callback Props →</a>
+  <a href="<?= base_url('react/callback-props') ?>" class="hover:underline ms-auto">Next: Callback Props →</a>
 </div>
 
 </main>

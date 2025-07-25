@@ -27,7 +27,7 @@
             <p class=" mb-2">
                 The <code>text-align</code> property controls horizontal alignment of text within a container.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 p.left {
     text-align: left;
 }
@@ -54,7 +54,7 @@ p.justify {
             <p class=" mb-2">
                 The <code>text-decoration</code> property is used to underline, overline, strike-through, or remove decoration from text.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 a {
     text-decoration: none;
 }
@@ -74,7 +74,7 @@ p.marked {
             <p class=" mb-2">
                 The shorthand version allows you to specify style, color, and type together:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 a.custom-link {
     text-decoration: underline dotted red;
 }
@@ -86,7 +86,7 @@ a.custom-link {
             <p class=" mb-2">
                 Change the capitalization of text using <code>text-transform</code>.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .upper {
     text-transform: uppercase;
 }
@@ -108,9 +108,9 @@ a.custom-link {
             </p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Line & Letter Spacing</a></div>
-    <div><a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Hex, RGB, HSL →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Line & Letter Spacing</a> 
+   <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Hex, RGB, HSL →</a> 
 </div>
     </article>
 </main>

@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Use the <code>transition</code> property to define which CSS property to animate, the duration, and optionally, the timing function and delay.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .button {
     transition: background-color 0.3s ease;
 }
@@ -48,7 +48,7 @@
                 <li><code>transition-timing-function</code>: Easing (e.g., <code>ease</code>, <code>linear</code>, <code>ease-in</code>)</li>
                 <li><code>transition-delay</code>: Delay before starting</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mt-2"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mt-2"><code class="text-sm">
 .box {
     transition-property: transform;
     transition-duration: 0.5s;
@@ -62,7 +62,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Shorthand Transition</h2>
             <p class=" mb-2">Combine all properties into one line:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .card {
     transition: transform 0.4s ease-in-out;
 }
@@ -76,7 +76,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Multiple Transitions</h2>
             <p class=" mb-2">Animate more than one property at the same time:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     transition: opacity 0.3s ease, transform 0.5s ease-in;
 }
@@ -101,9 +101,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/shadows') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Shadows</a></div>
-    <div><a href="<?= base_url('css/animations') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Keyframe Animations →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/shadows') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Shadows</a> 
+   <a href="<?= base_url('css/animations') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Keyframe Animations →</a> 
 </div>
     </article>
 </main>

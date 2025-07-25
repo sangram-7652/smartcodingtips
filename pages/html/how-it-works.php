@@ -1,3 +1,8 @@
+<?php
+$title = "How HTML Works | SmartCodingTips";
+$description = "Learn about how html works in HTML. Understand key concepts, examples, and usage.";
+$keywords = "how, html, works, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -34,7 +39,7 @@
 
         <section class="mb-6 ">
             <h2 class="text-2xl font-semibold mb-2">HTML in Action</h2>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap  dark:bg-gray-900 dark:text-white"><code class="text-sm ">
+            <pre class="bg-gray-100 p-4 rounded overflow-x-auto   dark:bg-gray-800 dark:text-white"><code class="text-sm ">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -63,9 +68,9 @@
             <p class="">HTML is more than markup—it's the language that gives structure to every online experience. Knowing how it works unlocks the power to create, style, and script the web effectively.</p>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/importance') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Importance in Web Dev</a></div>
-    <div><a href="<?= base_url('html/first-page') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Your First HTML Page →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/importance') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Importance in Web Dev</a>
+    <a href="<?= base_url('html/first-page') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Your First HTML Page →</a>
 </div>
     </article>
 </main>

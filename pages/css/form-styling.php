@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Styling Input Fields</h2>
             <p class=" mb-2">Basic input styling includes padding, borders, and focus states:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -49,7 +49,7 @@ input:focus {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Styling Buttons</h2>
             <p class=" mb-2">Customize colors, padding, border-radius, and hover/focus effects:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 button {
     background-color: #2563eb;
     color: white;
@@ -76,7 +76,7 @@ button:focus {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Disabled States</h2>
             <p class=" mb-2">Style disabled inputs and buttons clearly to indicate interactivity:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 input:disabled,
 button:disabled {
     background-color: #f3f4f6;
@@ -91,7 +91,7 @@ button:disabled {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Input with Icons (Optional)</h2>
             <p class=" mb-2">You can style inputs with icons using relative/absolute positioning:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .input-wrapper {
     position: relative;
 }
@@ -129,8 +129,9 @@ button:disabled {
             </p>
         </section>
 
-       <div class="mt-4">
-    <p class="font-semibold">Next: <a href="css.php?page=css/form-layouts" class="text-blue-600 hover:underline">Form Layout →</a></p>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/dark-mode') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Dark Mode</a> 
+   <a href="<?= base_url('css/form-layouts') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Form Layout →</a> 
 </div>
     </article>
 </main>

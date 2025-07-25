@@ -31,7 +31,7 @@
                 <li><code>scale(x, y)</code> – resizes the element</li>
                 <li><code>skew(x-angle, y-angle)</code> – skews the element</li>
             </ul>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     transform: translate(50px, 20px) rotate(10deg) scale(1.2);
 }
@@ -44,7 +44,7 @@
             <p class=" mb-2">
                 3D transforms add depth to the element using the Z-axis. Make sure to set the <code>perspective</code> for the parent container.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .scene {
     perspective: 1000px;
 }
@@ -61,7 +61,7 @@
             <p class=" mb-2">
                 Controls the pivot point of the transform:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     transform-origin: top left;
     transform: rotate(15deg);
@@ -73,7 +73,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Combining Transforms</h2>
             <p class=" mb-2">You can combine multiple transforms in one rule:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     transform: scale(1.1) translateX(20px) rotateZ(10deg);
 }
@@ -86,7 +86,7 @@
             <p class=" mb-2">
                 Use <code>transform: translateZ(0);</code> to trigger GPU acceleration and smoother animations:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .card {
     transform: translateZ(0);
 }
@@ -101,9 +101,9 @@
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/animations') ?>" class="text-blue-600 hover:underline">← Previous: Keyframe Animations</a></div>
-    <div><a href="<?= base_url('css/media-queries') ?>" class="text-blue-600 hover:underline">Next: Media Queries →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/animations') ?>" class="text-blue-600 hover:underline">← Previous: Keyframe Animations</a> 
+   <a href="<?= base_url('css/media-queries') ?>" class="text-blue-600 hover:underline ms-auto">Next: Media Queries →</a> 
 </div>
     </article>
 </main>

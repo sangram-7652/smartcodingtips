@@ -1,3 +1,8 @@
+<?php
+$title = "Table Styling | SmartCodingTips";
+$description = "Learn about table styling in HTML. Understand key concepts, examples, and usage.";
+$keywords = "table, styling, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Default Table vs. Styled Table</h2>
             <p class="mb-2">Here's how a table looks without and with CSS styling:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Product&lt;/th&gt;
@@ -43,7 +48,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Basic CSS Table Styling</h2>
             <p class="mb-2">This example applies common styling rules to make tables more readable:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 table {
   width: 100%;
   border-collapse: collapse;
@@ -65,7 +70,7 @@ th {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Zebra Striping Rows</h2>
             <p class="mb-2">Alternating row colors improve readability:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 tr:nth-child(even) {
   background-color: #f9fafb;
 }
@@ -75,7 +80,7 @@ tr:nth-child(even) {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Hover Effects</h2>
             <p class="mb-2">Highlight a row when the mouse hovers over it:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 tr:hover {
   background-color: #e5e7eb;
 }
@@ -85,14 +90,14 @@ tr:hover {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">Responsive Table Design</h2>
             <p class="mb-2">Use the following style for tables on smaller screens:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 table {
   overflow-x: auto;
   display: block;
 }
             </code></pre>
             <p class="mt-2">Or wrap the table in a container:</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;div style="overflow-x: auto;"&gt;
   &lt;table&gt;...&lt;/table&gt;
 &lt;/div&gt;
@@ -108,9 +113,9 @@ table {
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/create-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Creating Tables</a></div>
-    <div><a href="<?= base_url('html/rowspan-colspan') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Rowspan & Colspan →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/create-table') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Creating Tables</a>
+    <a href="<?= base_url('html/rowspan-colspan') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Rowspan & Colspan →</a>
 </div>
     </article>
 </main>

@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Tailwind CLI is a command-line tool for processing your input CSS file with Tailwind’s directives into a final output CSS. It's a great way to use Tailwind without setting up complex build tools.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
             </pre>
             <p class=" mt-2">
@@ -42,13 +42,13 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
             <p class=" mb-2">
                 To enable customization (themes, plugins, variants), create a Tailwind configuration file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 npx tailwindcss init
             </pre>
             <p class=" mt-2">
                 This generates a basic <code>tailwind.config.js</code> file:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 module.exports = {
   content: [],
   theme: {
@@ -63,7 +63,7 @@ module.exports = {
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Customizing Your Tailwind Build</h2>
             <p class=" mb-2">You can add paths to your HTML/JS/PHP files so Tailwind only includes used styles:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm">
 module.exports = {
   content: ["./*.html", "./src/**/*.{js,ts,php}"],
   theme: {
@@ -105,9 +105,9 @@ module.exports = {
         </section>
 
         <!-- Next Link -->
-        <div class="mt-4 flex justify-between text-blue-600 dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600 dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/installation') ?>" class="hover:underline">← Previous: Installing Tailwind via CDN and NPM</a>
-  <a href="<?= base_url('tailwind/utility-classes') ?>" class="hover:underline">Next: What Are Utility Classes? →</a>
+  <a href="<?= base_url('tailwind/utility-classes') ?>" class="hover:underline ms-auto">Next: What Are Utility Classes? →</a>
 </div>
     </article>
 </main>

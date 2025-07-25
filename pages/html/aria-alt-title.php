@@ -1,3 +1,8 @@
+<?php
+$title = "Alt, Title, ARIA | SmartCodingTips";
+$description = "Learn about alt, title, aria in HTML. Understand key concepts, examples, and usage.";
+$keywords = "alt, title, aria, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -25,7 +30,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. The <code>alt</code> Attribute</h2>
             <p class="mb-2 ">Used with images to describe their content when the image cannot be displayed or is read by screen readers.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;img src="logo.png" alt="Smart Coding Tips Logo"&gt;
             </code></pre>
             <p class="mt-2">✅ Always provide meaningful <code>alt</code> text for important images. Use <code>alt=""</code> for decorative images.</p>
@@ -34,7 +39,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. The <code>title</code> Attribute</h2>
             <p class="mb-2 ">Displays a tooltip when the user hovers over an element. It also provides additional info for screen readers.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;a href="download.html" title="Click to download the file"&gt;Download&lt;/a&gt;
             </code></pre>
             <p class="mt-2">✅ Keep titles short and informative.</p>
@@ -52,7 +57,7 @@
                 <li><code>role</code> – Defines the role of the element (e.g., <code>button</code>, <code>alert</code>).</li>
             </ul>
 
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;button aria-label="Close"&gt;✖&lt;/button&gt;
 
 &lt;div role="alert"&gt;
@@ -62,9 +67,9 @@
             <p class="mt-2">✅ Use ARIA only when native HTML cannot provide the necessary semantics.</p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/sticky-footer') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Sticky Header/Footer</a></div>
-    <div><a href="<?= base_url('html/screen-readers') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Screen Readers →</a></div>
+       <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/sticky-footer') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Sticky Header/Footer</a>
+    <a href="<?= base_url('html/screen-readers') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Screen Readers →</a>
 </div>
     </article>
 </main>

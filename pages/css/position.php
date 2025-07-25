@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 The default position. Elements are placed in the normal document flow.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .element {
     position: static;
 }
@@ -41,7 +41,7 @@
             <p class=" mb-2">
                 The element is positioned relative to its normal position. You can nudge it using <code>top</code>, <code>left</code>, etc.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     position: relative;
     top: 10px;
@@ -56,7 +56,7 @@
             <p class=" mb-2">
                 Positioned relative to the nearest positioned ancestor (not static). If none, it's relative to the viewport.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .container {
     position: relative;
 }
@@ -75,7 +75,7 @@
             <p class=" mb-2">
                 The element is positioned relative to the browser window. It stays in place during scroll.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .header {
     position: fixed;
     top: 0;
@@ -90,7 +90,7 @@
             <p class=" mb-2">
                 The element toggles between relative and fixed, based on the user's scroll position.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .navbar {
     position: sticky;
     top: 0;
@@ -104,7 +104,7 @@
             <p class=" mb-2">
                 Controls the stacking order of overlapping elements. Higher values appear on top.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .box {
     position: absolute;
     z-index: 10;
@@ -120,9 +120,9 @@
             </p>
         </section>
 
-<div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/display') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Display Types</a></div>
-    <div><a href="<?= base_url('css/z-index') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Z-index & Layering →</a></div>
+<div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/display') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Display Types</a> 
+   <a href="<?= base_url('css/z-index') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Z-index & Layering →</a> 
 </div>
     </article>
 </main>

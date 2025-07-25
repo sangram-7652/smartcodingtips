@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Basic Syntax</h2>
             <p class=" mb-2">A simple media query that targets devices with a max width of 600px:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @media (max-width: 600px) {
     body {
         background-color: lightgray;
@@ -48,7 +48,7 @@
         <!-- Breakpoints -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Common Breakpoints</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Smartphones */
 @media (max-width: 480px) { ... }
 
@@ -67,7 +67,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">4. Orientation Queries</h2>
             <p class=" mb-2">Apply styles based on screen orientation:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @media (orientation: landscape) {
     .gallery {
         flex-direction: row;
@@ -80,7 +80,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">5. Combining Conditions</h2>
             <p class=" mb-2">You can combine multiple media features:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 @media (min-width: 768px) and (orientation: portrait) {
     .sidebar {
         display: none;
@@ -107,9 +107,9 @@
             </p>
         </section>
 
-     <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/transforms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: 2D & 3D Transforms</a></div>
-    <div><a href="<?= base_url('css/mobile-first') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Mobile-First Design →</a></div>
+     <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/transforms') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: 2D & 3D Transforms</a> 
+   <a href="<?= base_url('css/mobile-first') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Mobile-First Design →</a> 
 </div>
 
     </article>

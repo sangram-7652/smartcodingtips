@@ -26,7 +26,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">1. Aligning Items in Flexbox</h2>
             <p class=" mb-2">Flexbox uses <code>justify-content</code> and <code>align-items</code> to control alignment:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .flex-container {
     display: flex;
     justify-content: center;   /* horizontal */
@@ -45,7 +45,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">2. Aligning Items in Grid</h2>
             <p class=" mb-2">CSS Grid uses similar properties to control alignment:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid-container {
     display: grid;
     justify-items: center;     /* aligns items horizontally */
@@ -54,7 +54,7 @@
             </code></pre>
 
             <p class=" mt-2">You can also align the whole grid content:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .grid-container {
     justify-content: space-between;
     align-content: center;
@@ -66,7 +66,7 @@
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. Aligning Individual Items</h2>
             <p class=" mb-2">Use <code>align-self</code> or <code>justify-self</code> for specific item control:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 .item {
     align-self: flex-end;
     justify-self: start;
@@ -96,9 +96,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/flexbox-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Flexbox Basics</a></div>
-    <div><a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Wrapping & Direction →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/flexbox-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Flexbox Basics</a> 
+   <a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Wrapping & Direction →</a> 
 </div>
     </article>
 </main>

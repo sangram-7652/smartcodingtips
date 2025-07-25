@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/build-tools" class="text-blue-600 hover:underline">Build Tools</a>
+        <a href="javascript.php?page=js/build-tools" class="text-blue-600 dark:text-blue-400 hover:underline">Build Tools</a>
       </li>
     </ol>
   </nav>
@@ -33,7 +33,7 @@
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Install & Use Vite:</h3>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm create vite@latest my-app
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>npm create vite@latest my-app
 cd my-app
 npm install
 npm run dev</code></pre>
@@ -52,9 +52,9 @@ npm run dev</code></pre>
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Basic Webpack Setup:</h3>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm install --save-dev webpack webpack-cli</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>npm install --save-dev webpack webpack-cli</code></pre>
   <p class="mb-2">Create a <code>webpack.config.js</code>:</p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>module.exports = {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -77,10 +77,10 @@ npm run dev</code></pre>
   </ul>
 
   <h3 class="text-lg font-semibold mb-2">Install Babel with Webpack:</h3>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>npm install --save-dev babel-loader @babel/core @babel/preset-env</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>npm install --save-dev babel-loader @babel/core @babel/preset-env</code></pre>
 
   <p class="mb-2">Update <code>webpack.config.js</code> with a loader:</p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>module: {
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>module: {
   rules: [
     {
       test: /\.m?js$/,
@@ -129,7 +129,8 @@ npm run dev</code></pre>
     💡 <strong>Pro Tip:</strong> If you're building a modern front-end app, try Vite first. Use Webpack + Babel when you need full control or enterprise-level bundling.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/dry-kiss" class="text-blue-600 hover:underline">DRY & KISS →</a></p>
+  <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/node-npm') ?>" class="hover:underline">← Previous: Node.js & npm</a>
+    <a href="<?= base_url('js/dry-kiss') ?>" class="hover:underline ms-auto">Next: DRY & KISS →</a>
 </div>
 </main>

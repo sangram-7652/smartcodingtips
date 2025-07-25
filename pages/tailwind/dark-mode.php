@@ -26,7 +26,7 @@
         <!-- Configuration -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Configuration in tailwind.config.js</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 /** tailwind.config.js **/
 
 // Class-based strategy
@@ -47,7 +47,7 @@ module.exports = {
             <p class=" mb-2">
                 This strategy gives you full control to manually toggle dark mode using a parent class (`dark`), often on the `<html>` or `<body>` element.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;html class="dark"&gt;
   &lt;div class="bg-white dark:bg-gray-900 text-black dark:text-white"&gt;
     Dark mode enabled
@@ -65,7 +65,7 @@ module.exports = {
             <p class=" mb-2">
                 Tailwind automatically applies dark styles if the user's OS preference is dark mode.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 module.exports = {
   darkMode: 'media',
 }
@@ -73,7 +73,7 @@ module.exports = {
             <p class=" mt-2">
                 No need to toggle manually. Example:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="bg-white dark:bg-gray-800 text-black dark:text-white"&gt;
   Respects system dark mode preference
 &lt;/div&gt;
@@ -134,9 +134,9 @@ module.exports = {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/custom-utilities') ?>" class="hover:underline">← Previous: Creating Custom Utility Classes</a>
-  <a href="<?= base_url('tailwind/ui-principles') ?>" class="hover:underline">Next: Tailwind UI Principles →</a>
+  <a href="<?= base_url('tailwind/ui-principles') ?>" class="hover:underline ms-auto">Next: Tailwind UI Principles →</a>
 </div>
 
     </article>

@@ -26,7 +26,7 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-2">1. Floating Label with Tailwind</h2>
             <p class=" mb-2">Use <code>absolute</code>, <code>peer</code>, and <code>transform</code> utilities:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;div class="relative"&gt;
   &lt;input
     type="text"
@@ -60,7 +60,7 @@
             <p class=" mb-2">
                 Add ring effects or color transitions to improve focus visibility:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 &lt;input
   type="email"
   class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -85,9 +85,9 @@
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/forms-custom') ?>" class="hover:underline">← Previous: Custom Checkbox and Radio Buttons</a>
-  <a href="<?= base_url('tailwind/forms-plugin') ?>" class="hover:underline">Next: Tailwind Forms Plugin →</a>
+  <a href="<?= base_url('tailwind/forms-plugin') ?>" class="hover:underline ms-auto">Next: Tailwind Forms Plugin →</a>
 </div>
     </article>
 </main>

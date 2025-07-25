@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/api-intro" class="text-blue-600 hover:underline">Intro to APIs</a>
+                <a href="javascript.php?page=js/api-intro" class="text-blue-600 dark:text-blue-400 hover:underline">Intro to APIs</a>
             </li>
         </ol>
     </nav>
@@ -41,14 +41,14 @@
     <h2 class="text-2xl font-semibold mt-6 mb-2">📦 Common API Response Format: JSON</h2>
     <p>APIs often send data in <code>JSON (JavaScript Object Notation)</code> format:</p>
 
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>{
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>{
   "name": "John",
   "age": 30,
   "city": "New York"
 }</code></pre>
 
     <p>JavaScript can easily parse and use JSON data using:</p>
-    <pre class="bg-gray-100 p-4 rounded text-sm dark:bg-gray-900 dark:text-white"><code>const jsonData = '{"name":"John","age":30}';
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded text-sm dark:bg-gray-800 dark:text-white"><code>const jsonData = '{"name":"John","age":30}';
 const obj = JSON.parse(jsonData);
 console.log(obj.name); // "John"</code></pre>
 
@@ -71,8 +71,9 @@ console.log(obj.name); // "John"</code></pre>
         <li>APIs power modern web apps — from weather to login to search</li>
     </ul>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/fetch-api" class="text-blue-600 hover:underline">fetch() Basics →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/popups') ?>" class="hover:underline">← Previous: Popups & Controls</a>
+    <a href="<?= base_url('js/fetch-api') ?>" class="hover:underline ms-auto">Next: fetch() Basics →</a>
 </div>
 
 </main>

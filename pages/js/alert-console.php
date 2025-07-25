@@ -6,11 +6,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/alert-prompt-console" class="text-blue-600 hover:underline">Alert, Prompt & Console</a>
+                <a href="javascript.php?page=js/alert-prompt-console" class="text-blue-600 dark:text-blue-400 hover:underline">Alert, Prompt & Console</a>
             </li>
         </ol>
     </nav>
@@ -26,7 +26,7 @@
         Displays a popup message to the user. It's commonly used for notifications or warnings.
     </p>
     
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>alert("Welcome to JavaScript!");</code></pre>
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>alert("Welcome to JavaScript!");</code></pre>
 
     <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded mb-6">
         ⚠️ The alert box blocks further interaction until dismissed.
@@ -37,7 +37,7 @@
         Asks the user to input a value and returns that value as a string.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let name = prompt("What is your name?");
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let name = prompt("What is your name?");
 alert("Hello, " + name);</code></pre>
 
     <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded mb-6">
@@ -49,7 +49,7 @@ alert("Hello, " + name);</code></pre>
         Outputs data to the browser's developer console. Useful for debugging and inspecting values.
     </p>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>console.log("Page loaded");
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>console.log("Page loaded");
 let x = 5;
 console.log("Value of x is:", x);</code></pre>
 
@@ -60,7 +60,7 @@ console.log("Value of x is:", x);</code></pre>
         <li><code>console.table(object)</code> – Displays data as a table</li>
     </ul>
 
-    <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm mb-4"><code>let user = { name: "Alice", age: 30 };
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm mb-4"><code>let user = { name: "Alice", age: 30 };
 console.table(user);</code></pre>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">🎯 Summary</h2>
@@ -74,7 +74,8 @@ console.table(user);</code></pre>
         ✅ <strong>Tip:</strong> Use <code>console.log()</code> often to test code logic and track variable values.
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/if-else" class="text-blue-600 hover:underline">If, Else, Switch →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/comments') ?>" class="hover:underline">← Previous: Comments</a>
+    <a href="<?= base_url('js/if-else') ?>" class="hover:underline ms-auto">Next: If, Else, Switch →</a>
 </div>
 </main>

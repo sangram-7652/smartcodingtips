@@ -1,3 +1,8 @@
+<?php
+$title = "Favicon | SmartCodingTips";
+$description = "Learn about favicon in HTML. Understand key concepts, examples, and usage.";
+$keywords = "favicon, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -27,7 +32,7 @@
             <p class="mb-2">
                 Favicons are typically 16×16 or 32×32 pixel `.ico` or `.png` files. You can include them in your HTML using the <code>&lt;link&gt;</code> tag inside the <code>&lt;head&gt;</code> section.
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;head&gt;
   &lt;link rel="icon" type="image/png" href="favicon.png"&gt;
 &lt;/head&gt;
@@ -35,7 +40,7 @@
             <p class="mt-2">
                 For better browser compatibility, you can include multiple formats or sizes:
             </p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
 &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
             </code></pre>
@@ -50,9 +55,9 @@
             </ul>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/meta-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Meta Tags</a></div>
-    <div><a href="<?= base_url('html/deprecated-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Deprecated Tags →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/meta-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Meta Tags</a>
+    <a href="<?= base_url('html/deprecated-tags') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Deprecated Tags →</a>
 </div>
     </article>
 </main>

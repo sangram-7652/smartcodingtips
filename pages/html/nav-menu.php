@@ -1,3 +1,8 @@
+<?php
+$title = "Nav Menus with Lists | SmartCodingTips";
+$description = "Learn about nav menus with lists in HTML. Understand key concepts, examples, and usage.";
+$keywords = "nav, menus, with, lists, html tutorial, html basics";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -65,7 +70,7 @@
         <section class="">
             <h2 class="text-2xl font-semibold mb-2">Styling Navigation Menus</h2>
             <p class="mb-2">You can style lists and links with CSS for horizontal or vertical layouts. Using utility classes like Tailwind CSS helps speed up styling.</p>
-            <pre class="bg-gray-100 p-4 rounded overflow-x-auto whitespace-pre-wrap dark:bg-gray-900 dark:text-white"><code class="text-sm">
+            <pre class="bg-gray-100 p-4 overflow-x-auto  rounded  dark:bg-gray-800 dark:text-white"><code class="text-sm">
 /* Example CSS for horizontal nav */
 nav ul {
   list-style: none;
@@ -85,9 +90,9 @@ nav ul li a:focus {
             </code></pre>
         </section>
 
-        <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('html/relative-absolute') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Relative vs Absolute</a></div>
-    <div><a href="<?= base_url('html/images') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Images →</a></div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-10 text-sm font-semibold">
+    <a href="<?= base_url('html/relative-absolute') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Relative vs Absolute</a>
+    <a href="<?= base_url('html/images') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Images →</a>
 </div>
     </article>
 </main>

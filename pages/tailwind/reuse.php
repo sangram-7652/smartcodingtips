@@ -29,7 +29,7 @@
             <p class=" mb-2">
                 Define a class in your custom CSS file and apply commonly used utility combinations with <code>@apply</code>:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 /* styles.css */
 .btn {
   @apply px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700;
@@ -46,7 +46,7 @@
             <p class=" mb-2">
                 In templating engines like Blade, or frameworks like React, Vue, or Alpine, it's common to extract components:
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 <!-- Blade Example: resources/views/components/button.blade.php -->
 &lt;button {{ $attributes->merge(['class' => 'btn']) }}&gt;
     {{ $slot }}
@@ -60,7 +60,7 @@
         <!-- Extracted React Component -->
         <section class="mb-6">
             <h2 class="text-2xl font-semibold mb-2">3. React/JSX Component</h2>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>
 function Button({ children }) {
   return (
     &lt;button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"&gt;
@@ -90,9 +90,9 @@ function Button({ children }) {
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/ui-principles') ?>" class="hover:underline">← Previous: Tailwind UI Principles</a>
-  <a href="<?= base_url('tailwind/components') ?>" class="hover:underline">Next: Responsive Navbar, Cards, Modals →</a>
+  <a href="<?= base_url('tailwind/components') ?>" class="hover:underline ms-auto">Next: Responsive Navbar, Cards, Modals →</a>
 </div>
 
     </article>

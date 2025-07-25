@@ -29,7 +29,7 @@
   <p class="text-black dark:text-gray-300 mb-4">
     The most common way to render dynamic content in React is by using the <code>map()</code> function.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 const fruits = ['🍎 Apple', '🍌 Banana', '🍇 Grape'];
 
 function FruitList() {
@@ -48,7 +48,7 @@ function FruitList() {
   <p class="text-black dark:text-gray-300 mb-4">
     You can also render more complex data, like an array of objects. Just remember to use a <strong>unique key</strong> for each item.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 const users = [
   { id: 1, name: 'Alice' },
   { id: 2, name: 'Bob' },
@@ -70,7 +70,7 @@ function UserList() {
   <p class="text-black dark:text-gray-300 mb-4">
     Lists often render custom components dynamically using <code>props</code>.
   </p>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>
 function User({ name }) {
   return &lt;li&gt;👤 {name}&lt;/li&gt;;
 }
@@ -104,9 +104,9 @@ function UserList() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/keys') ?>" class="hover:underline">← Previous: Keys in Lists</a>
-  <a href="<?= base_url('react/empty-states') ?>" class="hover:underline">Next: Conditional Lists & Empty States →</a>
+  <a href="<?= base_url('react/empty-states') ?>" class="hover:underline ms-auto">Next: Conditional Lists & Empty States →</a>
 </div>
 
 </main>

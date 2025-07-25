@@ -4,11 +4,11 @@
     <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
         <ol class="list-none p-0 inline-flex">
             <li class="flex items-center">
-                <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+                <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
                 <span class="mx-2">/</span>
             </li>
             <li class="flex items-center">
-                <a href="javascript.php?page=js/default-params" class="text-blue-600 hover:underline">Default Parameters</a>
+                <a href="javascript.php?page=js/default-params" class="text-blue-600 dark:text-blue-400 hover:underline">Default Parameters</a>
             </li>
         </ol>
     </nav>
@@ -20,7 +20,7 @@
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">✅ Syntax Example</h2>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name = "Guest") {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>function greet(name = "Guest") {
   console.log(`Hello, ${name}!`);
 }
 
@@ -32,7 +32,7 @@ greet("Alice");  // Hello, Alice!
     <p class="mb-4">
         Before ES6, developers used the OR operator (`||`) to simulate default values:
     </p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function greet(name) {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>function greet(name) {
   name = name || "Guest";
   console.log("Hello, " + name);
 }</code></pre>
@@ -48,7 +48,7 @@ greet("Alice");  // Hello, Alice!
     <p class="mb-4">
         Default parameters only apply if the argument is <code>undefined</code>, not <code>null</code>.
     </p>
-    <pre class="bg-gray-100 p-4 rounded mb-4 text-sm dark:bg-gray-900 dark:text-white"><code>function demo(value = "default") {
+    <pre class="bg-gray-100 p-4 overflow-x-auto rounded mb-4 text-sm dark:bg-gray-800 dark:text-white"><code>function demo(value = "default") {
   console.log(value);
 }
 
@@ -59,7 +59,8 @@ demo(null);      // null</code></pre>
         ✅ <strong>Next Up:</strong> Learn about <code>import</code> and <code>export</code> for using JavaScript modules!
     </div>
 
-    <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/es6-modules" class="text-blue-600 hover:underline">Modules in Depth →</a></p>
+    <div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/es6-overview') ?>" class="hover:underline">← Previous: ES6+ Overview</a>
+    <a href="<?= base_url('js/es6-modules') ?>" class="hover:underline ms-auto">Next: Modules in Depth →</a>
 </div>
 </main>

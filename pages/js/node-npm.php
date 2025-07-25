@@ -4,11 +4,11 @@
   <nav aria-label="breadcrumb" class="text-sm text-gray-600 mb-4">
     <ol class="list-none p-0 inline-flex">
       <li class="flex items-center">
-        <a href="index.php" class="text-blue-600 hover:underline">Home</a>
+        <a href="index.php" class="text-blue-600 dark:text-blue-400 hover:underline">Home</a>
         <span class="mx-2">/</span>
       </li>
       <li class="flex items-center">
-        <a href="javascript.php?page=js/node-npm" class="text-blue-600 hover:underline">Node.js & npm</a>
+        <a href="javascript.php?page=js/node-npm" class="text-blue-600 dark:text-blue-400 hover:underline">Node.js & npm</a>
       </li>
     </ol>
   </nav>
@@ -29,12 +29,12 @@
     <li>Event-driven and non-blocking (asynchronous) architecture</li>
   </ul>
 
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4 text-sm"><code>// hello.js
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mb-4 text-sm"><code>// hello.js
 console.log("Hello from Node.js!");
 </code></pre>
 
   <p class="mb-4">To run this file:</p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4 text-sm"><code>node hello.js</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mb-4 text-sm"><code>node hello.js</code></pre>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📦 What is npm?</h2>
   <p class="mb-4">
@@ -53,13 +53,13 @@ console.log("Hello from Node.js!");
     <li>Download the LTS version</li>
     <li>Run the installer (npm is included)</li>
     <li>Verify installation:
-      <pre class="bg-gray-100 p-3 rounded dark:bg-gray-900 dark:text-white text-sm mt-2"><code>node -v
+      <pre class="bg-gray-100 p-3 rounded dark:bg-gray-800 dark:text-white text-sm mt-2"><code>node -v
 npm -v</code></pre>
     </li>
   </ol>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🧪 Creating Your First npm Project</h2>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4 text-sm"><code>mkdir my-app
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mb-4 text-sm"><code>mkdir my-app
 cd my-app
 npm init -y
 </code></pre>
@@ -69,25 +69,25 @@ npm init -y
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">📁 Installing a Package</h2>
   <p class="mb-4">Example: Install <code>axios</code> for making HTTP requests:</p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white mb-4 text-sm"><code>npm install axios</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white mb-4 text-sm"><code>npm install axios</code></pre>
   <p class="mb-4">This adds a <code>node_modules</code> folder and updates <code>package.json</code>.</p>
 
   <h2 class="text-2xl font-semibold mt-6 mb-2">🔁 Running a Script</h2>
   <p class="mb-4">Add this to your <code>package.json</code>:</p>
-  <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>{
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>{
   "scripts": {
     "start": "node index.js"
   }
 }</code></pre>
   <p class="mb-4">Then run:</p>
-  <pre class="bg-gray-100 p-4 rounded  dark:bg-gray-900 dark:text-white text-sm"><code>npm start</code></pre>
+  <pre class="bg-gray-100 p-4 overflow-x-auto rounded  dark:bg-gray-800 dark:text-white text-sm"><code>npm start</code></pre>
 
   <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-900 p-4 rounded mt-6">
     💡 <strong>Tip:</strong> Node.js is not just for servers. You can build tools, APIs, and even desktop or full-stack apps using frameworks like Electron or Next.js.
   </div>
 
-  <div class="mt-4">
-    <p class="font-semibold">Next: <a href="js.php?page=js/vite-webpack" class="text-blue-600 hover:underline">Vite / Webpack / Babel →</a></p>
+<div class="mt-4 flex justify-between  items-center flex-wrap gap-4  text-blue-600 dark:text-blue-400 font-semibold">
+    <a href="<?= base_url('js/react-vue-angular') ?>" class="hover:underline">← Previous: React / Vue / Angular</a>
+    <a href="<?= base_url('js/vite-webpack') ?>" class="hover:underline ms-auto">Next: Vite / Webpack / Babel →</a>
 </div>
-
 </main>

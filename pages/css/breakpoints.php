@@ -109,9 +109,9 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center text-sm font-semibold">
-    <div><a href="<?= base_url('css/mobile-first') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Mobile-First Design</a></div>
-    <div><a href="<?= base_url('css/flexbox-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">Next: Flexbox Basics →</a></div>
+      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+   <a href="<?= base_url('css/mobile-first') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Mobile-First Design</a> 
+   <a href="<?= base_url('css/flexbox-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Flexbox Basics →</a> 
 </div>
 
     </article>

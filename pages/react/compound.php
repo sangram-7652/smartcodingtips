@@ -31,7 +31,7 @@
 
   <!-- Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧪 2. Example: Toggle Component</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 import React, { createContext, useContext, useState } from 'react';
 
 const ToggleContext = createContext();
@@ -69,7 +69,7 @@ Toggle.Button = function Button() {
 
   <!-- Usage -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">⚙️ 3. Usage Example</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto mb-6"><code>
 function App() {
   return (
     &lt;Toggle&gt;
@@ -99,9 +99,9 @@ function App() {
   </ul>
 
   <!-- Next Page Navigation -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/reusability') ?>" class="hover:underline">← Previous: Reusability Principles</a>
-  <a href="<?= base_url('react/render-props') ?>" class="hover:underline">Next: Render Props →</a>
+  <a href="<?= base_url('react/render-props') ?>" class="hover:underline ms-auto">Next: Render Props →</a>
 </div>
 
 </main>

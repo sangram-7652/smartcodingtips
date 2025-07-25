@@ -26,7 +26,7 @@
 
   <!-- useState Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🧠 useState</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useState } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -40,7 +40,7 @@ function Counter() {
 
   <!-- useEffect Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🕒 useEffect</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useEffect } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useEffect } from "react";
 
 function Timer() {
   useEffect(() => {
@@ -53,7 +53,7 @@ function Timer() {
 
   <!-- useRef Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">📦 useRef</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useRef } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useRef } from "react";
 
 function InputFocus() {
   const inputRef = useRef(null);
@@ -67,7 +67,7 @@ function InputFocus() {
 
   <!-- useContext Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🌐 useContext</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { createContext, useContext } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { createContext, useContext } from "react";
 
 const ThemeContext = createContext("light");
 
@@ -78,7 +78,7 @@ function ThemedComponent() {
 
   <!-- useReducer Example -->
   <h2 class="text-2xl font-semibold mb-4 text-black dark:text-white">🔄 useReducer</h2>
-  <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useReducer } from "react";
+  <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm text-black dark:text-white overflow-x-auto"><code>import { useReducer } from "react";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -112,9 +112,9 @@ function Counter() {
   </ul>
 
   <!-- Next Page -->
-  <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+  <div class="mt-4 flex justify-between items-center flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('react/hook-rules') ?>" class="hover:underline">← Previous: Hook Rules & Best Practices</a>
-  <a href="<?= base_url('react/prop-drilling') ?>" class="hover:underline">Next: Props Drilling →</a>
+  <a href="<?= base_url('react/prop-drilling') ?>" class="hover:underline ms-auto">Next: Props Drilling →</a>
 </div>
 
 

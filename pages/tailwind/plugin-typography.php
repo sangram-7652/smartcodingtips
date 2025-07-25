@@ -28,7 +28,7 @@
             <p class=" mb-2">
                 Also known as "prose classes," this plugin provides beautiful default styles for long-form content such as articles, blog posts, and documentation.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>// Installation
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>// Installation
 npm install -D @tailwindcss/typography
 
 // In tailwind.config.js
@@ -36,7 +36,7 @@ plugins: [
     require('@tailwindcss/typography'),
 ]</code></pre>
             <p class=" mt-4">Usage example:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>&lt;article class="prose lg:prose-xl"&gt;
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>&lt;article class="prose lg:prose-xl"&gt;
     &lt;h1&gt;Tailwind Typography Plugin&lt;/h1&gt;
     &lt;p&gt;This is a paragraph styled with prose classes.&lt;/p&gt;
 &lt;/article&gt;
@@ -49,7 +49,7 @@ plugins: [
             <p class=" mb-2">
                 Ensures consistent width-to-height ratios (like 16:9, 4:3) for videos, images, and containers.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>// Installation
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>// Installation
 npm install -D @tailwindcss/aspect-ratio
 
 // In tailwind.config.js
@@ -57,7 +57,7 @@ plugins: [
     require('@tailwindcss/aspect-ratio'),
 ]</code></pre>
             <p class=" mt-4">Usage example:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>&lt;div class="aspect-w-16 aspect-h-9"&gt;
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>&lt;div class="aspect-w-16 aspect-h-9"&gt;
     &lt;iframe src="https://www.youtube.com/embed/xyz" frameborder="0"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </code></pre>
@@ -69,7 +69,7 @@ plugins: [
             <p class=" mb-2">
                 Allows you to truncate text after a fixed number of lines and append an ellipsis (`...`) when overflowed.
             </p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>// Installation
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>// Installation
 npm install -D @tailwindcss/line-clamp
 
 // In tailwind.config.js
@@ -77,7 +77,7 @@ plugins: [
     require('@tailwindcss/line-clamp'),
 ]</code></pre>
             <p class=" mt-4">Usage example:</p>
-            <pre class="bg-gray-100 p-4 rounded dark:bg-gray-900 dark:text-white text-sm"><code>&lt;p class="line-clamp-3"&gt;
+            <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white text-sm"><code>&lt;p class="line-clamp-3"&gt;
   This is a very long paragraph that will be truncated after three lines using the line-clamp utility class.
 &lt;/p&gt;
 </code></pre>
@@ -101,9 +101,9 @@ plugins: [
             </p>
         </section>
 
-        <div class="mt-4 flex justify-between text-blue-600  dark:text-blue-400 font-semibold">
+        <div class="mt-4 flex justify-between flex-wrap gap-4 text-blue-600  dark:text-blue-400 font-semibold">
   <a href="<?= base_url('tailwind/plugin-examples') ?>" class="hover:underline">← Previous: Community Plugins and Examples</a>
-  <a href="<?= base_url('tailwind/plugin-ui') ?>" class="hover:underline">Next: Tailwind UI (Paid) and Headless UI (Free) →</a>
+  <a href="<?= base_url('tailwind/plugin-ui') ?>" class="hover:underline ms-auto">Next: Tailwind UI (Paid) and Headless UI (Free) →</a>
 </div>
     </article>
 </main>
