@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Grid Basics | SmartCodingTips";
+$description = "Start learning CSS Grid layout. Understand rows, columns, and areas for advanced design.";
+$keywords = "css grid, grid layout, grid container, css rows and columns";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

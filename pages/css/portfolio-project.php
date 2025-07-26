@@ -1,3 +1,9 @@
+<?php
+$title = "Portfolio Project Using CSS | SmartCodingTips";
+$description = "Build a personal portfolio website using only HTML and CSS. Great practice for beginners.";
+$keywords = "css portfolio project, html css website, beginner css project, web design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

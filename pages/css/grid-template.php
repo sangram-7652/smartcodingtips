@@ -1,3 +1,9 @@
+<?php
+$title = "Grid Template Areas in CSS | SmartCodingTips";
+$description = "Use named grid areas for cleaner and more structured layout using CSS Grid.";
+$keywords = "grid template areas, css grid layout, grid naming, css templates";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

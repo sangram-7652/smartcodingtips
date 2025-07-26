@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Form Layout Techniques | SmartCodingTips";
+$description = "Arrange form elements using flexbox and grid for modern UI layouts.";
+$keywords = "css form layout, grid form, flexbox form css, responsive form design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

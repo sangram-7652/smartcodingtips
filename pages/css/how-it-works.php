@@ -1,3 +1,9 @@
+<?php
+$title = "How CSS Works | SmartCodingTips";
+$description = "Understand how CSS works behind the scenes to style HTML elements. Learn about selectors, rules, and rendering.";
+$keywords = "how css works, css mechanism, css render, css rules, learn css basics";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Shadows | SmartCodingTips";
+$description = "Create beautiful effects using box-shadow and text-shadow in CSS. Includes real examples.";
+$keywords = "css shadow, box-shadow, text-shadow, css effects, element styling";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

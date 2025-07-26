@@ -1,3 +1,9 @@
+<?php
+$title = "Common Flexbox Layout Patterns | SmartCodingTips";
+$description = "Explore real-world layout examples using Flexbox: navigation bars, cards, and more.";
+$keywords = "flexbox layout examples, css ui layout, responsive flexbox, flex design patterns";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -108,9 +114,9 @@
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Wrapping & Direction</a> 
-   <a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Grid Basics →</a> 
-</div>
+            <a href="<?= base_url('css/flexbox-wrap') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Wrapping & Direction</a>
+            <a href="<?= base_url('css/grid-intro') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Grid Basics →</a>
+        </div>
 
     </article>
 </main>

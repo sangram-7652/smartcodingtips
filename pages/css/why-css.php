@@ -1,3 +1,10 @@
+<?php
+$title = "Why Use CSS? | SmartCodingTips";
+$description = "Discover why CSS is essential for styling HTML pages and improving user experience. Learn the benefits of using CSS.";
+$keywords = "why use css, benefits of css, css importance, styling html, css tutorial";
+?>
+
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -79,8 +86,8 @@
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/what-is-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: What is CSS?</a> 
-   <a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Types of CSS →</a> 
-</div>
+            <a href="<?= base_url('css/what-is-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: What is CSS?</a>
+            <a href="<?= base_url('css/css-types') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Types of CSS →</a>
+        </div>
     </article>
 </main>

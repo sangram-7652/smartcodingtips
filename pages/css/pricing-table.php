@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Pricing Table Design | SmartCodingTips";
+$description = "Create a responsive pricing table layout using Flexbox and CSS styling.";
+$keywords = "css pricing table, pricing layout css, pricing card design, css ui projects";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

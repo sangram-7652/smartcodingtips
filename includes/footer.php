@@ -74,32 +74,32 @@
       });
     }
 
-    // 📄 Dynamic Page Load (optional)
-    const contentDiv = document.getElementById("content");
-    if (contentDiv) {
-      fetch("pages/html/what-is-html.php")
-        .then((res) => res.text())
-        .then((html) => {
-          contentDiv.innerHTML = html;
-        });
+    // // 📄 Dynamic Page Load (optional)
+    // const contentDiv = document.getElementById("content");
+    // if (contentDiv) {
+    //   fetch("pages/html/what-is-html.php")
+    //     .then((res) => res.text())
+    //     .then((html) => {
+    //       contentDiv.innerHTML = html;
+    //     });
 
-      const links = document.querySelectorAll("a[data-page]");
-      links.forEach((link) => {
-        link.addEventListener("click", function(e) {
-          e.preventDefault();
-          const page = this.getAttribute("data-page");
+    //   const links = document.querySelectorAll("a[data-page]");
+    //   links.forEach((link) => {
+    //     link.addEventListener("click", function(e) {
+    //       e.preventDefault();
+    //       const page = this.getAttribute("data-page");
 
-          fetch(`pages/${page}`)
-            .then((res) => res.text())
-            .then((html) => {
-              contentDiv.innerHTML = html;
-            });
+    //       fetch(`pages/${page}`)
+    //         .then((res) => res.text())
+    //         .then((html) => {
+    //           contentDiv.innerHTML = html;
+    //         });
 
-          links.forEach((l) => l.classList.remove("font-bold"));
-          this.classList.add("font-bold");
-        });
-      });
-    }
+    //       links.forEach((l) => l.classList.remove("font-bold"));
+    //       this.classList.add("font-bold");
+    //     });
+    //   });
+    // }
 
     const toc = document.getElementById('mobileToc');
     const openTocBtn = document.getElementById('openToc');

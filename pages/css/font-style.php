@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Font Styles | SmartCodingTips";
+$description = "Style your text with different fonts, weights, and styles using CSS. Includes font-family usage.";
+$keywords = "css font style, font-family, font-weight, css typography, styling text in css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

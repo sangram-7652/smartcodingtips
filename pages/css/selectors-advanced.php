@@ -1,3 +1,9 @@
+<?php
+$title = "Advanced CSS Selectors | SmartCodingTips";
+$description = "Learn advanced CSS selectors like attribute, pseudo-class, and pseudo-element selectors with examples.";
+$keywords = "advanced css selectors, css pseudo selectors, attribute selector, css tips";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

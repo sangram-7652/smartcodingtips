@@ -1,3 +1,9 @@
+<?php
+$title = "Animated Navbar with CSS | SmartCodingTips";
+$description = "Design a responsive and animated navigation bar using only CSS and Flexbox.";
+$keywords = "css navbar, animated menu css, responsive navbar, nav bar design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

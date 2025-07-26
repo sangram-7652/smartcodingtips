@@ -1,3 +1,9 @@
+<?php
+$title = "Custom Checkbox & Radio Buttons | SmartCodingTips";
+$description = "Create custom-designed checkboxes and radio buttons using CSS only.";
+$keywords = "css custom checkbox, radio button style, input type styling css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

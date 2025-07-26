@@ -1,3 +1,9 @@
+<?php
+$title = "Text Alignment & Decoration in CSS | SmartCodingTips";
+$description = "Use CSS to align and decorate text with properties like text-align, text-decoration, and more.";
+$keywords = "text alignment css, text decoration css, underline, center text, css text style";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -109,8 +115,8 @@ a.custom-link {
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Line & Letter Spacing</a> 
-   <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Hex, RGB, HSL →</a> 
-</div>
+            <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Line & Letter Spacing</a>
+            <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Hex, RGB, HSL →</a>
+        </div>
     </article>
 </main>

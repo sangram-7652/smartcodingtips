@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Opacity & Gradients | SmartCodingTips";
+$description = "Add transparency and beautiful gradients using CSS. Includes linear and radial gradient examples.";
+$keywords = "css opacity, css gradients, transparent background, linear gradient css, radial gradient";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -100,8 +106,8 @@ div.fade {
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Units: px, %, em, rem</a> 
-   <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: CSS Variables →</a> 
-</div>
+            <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Units: px, %, em, rem</a>
+            <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: CSS Variables →</a>
+        </div>
     </article>
 </main>

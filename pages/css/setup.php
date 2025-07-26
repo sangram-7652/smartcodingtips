@@ -1,3 +1,9 @@
+<?php
+$title = "Setup Your First CSS File | SmartCodingTips";
+$description = "Learn how to create and link your first CSS file to an HTML document. Step-by-step setup guide.";
+$keywords = "setup css file, first css file, link css html, css beginner guide, css tutorial";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -26,7 +32,7 @@
             <h2 class="text-2xl font-semibold mb-2">1. Create the HTML File</h2>
             <p class=" mb-2">
                 Start with a basic HTML structure and save it as
-                 <code>index.html</code>.
+                <code>index.html</code>.
             </p>
             <pre class="bg-gray-100 p-4 overflow-x-auto rounded dark:bg-gray-800 dark:text-white"><code class="text-sm">
 &lt;!DOCTYPE html&gt;
@@ -100,8 +106,8 @@ p {
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How CSS Works</a> 
-   <a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Syntax Overview →</a> 
-</div>
+            <a href="<?= base_url('css/how-it-works') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: How CSS Works</a>
+            <a href="<?= base_url('css/syntax') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Syntax Overview →</a>
+        </div>
     </article>
 </main>

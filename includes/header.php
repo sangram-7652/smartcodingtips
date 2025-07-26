@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+        <script>
+  // Prevent dark mode flicker
+  (function () {
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script>
     <?php
     $title = $title ?? "SmartCodingTips";
     $description = $description ?? "SmartCodingTips: Learn Web Development with HTML, CSS, JavaScript, and more.";
@@ -48,6 +56,7 @@
                 <a href="<?= base_url('tailwind/what-is-tailwind') ?>" class="hover:text-teal-400 transition">Tailwind CSS</a>
                 <a href="<?= base_url('js/what-is-js') ?>" class="hover:text-teal-400 transition">JavaScript</a>
                 <a href="<?= base_url('react/what-is-react') ?>" class="hover:text-teal-400 transition">React</a>
+                <a href="<?= base_url('mcq') ?>" class="hover:text-teal-400 transition">MCQs</a>
             </nav>
 
             <!-- Theme Toggle -->

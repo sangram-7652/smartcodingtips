@@ -1,3 +1,9 @@
+<?php
+$title = "Dark Mode with CSS | SmartCodingTips";
+$description = "Implement a dark mode feature using CSS custom properties and prefers-color-scheme.";
+$keywords = "css dark mode, prefers-color-scheme, css theme switcher, dark light toggle";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

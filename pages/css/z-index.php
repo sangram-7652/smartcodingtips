@@ -1,3 +1,9 @@
+<?php
+$title = "Z-index & Layering in CSS | SmartCodingTips";
+$description = "Control stacking order with z-index and understand how layers work in CSS positioning.";
+$keywords = "css z-index, layer order, css stacking context, element overlap";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

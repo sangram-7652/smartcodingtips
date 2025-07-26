@@ -1,3 +1,9 @@
+<?php
+$title = "Keyframe Animations in CSS | SmartCodingTips";
+$description = "Use @keyframes to create advanced animations in CSS. Includes loop, delay, and ease examples.";
+$keywords = "css animation, keyframes, animate css, css motion effects";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

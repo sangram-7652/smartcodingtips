@@ -1,3 +1,9 @@
+<?php
+$title = "2D & 3D Transforms in CSS | SmartCodingTips";
+$description = "Rotate, scale, and move elements in 2D and 3D space using CSS transforms.";
+$keywords = "css transform, css rotate, 3d transform, translate scale, css effects";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Borders | SmartCodingTips";
+$description = "Learn how to create and style borders around elements using CSS.";
+$keywords = "css border, border radius, border color, border style css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

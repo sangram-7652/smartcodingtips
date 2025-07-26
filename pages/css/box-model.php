@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Box Model Explained | SmartCodingTips";
+$description = "Understand the box model concept in CSS including content, padding, border, and margin.";
+$keywords = "css box model, margin padding border, css layout, box sizing css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -90,10 +96,10 @@
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: CSS Variables</a> 
-   <a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Margin & Padding →</a> 
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+            <a href="<?= base_url('css/variables') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: CSS Variables</a>
+            <a href="<?= base_url('css/margin-padding') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Margin & Padding →</a>
+        </div>
 
     </article>
 </main>

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Units: px, %, em, rem | SmartCodingTips";
+$description = "Learn various CSS units of measurement and how to use px, %, em, rem effectively.";
+$keywords = "css units, px em rem, css measurement, responsive css units, css layout tips";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -109,9 +115,9 @@ h1 {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Hex, RGB, HSL</a> 
-   <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Opacity & Gradients →</a> 
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+            <a href="<?= base_url('css/color-systems') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Hex, RGB, HSL</a>
+            <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Opacity & Gradients →</a>
+        </div>
     </article>
 </main>

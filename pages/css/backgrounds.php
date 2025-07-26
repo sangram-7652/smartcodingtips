@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Backgrounds | SmartCodingTips";
+$description = "Add background images, colors, repeat, and position using CSS background properties.";
+$keywords = "css background, background image, background color, background repeat, css design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

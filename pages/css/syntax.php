@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Syntax Overview | SmartCodingTips";
+$description = "Learn the basic structure of CSS syntax including selectors, properties, and values with examples.";
+$keywords = "css syntax, css rules, css properties, css structure, css tutorial for beginners";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Performance Tips & Best Practices | SmartCodingTips";
+$description = "Improve website performance with efficient CSS. Learn best practices to write clean and fast CSS.";
+$keywords = "css performance tips, css best practices, optimize css, fast loading styles";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

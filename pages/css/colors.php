@@ -1,3 +1,9 @@
+<?php
+$title = "Text & Background Colors in CSS | SmartCodingTips";
+$description = "Learn how to use CSS to apply text and background colors. Includes HEX, RGB examples.";
+$keywords = "css colors, background color, text color, css color examples, html color codes";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -102,8 +108,8 @@ div.highlight {
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Font Styles</a> 
-   <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Line & Letter Spacing →</a> 
-</div>
+            <a href="<?= base_url('css/font-style') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Font Styles</a>
+            <a href="<?= base_url('css/text-spacing') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Line & Letter Spacing →</a>
+        </div>
     </article>
 </main>

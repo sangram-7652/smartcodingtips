@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Combinators Explained | SmartCodingTips";
+$description = "Explore CSS combinators such as descendant, child, sibling selectors and learn when to use them.";
+$keywords = "css combinators, css descendant selector, css child selector, css sibling selector";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

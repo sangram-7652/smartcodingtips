@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Breakpoints | SmartCodingTips";
+$description = "Choose the right breakpoints for responsive design. Understand widths for devices and layout changes.";
+$keywords = "css breakpoints, responsive width, layout breakpoints, media queries";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

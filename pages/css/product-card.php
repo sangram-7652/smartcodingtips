@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Product Card Design | SmartCodingTips";
+$description = "Create stylish product cards using CSS. Great for eCommerce UI design.";
+$keywords = "css product card, ecommerce card css, product layout, css ui design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "Types of CSS | SmartCodingTips";
+$description = "Explore the three main types of CSS: Inline, Internal, and External. Learn how and when to use each.";
+$keywords = "types of css, inline css, internal css, external css, css tutorial";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

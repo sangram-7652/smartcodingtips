@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Media Queries | SmartCodingTips";
+$description = "Build responsive designs using media queries in CSS. Target different screen sizes easily.";
+$keywords = "css media query, responsive css, screen breakpoints, mobile css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

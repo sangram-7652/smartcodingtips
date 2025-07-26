@@ -1,6 +1,7 @@
 RewriteEngine On
 RewriteBase /smartcodingtips/
 
+
 # 🔁 Redirect old dynamic URLs to clean SEO URLs
 
 RewriteCond %{THE_REQUEST} \s/js\.php\?page=js/([^&\s]+) [NC]
@@ -31,10 +32,16 @@ RewriteRule ^tailwind/([^/]+)$ tailwind.php?page=tailwind/$1 [L,QSA]
 RewriteRule ^react/([^/]+)$ react.php?page=react/$1 [L,QSA]
 RewriteRule ^subscribed/([^/]+)$ index.php?subscribed=$1 [L,QSA]
 
-
 # Rewrite /about to about.php
 RewriteRule ^about$ about.php [L]
 RewriteRule ^contact$ contact.php [L]
+RewriteRule ^subscribed/([^/]+)$ index.php?subscribed=$1 [L,QSA]
 RewriteRule ^privacy-policy$ privacy-policy.php [L]
 RewriteRule ^subscribe$ subscribe.php [L]
+
+# ✅ MCQ SEO URLs
+RewriteRule ^mcq/([^/]+)$ mcq.php?page=$1/$2 [L,QSA]
+
+
+
 

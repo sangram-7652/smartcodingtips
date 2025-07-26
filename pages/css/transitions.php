@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Transitions | SmartCodingTips";
+$description = "Add smooth effects to your web elements using CSS transitions. Learn with examples.";
+$keywords = "css transitions, transition property, hover effect css, smooth animation";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "Using DevTools for CSS Debugging | SmartCodingTips";
+$description = "Learn how to inspect and debug CSS using browser DevTools efficiently.";
+$keywords = "css devtools, inspect css, debug css chrome, browser tools css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

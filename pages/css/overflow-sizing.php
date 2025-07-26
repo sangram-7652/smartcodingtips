@@ -1,3 +1,9 @@
+<?php
+$title = "Overflow & Box Sizing in CSS | SmartCodingTips";
+$description = "Handle overflow and control box dimensions using box-sizing, overflow, and related properties.";
+$keywords = "css overflow, box sizing, overflow scroll, content clipping, box size control";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

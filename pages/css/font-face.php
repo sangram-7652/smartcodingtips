@@ -1,3 +1,9 @@
+<?php
+$title = "Using Custom Fonts with @font-face | SmartCodingTips";
+$description = "Embed and use custom fonts in your website using @font-face in CSS.";
+$keywords = "css font-face, custom fonts css, embed fonts, web fonts css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Positioning | SmartCodingTips";
+$description = "Master the CSS position property including static, relative, absolute, fixed, and sticky.";
+$keywords = "css position, absolute relative fixed, positioning elements, css layout control";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

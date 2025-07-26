@@ -1,3 +1,9 @@
+<?php
+$title = "Flexbox Wrapping & Direction | SmartCodingTips";
+$description = "Master wrapping, row vs column direction, and reverse layouts in CSS Flexbox.";
+$keywords = "flex wrap, flex-direction, css row column, flexbox layout techniques";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

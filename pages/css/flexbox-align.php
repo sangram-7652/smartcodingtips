@@ -1,3 +1,9 @@
+<?php
+$title = "Aligning Items with Flexbox | SmartCodingTips";
+$description = "Learn how to align flex items using justify-content, align-items, and align-self.";
+$keywords = "flexbox alignment, justify content, align items css, css flex properties";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

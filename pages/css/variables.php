@@ -1,3 +1,9 @@
+<?php
+$title = "Using CSS Variables | SmartCodingTips";
+$description = "Simplify your CSS with variables. Learn how to define and reuse values using custom properties.";
+$keywords = "css variables, custom properties, root variable, css optimization, modern css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -109,9 +115,9 @@ body {
             </p>
         </section>
 
-      <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Opacity & Gradients</a> 
-   <a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Box Model Basics →</a> 
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+            <a href="<?= base_url('css/opacity-gradient') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Opacity & Gradients</a>
+            <a href="<?= base_url('css/box-model') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Box Model Basics →</a>
+        </div>
     </article>
 </main>

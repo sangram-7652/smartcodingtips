@@ -1,3 +1,9 @@
+<?php
+$title = "Centering Elements in CSS | SmartCodingTips";
+$description = "Learn multiple ways to center elements using margin auto, flexbox, and grid.";
+$keywords = "css centering, center div, center text css, flexbox centering, css layout tips";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

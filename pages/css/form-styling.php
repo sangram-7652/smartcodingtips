@@ -1,3 +1,9 @@
+<?php
+$title = "Styling Inputs & Buttons with CSS | SmartCodingTips";
+$description = "Make your forms look professional with styled input fields and buttons using CSS.";
+$keywords = "css form styling, input css, button styles, css form design";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

@@ -1,3 +1,9 @@
+<?php
+$title = "CSS Display Property | SmartCodingTips";
+$description = "Explore the CSS display property: block, inline, flex, grid, and more. Learn how they affect layout.";
+$keywords = "css display, block inline flex grid, css layout, display types";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->

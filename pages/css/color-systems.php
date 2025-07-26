@@ -1,3 +1,9 @@
+<?php
+$title = "Color Systems: HEX, RGB, HSL | SmartCodingTips";
+$description = "Understand different color formats in CSS including HEX, RGB, and HSL. Choose the right one for your project.";
+$keywords = "css hex rgb hsl, css color formats, hex code, rgb color, hsl css";
+?>
+
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -94,9 +100,9 @@ div.transparent {
             </p>
         </section>
 
-       <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-   <a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Alignment & Decoration</a> 
-   <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Units: px, %, em, rem →</a> 
-</div>
+        <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
+            <a href="<?= base_url('css/text-decoration') ?>" class="text-blue-600 dark:text-blue-400 hover:underline">← Previous: Alignment & Decoration</a>
+            <a href="<?= base_url('css/units') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Units: px, %, em, rem →</a>
+        </div>
     </article>
 </main>

@@ -1,3 +1,8 @@
+<?php
+$title = "What is CSS? | SmartCodingTips";
+$description = "Learn what CSS is and how it helps style websites. Understand its role in web development with examples.";
+$keywords = "what is css, css introduction, css meaning, learn css, css tutorial for beginners";
+?>
 <!-- Page Content Starts Here -->
 <main class="content-area" style="padding: 20px; max-width: 950px; margin: auto;">
     <!-- Breadcrumb Navigation -->
@@ -75,8 +80,8 @@ h1 {
         </section>
 
         <div class="mt-6 flex justify-between items-center flex-wrap gap-4 text-sm font-semibold">
-    <div></div>
-   <a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Why Use CSS? →</a> 
-</div>
+            <div></div>
+            <a href="<?= base_url('css/why-css') ?>" class="text-blue-600 dark:text-blue-400 hover:underline ms-auto">Next: Why Use CSS? →</a>
+        </div>
     </article>
 </main>
